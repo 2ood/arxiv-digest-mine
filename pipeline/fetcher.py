@@ -31,7 +31,8 @@ class Paper:
     abstract:   str
     authors:    list[str]
     url:        str
-    published:  datetime
+    published:  datetime   # original v1 submission date — for display
+    updated:    datetime   # most recent revision date — used for date-window checks
     categories: list[str]
 
 
@@ -57,12 +58,14 @@ def _fetch_chunk(category_query: str, start: int) -> list[Paper]:
                     for a in entry.findall("atom:author", NS)]
         published = datetime.fromisoformat(
             entry.find("atom:published", NS).text.strip().replace("Z", "+00:00"))
+        updated = datetime.fromisoformat(
+            entry.find("atom:updated", NS).text.strip().replace("Z", "+00:00"))
         categories = [tag.get("term") for tag in entry.findall("atom:category", NS)]
 
         papers.append(Paper(
             id=short_id, title=title, abstract=abstract,
             authors=authors, url=f"https://arxiv.org/abs/{short_id}",
-            published=published, categories=categories,
+            published=published, updated=updated, categories=categories,
         ))
     return papers
 
@@ -96,7 +99,7 @@ def fetch_today(
         new_today = []
         hit_old   = False
         for p in chunk:
-            if p.published.astimezone(KST).date() >= today_kst:
+            if p.updated.astimezone(KST).date() >= today_kst:
                 if p.id not in seen_ids:
                     seen_ids.add(p.id)
                     new_today.append(p)
@@ -155,7 +158,7 @@ def fetch_recent_days(
 
         all_too_old = True
         for p in chunk:
-            paper_date = p.published.astimezone(KST).date()
+            paper_date = p.updated.astimezone(KST).date()
             if paper_date >= cutoff:
                 all_too_old = False
                 if p.id not in seen_ids:
