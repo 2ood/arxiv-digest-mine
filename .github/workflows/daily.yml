@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/papers/*.json data/available_dates.json
+          git add data/papers/*.json data/available_dates.json data/terms/*.yaml
           git diff --cached --quiet || git commit -m "chore: papers $(date -u +'%Y-%m-%d') [skip ci]"
           git push origin main
 
@@ -67,7 +67,6 @@ jobs:
           cp date.html   /tmp/site/
           cp -r static/  /tmp/site/static/
           cp -r data/    /tmp/site/data/
-
           git fetch origin gh-pages 2>/dev/null || true
           git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
 

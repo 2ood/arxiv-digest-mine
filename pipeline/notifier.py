@@ -104,8 +104,11 @@ def _build_html(summaries: list[DaySummary], site_url: str | None) -> str:
         for topic, papers in by_topic.items():
             bg, fg = colors.get(topic, ("#f1f5f9", "#475569"))
 
+            shown    = papers[:5]
+            overflow = len(papers) - len(shown)
+
             paper_cards = ""
-            for p in papers:
+            for p in shown:
                 authors_str = ", ".join(p.authors[:3])
                 if len(p.authors) > 3:
                     authors_str += " et al."
@@ -125,6 +128,18 @@ def _build_html(summaries: list[DaySummary], site_url: str | None) -> str:
                   </div>
                 </div>"""
 
+            overflow_note = ""
+            if overflow > 0:
+                overflow_note = f"""
+                <div style="text-align:center;padding:10px 0 4px;
+                            font-size:12px;color:#94a3b8;">
+                  +{overflow} more paper{'s' if overflow != 1 else ''} —
+                  <a href="https://2ood.github.io/arxiv-digest-web"
+                     style="color:#3b82f6;text-decoration:none;font-weight:600;">
+                    see full list
+                  </a>
+                </div>"""
+
             topic_sections += f"""
             <div style="margin-bottom:28px;">
               <div style="margin-bottom:12px;">
@@ -136,6 +151,7 @@ def _build_html(summaries: list[DaySummary], site_url: str | None) -> str:
                 </span>
               </div>
               {paper_cards}
+              {overflow_note}
             </div>"""
 
         day_html += f"""

@@ -28,6 +28,7 @@ from storage   import (save_papers, date_has_data, list_available_dates,
                        load_papers, load_matched_summaries,
                        update_available_dates, prune_old_files)
 from notifier  import send_digest, DaySummary, PaperSummary
+from terms     import load_or_generate, regenerate as regenerate_terms
 
 CONFIG_PATH = ROOT / "config.yaml"
 UTC         = timezone.utc
@@ -40,16 +41,22 @@ def load_config() -> dict:
 
 
 def build_topics(config: dict) -> list[Topic]:
-    return [
-        Topic(
-            id=t["name"].lower().replace(" ", "-"),
-            name=t["name"],
-            terms=t["terms"],
-            description=t["description"],
-            enabled=t.get("enabled", True),
+    topics = []
+    for t in config["topics"]:
+        topic_id = t["name"].lower().replace(" ", "-")
+        terms    = load_or_generate(
+            topic_id    = topic_id,
+            name        = t["name"],
+            description = t["description"],
         )
-        for t in config["topics"]
-    ]
+        topics.append(Topic(
+            id          = topic_id,
+            name        = t["name"],
+            terms       = terms,
+            description = t["description"],
+            enabled     = t.get("enabled", True),
+        ))
+    return topics
 
 
 def filter_and_save(day: date, papers: list, topics: list[Topic], config: dict) -> DaySummary:
@@ -185,6 +192,11 @@ def main():
         epilog=__doc__,
     )
     parser.add_argument(
+        "--regen-terms", action="store_true",
+        help="Regenerate all term files using KeyBERT, overwriting existing ones. "
+             "Combine with --refilter to immediately re-score stored papers.",
+    )
+    parser.add_argument(
         "--refilter", action="store_true",
         help="Re-run filter on all stored JSONs without hitting arXiv. "
              "Use after editing topics or thresholds in config.yaml.",
@@ -231,6 +243,16 @@ def main():
     print("=" * 60)
 
     config  = load_config()
+    regen   = getattr(args, 'regen_terms', False)
+
+    # ── Term generation step (before build_topics) ────────────────────────────
+    if regen:
+        print("[main] Regenerating all term files with KeyBERT…")
+        for t in config["topics"]:
+            if t.get("enabled", True):
+                tid = t["name"].lower().replace(" ", "-")
+                regenerate_terms(tid, t["name"], t["description"])
+
     topics  = build_topics(config)
     enabled = [t for t in topics if t.enabled]
     cats    = config.get("categories", ["cs.AI", "cs.LG", "cs.CL"])

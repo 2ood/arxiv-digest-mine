@@ -1,66 +1,27 @@
 topics:
   - name: Artificial Consciousness
     enabled: true
-    terms:
-      - artificial consciousness
-      - machine consciousness
-      - conscious AI
-      - conscious agent
-      - sentience
-      - phenomenal experience
-      - qualia
-      - machine self-awareness
-      - subjective experience
-      - integrated information theory
-      - IIT
-      - global workspace theory
-      - GWT
-      - higher-order theory
-      - cognitive architecture
-      - inner experience
-    description: "Papers about machine consciousness, subjective experience, and theories of mind applied to AI systems"
+    description: "Papers about machine consciousness, subjective experience, and theories of mind applied to AI systems. Especially, any philosophical approaches on Artifical Intelligence."
 
-  - name: Test-Time Learning
+  - name: Neural Network Training Methods
     enabled: true
-    terms:
-      - test-time learning
-      - test-time training
-      - test-time compute
-      - test-time adaptation
-      - inference-time compute
-      - inference-time scaling
-      - chain-of-thought reasoning
-      - chain of thought
-      - self-consistency decoding
-      - tree of thought
-      - best-of-N sampling
-      - majority voting
-      - slow thinking
-      - extended thinking
-      - reasoning model
-      - Monte Carlo tree search
-      - MCTS
-      - search at inference
-    description: "Papers about leveraging more computation at inference time to improve model performance, including reasoning models and search-based methods"
+    description: "Papers about alternative training and finetuning methods for neural networks, especially dealing with the inefficiency of backpropagation."
 
   - name: Symbolic AI
     enabled: true
-    terms:
-      - neurosymbolic
-      - neuro-symbolic
-      - symbolic reasoning
-      - knowledge graph
-      - formal verification
-      - theorem proving
-      - automated reasoning
-      - first-order logic
-      - constraint satisfaction
-      - program synthesis
-      - knowledge representation
-      - inductive logic programming
-      - symbolic regression
-      - hybrid reasoning
     description: "Papers combining neural networks with symbolic reasoning, logic, or structured knowledge representations"
+
+  - name: Graph Neural Networks
+    enabled: true
+    description: "Papers about the expressive freedom of graph neural networks. Especially on the control of the overexceeding freedom of a graph."
+  
+  - name: Brain inspired AI
+    enabled: true
+    description: "Papers that got inspirations from a biological brain's structure and behaviors. Brain functions, brain signals, brain energy controls are examples."
+
+  - name: Interpretability
+    enabled: true
+    description: "Papers about how to analyze the black box neural network and find out the discovered logics. Furthermore, papers about how to design a neural network to be more interpretably trained."
 
 # arXiv categories to fetch from
 categories:
