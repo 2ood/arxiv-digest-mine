@@ -5,7 +5,7 @@ filter.py — Two-layer matching:
 
 A paper passes if EITHER layer fires.
 Unmatched papers are returned separately, sorted by best semantic score,
-so nothing is truly lost — they appear at the bottom as "irrelevant".
+so nothing is truly lost — they appear at the bottom as "misc".
 """
 
 import re

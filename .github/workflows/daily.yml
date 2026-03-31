@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/papers/*.json data/available_dates.json data/terms/*.yaml
+          git add data/papers/**/*.json data/available_dates.json data/terms/*.yaml
           git diff --cached --quiet || git commit -m "chore: papers $(date -u +'%Y-%m-%d') [skip ci]"
           git push origin main
 
@@ -85,7 +85,7 @@ jobs:
       github.event_name == 'workflow_dispatch' && inputs.mode == 'notify' ||
       github.event_name == 'schedule' && startsWith(github.event.schedule, '0 22')
     runs-on: ubuntu-latest
-    environment: production
+    environment: github-pages
     timeout-minutes: 5
 
     steps:

@@ -138,7 +138,7 @@ arxiv-digest/
 │   ├── display.js               # shared frontend rendering
 │   └── global.css               # responsive styles
 ├── data/
-│   ├── papers/                  # YYYY-MM-DD.json per day
+│   ├── papers/                  # YYYY/MM/DD.json per day
 │   ├── terms/                   # {topic-id}.yaml per topic
 │   └── available_dates.json     # date index for the frontend calendar
 ├── index.html                   # main digest page (tabbed, last 7 days)

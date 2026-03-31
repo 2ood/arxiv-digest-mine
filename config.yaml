@@ -20,10 +20,26 @@ topics:
     description: "Papers that got inspirations from a biological brain's structure and behaviors. Brain functions, brain signals, brain energy controls are examples."
 
   - name: Interpretability
-    enabled: true
+    enabled: false
     description: "Papers about how to analyze the black box neural network and find out the discovered logics. Furthermore, papers about how to design a neural network to be more interpretably trained."
+  
+  - name: Recurrent Neural Networks
+    enabled: true
+    description: "Papers about recurrent neural networks, especially on the control of the overexceeding freedom of a recurrent neural network. Also, papers about the training methods for recurrent neural networks."
 
-# arXiv categories to fetch from
+  - name: Spiking Neural Networks
+    enabled: true
+    description: "Papers about spiking neural networks, and how it can be trained without backpropagation. Also, papers about the breakthroughs in the performance of spiking neural networks."
+
+  - name: ARC-AGI
+    enabled: true
+    description: "Papers about the ARC-AGI project, including the ARC Challenge and related research on artificial general intelligence."
+  
+  - name: Differentiable Logic Gate Networks
+    enabled: true
+    description: "Papers about differentiable logic gate networks, which combine neural networks with logical reasoning capabilities. This includes research on how to design and train such networks effectively."
+
+  # arXiv categories to fetch from
 categories:
   - cs.AI
   - cs.LG

@@ -1,7 +1,7 @@
 """
 storage.py — Persists papers + filter results as JSON under data/papers/.
 
-Schema per file (data/papers/YYYY-MM-DD.json):
+Schema per file (data/papers/YYYY/MM/DD.json):
   {
     "date":       "2026-02-27",
     "fetched_at": "2026-02-27T07:00:12+09:00",
@@ -54,7 +54,9 @@ def _papers_dir(root: Path) -> Path:
 
 
 def _path_for_date(root: Path, d: date) -> Path:
-    return _papers_dir(root) / f"{d.isoformat()}.json"
+    p = _papers_dir(root) / str(d.year) / f"{d.month:02d}" / f"{d.day:02d}.json"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    return p
 
 
 # ── Serialise ─────────────────────────────────────────────────────────────────
@@ -208,10 +210,13 @@ def patch_papers(
 def list_available_dates(root: Path) -> list[date]:
     """Return all dates that have saved JSON files, sorted newest-first."""
     dates = []
-    for f in _papers_dir(root).glob("????-??-??.json"):
+    for f in _papers_dir(root).glob("*/*/??.json"):
         try:
-            dates.append(date.fromisoformat(f.stem))
-        except ValueError:
+            day   = int(f.stem)
+            month = int(f.parent.name)
+            year  = int(f.parent.parent.name)
+            dates.append(date(year, month, day))
+        except (ValueError, TypeError):
             pass
     return sorted(dates, reverse=True)
 
@@ -256,16 +261,27 @@ def update_available_dates(root: Path) -> None:
 def prune_old_files(root: Path, retention_days: int = RETENTION_DAYS) -> None:
     """Delete paper JSON files older than retention_days."""
     cutoff = datetime.now(UTC).date() - timedelta(days=retention_days)
+    papers_dir = _papers_dir(root)
     pruned = 0
-    for f in _papers_dir(root).glob("????-??-??.json"):
+    for f in papers_dir.glob("*/*/??.json"):
         try:
-            file_date = date.fromisoformat(f.stem)
-        except ValueError:
+            day   = int(f.stem)
+            month = int(f.parent.name)
+            year  = int(f.parent.parent.name)
+            file_date = date(year, month, day)
+        except (ValueError, TypeError):
             continue
         if file_date < cutoff:
             f.unlink()
             pruned += 1
-            print(f"[storage] Pruned {f.name}")
+            print(f"[storage] Pruned {f.relative_to(papers_dir)}")
+    # Remove empty month/year directories
+    for month_dir in papers_dir.glob("*/*/"):
+        if month_dir.is_dir() and not any(month_dir.iterdir()):
+            month_dir.rmdir()
+    for year_dir in papers_dir.glob("*/"):
+        if year_dir.is_dir() and not any(year_dir.iterdir()):
+            year_dir.rmdir()
     if pruned:
         print(f"[storage] Pruned {pruned} file(s).")
     else:

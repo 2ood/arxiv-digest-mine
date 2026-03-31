@@ -22,6 +22,7 @@ from datetime import datetime, timezone, timedelta, date
 ARXIV_API     = "https://export.arxiv.org/api/query"
 CHUNK_SIZE    = 300
 REQUEST_DELAY = 3
+MAX_RETRIES   = 3
 
 NS = {"atom": "http://www.w3.org/2005/Atom"}
 
@@ -48,8 +49,19 @@ def _fetch_chunk(category_query: str, start: int) -> list[Paper]:
         "start":        start,
         "max_results":  CHUNK_SIZE,
     })
-    with urllib.request.urlopen(f"{ARXIV_API}?{params}", timeout=30) as resp:
-        xml_data = resp.read()
+    url = f"{ARXIV_API}?{params}"
+    for attempt in range(MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(url, timeout=30) as resp:
+                xml_data = resp.read()
+            break
+        except (TimeoutError, urllib.error.URLError) as e:
+            if attempt < MAX_RETRIES - 1:
+                wait = REQUEST_DELAY * (attempt + 2)
+                print(f"[fetcher] Attempt {attempt+1} failed ({e}), retrying in {wait}s…")
+                time.sleep(wait)
+            else:
+                raise
 
     root   = ET.fromstring(xml_data)
     papers = []
