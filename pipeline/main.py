@@ -362,7 +362,7 @@ def main():
         prune_old_files(ROOT, retention_days=config.get("retention_days", 90))
 
     # ── Notify ────────────────────────────────────────────────────────────────
-    if do_notify:
+    if do_notify and config.get("email_enabled", True):
         site_url = config.get("site_url")   # optional in config.yaml
         send_digest(summaries, site_url=site_url)
 

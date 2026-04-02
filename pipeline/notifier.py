@@ -134,14 +134,13 @@ def _build_html(summaries: list[DaySummary], site_url: str | None) -> str:
 
             overflow_note = ""
             if overflow > 0:
+                link = (f' — <a href="{site_url}" style="color:#3b82f6;'
+                        f'text-decoration:none;font-weight:600;">see full list</a>'
+                        if site_url else "")
                 overflow_note = f"""
                 <div style="text-align:center;padding:10px 0 4px;
                             font-size:12px;color:#94a3b8;">
-                  +{overflow} more paper{'s' if overflow != 1 else ''} —
-                  <a href="https://2ood.github.io/arxiv-digest-web"
-                     style="color:#3b82f6;text-decoration:none;font-weight:600;">
-                    see full list
-                  </a>
+                  +{overflow} more paper{'s' if overflow != 1 else ''}{link}
                 </div>"""
 
             topic_sections += f"""
@@ -200,11 +199,12 @@ def _build_html(summaries: list[DaySummary], site_url: str | None) -> str:
           </div>
         </div>"""
 
-    SITE_URL = "https://2ood.github.io/arxiv-digest-web"
-    cta = f"""
+    cta = ""
+    if site_url:
+        cta = f"""
         <div style="text-align:center;margin-top:32px;padding-top:28px;
                     border-top:1px solid #e2e8f0;">
-          <a href="{SITE_URL}"
+          <a href="{site_url}"
              style="display:inline-block;background:#3b82f6;color:#ffffff;
                     font-size:14px;font-weight:700;text-decoration:none;
                     border-radius:8px;padding:13px 36px;letter-spacing:0.01em;">
@@ -266,7 +266,7 @@ def _build_plaintext(summaries: list[DaySummary], site_url: str | None) -> str:
                           f"    {p.url}", ""]
 
     if site_url:
-        lines += [f"{'─'*56}", f"  Go to Arxiv Digest: https://2ood.github.io/arxiv-digest-web"]
+        lines += [f"{'─'*56}", f"  Go to Arxiv Digest: {site_url}"]
 
     return "\n".join(lines)
 
