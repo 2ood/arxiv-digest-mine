@@ -3,6 +3,61 @@
   "fetched_at": "2026-04-02T12:32:47.679811+09:00",
   "papers": [
     {
+      "id": "2604.03315",
+      "title": "StoryBlender: Inter-Shot Consistent and Editable 3D Storyboard with Spatial-temporal Dynamics",
+      "abstract": "Storyboarding is a core skill in visual storytelling for film, animation, and games. However, automating this process requires a system to achieve two properties that current approaches rarely satisfy simultaneously: inter-shot consistency and explicit editability. While 2D diffusion-based generators produce vivid imagery, they often suffer from identity drift along with limited geometric control; conversely, traditional 3D animation workflows are consistent and editable but require expert-heavy, labor-intensive authoring. We present StoryBlender, a grounded 3D storyboard generation framework governed by a Story-centric Reflection Scheme. At its core, we propose the StoryBlender system, which is built on a three-stage pipeline: (1) Semantic-Spatial Grounding, to construct a continuity memory graph to decouple global assets from shot-specific variables for long-horizon consistency; (2) Canonical Asset Materialization, to instantiate entities in a unified coordinate space to maintain visual identity; and (3) Spatial-Temporal Dynamics, to achieve layout design and cinematic evolution through visual metrics. By orchestrating multiple agents in a hierarchical manner within a verification loop, StoryBlender iteratively self-corrects spatial hallucinations via engine-verified feedback. The resulting native 3D scenes support direct, precise editing of cameras and visual assets while preserving unwavering multi-shot continuity. Experiments demonstrate that StoryBlender significantly improves consistency and editability over both diffusion-based and 3D-grounded baselines. Code, data, and demonstration video will be available on https://engineeringai-lab.github.io/StoryBlender/",
+      "authors": [
+        "Bingliang Li",
+        "Zhenhong Sun",
+        "Jiaming Bian",
+        "Yuehao Wu",
+        "Yifu Wang",
+        "Hongdong Li",
+        "Yatao Bian",
+        "Huadong Mo",
+        "Daoyi Dong"
+      ],
+      "url": "https://arxiv.org/abs/2604.03315",
+      "published": "2026-04-01T07:24:31+00:00",
+      "updated": "2026-04-01T07:24:31+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.02382",
+      "title": "Ambig-IaC: Multi-level Disambiguation for Interactive Cloud Infrastructure-as-Code Synthesis",
+      "abstract": "The scale and complexity of modern cloud infrastructure have made Infrastructure-as-Code (IaC) essential for managing deployments. While large Language models (LLMs) are increasingly being used to generate IaC configurations from natural language, user requests are often underspecified. Unlike traditional code generation, IaC configurations cannot be executed cheaply or iteratively repaired, forcing the LLMs into an almost one-shot regime. We observe that ambiguity in IaC exhibits a tractable compositional structure: configurations decompose into three hierarchical axes (resources, topology, attributes) where higher-level decisions constrain lower-level ones. We propose a training-free, disagreement-driven framework that generates diverse candidate specifications, identifies structural disagreements across these axes, ranks them by informativeness, and produces targeted clarification questions that progressively narrow the configuration space. We introduce \\textsc{Ambig-IaC}, a benchmark of 300 validated IaC tasks with ambiguous prompts, and an evaluation framework based on graph edit distance and embedding similarity. Our method outperforms the strongest baseline, achieving relative improvements of +18.4\\% and +25.4\\% on structure and attribute evaluations, respectively.",
+      "authors": [
+        "Zhenning Yang",
+        "Kaden Gruizenga",
+        "Tongyuan Miao",
+        "Patrick Tser Jern Kon",
+        "Hui Guan",
+        "Ang Chen"
+      ],
+      "url": "https://arxiv.org/abs/2604.02382",
+      "published": "2026-04-01T20:27:43+00:00",
+      "updated": "2026-04-01T20:27:43+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.01275",
       "title": "Descending into the Modular Bootstrap",
       "abstract": "In this paper, we attempt to explore the landscape of two-dimensional conformal field theories (2d CFTs) by efficiently searching for numerical solutions to the modular bootstrap equation using machine-learning-style optimization. The torus partition function of a 2d CFT is fixed by the spectrum of its primary operators and its chiral algebra, which we take to be the Virasoro algebra with $c>1$. We translate the requirement that this partition function is modular invariant into a loss function, which we then minimize to identify possible primary spectra. Our approach involves two technical innovations that facilitate finding reliable candidate CFTs. The first is a strategy to estimate the uncertainty associated with truncating the spectrum to the lowest dimension operators. The second is the use of a new singular-value-based optimizer (Sven) that is more effective than gradient descent at navigating the hierarchical structure of the loss landscape. We numerically construct candidate truncated CFT partition functions with central charges between 1 and $\\frac{8}{7}$, a range devoid of known examples, and argue that these candidates likely come from a continuous space of modular bootstrap solutions. We also provide evidence for a more stringent constraint on the spectral gap near $c = 1$ than the existing bound of $Δ_{\\rm gap} \\le \\frac{c}{6} + \\frac{1}{3}$.",
@@ -7221,7 +7276,48 @@
       "match_method": "none",
       "best_score": 0.055,
       "backfilled": true
+    },
+    {
+      "id": "2604.03314",
+      "title": "CoLA: Cross-Modal Low-rank Adaptation for Multimodal Downstream Tasks",
+      "abstract": "Foundation models have revolutionized AI, but adapting them efficiently for multimodal tasks, particularly in dual-stream architectures composed of unimodal encoders, such as DINO and BERT, remains a significant challenge. Parameter-Efficient Fine-Tuning (PEFT) methods like Low-Rank Adaptation (LoRA) enable lightweight adaptation, yet they operate in isolation within each modality, limiting their ability in capturing cross-modal interactions. In this paper, we take a step in bridging this gap with Cross-Modal Low-Rank Adaptation (CoLA), a novel PEFT framework that extends LoRA by introducing a dedicated inter-modal adaptation pathway alongside the standard intra-modal one. This dual-path design enables CoLA to adapt unimodal foundation models to multimodal tasks effectively, without interference between modality-specific and cross-modal learning. We evaluate CoLA across a range of vision-language (RefCOCO, RefCOCO+, RefCOCOg) and audio-visual (AVE, AVS) benchmarks, where it consistently outperforms LORA, achieving a relative gain of around 3\\% and 2\\%, respectively, while maintaining parameter efficiency. Notably, CoLA enables the first multi-task PEFT framework for visual grounding, bridging a key gap in efficient multimodal adaptation.",
+      "authors": [
+        "Wish Suharitdamrong",
+        "Tony Alex",
+        "Muhammad Awais",
+        "Sara Ahmed"
+      ],
+      "url": "https://arxiv.org/abs/2604.03314",
+      "published": "2026-04-01T01:37:24+00:00",
+      "updated": "2026-04-01T01:37:24+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.34,
+      "backfilled": true
+    },
+    {
+      "id": "2604.02378",
+      "title": "YC Bench: a Live Benchmark for Forecasting Startup Outperformance in Y Combinator Batches",
+      "abstract": "Forecasting startup success is notoriously difficult, partly because meaningful outcomes, such as exits, large funding rounds, and sustained revenue growth, are rare and can take years to materialize. As a result, signals are sparse and evaluation cycles are slow. Y Combinator batches offer a unique mitigation: each batch comprises around 200 startups, funded simultaneously, with evaluation at Demo Day only three months later. We introduce YC Bench, a live benchmark for forecasting early outperformance within YC batches. Using the YC W26 batch as a case study (196 startups), we measure outperformance with a Pre-Demo Day Score, a KPI combining publicly available traction signals and web visibility. This short-term metric enables rapid evaluation of forecasting models. As a baseline, we take Google mentions prior to the YC W26 application deadline, a simple proxy for prior brand recognition, recovering 6 of 11 top performers at YC Demo Day (55% recall). YC Bench provides a live benchmark for studying startup success forecasting, with iteration cycles measured in months rather than years. Code and Data are available on GitHub: https://github.com/benstaf/ycbench",
+      "authors": [
+        "Mostapha Benhenda"
+      ],
+      "url": "https://arxiv.org/abs/2604.02378",
+      "published": "2026-04-01T07:58:27+00:00",
+      "updated": "2026-04-01T07:58:27+00:00",
+      "categories": [
+        "cs.LG",
+        "q-fin.GN"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.113,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-03T03:35:10.579258+00:00"
+  "patched_at": "2026-04-07T03:39:31.193551+00:00"
 }
