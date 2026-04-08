@@ -3,6 +3,121 @@
   "fetched_at": "2026-04-07T12:39:19.936034+09:00",
   "papers": [
     {
+      "id": "2604.04986",
+      "title": "Enhancing sample efficiency in reinforcement-learning-based flow control: replacing the critic with an adaptive reduced-order model",
+      "abstract": "Model-free deep reinforcement learning (DRL) methods suffer from poor sample efficiency. To overcome this limitation, this work introduces an adaptive reduced-order-model (ROM)-based reinforcement learning framework for active flow control. In contrast to conventional actor--critic architectures, the proposed approach leverages a ROM to estimate the gradient information required for controller optimization. The design of the ROM structure incorporates physical insights. The ROM integrates a linear dynamical system and a neural ordinary differential equation (NODE) for estimating the nonlinearity in the flow. The parameters of the linear component are identified via operator inference, while the NODE is trained in a data-driven manner using gradient-based optimization. During controller--environment interactions, the ROM is continuously updated with newly collected data, enabling adaptive refinement of the model. The controller is then optimized through differentiable simulation of the ROM. The proposed ROM-based DRL framework is validated on two canonical flow control problems: Blasius boundary layer flow and flow past a square cylinder. For the Blasius boundary layer, the proposed method effectively reduces to a single-episode system identification and controller optimization process, yet it yields controllers that outperform traditional linear designs and achieve performance comparable to DRL approaches with minimal data. For the flow past a square cylinder, the proposed method achieves superior drag reduction with significantly fewer exploration data compared with DRL approaches. The work addresses a key component of model-free DRL control algorithms and lays the foundation for designing more sample-efficient DRL-based active flow controllers.",
+      "authors": [
+        "Zesheng Yao",
+        "Zhen-Hua Wan",
+        "Canjun Yang",
+        "Qingchao Xia",
+        "Mengqi Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2604.04986",
+      "published": "2026-04-05T01:48:32+00:00",
+      "updated": "2026-04-05T01:48:32+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04988",
+      "title": "Prune-Quantize-Distill: An Ordered Pipeline for Efficient Neural Network Compression",
+      "abstract": "Modern deployment often requires trading accuracy for efficiency under tight CPU and memory constraints, yet common compression proxies such as parameter count or FLOPs do not reliably predict wall-clock inference time. In particular, unstructured sparsity can reduce model storage while failing to accelerate (and sometimes slightly slowing down) standard CPU execution due to irregular memory access and sparse kernel overhead. Motivated by this gap between compression and acceleration, we study a practical, ordered pipeline that targets measured latency by combining three widely used techniques: unstructured pruning, INT8 quantization-aware training (QAT), and knowledge distillation (KD). Empirically, INT8 QAT provides the dominant runtime benefit, while pruning mainly acts as a capacity-reduction pre-conditioner that improves the robustness of subsequent low-precision optimization; KD, applied last, recovers accuracy within the already constrained sparse INT8 regime without changing the deployment form. We evaluate on CIFAR-10/100 using three backbones (ResNet-18, WRN-28-10, and VGG-16-BN). Across all settings, the ordered pipeline achieves a stronger accuracy-size-latency frontier than any single technique alone, reaching 0.99-1.42 ms CPU latency with competitive accuracy and compact checkpoints. Controlled ordering ablations with a fixed 20/40/40 epoch allocation further confirm that stage order is consequential, with the proposed ordering generally performing best among the tested permutations. Overall, our results provide a simple guideline for edge deployment: evaluate compression choices in the joint accuracy-size-latency space using measured runtime, rather than proxy metrics alone.",
+      "authors": [
+        "Longsheng Zhou",
+        "Yu Shen"
+      ],
+      "url": "https://arxiv.org/abs/2604.04988",
+      "published": "2026-04-05T06:13:47+00:00",
+      "updated": "2026-04-05T06:13:47+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04998",
+      "title": "El Nino Prediction Based on Weather Forecast and Geographical Time-series Data",
+      "abstract": "This paper proposes a novel framework for enhancing the prediction accuracy and lead time of El Niño events, crucial for mitigating their global climatic, economic, and societal impacts. Traditional prediction models often rely on oceanic and atmospheric indices, which may lack the granularity or dynamic interplay captured by comprehensive meteorological and geographical datasets. Our framework integrates real-time global weather forecast data with anomalies, subsurface ocean heat content, and atmospheric pressure across various temporal and spatial resolutions. Leveraging a hybrid deep learning architecture that combines a Convolutional Neural Network (CNN) for spatial feature extraction and a Long Short-Term Memory (LSTM) network for temporal dependency modeling, the framework aims to identify complex precursors and evolving patterns of El Niño events.",
+      "authors": [
+        "Viet Trinh",
+        "Ha-Vy Luu",
+        "Quoc-Khiem Nguyen-Pham",
+        "Hung Tong",
+        "Thanh-Huyen Tran",
+        "Hoai-Nam Nguyen Dang"
+      ],
+      "url": "https://arxiv.org/abs/2604.04998",
+      "published": "2026-04-05T21:10:59+00:00",
+      "updated": "2026-04-05T21:10:59+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04996",
+      "title": "Learning-Based Multi-Criteria Decision Making Model for Sawmill Location Problems",
+      "abstract": "Strategically locating a sawmill is vital for enhancing the efficiency, profitability, and sustainability of timber supply chains. Our study proposes a Learning-Based Multi-Criteria Decision-Making (LB-MCDM) framework that integrates machine learning (ML) with GIS-based spatial location analysis via MCDM. The proposed framework provides a data-driven, unbiased, and replicable approach to assessing site suitability. We demonstrate the utility of the proposed model through a case study in Mississippi (MS). We apply five ML algorithms (Random Forest Classifier, Support Vector Classifier, XGBoost Classifier, Logistic Regression, and K-Nearest Neighbors Classifier) to identify the most suitable sawmill locations in Mississippi. Among these models, the Random Forest Classifier achieved the highest performance. We use the SHAP (SHapley Additive exPlanations) technique to determine the relative importance of each criterion, revealing the Supply-Demand Ratio, a composite feature that reflects local market competition dynamics, as the most influential factor, followed by Road, Rail Line and Urban Area Distance. The validation of suitability maps generated by our LB-MCDM model suggests that 10-11% of the MS landscape is highly suitable for sawmill location.",
+      "authors": [
+        "Mahid Ahmed",
+        "Ali Dogru",
+        "Chaoyang Zhang",
+        "Chao Meng"
+      ],
+      "url": "https://arxiv.org/abs/2604.04996",
+      "published": "2026-04-05T18:46:59+00:00",
+      "updated": "2026-04-05T18:46:59+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.05000",
+      "title": "Closed-Loop Autonomous Software Development via Jira-Integrated Backlog Orchestration: A Case Study in Deterministic Control and Safety-Constrained Automation",
+      "abstract": "This paper presents a closed-loop system for software lifecycle management framed as a control architecture rather than a code-generation tool. The system manages a backlog of approximately 1,602 rows across seven task families, ingests 13 structured source documents, and executes a deterministic seven-stage pipeline implemented as seven scheduled automation lanes. The automation stack comprises approximately 12,661 lines of Python across 23 scripts plus 6,907 lines of versioned prompt specifications, with checkpoint-based time budgets, 101 exception handlers, and 12 centralized lock mechanisms implemented through four core functions and eight reusable patterns. A Jira Status Contract provides externally observable collision locking, and a degraded-mode protocol supports continued local operation when Jira is unavailable. Artificial-intelligence assistance is bounded by structured context packages, configured resource caps, output re-validation, and human review gates. A formal evaluation of the initial 152-run window yielded 100% terminal-state success with a 95% Clopper-Pearson interval of [97.6%, 100%]; the system has since accumulated more than 795 run artifacts in continuous operation. Three rounds of adversarial code review identified 51 findings, all closed within the study scope (48 fully remediated, 3 closed with deferred hardening), with zero false negatives within the injected set. In an autonomous security ticket family of 10 items, six were completed through pipeline-autonomous dispatch and verification, two required manual remediation, and two were closed by policy decision. The results indicate that bounded, traceable lifecycle automation is practical when autonomy is embedded within explicit control, recovery, and audit mechanisms.",
+      "authors": [
+        "Elias Calboreanu"
+      ],
+      "url": "https://arxiv.org/abs/2604.05000",
+      "published": "2026-04-05T21:54:03+00:00",
+      "updated": "2026-04-05T21:54:03+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.04212",
       "title": "Relay-Assisted Activation-Integrated SIM for Wireless Physical Neural Networks",
       "abstract": "Wireless physical neural networks (WPNNs) have emerged as a promising paradigm for performing neural computation directly in the physical layer of wireless systems, offering low latency and high energy efficiency. However, most existing WPNN implementations primarily rely on linear physical transformations, which fundamentally limits their expressiveness. In this work, we propose a relay-assisted WPNN architecture based on activation-integrated stacked intelligent metasurfaces (AI-SIMs), where each passive metasurface layer enabling linear wave manipulation is cascaded with an activation metasurface layer that realizes nonlinear processing in the analog domain. By deliberately structuring multi-hop wireless propagation, the relay amplification matrix and the metasurface phase-shift matrices jointly act as trainable network weights, while hardware-implemented activation functions provide essential nonlinearity. Simulation results demonstrate that the proposed architecture achieves high classification accuracy, and that incorporating hardware-based activation functions significantly improves representational capability and performance compared with purely linear physical implementations.",
@@ -3360,6 +3475,171 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.078
+    },
+    {
+      "id": "2604.04990",
+      "title": "Architecture Without Architects: How AI Coding Agents Shape Software Architecture",
+      "abstract": "AI coding agents select frameworks, scaffold infrastructure, and wire integrations, often in seconds. These are architectural decisions, yet almost no one reviews them as such. We identify five mechanisms by which agents make implicit architectural choices and propose six prompt-architecture coupling patterns that map natural-language prompt features to the infrastructure they require. The patterns range from contingent couplings (structured output validation) that may weaken as models improve to fundamental ones (tool-call orchestration) that persist regardless of model capability. An illustrative demonstration confirms that prompt wording alone produces structurally different systems for the same task. We term the phenomenon vibe architecting, architecture shaped by prompts rather than deliberate design, and outline review practices, decision records, and tooling to bring these hidden decisions under governance.",
+      "authors": [
+        "Phongsakon Mark Konrad",
+        "Tim Lukas Adam",
+        "Riccardo Terrenzi",
+        "Serkan Ayvaz"
+      ],
+      "url": "https://arxiv.org/abs/2604.04990",
+      "published": "2026-04-05T07:32:37+00:00",
+      "updated": "2026-04-05T07:32:37+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.343,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04997",
+      "title": "Evaluation of Embedding-Based and Generative Methods for LLM-Driven Document Classification: Opportunities and Challenges",
+      "abstract": "This work presents a comparative analysis of embedding-based and generative models for classifying geoscience technical documents. Using a multi-disciplinary benchmark dataset, we evaluated the trade-offs between model accuracy, stability, and computational cost. We find that generative Vision-Language Models (VLMs) like Qwen2.5-VL, enhanced with Chain-of-Thought (CoT) prompting, achieve superior zero-shot accuracy (82%) compared to state-of-the-art multimodal embedding models like QQMM (63%). We also demonstrate that while supervised fine-tuning (SFT) can improve VLM performance, it is sensitive to training data imbalance.",
+      "authors": [
+        "Rong Lu",
+        "Hao Liu",
+        "Song Hou"
+      ],
+      "url": "https://arxiv.org/abs/2604.04997",
+      "published": "2026-04-05T20:56:19+00:00",
+      "updated": "2026-04-05T20:56:19+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.306,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04993",
+      "title": "The Hiremath Early Detection (HED) Score: A Measure-Theoretic Evaluation Standard for Temporal Intelligence",
+      "abstract": "We introduce the Hiremath Early Detection (HED) Score, a principled, measure-theoretic evaluation criterion for quantifying the time-value of information in systems operating over non-stationary stochastic processes subject to abrupt regime transitions. Existing evaluation paradigms, chiefly the ROC/AUC framework and its downstream variants, are temporally agnostic: they assign identical credit to a detection at t + 1 and a detection at t + tau for arbitrarily large tau. This indifference to latency is a fundamental inadequacy in time-critical domains including cyber-physical security, algorithmic surveillance, and epidemiological monitoring.   The HED Score resolves this by integrating a baseline-neutral, exponentially decaying kernel over the posterior probability stream of a target regime, beginning precisely at the onset of the regime shift. The resulting scalar simultaneously encodes detection acuity, temporal lead, and pre-transition calibration quality. We prove that the HED Score satisfies three axiomatic requirements: (A1) Temporal Monotonicity, (A2) Invariance to Pre-Attack Bias, and (A3) Sensitivity Decomposability. We further demonstrate that the HED Score admits a natural parametric family indexed by the Hiremath Decay Constant (lambda_H), whose domain-specific calibration constitutes the Hiremath Standard Table.   As an empirical vehicle, we present PARD-SSM (Probabilistic Anomaly and Regime Detection via Switching State-Space Models), which couples fractional Stochastic Differential Equations (fSDEs) with a Switching Linear Dynamical System (S-LDS) inference backend. On the NSL-KDD benchmark, PARD-SSM achieves a HED Score of 0.0643, representing a 388.8 percent improvement over a Random Forest baseline (0.0132), with statistical significance confirmed via block-bootstrap resampling (p < 0.001). We propose the HED Score as the successor evaluation standard to ROC/AUC.",
+      "authors": [
+        "Prakul Sunil Hiremath"
+      ],
+      "url": "https://arxiv.org/abs/2604.04993",
+      "published": "2026-04-05T14:22:20+00:00",
+      "updated": "2026-04-05T14:22:20+00:00",
+      "categories": [
+        "stat.ML",
+        "cs.CR",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.275,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04999",
+      "title": "PRIME: Prototype-Driven Multimodal Pretraining for Cancer Prognosis with Missing Modalities",
+      "abstract": "Multimodal self-supervised pretraining offers a promising route to cancer prognosis by integrating histopathology whole-slide images, gene expression, and pathology reports, yet most existing approaches require fully paired and complete inputs. In practice, clinical cohorts are fragmented and often miss one or more modalities, limiting both supervised fusion and scalable multimodal pretraining. We propose PRIME, a missing-aware multimodal self-supervised pretraining framework that learns robust and transferable representations from partially observed cohorts. PRIME maps heterogeneous modality embeddings into a unified token space and introduces a shared prototype memory bank for latent-space semantic imputation via patient-level consensus retrieval, producing structurally aligned tokens without reconstructing raw signals. Two complementary pretraining objectives: inter-modality alignment and post-fusion consistency under structured missingness augmentation, jointly learn representations that remain predictive under arbitrary modality subsets. We evaluate PRIME on The Cancer Genome Atlas with label-free pretraining on 32 cancer types and downstream 5-fold evaluation on five cohorts across overall survival prediction, 3-year mortality classification, and 3-year recurrence classification. PRIME achieves the best macro-average performance among all compared methods, reaching 0.653 C-index, 0.689 AUROC, and 0.637 AUROC on the three tasks, respectively, while improving robustness under test-time missingness and supporting parameter-efficient and label-efficient adaptation. These results support missing-aware multimodal pretraining as a practical strategy for prognosis modeling in fragmented clinical data settings.",
+      "authors": [
+        "Kai Yu",
+        "Shuang Zhou",
+        "Yiran Song",
+        "Zaifu Zhan",
+        "Jie Peng",
+        "Kaixiong Zhou",
+        "Tianlong Chen",
+        "Feng Xie",
+        "Meng Wang",
+        "Huazhu Fu",
+        "Mingquan Lin",
+        "Rui Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2604.04999",
+      "published": "2026-04-05T21:14:27+00:00",
+      "updated": "2026-04-05T21:14:27+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.219,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04987",
+      "title": "Cactus: Accelerating Auto-Regressive Decoding with Constrained Acceptance Speculative Sampling",
+      "abstract": "Speculative sampling (SpS) has been successful in accelerating the decoding throughput of auto-regressive large language models by leveraging smaller draft models. SpS strictly enforces the generated distribution to match that of the verifier LLM. This is unnecessarily restrictive as slight variations of the verifier's distribution, such as sampling with top-$k$ or temperature, would also be acceptable. Typical acceptance sampling (TAS) alleviates this issue by accepting more tokens using entropy-based heuristics. However, this approach distorts the verifier distribution, potentially degrading output quality when the verifier encodes critical information. In this work, we formalize the speculative sampling algorithm through the lens of constrained optimization. Based on this formulation, we propose Cactus (constrained acceptance speculative sampling), a method that guarantees controlled divergence from the verifier distribution and increasing acceptance rates. Empirical results across a wide range of benchmarks confirm the effectiveness of our approach.",
+      "authors": [
+        "Yongchang Hao",
+        "Lili Mou"
+      ],
+      "url": "https://arxiv.org/abs/2604.04987",
+      "published": "2026-04-05T03:37:30+00:00",
+      "updated": "2026-04-05T03:37:30+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC",
+        "stat.ML"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.199,
+      "backfilled": true
+    },
+    {
+      "id": "2604.04992",
+      "title": "FreakOut-LLM: The Effect of Emotional Stimuli on Safety Alignment",
+      "abstract": "Safety-aligned LLMs go through refusal training to reject harmful requests, but whether these mechanisms remain effective under emotionally charged stimuli is unexplored. We introduce FreakOut-LLM, a framework investigating whether emotional context compromises safety alignment in adversarial settings. Using validated psychological stimuli, we evaluate how emotional priming through system prompts affects jailbreak susceptibility across ten LLMs. We test three conditions (stress, relaxation, neutral) using scenarios from established psychological protocols, plus a no-prompt baseline, and evaluate attack success using HarmBench on AdvBench prompts. Stress priming increases jailbreak success by 65.2\\% compared to neutral conditions (z = 5.93, p < 0.001; OR = 1.67, Cohen's d = 0.28), while relaxation priming produces no effect (p = 0.84). Five of ten models show significant vulnerability, with the largest effects concentrated in open-weight models. Logistic regression on 59,800 queries confirms stress as the sole significant condition predictor after controlling for prompt length (p = 0.61) and model identity. Measured psychological state strongly predicts attack success (|r|\\geq0.70 across five instruments; all p < 0.001 in individual-level logistic regression). These results establish emotional context as a measurable attack surface with implications for real-world AI deployment in high-stress domains.",
+      "authors": [
+        "Daniel Kuznetsov",
+        "Ofir Cohen",
+        "Karin Shistik",
+        "Rami Puzis",
+        "Asaf Shabtai"
+      ],
+      "url": "https://arxiv.org/abs/2604.04992",
+      "published": "2026-04-05T13:37:52+00:00",
+      "updated": "2026-04-05T13:37:52+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.196,
+      "backfilled": true
+    },
+    {
+      "id": "2604.05002",
+      "title": "Learning Stable Predictors from Weak Supervision under Distribution Shift",
+      "abstract": "Learning from weak or proxy supervision is common when ground-truth labels are unavailable, yet robustness under distribution shift remains poorly understood, especially when the supervision mechanism itself changes. We formalize this as supervision drift, defined as changes in P(y | x, c) across contexts, and study it in CRISPR-Cas13d experiments where guide efficacy is inferred indirectly from RNA-seq responses. Using data from two human cell lines and multiple time points, we build a controlled non-IID benchmark with explicit domain and temporal shifts while keeping the weak-label construction fixed. Models achieve strong in-domain performance (ridge R^2 = 0.356, Spearman rho = 0.442) and partial cross-cell-line transfer (rho ~ 0.40). However, temporal transfer fails across all models, with negative R^2 and near-zero correlation (e.g., XGBoost R^2 = -0.155, rho = 0.056). Additional analyses confirm this pattern. Feature-label relationships remain stable across cell lines but change sharply over time, indicating that failures arise from supervision drift rather than model limitations. These findings highlight feature stability as a simple diagnostic for detecting non-transferability before deployment.",
+      "authors": [
+        "Mehrdad Shoeibi",
+        "Elias Hossain",
+        "Ivan Garibay",
+        "Niloofar Yousefi"
+      ],
+      "url": "https://arxiv.org/abs/2604.05002",
+      "published": "2026-04-05T23:46:49+00:00",
+      "updated": "2026-04-05T23:46:49+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.177,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-04-08T03:41:21.763438+00:00"
 }
