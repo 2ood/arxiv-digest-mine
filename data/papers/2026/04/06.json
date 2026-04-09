@@ -3,6 +3,91 @@
   "fetched_at": "2026-04-07T12:39:16.738958+09:00",
   "papers": [
     {
+      "id": "2604.06251",
+      "title": "Toward Reducing Unproductive Container Moves: Predicting Service Requirements and Dwell Times",
+      "abstract": "This article presents the results of a data science study conducted at a container terminal, aimed at reducing unproductive container moves through the prediction of service requirements and container dwell times. We develop and evaluate machine learning models that leverage historical operational data to anticipate which containers will require pre-clearance handling services prior to cargo release and to estimate how long they are expected to remain in the terminal. As part of the data preparation process, we implement a classification system for cargo descriptions and perform deduplication of consignee records to improve data consistency and feature quality. These predictive capabilities provide valuable inputs for strategic planning and resource allocation in yard operations. Across multiple temporal validation periods, the proposed models consistently outperform existing rule-based heuristics and random baselines in precision and recall. These results demonstrate the practical value of predictive analytics for improving operational efficiency and supporting data-driven decision-making in container terminal logistics.",
+      "authors": [
+        "Elena Villalobos",
+        "Adolfo De Unánue T.",
+        "Fernanda Sobrino",
+        "David Aké",
+        "Stephany Cisneros",
+        "Jorge Lecona",
+        "Alejandra Matadamaz"
+      ],
+      "url": "https://arxiv.org/abs/2604.06251",
+      "published": "2026-04-06T19:06:15+00:00",
+      "updated": "2026-04-06T19:06:15+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.06253",
+      "title": "FLeX: Fourier-based Low-rank EXpansion for multilingual transfer",
+      "abstract": "Cross-lingual code generation is critical in enterprise environments where multiple programming languages coexist. However, fine-tuning large language models (LLMs) individually for each language is computationally prohibitive. This paper investigates whether parameter-efficient fine-tuning methods and optimizer enhancements can improve cross-lingual transfer from Python to languages like Java. We fine-tune the Code Llama 7B model using low-rank adaptation (LoRA) to optimize a small subset of parameters and compare Adam and Sophia optimizers, while exploring a novel Fourier-based regularization technique. Our contributions include: (1)demonstrating that LoRA fine-tuning on a small, high-quality dataset (MBPP) can exceed the pass@1 performance of the more broadly fine-tuned Code Llama-Python-7B model (40.1% vs. 38.4%); (2) showing that while Sophia achieves faster convergence than Adam, final pass@1 scores show marginal differences; and (3) presenting evidence that Fourier-based regularization during fine-tuning significantly improves cross-lingual transfer, achieving 42.1% pass@1 on Java tasks compared to the 34.2% baseline. These findings suggest that combining LoRA, optimized training methods, and frequency-domain regularization can efficiently adapt single-language LLMs to perform well across multiple programming languages.",
+      "authors": [
+        "Gaurav Narasimhan"
+      ],
+      "url": "https://arxiv.org/abs/2604.06253",
+      "published": "2026-04-06T19:26:13+00:00",
+      "updated": "2026-04-06T19:26:13+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.PL"
+      ],
+      "matched_topics": [
+        "Neural Network Training Methods"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.06255",
+      "title": "Learning the Stellar Structure Equations via Self-supervised Physics-Informed Neural Networks",
+      "abstract": "Stellar astrophysics relies critically on accurate descriptions of the physical conditions inside stars. Traditional solvers such as \\texttt{MESA} (Modules for Experiments in Stellar Astrophysics), which employ adaptive finite-difference methods, can become computationally expensive and challenging to scale for large stellar population synthesis ($>10^9$ stars). In this work, we present an self-supervised physics-informed neural network (PINN) framework that provides a mesh-free and fully differentiable approach to solving the stellar structure equations under hydrostatic and thermal equilibrium. The model takes as input the stellar boundary conditions (at the center and surface) together with the chemical composition, and learns continuous radial profiles for mass $M_r(r)$, pressure $P(r)$, density $ρ(r)$, temperature $T(r)$, and luminosity $L_r(r)$ by enforcing the governing structure equations through physics-based loss terms. To incorporate realistic microphysics, we introduce auxiliary neural networks that approximate the equation of state and opacity tables as smooth, differentiable functions of the local thermodynamic state. These surrogates replace traditional tabulated inputs and enable end-to-end training. Once trained for a given star, the model produces continuous solutions across the entire radial domain without requiring discretization or interpolation. Validation against benchmark \\texttt{MESA} models across a range of stellar masses yields a Mean Relative Absolute Error of $3.06\\%$ and an average $R^2$ score of $99.98\\%$. To our knowledge, this is the first demonstration that the stellar structure equations can be solved in a fully self-supervised and data-free fashion employing PINNs. This work establishes a foundation for scalable, physics-informed emulation of stellar interiors and opens the door to future extensions toward time-dependent stellar evolution.",
+      "authors": [
+        "Manuel Ballester",
+        "Santiago Lopez-Tapia",
+        "Seth Gossage",
+        "Patrick Koller",
+        "Philipp M. Srivastava",
+        "Ugur Demir",
+        "Yongseok Jo",
+        "Almudena P. Marquez",
+        "Christoph Wuersch",
+        "Souvik Chakraborty",
+        "Vicky Kalogera",
+        "Aggelos Katsaggelos"
+      ],
+      "url": "https://arxiv.org/abs/2604.06255",
+      "published": "2026-04-06T20:59:03+00:00",
+      "updated": "2026-04-06T20:59:03+00:00",
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA",
+        "astro-ph.IM",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.05008",
       "title": "Generative Path-Law Jump-Diffusion: Sequential MMD-Gradient Flows and Generalisation Bounds in Marcus-Signature RKHS",
       "abstract": "This paper introduces a novel generative framework for synthesising forward-looking, càdlàg stochastic trajectories that are sequentially consistent with time-evolving path-law proxies, thereby incorporating anticipated structural breaks, regime shifts, and non-autonomous dynamics. By framing path synthesis as a sequential matching problem on restricted Skorokhod manifolds, we develop the \\textit{Anticipatory Neural Jump-Diffusion} (ANJD) flow, a generative mechanism that effectively inverts the time-extended Marcus-sense signature. Central to this approach is the Anticipatory Variance-Normalised Signature Geometry (AVNSG), a time-evolving precision operator that performs dynamic spectral whitening on the signature manifold to ensure contractivity during volatile regime shifts and discrete aleatoric shocks. We provide a rigorous theoretical analysis demonstrating that the joint generative flow constitutes an infinitesimal steepest descent direction for the Maximum Mean Discrepancy functional relative to a moving target proxy. Furthermore, we establish statistical generalisation bounds within the restricted path-space and analyse the Rademacher complexity of the whitened signature functionals to characterise the expressive power of the model under heavy-tailed innovations. The framework is implemented via a scalable numerical scheme involving Nyström-compressed score-matching and an anticipatory hybrid Euler-Maruyama-Marcus integration scheme. Our results demonstrate that the proposed method captures the non-commutative moments and high-order stochastic texture of complex, discontinuous path-laws with high computational efficiency.",
@@ -7159,7 +7244,94 @@
       "match_method": "none",
       "best_score": 0.044,
       "backfilled": true
+    },
+    {
+      "id": "2604.06256",
+      "title": "Spectral Edge Dynamics Reveal Functional Modes of Learning",
+      "abstract": "Training dynamics during grokking concentrate along a small number of dominant update directions -- the spectral edge -- which reliably distinguishes grokking from non-grokking regimes. We show that standard mechanistic interpretability tools (head attribution, activation probing, sparse autoencoders) fail to capture these directions: their structure is not localized in parameter or feature space. Instead, each direction induces a structured function over the input domain, revealing low-dimensional functional modes invisible to representation-level analysis.   For modular addition, all leading directions collapse to a single Fourier mode. For multiplication, the same collapse appears only in the discrete-log basis, yielding a 5.9x improvement in concentration. For subtraction, the edge spans a small multi-mode family. For $x^2+y^2$, no single harmonic basis suffices, but cross-terms of additive and multiplicative features provide a 4x variance boost, consistent with the decomposition (a+b)^2 - 2ab. Multitask training amplifies this compositional structure, with the $x^2+y^2$ spectral edge inheriting the addition circuit's characteristic frequency (2.3x concentration increase).   These results suggest that training discovers low-dimensional functional modes over the input domain, whose structure depends on the algebraic symmetry of the task.   These results suggest that spectral edge dynamics identify low-dimensional functional subspaces governing learning, whose representation depends on the algebraic structure of the task. Simple harmonic structure emerges only when the task admits a symmetry-adapted basis; more complex tasks require richer functional descriptions.",
+      "authors": [
+        "Yongzhong Xu"
+      ],
+      "url": "https://arxiv.org/abs/2604.06256",
+      "published": "2026-04-06T22:29:00+00:00",
+      "updated": "2026-04-06T22:29:00+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.32,
+      "backfilled": true
+    },
+    {
+      "id": "2604.06250",
+      "title": "DISSECT: Diagnosing Where Vision Ends and Language Priors Begin in Scientific VLMs",
+      "abstract": "When asked to describe a molecular diagram, a Vision-Language Model correctly identifies ``a benzene ring with an -OH group.'' When asked to reason about the same image, it answers incorrectly. The model can see but it cannot think about what it sees. We term this the perception-integration gap: a failure where visual information is successfully extracted but lost during downstream reasoning, invisible to single-configuration benchmarks that conflate perception with integration under one accuracy number. To systematically expose such failures, we introduce DISSECT, a 12,000-question diagnostic benchmark spanning Chemistry (7,000) and Biology (5,000). Every question is evaluated under five input modes -- Vision+Text, Text-Only, Vision-Only, Human Oracle, and a novel Model Oracle in which the VLM first verbalizes the image and then reasons from its own description -- yielding diagnostic gaps that decompose performance into language-prior exploitation, visual extraction, perception fidelity, and integration effectiveness. Evaluating 18~VLMs, we find that: (1) Chemistry exhibits substantially lower language-prior exploitability than Biology, confirming molecular visual content as a harder test of genuine visual reasoning; (2) Open-source models consistently score higher when reasoning from their own verbalized descriptions than from raw images, exposing a systematic integration bottleneck; and (3) Closed-source models show no such gap, indicating that bridging perception and integration is the frontier separating open-source from closed-source multimodal capability. The Model Oracle protocol is both model and benchmark agnostic, applicable post-hoc to any VLM evaluation to diagnose integration failures.",
+      "authors": [
+        "Dikshant Kukreja",
+        "Kshitij Sah",
+        "Karan Goyal",
+        "Mukesh Mohania",
+        "Vikram Goyal"
+      ],
+      "url": "https://arxiv.org/abs/2604.06250",
+      "published": "2026-04-06T18:47:05+00:00",
+      "updated": "2026-04-06T18:47:05+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.314,
+      "backfilled": true
+    },
+    {
+      "id": "2604.06254",
+      "title": "SE-Enhanced ViT and BiLSTM-Based Intrusion Detection for Secure IIoT and IoMT Environments",
+      "abstract": "With the rapid growth of interconnected devices in Industrial and Medical Internet of Things (IIoT and MIoT) ecosystems, ensuring timely and accurate detection of cyber threats has become a critical challenge. This study presents an advanced intrusion detection framework based on a hybrid Squeeze-and-Excitation Attention Vision Transformer-Bidirectional Long Short-Term Memory (SE ViT-BiLSTM) architecture. In this design, the traditional multi-head attention mechanism of the Vision Transformer is replaced with Squeeze-and-Excitation attention, and integrated with BiLSTM layers to enhance detection accuracy and computational efficiency. The proposed model was trained and evaluated on two real-world benchmark datasets; EdgeIIoT and CICIoMT2024; both before and after data balancing using the Synthetic Minority Over-sampling Technique (SMOTE) and RandomOverSampler. Experimental results demonstrate that the SE ViT-BiLSTM model outperforms existing approaches across multiple metrics. Before balancing, the model achieved accuracies of 99.11% (FPR: 0.0013%, latency: 0.00032 sec/inst) on EdgeIIoT and 96.10% (FPR: 0.0036%, latency: 0.00053 sec/inst) on CICIoMT2024. After balancing, performance further improved, reaching 99.33% accuracy with 0.00035 sec/inst latency on EdgeIIoT and 98.16% accuracy with 0.00014 sec/inst latency on CICIoMT2024.",
+      "authors": [
+        "Afrah Gueriani",
+        "Hamza Kheddar",
+        "Ahmed Cherif Mazari",
+        "Seref Sagiroglu",
+        "Onur Ceran"
+      ],
+      "url": "https://arxiv.org/abs/2604.06254",
+      "published": "2026-04-06T20:48:50+00:00",
+      "updated": "2026-04-06T20:48:50+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.245,
+      "backfilled": true
+    },
+    {
+      "id": "2604.06247",
+      "title": "SALLIE: Safeguarding Against Latent Language & Image Exploits",
+      "abstract": "Large Language Models (LLMs) and Vision-Language Models (VLMs) remain highly vulnerable to textual and visual jailbreaks, as well as prompt injections (arXiv:2307.15043, Greshake et al., 2023, arXiv:2306.13213). Existing defenses often degrade performance through complex input transformations or treat multimodal threats as isolated problems (arXiv:2309.00614, arXiv:2310.03684, Zhang et al., 2025). To address the critical gap for a unified, modal-agnostic defense that mitigates both textual and visual threats simultaneously without degrading performance or requiring architectural modifications, we introduce SALLIE (Safeguarding Against Latent Language & Image Exploits), a lightweight runtime detection framework rooted in mechanistic interpretability (Lindsey et al., 2025, Ameisen et al., 2025). By integrating seamlessly into standard token-level fusion pipelines (arXiv:2306.13549), SALLIE extracts robust signals directly from the model's internal activations. At inference, SALLIE defends via a three-stage architecture: (1) extracting internal residual stream activations, (2) calculating layer-wise maliciousness scores using a K-Nearest Neighbors (k-NN) classifier, and (3) aggregating these predictions via a layer ensemble module. We evaluate SALLIE on compact, open-source architectures - Phi-3.5-vision-instruct (arXiv:2404.14219), SmolVLM2-2.2B-Instruct (arXiv:2504.05299), and gemma-3-4b-it (arXiv:2503.19786) - prioritized for practical inference times and real-world deployment costs. Our comprehensive evaluation pipeline spans over ten datasets and more than five strong baseline methods from the literature, and SALLIE consistently outperforms these baselines across a wide range of experimental settings.",
+      "authors": [
+        "Guy Azov",
+        "Ofer Rivlin",
+        "Guy Shtar"
+      ],
+      "url": "https://arxiv.org/abs/2604.06247",
+      "published": "2026-04-06T16:29:05+00:00",
+      "updated": "2026-04-06T16:29:05+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.172,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-08T03:41:20.522401+00:00"
+  "patched_at": "2026-04-09T03:36:32.687513+00:00"
 }
