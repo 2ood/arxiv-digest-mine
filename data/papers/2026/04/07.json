@@ -9195,7 +9195,53 @@
       "match_method": "none",
       "best_score": 0.104,
       "backfilled": true
+    },
+    {
+      "id": "2604.07372",
+      "title": "NS-RGS: Newton-Schulz based Riemannian gradient method for orthogonal group synchronization",
+      "abstract": "Group synchronization is a fundamental task involving the recovery of group elements from pairwise measurements. For orthogonal group synchronization, the most common approach reformulates the problem as a constrained nonconvex optimization and solves it using projection-based methods, such as the generalized power method. However, these methods rely on exact SVD or QR decompositions in each iteration, which are computationally expensive and become a bottleneck for large-scale problems. In this paper, we propose a Newton-Schulz-based Riemannian Gradient Scheme (NS-RGS) for orthogonal group synchronization that significantly reduces computational cost by replacing the SVD or QR step with the Newton-Schulz iteration. This approach leverages efficient matrix multiplications and aligns perfectly with modern GPU/TPU architectures. By employing a refined leave-one-out analysis, we overcome the challenge arising from statistical dependencies, and establish that NS-RGS with spectral initialization achieves linear convergence to the target solution up to near-optimal statistical noise levels. Experiments on synthetic data and real-world global alignment tasks demonstrate that NS-RGS attains accuracy comparable to state-of-the-art methods such as the generalized power method, while achieving nearly a 2$\\times$ speedup.",
+      "authors": [
+        "Haiyang Peng",
+        "Deren Han",
+        "Xin Chen",
+        "Meng Huang"
+      ],
+      "url": "https://arxiv.org/abs/2604.07372",
+      "published": "2026-04-07T14:40:35+00:00",
+      "updated": "2026-04-07T14:40:35+00:00",
+      "categories": [
+        "stat.ML",
+        "cs.IT",
+        "cs.LG",
+        "math.OC"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.214,
+      "backfilled": true
+    },
+    {
+      "id": "2604.07369",
+      "title": "The Role of Emotional Stimuli and Intensity in Shaping Large Language Model Behavior",
+      "abstract": "Emotional prompting - the use of specific emotional diction in prompt engineering - has shown increasing promise in improving large language model (LLM) performance, truthfulness, and responsibility. However these studies have been limited to single types of positive emotional stimuli and have not considered varying degrees of emotion intensity in their analyses. In this paper, we explore the effects of four distinct emotions - joy, encouragement, anger, and insecurity - in emotional prompting and evaluate them on accuracy, sycophancy, and toxicity. We develop a prompt-generation pipeline with GPT-4o mini to create a suite of LLM and human-generated prompts with varying intensities across the four emotions. Then, we compile a \"Gold Dataset\" of prompts where human and model labels align. Our empirical evaluation on LLM behavior suggests that positive emotional stimuli lead to more accurate and less toxic results, but also increase sycophantic behavior.",
+      "authors": [
+        "Ameen Patel",
+        "Felix Lee",
+        "Kyle Liang",
+        "Joseph Thomas"
+      ],
+      "url": "https://arxiv.org/abs/2604.07369",
+      "published": "2026-04-07T05:29:13+00:00",
+      "updated": "2026-04-07T05:29:13+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.21,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-09T03:36:32.121277+00:00"
+  "patched_at": "2026-04-11T03:26:41.614112+00:00"
 }
