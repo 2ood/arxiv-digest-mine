@@ -3,6 +3,92 @@
   "fetched_at": "2026-04-09T12:36:29.481698+09:00",
   "papers": [
     {
+      "id": "2604.08603",
+      "title": "From Business Events to Auditable Decisions: Ontology-Governed Graph Simulation for Enterprise AI",
+      "abstract": "Existing LLM-based agent systems share a common architectural failure: they answer from the unrestricted knowledge space without first simulating how active business scenarios reshape that space for the event at hand -- producing decisions that are fluent but ungrounded and carrying no audit trail. We present LOM-action, which equips enterprise AI with \\emph{event-driven ontology simulation}: business events trigger scenario conditions encoded in the enterprise ontology~(EO), which drive deterministic graph mutations in an isolated sandbox, evolving a working copy of the subgraph into the scenario-valid simulation graph $G_{\\text{sim}}$; all decisions are derived exclusively from this evolved graph. The core pipeline is \\emph{event $\\to$ simulation $\\to$ decision}, realized through a dual-mode architecture -- \\emph{skill mode} and \\emph{reasoning mode}. Every decision produces a fully traceable audit log. LOM-action achieves 93.82% accuracy and 98.74% tool-chain F1 against frontier baselines Doubao-1.8 and DeepSeek-V3.2, which reach only 24--36% F1 despite 80% accuracy -- exposing the \\emph{illusive accuracy} phenomenon. The four-fold F1 advantage confirms that ontology-governed, event-driven simulation, not model scale, is the architectural prerequisite for trustworthy enterprise decision intelligence.",
+      "authors": [
+        "Hongyin Zhu",
+        "Jinming Liang",
+        "Mengjun Hou",
+        "Ruifan Tang",
+        "Xianbin Zhu",
+        "Jingyuan Yang",
+        "Yuanman Mao",
+        "Feng Wu"
+      ],
+      "url": "https://arxiv.org/abs/2604.08603",
+      "published": "2026-04-08T06:07:48+00:00",
+      "updated": "2026-04-08T06:07:48+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.08602",
+      "title": "TiAb Review Plugin: A Browser-Based Tool for AI-Assisted Title and Abstract Screening",
+      "abstract": "Background: Server-based screening tools impose subscription costs, while open-source alternatives require coding skills. Objectives: We developed a browser extension that provides no-code, serverless artificial intelligence (AI)-assisted title and abstract screening and examined its functionality. Methods: TiAb Review Plugin is an open-source Chrome browser extension (available at https://chromewebstore.google.com/detail/tiab-review-plugin/alejlnlfflogpnabpbplmnojgoeeabij). It uses Google Sheets as a shared database, requiring no dedicated server and enabling multi-reviewer collaboration. Users supply their own Gemini API key, stored locally and encrypted. The tool offers three screening modes: manual review, large language model (LLM) batch screening, and machine learning (ML) active learning. For ML evaluation, we re-implemented the default ASReview active learning algorithm (TF-IDF with Naive Bayes) in TypeScript to enable in-browser execution, and verified equivalence against the original Python implementation using 10-fold cross-validation on six datasets. For LLM evaluation, we compared 16 parameter configurations across two model families on a benchmark dataset, then validated the optimal configuration (Gemini 3.0 Flash, low thinking budget, TopP=0.95) with a sensitivity-oriented prompt on five public datasets (1,038 to 5,628 records, 0.5 to 2.0 percent prevalence). Results: The TypeScript classifier produced top-100 rankings 100 percent identical to the original ASReview across all six datasets. For LLM screening, recall was 94 to 100 percent with precision of 2 to 15 percent, and Work Saved over Sampling at 95 percent recall (WSS@95) ranged from 48.7 to 87.3 percent. Conclusions: We developed a functional browser extension that integrates LLM screening and ML active learning into a no-code, serverless environment, ready for practical use in systematic review screening.",
+      "authors": [
+        "Yuki Kataoka",
+        "Masahiro Banno",
+        "Michihito Kyo",
+        "Shuri Nakao",
+        "Tomoo Sato",
+        "Shunsuke Taito",
+        "Tomohiro Takayama",
+        "Takahiro Tsuge",
+        "Yasushi Tsujimoto",
+        "Ryuhei So",
+        "Toshi A. Furukawa"
+      ],
+      "url": "https://arxiv.org/abs/2604.08602",
+      "published": "2026-04-08T03:05:14+00:00",
+      "updated": "2026-04-08T03:05:14+00:00",
+      "categories": [
+        "cs.DL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.09716",
+      "title": "Training Deep Visual Networks Beyond Loss and Accuracy Through a Dynamical Systems Approach",
+      "abstract": "Deep visual recognition models are usually trained and evaluated using metrics such as loss and accuracy. While these measures show whether a model is improving, they reveal very little about how its internal representations change during training. This paper introduces a complementary way to study that process by examining training through the lens of dynamical systems. Drawing on ideas from signal analysis originally used to study biological neural activity, we define three measures from layer activations collected across training epochs: an integration score that reflects long-range coordination across layers, a metastability score that captures how flexibly the network shifts between more and less synchronised states, and a combined dynamical stability index. We apply this framework to nine combinations of model architecture and dataset, including several ResNet variants, DenseNet-121, MobileNetV2, VGG-16, and a pretrained Vision Transformer on CIFAR-10 and CIFAR-100. The results suggest three main patterns. First, the integration measure consistently distinguishes the easier CIFAR-10 setting from the more difficult CIFAR-100 setting. Second, changes in the volatility of the stability index may provide an early sign of convergence before accuracy fully plateaus. Third, the relationship between integration and metastability appears to reflect different styles of training behaviour. Overall, this study offers an exploratory but promising new way to understand deep visual training beyond loss and accuracy.",
+      "authors": [
+        "Hai La Quang",
+        "Hassan Ugail",
+        "Newton Howard",
+        "Cong Tran Tien",
+        "Nam Vu Hoai",
+        "Hung Nguyen Viet"
+      ],
+      "url": "https://arxiv.org/abs/2604.09716",
+      "published": "2026-04-08T12:41:10+00:00",
+      "updated": "2026-04-08T12:41:10+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.07404",
       "title": "Score Shocks: The Burgers Equation Structure of Diffusion Generative Models",
       "abstract": "We analyze the score field of a diffusion generative model through a Burgers-type evolution law. For VE diffusion, the heat-evolved data density implies that the score obeys viscous Burgers in one dimension and the corresponding irrotational vector Burgers system in $\\R^d$, giving a PDE view of \\emph{speciation transitions} as the sharpening of inter-mode interfaces. For any binary decomposition of the noised density into two positive heat solutions, the score separates into a smooth background and a universal $\\tanh$ interfacial term determined by the component log-ratio; near a regular binary mode boundary this yields a normal criterion for speciation. In symmetric binary Gaussian mixtures, the criterion recovers the critical diffusion time detected by the midpoint derivative of the score and agrees with the spectral criterion of Biroli, Bonnaire, de~Bortoli, and Mézard (2024). After subtracting the background drift, the inter-mode layer has a local Burgers $\\tanh$ profile, which becomes global in the symmetric Gaussian case with width $σ_τ^2/a$. We also quantify exponential amplification of score errors across this layer, show that Burgers dynamics preserves irrotationality, and use a change of variables to reduce the VP-SDE to the VE case, yielding a closed-form VP speciation time. Gaussian-mixture formulas are verified to machine precision, and the local theorem is checked numerically on a quartic double-well.",
@@ -8593,7 +8679,218 @@
       "match_method": "none",
       "best_score": 0.09,
       "backfilled": true
+    },
+    {
+      "id": "2604.09709",
+      "title": "Orthogonal Quadratic Complements for Vision Transformer Feed-Forward Networks",
+      "abstract": "Recent bilinear feed-forward replacements for vision transformers can substantially improve accuracy, but they often conflate two effects: stronger second-order interactions and increased redundancy relative to the main branch. We study a complementary design principle in which auxiliary quadratic features contribute only information not already captured by the dominant hidden representation. To this end, we propose Orthogonal Quadratic Complements (OQC), which construct a low-rank quadratic auxiliary branch and explicitly project it onto the orthogonal complement of the main branch before injection. We further study an efficient low-rank realization (OQC-LR) and gated extensions (OQC-static and OQC-dynamic).   Under a parameter-matched Deep-ViT and CIFAR-100 protocol with a fixed penultimate residual readout, full OQC improves an AFBO baseline from 64.25 +/- 0.22 to 65.59 +/- 0.22, while OQC-LR reaches 65.52 +/- 0.25 with a substantially better speed-accuracy tradeoff. On TinyImageNet, the gated extension OQC-dynamic achieves 51.88 +/- 0.32, improving the baseline (50.45 +/- 0.21) by 1.43 points and outperforming all ungated variants. Mechanism analyses show near-zero post-projection auxiliary-main overlap together with improved representation geometry and class separation. The full family, including both ungated and gated variants, generalizes consistently across both datasets.",
+      "authors": [
+        "Wang Zixian"
+      ],
+      "url": "https://arxiv.org/abs/2604.09709",
+      "published": "2026-04-08T02:04:47+00:00",
+      "updated": "2026-04-08T02:04:47+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.323,
+      "backfilled": true
+    },
+    {
+      "id": "2604.08607",
+      "title": "Joint Interference Detection and Identification via Adversarial Multi-task Learning",
+      "abstract": "Precise interference detection and identification are crucial for enhancing the survivability of communication systems in non-cooperative wireless environments. While deep learning (DL) has advanced this field, existing single-task learning (STL) approaches neglect inherent task correlations. Furthermore, emerging multi-task learning (MTL) methods often lack a theoretical foundation for quantifying and modeling task relationships. To bridge this gap, we establish a theoretically grounded MTL framework for joint interference detection, modulation identification, and interference identification. First, we derive an upper bound for the weighted expected loss in MTL frameworks. This bound explicitly connects MTL performance to task similarity, quantified by the Wasserstein distance and learnable task relation coefficients. Guided by this theory, we present the adversarial multi-task interference detection and identification network (AMTIDIN), which integrates adversarial training to minimize distributional discrepancies across tasks and uses adaptive coefficients to model task correlations dynamically. Crucially, we conducted a quantitative analysis of task similarity to reveal intrinsic task relationships, specifically that modulation identification and interference identification share a substantial feature overlap distinct from interference detection. Extensive comparative experiments demonstrate that AMTIDIN significantly outperforms both its task-specific STL baseline and state-of-the-art MTL baselines in robustness and generalization, particularly under challenging conditions with limited training data, short signal lengths, and low signal-to-noise ratios (SNRs).",
+      "authors": [
+        "H. Xu",
+        "B. He",
+        "S. Wang"
+      ],
+      "url": "https://arxiv.org/abs/2604.08607",
+      "published": "2026-04-08T14:41:03+00:00",
+      "updated": "2026-04-08T14:41:03+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR",
+        "cs.IT"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.298,
+      "backfilled": true
+    },
+    {
+      "id": "2604.09710",
+      "title": "Robust Fair Disease Diagnosis in CT Images",
+      "abstract": "Automated diagnosis from chest CT has improved considerably with deep learning, but models trained on skewed datasets tend to perform unevenly across patient demographics. However, the situation is worse than simple demographic bias. In clinical data, class imbalance and group underrepresentation often coincide, creating compound failure modes that neither standard rebalancing nor fairness corrections can fix alone. We introduce a two-level objective that targets both axes of this problem. Logit-adjusted cross-entropy loss operates at the sample level, shifting decision margins by class frequency with provable consistency guarantees. Conditional Value at Risk aggregation operates at the group level, directing optimization pressure toward whichever demographic group currently has the higher loss. We evaluate on the Fair Disease Diagnosis benchmark using a 3D ResNet-18 pretrained on Kinetics-400, classifying CT volumes into Adenocarcinoma, Squamous Cell Carcinoma, COVID-19, and Normal groups with patient sex annotations. The training set illustrates the compound problem concretely: squamous cell carcinoma has 84 samples total, 5 of them female. The combined loss reaches a gender-averaged macro F1 of 0.8403 with a fairness gap of 0.0239, a 13.3% improvement in score and 78% reduction in demographic disparity over the baseline. Ablations show that each component alone falls short. The code is publicly available at https://github.com/Purdue-M2/Fair-Disease-Diagnosis.",
+      "authors": [
+        "Justin Li",
+        "Daniel Ding",
+        "Asmita Yuki Pritha",
+        "Aryana Hou",
+        "Xin Wang",
+        "Shu Hu"
+      ],
+      "url": "https://arxiv.org/abs/2604.09710",
+      "published": "2026-04-08T03:37:44+00:00",
+      "updated": "2026-04-08T03:37:44+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.298,
+      "backfilled": true
+    },
+    {
+      "id": "2604.09712",
+      "title": "LAST: Leveraging Tools as Hints to Enhance Spatial Reasoning for Multimodal Large Language Models",
+      "abstract": "Spatial reasoning is a cornerstone capability for intelligent systems to perceive and interact with the physical world. However, multimodal large language models (MLLMs) frequently suffer from hallucinations and imprecision when parsing complex geometric layouts. As data-driven scaling struggles to internalize structured geometric priors and spatial constraints, integrating mature, specialized vision models presents a compelling alternative. Despite its promise, applying this paradigm to spatial reasoning is hindered by two key challenges: The difficulty of invoking heterogeneous, parameter-rich tools, as well as the challenge of understanding and effectively leveraging their diverse low-level outputs (e.g., segmentation masks, depth maps) in high-level reasoning. To address these challenges, we propose LAST, a unified framework for tool-augmented spatial reasoning. LAST features an extensible interactive sandbox, termed LAST-Box, which abstracts heterogeneous tool invocations into atomic instructions and reusable spatial skills, returning multimodal hints (e.g., annotated images and textual descriptions) that can be directly consumed by LLMs. We further design a three-stage progressive training strategy that guides models from understanding tool outputs to proficient and adaptive tool invocation. Experiments on four datasets show that LAST-7B achieves around 20\\% performance gains over its backbone and outperforms strong proprietary closed-source LLMs, substantially enhancing reasoning on complex spatial tasks.",
+      "authors": [
+        "Shi-Yu Tian",
+        "Zhi Zhou",
+        "Kun-Yang Yu",
+        "Ming Yang",
+        "Yang Chen",
+        "Ziqiao Shang",
+        "Lan-Zhe Guo",
+        "Yu-Feng Li"
+      ],
+      "url": "https://arxiv.org/abs/2604.09712",
+      "published": "2026-04-08T06:28:03+00:00",
+      "updated": "2026-04-08T06:28:03+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.283,
+      "backfilled": true
+    },
+    {
+      "id": "2604.08608",
+      "title": "Semantic Intent Fragmentation: A Single-Shot Compositional Attack on Multi-Agent AI Pipelines",
+      "abstract": "We introduce Semantic Intent Fragmentation (SIF), an attack class against LLM orchestration systems where a single, legitimately phrased request causes an orchestrator to decompose a task into subtasks that are individually benign but jointly violate security policy. Current safety mechanisms operate at the subtask level, so each step clears existing classifiers -- the violation only emerges at the composed plan. SIF exploits OWASP LLM06:2025 through four mechanisms: bulk scope escalation, silent data exfiltration, embedded trigger deployment, and quasi-identifier aggregation, requiring no injected content, no system modification, and no attacker interaction after the initial request. We construct a three-stage red-teaming pipeline grounded in OWASP, MITRE ATLAS, and NIST frameworks to generate realistic enterprise scenarios. Across 14 scenarios spanning financial reporting, information security, and HR analytics, a GPT-20B orchestrator produces policy-violating plans in 71% of cases (10/14) while every subtask appears benign. Three independent signals validate this: deterministic taint analysis, chain-of-thought evaluation, and a cross-model compliance judge with 0% false positives. Stronger orchestrators increase SIF success rates. Plan-level information-flow tracking combined with compliance evaluation detects all attacks before execution, showing the compositional safety gap is closable.",
+      "authors": [
+        "Tanzim Ahad",
+        "Ismail Hossain",
+        "Md Jahangir Alam",
+        "Sai Puppala",
+        "Yoonpyo Lee",
+        "Syed Bahauddin Alam",
+        "Sajedul Talukder"
+      ],
+      "url": "https://arxiv.org/abs/2604.08608",
+      "published": "2026-04-08T18:19:03+00:00",
+      "updated": "2026-04-08T18:19:03+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.262,
+      "backfilled": true
+    },
+    {
+      "id": "2604.09711",
+      "title": "Head-wise Modality Specialization within MLLMs for Robust Fake News Detection under Missing Modality",
+      "abstract": "Multimodal fake news detection (MFND) aims to verify news credibility by jointly exploiting textual and visual evidence. However, real-world news dissemination frequently suffers from missing modality due to deleted images, corrupted screenshots, and similar issues. Thus, robust detection in this scenario requires preserving strong verification ability for each modality, which is challenging in MFND due to insufficient learning of the low-contribution modality and scarce unimodal annotations. To address this issue, we propose Head-wise Modality Specialization within Multimodal Large Language Models (MLLMs) for robust MFND under missing modality. Specifically, we first systematically study attention heads in MLLMs and their relationship with performance under missing modality, showing that modality-critical heads serve as key carriers of unimodal verification ability through their modality specialization. Based on this observation, to better preserve verification ability for the low-contribution modality, we introduce a head-wise specialization mechanism that explicitly allocates these heads to different modalities and preserves their specialization through lower-bound attention constraints. Furthermore, to better exploit scarce unimodal annotations, we propose a Unimodal Knowledge Retention strategy that prevents these heads from drifting away from the unimodal knowledge learned from limited supervision. Experiments show that our method improves robustness under missing modality while preserving performance with full multimodal input.",
+      "authors": [
+        "Kai Qian",
+        "Weijie Shi",
+        "Jiaqi Wang",
+        "Mengze Li",
+        "Hao Chen",
+        "Yue Cui",
+        "Hanghui Guo",
+        "Ziyi Liu",
+        "Jia Zhu",
+        "Jiajie Xu"
+      ],
+      "url": "https://arxiv.org/abs/2604.09711",
+      "published": "2026-04-08T04:13:55+00:00",
+      "updated": "2026-04-08T04:13:55+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.211,
+      "backfilled": true
+    },
+    {
+      "id": "2604.08606",
+      "title": "Extrapolating Volition with Recursive Information Markets",
+      "abstract": "One of the impediments to the efficiency of information markets is the inherent information asymmetry present in them, exacerbated by the \"buyer's inspection paradox\" (the buyer cannot mitigate the asymmetry by \"inspecting\" the information, because in doing so the buyer obtains the information without paying for it). Previous work has suggested that using Large Language Model (LLM) buyers to inspect and purchase information could overcome this information asymmetry, as an LLM buyer can simply \"forget\" the information it inspects. In this work, we analyze this mechanism formally through a \"value-of-information\" paradigm, i.e. whether it incentivizes information to be priced and provided in accordance with its \"true value\". We focus in particular on our new recursive version of the mechanism, which we believe has a range of applications including in AI alignment research, where it is related to Extrapolated Volition and Scalable Oversight.",
+      "authors": [
+        "Abhimanyu Pallavi Sudhir",
+        "Long Tran-Thanh"
+      ],
+      "url": "https://arxiv.org/abs/2604.08606",
+      "published": "2026-04-08T13:57:38+00:00",
+      "updated": "2026-04-08T13:57:38+00:00",
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "econ.TH"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.207,
+      "backfilled": true
+    },
+    {
+      "id": "2604.09722",
+      "title": "ConfigSpec: Profiling-Based Configuration Selection for Distributed Edge--Cloud Speculative LLM Serving",
+      "abstract": "Speculative decoding enables collaborative Large Language Model (LLM) inference across cloud and edge by separating lightweight token drafting from heavyweight verification. While prior systems show performance and cost benefits, practical deployment requires navigating a large configuration space spanning draft model variants, quantisation levels, speculative lengths, and heterogeneous edge devices. This paper presents ConfigSpec, a configurationselection framework for distributed speculative LLM serving. ConfigSpec profiles edge devices and draft-target alignment, and models drafting throughput, acceptance rate, and power to evaluate goodput, verification cost efficiency, and energy efficiency across the joint configuration space. Our analysis across three edge platforms and two LLM families reveals structurally conflicting optima. Firstly, goodput is maximised by the smallest, fastest draft model at device-dependent speculative lengths (K*=2-10). Secondly, both cost and energy efficiency converge to K=2 due to a dominant bonus-token effect-with cost favouring the largest drafter for its high acceptance rate and energy favouring the smallest for its low power draw. These conflicts confirm that no single fixed configuration can simultaneously optimise all objectives, underscoring the need for profiling-based configuration selection in disaggregated edge-cloud LLM inference.",
+      "authors": [
+        "Xiangchen Li",
+        "Saeid Ghafouri",
+        "Jiakun Fan",
+        "Babar Ali",
+        "Hans Vandierendonck",
+        "Dimitrios S. Nikolopoulos"
+      ],
+      "url": "https://arxiv.org/abs/2604.09722",
+      "published": "2026-04-08T21:54:41+00:00",
+      "updated": "2026-04-08T21:54:41+00:00",
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.148,
+      "backfilled": true
+    },
+    {
+      "id": "2604.08609",
+      "title": "Detection of Hate and Threat in Digital Forensics: A Case-Driven Multimodal Approach",
+      "abstract": "Digital forensic investigations increasingly rely on heterogeneous evidence such as images, scanned documents, and contextual reports. These artifacts may contain explicit or implicit expressions of harm, hate, threat, violence, or intimidation, yet existing automated approaches often assume clean text input or apply vision models without forensic justification. This paper presents a case-driven multimodal approach for hate and threat detection in forensic analysis. The proposed framework explicitly determines the presence and source of textual evidence, distinguishing between embedded text, associated contextual text, and image-only evidence. Based on the identified evidence configuration, the framework selectively applies text analysis, multimodal fusion, or image-only semantic reasoning using vision language models with vision transformer backbones (ViT). By conditioning inference on evidence availability, the approach mirrors forensic decision-making, improves evidentiary traceability, and avoids unjustified modality assumptions. Experimental evaluation on forensic-style image evidence demonstrates consistent and interpretable behavior across heterogeneous evidence scenarios.",
+      "authors": [
+        "Ponkoj Chandra Shill"
+      ],
+      "url": "https://arxiv.org/abs/2604.08609",
+      "published": "2026-04-08T21:50:02+00:00",
+      "updated": "2026-04-08T21:50:02+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.123,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-11T03:26:40.345311+00:00"
+  "patched_at": "2026-04-14T03:51:12.611767+00:00"
 }
