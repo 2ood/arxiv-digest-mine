@@ -3,6 +3,142 @@
   "fetched_at": "2026-04-14T12:50:59.348262+09:00",
   "papers": [
     {
+      "id": "2604.11842",
+      "title": "DBGL: Decay-aware Bipartite Graph Learning for Irregular Medical Time Series Classification",
+      "abstract": "Irregular Medical Time Series play a critical role in the clinical domain to better understand the patient's condition. However, inherent irregularity arising from heterogeneous sampling rates, asynchronous observations, and variable gaps poses key challenges for reliable modeling. Existing methods often distort temporal sampling irregularity and missingness patterns while failing to capture variable decay irregularity, resulting in suboptimal representations. To address these limitations, we introduce DBGL, Decay-Aware Bipartite Graph Learning for Irregular Medical Time Series. DBGL first introduces a patient-variable bipartite graph that simultaneously captures irregular sampling patterns without artificial alignment and adaptively models variable relationships for temporal sampling irregularity modeling, enhancing representation learning. To model variable decay irregularity, DBGL designs a novel node-specific temporal decay encoding mechanism that captures each variable's decay rates based on sampling interval, yielding a more accurate and faithful representation of irregular temporal dynamics. We evaluate the performance of DBGL on four publicly available datasets, and the results show that DBGL outperforms all baselines.",
+      "authors": [
+        "Jian Chen",
+        "Yuzhu Hu",
+        "Xiaoyan Yuan",
+        "Yuxuan Hu",
+        "Jinfeng Xu",
+        "Yipeng Du",
+        "Wenhao Yuan",
+        "Wei Wang",
+        "Edith C. H. Ngai"
+      ],
+      "url": "https://arxiv.org/abs/2604.11842",
+      "published": "2026-04-12T14:43:12+00:00",
+      "updated": "2026-04-12T14:43:12+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.11835",
+      "title": "Schema-Adaptive Tabular Representation Learning with LLMs for Generalizable Multimodal Clinical Reasoning",
+      "abstract": "Machine learning for tabular data remains constrained by poor schema generalization, a challenge rooted in the lack of semantic understanding of structured variables. This challenge is particularly acute in domains like clinical medicine, where electronic health record (EHR) schemas vary significantly. To solve this problem, we propose Schema-Adaptive Tabular Representation Learning, a novel method that leverages large language models (LLMs) to create transferable tabular embeddings. By transforming structured variables into semantic natural language statements and encoding them with a pretrained LLM, our approach enables zero-shot alignment across unseen schemas without manual feature engineering or retraining. We integrate our encoder into a multimodal framework for dementia diagnosis, combining tabular and MRI data. Experiments on NACC and ADNI datasets demonstrate state-of-the-art performance and successful zero-shot transfer to unseen schemas, significantly outperforming clinical baselines, including board-certified neurologists, in retrospective diagnostic tasks. These results validate our LLM-driven approach as a scalable, robust solution for heterogeneous real-world data, offering a pathway to extend LLM-based reasoning to structured domains.",
+      "authors": [
+        "Hongxi Mao",
+        "Wei Zhou",
+        "Mengting Jia",
+        "Tao Fang",
+        "Huan Gao",
+        "Bin Zhang",
+        "Shangyang Li"
+      ],
+      "url": "https://arxiv.org/abs/2604.11835",
+      "published": "2026-04-12T07:19:12+00:00",
+      "updated": "2026-04-12T07:19:12+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.10861",
+      "title": "Training single-electron and single-photon stochastic physical neural networks",
+      "abstract": "The computational demands of deep learning motivate the investigation of alternative approaches to computation. One alternative is physical neural networks~(PNNs), in which learning and inference are performed directly via physical processes. Stochastic PNNs arise when the underlying neurons are realized by the dynamics of a stochastic activation switch. Here we propose novel electronic and photonic stochastic neurons. The electronic realization is implemented by single-electron tunneling through a quantum dot. The photonic realization is implemented via a single-photon source driving one of two modes coupled via a controllable beam-splitter-like interaction. In the electronic case, the charge state of the quantum dot forms the basis for the stochastic neuron, whereas in the photonic case the occupation of the undriven mode serves as the basis for the stochastic neuron. Training of stochastic PNNs is performed with models of stochastic neurons, as well as with coherently-driven, single-photon detector stochastic neurons previously introduced. Several training strategies for MNIST handwritten digit classification have been investigated using single-hidden-layer stochastic PNNs, including varying the number of trials in each layer to control forward pass stochasticity and employing either true probability or empirical outputs in the backward pass to evaluate their influence on gradient estimation. We show that when empirical outputs are used in the backward pass, the network achieves more than 97\\% test accuracy with few trials per layer. Despite the simplicity of the model architecture, high test accuracy is maintained in the presence of a high degree of noise and model uncertainty. The results demonstrate the potential of embracing stochastic PNNs for deep learning.",
+      "authors": [
+        "Tong Dou",
+        "Shiro Kumara",
+        "Josh Burns",
+        "Ethan Sigler",
+        "Parth Girdhar",
+        "David Petty",
+        "Gerard Milburn",
+        "Jo Plested",
+        "Matt Woolley"
+      ],
+      "url": "https://arxiv.org/abs/2604.10861",
+      "published": "2026-04-12T23:57:03+00:00",
+      "updated": "2026-04-12T23:57:03+00:00",
+      "categories": [
+        "quant-ph",
+        "cond-mat.dis-nn",
+        "cs.ET",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.11839",
+      "title": "Beyond Static Sandboxing: Learned Capability Governance for Autonomous AI Agents",
+      "abstract": "Autonomous AI agents built on open-source runtimes such as OpenClaw expose every available tool to every session by default, regardless of the task. A summarization task receives the same shell execution, subagent spawning, and credential access capabilities as a code deployment task, a 15x overprovision ratio that we call the capability overprovisioning problem. Existing defenses, including the NemoClaw container sandbox and the Cisco DefenseClaw skill scanner, address containment and threat detection but do not learn the minimum viable capability set for each task type.   We present Aethelgard, a four layer adaptive governance framework that enforces least privilege for AI agents through a learned policy. Layer 1, the Capability Governor, dynamically scopes which tools the agent is aware of in each session. Layer 3, the Safety Router, intercepts tool calls before execution using a hybrid rule based and fine tuned classifier. Layer 2, the RL Learning Policy, trains a PPO policy on the accumulated audit log to learn the minimum viable skill set for each task type.",
+      "authors": [
+        "Bronislav Sidik",
+        "Lior Rokach"
+      ],
+      "url": "https://arxiv.org/abs/2604.11839",
+      "published": "2026-04-12T13:10:56+00:00",
+      "updated": "2026-04-12T13:10:56+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.384,
+      "backfilled": true
+    },
+    {
+      "id": "2604.11838",
+      "title": "A Layer-wise Analysis of Supervised Fine-Tuning",
+      "abstract": "While critical for alignment, Supervised Fine-Tuning (SFT) incurs the risk of catastrophic forgetting, yet the layer-wise emergence of instruction-following capabilities remains elusive. We investigate this mechanism via a comprehensive analysis utilizing information-theoretic, geometric, and optimization metrics across model scales (1B-32B). Our experiments reveal a distinct depth-dependent pattern: middle layers (20\\%-80\\%) are stable, whereas final layers exhibit high sensitivity. Leveraging this insight, we propose Mid-Block Efficient Tuning, which selectively updates these critical intermediate layers. Empirically, our method outperforms standard LoRA up to 10.2\\% on GSM8K (OLMo2-7B) with reduced parameter overhead, demonstrating that effective alignment is architecturally localized rather than distributed. The code is publicly available at https://anonymous.4open.science/r/base_sft.",
+      "authors": [
+        "Qinghua Zhao",
+        "Xueling Gong",
+        "Xinyu Chen",
+        "Zhongfeng Kang",
+        "Xinlu Li"
+      ],
+      "url": "https://arxiv.org/abs/2604.11838",
+      "published": "2026-04-12T12:57:12+00:00",
+      "updated": "2026-04-12T12:57:12+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Neural Network Training Methods"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.375,
+      "backfilled": true
+    },
+    {
       "id": "2604.10833",
       "title": "Speaking to No One: Ontological Dissonance and the Double Bind of Conversational AI",
       "abstract": "Recent reports indicate that sustained interaction with conversational artificial intelligence (AI) systems can, in a small subset of users, contribute to the emergence or stabilisation of delusional experience. Existing accounts typically attribute such cases either to individual vulnerability or to failures of safety engineering. These explanations are incomplete. Drawing on phenomenology, psychiatry, and cognitive neuroscience, this paper argues that the risk arises from the relational and ontological structure of the interaction itself. Conversational AI generates ontological dissonance: a conflict between the appearance of relational presence and the absence of any subject capable of sustaining it. Maintained through a communicative double bind and amplified by attentional asymmetries, this dissonance tends, under conditions of affective vulnerability, to stabilise into a technologically mediated analogue of folie a deux. This account explains why explicit disclaimers often fail to disrupt delusional involvement and clarifies the ethical and clinical implications for the design and use of conversational AI.",
@@ -3961,6 +4097,48 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.048
+    },
+    {
+      "id": "2604.11840",
+      "title": "When Reasoning Models Hurt Behavioral Simulation: A Solver-Sampler Mismatch in Multi-Agent LLM Negotiation",
+      "abstract": "Large language models are increasingly used as agents in social, economic, and policy simulations. A common assumption is that stronger reasoning should improve simulation fidelity. We argue that this assumption can fail when the objective is not to solve a strategic problem, but to sample plausible boundedly rational behavior. In such settings, reasoning-enhanced models can become better solvers and worse simulators: they can over-optimize for strategically dominant actions, collapse compromise-oriented terminal behavior, and sometimes exhibit a diversity-without-fidelity pattern in which local variation survives without outcome-level fidelity. We study this solver-sampler mismatch in three multi-agent negotiation environments adapted from earlier simulation work: an ambiguous fragmented-authority trading-limits scenario, an ambiguous unified-opposition trading-limits scenario, and a new-domain grid-curtailment case in emergency electricity management. We compare three reflection conditions, no reflection, bounded reflection, and native reasoning, across two primary model families and then extend the same protocol to direct OpenAI runs with GPT-4.1 and GPT-5.2. Across all three experiments, bounded reflection produces substantially more diverse and compromise-oriented trajectories than either no reflection or native reasoning. In the direct OpenAI extension, GPT-5.2 native ends in authority decisions in 45 of 45 runs across the three experiments, while GPT-5.2 bounded recovers compromise outcomes in every environment. The contribution is not a claim that reasoning is generally harmful. It is a methodological warning: model capability and simulation fidelity are different objectives, and behavioral simulation should qualify models as samplers, not only as solvers.",
+      "authors": [
+        "Sandro Andric"
+      ],
+      "url": "https://arxiv.org/abs/2604.11840",
+      "published": "2026-04-12T13:36:10+00:00",
+      "updated": "2026-04-12T13:36:10+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.245,
+      "backfilled": true
+    },
+    {
+      "id": "2604.11841",
+      "title": "Polynomial Expansion Rank Adaptation: Enhancing Low-Rank Fine-Tuning with High-Order Interactions",
+      "abstract": "Low-rank adaptation (LoRA) is a widely used strategy for efficient fine-tuning of large language models (LLMs), but its strictly linear structure fundamentally limits expressive capacity. The bilinear formulation of weight updates captures only first-order dependencies between low-rank factors, restricting the modeling of nonlinear and higher-order parameter interactions. In this paper, we propose Polynomial Expansion Rank Adaptation (PERA), a novel method that introduces structured polynomial expansion directly into the low-rank factor space. By expanding each low-rank factor to synthesize high-order interaction terms before composition, PERA transforms the adaptation space into a polynomial manifold capable of modeling richer nonlinear coupling without increasing rank or inference cost. We provide theoretical analysis demonstrating that PERA offers enhanced expressive capacity and more effective feature utilization compare to existing linear adaptation approaches. Empirically, PERA consistently outperforms state-of-the-art methods across diverse benchmarks. Notably, our experiments show that incorporating high-order nonlinear components particularly square terms is crucial for enhancing expressive capacity and maintaining strong and robust performance under various rank settings. Our code is available at https://github.com/zhangwenhao6/PERA",
+      "authors": [
+        "Wenhao Zhang",
+        "Lin Mu",
+        "Li Ni",
+        "Peiquan Jin",
+        "Yiwen Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2604.11841",
+      "published": "2026-04-12T14:30:49+00:00",
+      "updated": "2026-04-12T14:30:49+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.242,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-04-15T03:50:05.420705+00:00"
 }
