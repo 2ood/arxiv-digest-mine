@@ -3,6 +3,52 @@
   "fetched_at": "2026-04-14T12:50:54.276347+09:00",
   "papers": [
     {
+      "id": "2604.13125",
+      "title": "Synthetic Tabular Generators Fail to Preserve Behavioral Fraud Patterns: A Benchmark on Temporal, Velocity, and Multi-Account Signals",
+      "abstract": "We introduce behavioral fidelity -- a third evaluation dimension for synthetic tabular data that measures whether generated data preserves the temporal, sequential, and structural behavioral patterns that distinguish real-world entity activity. Existing frameworks evaluate statistical fidelity (marginal distributions and correlations) and downstream utility (classifier AUROC on synthetic-trained models), but neither tests for the behavioral signals that operational detection and analysis systems actually rely on. We formalize a taxonomy of four behavioral fraud patterns (P1-P4) covering inter-event timing, burst structure, multi-account graph motifs, and velocity-rule trigger rates; define a degradation ratio metric calibrated to a real-data noise floor (1.0 = matches real variability, k = k-times worse); and prove that row-independent generators -- the dominant paradigm -- are structurally incapable of reproducing P3 graph motifs (Proposition 1) and produce non-positive within-entity IET autocorrelation (Proposition 2), making the positive burst fingerprint of fraud sequences unachievable regardless of architecture or training data size. We benchmark CTGAN, TVAE, GaussianCopula, and TabularARGN on IEEE-CIS Fraud Detection and the Amazon Fraud Dataset. All four fail severely: on IEEE-CIS composite degradation ratios range from 24.4x (TVAE) to 39.0x (GaussianCopula); on Amazon FDB, row-independent generators score 81.6-99.7x, while TabularARGN achieves 17.2x. We document generator-specific failure modes and their resolutions. The P1-P4 framework extends to any domain with entity-level sequential tabular data, including healthcare and network security. We release our evaluation framework as open source.",
+      "authors": [
+        "Bhavana Sajja"
+      ],
+      "url": "https://arxiv.org/abs/2604.13125",
+      "published": "2026-04-13T19:36:00+00:00",
+      "updated": "2026-04-13T19:36:00+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.13127",
+      "title": "Graph Propagated Projection Unlearning: A Unified Framework for Vision and Audio Discriminative Models",
+      "abstract": "The need to selectively and efficiently erase learned information from deep neural networks is becoming increasingly important for privacy, regulatory compliance, and adaptive system design. We introduce Graph-Propagated Projection Unlearning (GPPU), a unified and scalable algorithm for class-level unlearning that operates across both vision and audio models. GPPU employs graph-based propagation to identify class-specific directions in the feature space and projects representations onto the orthogonal subspace, followed by targeted fine-tuning, to ensure that target class information is effectively and irreversibly removed. Through comprehensive evaluations on six vision datasets and two large-scale audio benchmarks spanning a variety of architectures including CNNs, Vision Transformers, and Audio Transformers, we demonstrate that GPPU achieves highly efficient unlearning, realizing 10-20x speedups over prior methodologies while preserving model utility on retained classes. Our framework provides a principled and modality-agnostic approach to machine unlearning, evaluated at a scale that has received limited attention in prior work, contributing toward more efficient and responsible deep learning.",
+      "authors": [
+        "Shreyansh Pathak",
+        "Jyotishman Das"
+      ],
+      "url": "https://arxiv.org/abs/2604.13127",
+      "published": "2026-04-13T21:14:54+00:00",
+      "updated": "2026-04-13T21:14:54+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.SD"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Graph Neural Networks",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.12041",
       "title": "On the continuum limit of t-SNE for data visualization",
       "abstract": "This work is concerned with the continuum limit of a graph-based data visualization technique called the t-Distributed Stochastic Neighbor Embedding (t-SNE), which is widely used for visualizing data in a variety of applications, but is still poorly understood from a theoretical standpoint. The t-SNE algorithm produces visualizations by minimizing the Kullback-Leibler divergence between similarity matrices representing the high dimensional data and its low dimensional representation. We prove that as the number of data points $n \\to \\infty$, after a natural rescaling and in applicable parameter regimes, the Kullback-Leibler divergence is consistent as the number of data points $n \\to \\infty$ and the similarity graph remains sparse with a continuum variational problem that involves a non-convex gradient regularization term and a penalty on the magnitude of the probability density function in the visualization space. These two terms represent the continuum limits of the attraction and repulsion forces in the t-SNE algorithm.   Due to the lack of convexity in the continuum variational problem, the question of well-posedeness is only partially resolved. We show that when both dimensions are $1$, the problem admits a unique smooth minimizer, along with an infinite number of discontinuous minimizers (interpreted in a relaxed sense). This aligns well with the empirically observed ability of t-SNE to separate data in seemingly arbitrary ways in the visualization. The energy is also very closely related to the famously ill-posed Perona-Malik equation, which is used for denoising and simplifying images. We present numerical results validating the continuum limit, provide some preliminary results about the delicate nature of the limiting energetic problem in higher dimensions, and highlight several problems for future work.",
@@ -9666,7 +9712,97 @@
       "match_method": "none",
       "best_score": 0.039,
       "backfilled": true
+    },
+    {
+      "id": "2604.13130",
+      "title": "Generalization Guarantees on Data-Driven Tuning of Gradient Descent with Langevin Updates",
+      "abstract": "We study learning to learn for regression problems through the lens of hyperparameter tuning. We propose the Langevin Gradient Descent Algorithm (LGD), which approximates the mean of the posterior distribution defined by the loss function and regularizer of a convex regression task. We prove the existence of an optimal hyperparameter configuration for which the LGD algorithm achieves the Bayes' optimal solution for squared loss. Subsequently, we study generalization guarantees on meta-learning optimal hyperparameters for the LGD algorithm from a given set of tasks in the data-driven setting. For a number of parameters $d$ and hyperparameter dimension $h$, we show a pseudo-dimension bound of $O(dh)$, upto logarithmic terms under mild assumptions on LGD. This matches the dimensional dependence of the bounds obtained in prior work for the elastic net, which only allows for $h=2$ hyperparameters, and extends their bounds to regression on convex loss. Finally, we show empirical evidence of the success of LGD and the meta-learning procedure for few-shot learning on linear regression using a few synthetically created datasets.",
+      "authors": [
+        "Saumya Goyal",
+        "Rohith Rongali",
+        "Ritabrata Ray",
+        "Barnabás Póczos"
+      ],
+      "url": "https://arxiv.org/abs/2604.13130",
+      "published": "2026-04-13T22:27:31+00:00",
+      "updated": "2026-04-13T22:27:31+00:00",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.299,
+      "backfilled": true
+    },
+    {
+      "id": "2604.13120",
+      "title": "AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering",
+      "abstract": "Large language models generate plausible code but cannot verify correctness. Existing multi-agent systems simulate execution or leave verification optional. We introduce execution-grounded verification as a first-class principle: every code change must survive sandboxed execution before propagation. We instantiate this principle in AGENTFORGE, a multi-agent framework where Planner, Coder, Tester, Debugger, and Critic agents coordinate through shared memory and a mandatory Docker sandbox. We formalize software engineering with LLMs as an iterative decision process over repository states, where execution feedback provides a stronger supervision signal than next-token likelihood. AGENTFORGE achieves 40.0\\% resolution on SWE-BENCH Lite, outperforming single-agent baselines by 26--28 points. Ablations confirm that execution feedback and role decomposition each independently drive performance. The framework is open-source at https://github.com/raja21068/AutoCodeAI.",
+      "authors": [
+        "Rajesh Kumar",
+        "Waqar Ali",
+        "Junaid Ahmed",
+        "Najma Imtiaz Ali",
+        "Shaban Usman"
+      ],
+      "url": "https://arxiv.org/abs/2604.13120",
+      "published": "2026-04-13T13:51:13+00:00",
+      "updated": "2026-04-13T13:51:13+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.296,
+      "backfilled": true
+    },
+    {
+      "id": "2604.13128",
+      "title": "Learning Probabilistic Responsibility Allocations for Multi-Agent Interactions",
+      "abstract": "Human behavior in interactive settings is shaped not only by individual objectives but also by shared constraints with others, such as safety. Understanding how people allocate responsibility, i.e., how much one deviates from their desired policy to accommodate others, can inform the design of socially compliant and trustworthy autonomous systems. In this work, we introduce a method for learning a probabilistic responsibility allocation model that captures the multimodal uncertainty inherent in multi-agent interactions. Specifically, our approach leverages the latent space of a conditional variational autoencoder, combined with techniques from multi-agent trajectory forecasting, to learn a distribution over responsibility allocations conditioned on scene and agent context. Although ground-truth responsibility labels are unavailable, the model remains tractable by incorporating a differentiable optimization layer that maps responsibility allocations to induced controls, which are available. We evaluate our method on the INTERACTION driving dataset and demonstrate that it not only achieves strong predictive performance but also provides interpretable insights, through the lens of responsibility, into patterns of multi-agent interaction.",
+      "authors": [
+        "Isaac Remy",
+        "Caleb Chang",
+        "Karen Leung"
+      ],
+      "url": "https://arxiv.org/abs/2604.13128",
+      "published": "2026-04-13T21:49:41+00:00",
+      "updated": "2026-04-13T21:49:41+00:00",
+      "categories": [
+        "cs.MA",
+        "cs.LG",
+        "cs.RO",
+        "eess.SY"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.229,
+      "backfilled": true
+    },
+    {
+      "id": "2604.13123",
+      "title": "Spectral Entropy Collapse as an Empirical Signature of Delayed Generalisation in Grokking",
+      "abstract": "Grokking -- delayed generalisation long after memorisation -- lacks a predictive mechanistic explanation. We identify the normalised spectral entropy $\\tilde{H}(t)$ of the representation covariance as a scalar order parameter for this transition, validated on 1-layer Transformers on group-theoretic tasks. Five contributions: (i) Grokking follows a two-phase pattern: norm expansion then entropy collapse. (ii) $\\tilde{H}$ crosses a stable threshold $\\tilde{H}^* \\approx 0.61$ before generalisation in 100% of runs (mean lead: 1,020 steps). (iii) A causal intervention preventing collapse delays grokking by +5,020 steps ($p=0.044$); a norm-matched control ($n=30$, $p=5\\times10^{-5}$) confirms entropy -- not norm -- drives the transition. (iv) A power-law $ΔT = C_1(\\tilde{H}-\\tilde{H}^*)^γ+C_2$ ($R^2=0.543$) predicts grokking onset with 4.1% error. (v) The mechanism holds across abelian ($\\mathbb{Z}/97\\mathbb{Z}$) and non-abelian ($S_5$) groups. Crucially, MLPs show entropy collapse without grokking, proving collapse is necessary but not sufficient -- architecture matters. Code: https://anonymous.4open.science/r/grokking-entropy",
+      "authors": [
+        "Truong Xuan Khanh",
+        "Truong Quynh Hoa",
+        "Luu Duc Trung",
+        "Phan Thanh Duc"
+      ],
+      "url": "https://arxiv.org/abs/2604.13123",
+      "published": "2026-04-13T18:23:16+00:00",
+      "updated": "2026-04-13T18:23:16+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.218,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-15T03:50:03.638785+00:00"
+  "patched_at": "2026-04-16T03:55:43.270783+00:00"
 }
