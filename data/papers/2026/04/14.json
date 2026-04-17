@@ -3,6 +3,148 @@
   "fetched_at": "2026-04-15T12:49:59.863122+09:00",
   "papers": [
     {
+      "id": "2604.14232",
+      "title": "Explainable Graph Neural Networks for Interbank Contagion Surveillance: A Regulatory-Aligned Framework for the U.S. Banking Sector",
+      "abstract": "The Spatial-Temporal Graph Attention Network (ST-GAT) framework was created to serve as an explainable GNN-based solution for detecting bank distress early warning signs and for conducting macro-prudential surveillance of the interbank system in the United States. The ST-GAT framework models 8,103 FDIC insured institutions across 58 quarterly snapshots (2010Q1-2024Q2). Bilateral exposures were reconstructed from publicly available FDIC Call Reports using maximum entropy estimation to produce a dynamic directed weighted graph. The framework achieves the highest AUPRC among all GNN architectures (0.939 +/- 0.010), trailing only XGBoost (0.944). Ablation analysis confirms the BiLSTM temporal component contributes +0.020 AUPRC; temporal attention weights exhibit a monotonically decreasing pattern consistent with long-run structural vulnerability weighting. Permutation importance identifies ROA (0.309) and NPL Ratio (0.252) as dominant predictors, consistent with post-mortem analyses of the 2023 regional banking crisis. All data are publicly available FDIC Call Reports and FRED series; all code and results are released.",
+      "authors": [
+        "Mohammad Nasir Uddin"
+      ],
+      "url": "https://arxiv.org/abs/2604.14232",
+      "published": "2026-04-14T19:07:28+00:00",
+      "updated": "2026-04-14T19:07:28+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14220",
+      "title": "Knowledge Graph RAG: Agentic Crawling and Graph Construction in Enterprise Documents",
+      "abstract": "This research paper addresses the limitations of semantic search in complex enterprise document ecosystems. Traditional RAG pipelines often fail to capture hierarchical and interconnected information, leading to retrieval inaccuracies. We propose Agentic Knowledge Graphs featuring Recursive Crawling as a robust solution for navigating superseding logic and multi-hop references. Our benchmark evaluation using the Code of Federal Regulations (CFR) demonstrates that this Knowledge Graph-enhanced approach achieves a 70% accuracy improvement over standard vector-based RAG systems, providing exhaustive and precise answers for complex regulatory queries.",
+      "authors": [
+        "Koushik Chakraborty",
+        "Koyel Guha"
+      ],
+      "url": "https://arxiv.org/abs/2604.14220",
+      "published": "2026-04-14T05:26:50+00:00",
+      "updated": "2026-04-14T05:26:50+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14235",
+      "title": "Graph-Based Fraud Detection with Dual-Path Graph Filtering",
+      "abstract": "Fraud detection on graph data can be viewed as a demanding task that requires distinguishing between different types of nodes. Because graph neural networks (GNNs) are naturally suited for processing information encoded in graph form through their message-passing operations, methods based on GNN models have increasingly attracted attention in the fraud detection domain. However, fraud graphs inherently exhibit relation camouflage, high heterophily, and class imbalance, causing most GNNs to underperform in fraud detection tasks. To address these challenges, this paper proposes a Graph-Based Fraud Detection Model with Dual-Path Graph Filtering (DPF-GFD). DPF-GFD first applies a beta wavelet-based operator to the original graph to capture key structural patterns. It then constructs a similarity graph from distance-based node representations and applies an improved low-pass filter. The embeddings from the original and similarity graphs are fused through supervised representation learning to obtain node features, which are finally used by an ensemble tree model to assess the fraud risk of unlabeled nodes. Unlike existing single-graph smoothing approaches, DPF-GFD introduces a frequency-complementary dual-path filtering paradigm tailored for fraud detection, explicitly decoupling structural anomaly modeling and feature similarity modeling. This design enables more discriminative and stable node representations in highly heterophilous and imbalanced fraud graphs. Comprehensive experiments on four real-world financial fraud detection datasets demonstrate the effectiveness of our proposed method.",
+      "authors": [
+        "Wei He",
+        "Wensheng Gan",
+        "Philip S. Yu"
+      ],
+      "url": "https://arxiv.org/abs/2604.14235",
+      "published": "2026-04-14T20:46:36+00:00",
+      "updated": "2026-04-14T20:46:36+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14229",
+      "title": "Magnitude Is All You Need? Rethinking Phase in Quantum Encoding of Complex SAR Data",
+      "abstract": "Synthetic Aperture Radar (SAR) data is inherently complex-valued, while quantum machine learning (QML) models naturally operate in complex Hilbert spaces. This apparent alignment suggests that incorporating both magnitude and phase information into quantum encoding should improve performance in SAR Automatic Target Recognition (ATR). In this work, we systematically evaluate this assumption by comparing five quantum encoding strategies: magnitude-only, joint complex, I/Q-based, preprocessed phase, and pure quantum, under a unified experimental framework on the MSTAR benchmark dataset.   Contrary to expectation, we observe a consistent pattern: in hybrid quantum-classical architectures, magnitude-only encoding outperforms all complex-valued strategies, achieving 99.57% accuracy on a 3-class task and 71.19% on an 8-class task, while phase-aware methods provide negligible (~0%) or negative improvements. In contrast, in purely quantum architectures with only 184-224 trainable parameters and no classical components, phase information becomes essential, contributing up to 21.65% improvement in accuracy.   These results reveal that the utility of phase information is not inherent to the data, but depends critically on the model architecture. Hybrid models rely on classical components that compensate for missing phase information, whereas purely quantum models require phase to construct discriminative representations. Our findings provide practical design guidelines for encoding complex-valued data in QML and highlight the importance of encoding-architecture co-design in the NISQ era.",
+      "authors": [
+        "Sakthi Prabhu Gunasekar",
+        "Prasanna Kumar R"
+      ],
+      "url": "https://arxiv.org/abs/2604.14229",
+      "published": "2026-04-14T18:03:47+00:00",
+      "updated": "2026-04-14T18:03:47+00:00",
+      "categories": [
+        "quant-ph",
+        "cs.AI",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14228",
+      "title": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+      "abstract": "Claude Code is an agentic coding tool that can run shell commands, edit files, and call external services on behalf of the user. This study describes its comprehensive architecture by analyzing the publicly available TypeScript source code and further comparing it with OpenClaw, an independent open-source AI agent system that answers many of the same design questions from a different deployment context. Our analysis identifies five human values, philosophies, and needs that motivate the architecture (human decision authority, safety and security, reliable execution, capability amplification, and contextual adaptability) and traces them through thirteen design principles to specific implementation choices. The core of the system is a simple while-loop that calls the model, runs tools, and repeats. Most of the code, however, lives in the systems around this loop: a permission system with seven modes and an ML-based classifier, a five-layer compaction pipeline for context management, four extensibility mechanisms (MCP, plugins, skills, and hooks), a subagent delegation mechanism with worktree isolation, and append-oriented session storage. A comparison with OpenClaw, a multi-channel personal assistant gateway, shows that the same recurring design questions produce different architectural answers when the deployment context changes: from per-action safety classification to perimeter-level access control, from a single CLI loop to an embedded runtime within a gateway control plane, and from context-window extensions to gateway-wide capability registration. We finally identify six open design directions for future agent systems, grounded in recent empirical, architectural, and policy literature.",
+      "authors": [
+        "Jiacheng Liu",
+        "Xiaohan Zhao",
+        "Xinyi Shang",
+        "Zhiqiang Shen"
+      ],
+      "url": "https://arxiv.org/abs/2604.14228",
+      "published": "2026-04-14T17:59:37+00:00",
+      "updated": "2026-04-14T17:59:37+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.395,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14222",
+      "title": "Adaptive Query Routing: A Tier-Based Framework for Hybrid Retrieval Across Financial, Legal, and Medical Documents",
+      "abstract": "Retrieval-Augmented Generation (RAG) has become the standard paradigm for grounding Large Language Model outputs in external knowledge. Lumer et al. [1] presented the first systematic evaluation comparing vector-based agentic RAG against hierarchical node-based reasoning systems for financial document QA across 1,200 SEC filings, finding vector-based systems achieved a 68% win rate. Concurrently, the PageIndex framework [2] demonstrated 98.7% accuracy on FinanceBench through purely reasoning-based retrieval. This paper extends their work by: (i) implementing and evaluating three retrieval architectures: Vector RAG, Tree Reasoning, and the proposed Adaptive Hybrid Retrieval (AHR) across financial, legal, and medical domains; (ii) introducing a four-tier query complexity benchmark; and (iii) employing GPT-4-powered LLM-as-judge evaluation. Experiments reveal that Tree Reasoning achieves the highest overall score (0.900), but no single paradigm dominates across all tiers: Vector RAG wins on multi-document synthesis (Tier 4, score 0.900), while the Hybrid AHR achieves the best performance on cross-reference (0.850) and multi-section queries (0.929). Cross-reference recall reaches 100% for tree-based and hybrid approaches versus 91.7% for vector search, quantifying a critical capability gap. Validation on FinanceBench (150 expert-annotated questions on real SEC 10-K and 10-Q filings) confirms and strengthens these findings: Tree Reasoning scores 0.938, Hybrid AHR 0.901, and Vector RAG 0.821, with the Tree--Vector quality gap widening to 11.7 percentage points on real-world documents. These findings support the development of adaptive retrieval systems that dynamically select strategies based on query complexity and document structure. All code and data are publicly available.",
+      "authors": [
+        "Afshan Hashmi"
+      ],
+      "url": "https://arxiv.org/abs/2604.14222",
+      "published": "2026-04-14T10:48:13+00:00",
+      "updated": "2026-04-14T10:48:13+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Symbolic AI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.354,
+      "backfilled": true
+    },
+    {
       "id": "2604.13307",
       "title": "Deep Spatially-Regularized and Superpixel-Based Diffusion Learning for Unsupervised Hyperspectral Image Clustering",
       "abstract": "An unsupervised framework for hyperspectral image (HSI) clustering is proposed that incorporates masked deep representation learning with diffusion-based clustering, extending the Spatially-Regularized Superpixel-based Diffusion Learning ($S^2DL$) algorithm. Initially, a denoised latent representation of the original HSI is learned via an unsupervised masked autoencoder (UMAE) model with a Vision Transformer backbone. The UMAE takes spatial context and long-range spectral correlations into account and incorporates an efficient pretraining process via masking that utilizes only a small subset of training pixels. In the next stage, the entropy rate superpixel (ERS) algorithm is used to segment the image into superpixels, and a spatially regularized diffusion graph is constructed using Euclidean and diffusion distances within the compressed latent space instead of the HSI space. The proposed algorithm, Deep Spatially-Regularized Superpixel-based Diffusion Learning ($DS^2DL$), leverages more faithful diffusion distances and subsequent diffusion graph construction that better reflect the intrinsic geometry of the underlying data manifold, improving labeling accuracy and clustering quality. Experiments on Botswana and KSC datasets demonstrate the efficacy of $DS^2DL$.",
@@ -9254,7 +9396,114 @@
       "match_method": "none",
       "best_score": 0.104,
       "backfilled": true
+    },
+    {
+      "id": "2604.14231",
+      "title": "Shapley Value-Guided Adaptive Ensemble Learning for Explainable Financial Fraud Detection with U.S. Regulatory Compliance Validation",
+      "abstract": "Financial crime costs U.S. institutions over $32 billion each year. Although AI tools for fraud detection have become more advanced, their use in real-world systems still faces a major obstacle: many of these models operate as black boxes that cannot provide the transparent, auditable explanations required by regulations such as OCC Bulletin 2011-12 and Federal Reserve SR 11-7. This study makes three main contributions. First, it offers a thorough evaluation of explanation quality across faithfulness (sufficiency and comprehensiveness at k=5, 10, and 15) and stability (Kendall's W across 30 bootstrap samples). XGBoost paired with TreeExplainer achieves near-perfect stability (W=0.9912), while LSTM with DeepExplainer shows weak results (W=0.4962). Second, the paper introduces the SHAP-Guided Adaptive Ensemble (SGAE), which dynamically adjusts per-transaction ensemble weights based on SHAP attribution agreement, achieving the highest AUC-ROC among all tested models (0.8837 held-out; 0.9245 cross-validation). Third, a complete three-architecture evaluation of LSTM, Transformer, and GNN-GraphSAGE on the full 590,540-transaction IEEE-CIS dataset is provided, with GNN-GraphSAGE achieving AUC-ROC 0.9248 and F1=0.6013. All results are mapped directly to OCC, SR 11-7, and BSA-AML regulatory compliance requirements.",
+      "authors": [
+        "Mohammad Nasir Uddin",
+        "Md Munna Aziz"
+      ],
+      "url": "https://arxiv.org/abs/2604.14231",
+      "published": "2026-04-14T19:00:20+00:00",
+      "updated": "2026-04-14T19:00:20+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.279,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14227",
+      "title": "FRESCO: Benchmarking and Optimizing Re-rankers for Evolving Semantic Conflict in Retrieval-Augmented Generation",
+      "abstract": "Retrieval-Augmented Generation (RAG) is a key approach to mitigating the temporal staleness of large language models (LLMs) by grounding responses in up-to-date evidence. Within the RAG pipeline, re-rankers play a pivotal role in selecting the most useful documents from retrieved candidates. However, existing benchmarks predominantly evaluate re-rankers in static settings and do not adequately assess performance under evolving information -- a critical gap, as real-world systems often must choose among temporally different pieces of evidence. To address this limitation, we introduce FRESCO (Factual Recency and Evolving Semantic COnflict), a benchmark for evaluating re-rankers in temporally dynamic contexts. By pairing recency-seeking queries with historical Wikipedia revisions, FRESCO tests whether re-rankers can prioritize factually recent evidence while maintaining semantic relevance. Our evaluation reveals a consistent failure mode across existing re-rankers: a strong bias toward older, semantically rich documents, even when they are factually obsolete. We further investigate an instruction optimization framework to mitigate this issue. By identifying Pareto-optimal instructions that balance Evolving and Non-Evolving Knowledge tasks, we obtain gains of up to 27% on Evolving Knowledge tasks while maintaining competitive performance on Non-Evolving Knowledge tasks.",
+      "authors": [
+        "Sohyun An",
+        "Hayeon Lee",
+        "Shuibenyang Yuan",
+        "Chun-cheng Jason Chen",
+        "Cho-Jui Hsieh",
+        "Vijai Mohan",
+        "Alexander Min"
+      ],
+      "url": "https://arxiv.org/abs/2604.14227",
+      "published": "2026-04-14T17:04:25+00:00",
+      "updated": "2026-04-14T17:04:25+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.206,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14223",
+      "title": "TRACE: A Conversational Framework for Sustainable Tourism Recommendation with Agentic Counterfactual Explanations",
+      "abstract": "Traditional conversational travel recommender systems primarily optimize for user relevance and convenience, often reinforcing popular, overcrowded destinations and carbon-intensive travel choices. To address this, we present TRACE (Tourism Recommendation with Agentic Counterfactual Explanations), a multi-agent, LLM-based framework that promotes sustainable tourism through interactive nudging. TRACE uses a modular orchestrator-worker architecture where specialized agents elicit latent sustainability preferences, construct structured user personas, and generate recommendations that balance relevance with environmental impact.   A key innovation lies in its use of agentic counterfactual explanations and LLM-driven clarifying questions, which together surface greener alternatives and refine understanding of intent, fostering user reflection without coercion. User studies and semantic alignment analyses demonstrate that TRACE effectively supports sustainable decision-making while preserving recommendation quality and interactive responsiveness. TRACE is implemented on Google's Agent Development Kit, with full code, Docker setup, prompts, and a publicly available demo video to ensure reproducibility.   A project summary, including all resources, prompts, and demo access, is available at https://ashmibanerjee.github.io/trace-chatbot.",
+      "authors": [
+        "Ashmi Banerjee",
+        "Adithi Satish",
+        "Wolfgang Wörndl",
+        "Yashar Deldjoo"
+      ],
+      "url": "https://arxiv.org/abs/2604.14223",
+      "published": "2026-04-14T12:35:21+00:00",
+      "updated": "2026-04-14T12:35:21+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.196,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14233",
+      "title": "Anomaly Detection in IEC-61850 GOOSE Networks: Evaluating Unsupervised and Temporal Learning for Real-Time Intrusion Detection",
+      "abstract": "The IEC-61850 GOOSE protocol underpins time-critical communication in modern digital substations but lacks native security mechanisms, leaving it vulnerable to replay, masquerade, and data injection attacks. Intrusion detection in this setting is challenging due to strict latency constraints (sub-4ms) and limited availability of labeled attack data. This paper evaluates whether unsupervised temporal modeling can provide effective and deployable anomaly detection for GOOSE networks. Five models are compared on the ERENO IEC-61850 dataset: a supervised Random Forest baseline, a feedforward Autoencoder, and three recurrent sequence autoencoders (RNN, LSTM, and GRU). The supervised Random Forest achieves the highest detection performance (F1=0.9516) but fails to meet real-time constraints at 21.8ms per prediction. All four unsupervised models satisfy the 4ms requirement, with the GRU achieving the best accuracy to latency tradeoff among them (F1=0.8737 at 1.118ms). A cross-environment evaluation on an independent dataset shows that all models degrade under distribution shift. However, recurrent models retain substantially higher relative performance than the supervised baseline, suggesting that temporal sequence modeling generalizes better than fitting labeled attack distributions. Anomaly thresholds for the unsupervised models are selected on a held out validation partition to avoid test set leakage. These results support unsupervised temporal models as a practical choice for real-time GOOSE intrusion detection, particularly in environments where labeled training data may be unavailable or where large-scale deployment across diverse substations is required.",
+      "authors": [
+        "Joseph Moore"
+      ],
+      "url": "https://arxiv.org/abs/2604.14233",
+      "published": "2026-04-14T20:13:55+00:00",
+      "updated": "2026-04-14T20:13:55+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.172,
+      "backfilled": true
+    },
+    {
+      "id": "2604.14221",
+      "title": "Fun-TSG: A Function-Driven Multivariate Time Series Generator with Variable-Level Anomaly Labeling",
+      "abstract": "Reliable evaluation of anomaly detection methods in multivariate time series remains an open challenge, largely due to the limitations of existing benchmark datasets. Current resources often lack fine-grained anomaly annotations, do not provide explicit intervariable and temporal dependencies, and offer little insight into the underlying generative mechanisms. These shortcomings hinder the development and rigorous comparison of detection models, especially those targeting interpretable and variable-specific outputs. To address this gap, we introduce Fun-TSG, a fully customizable time series generator designed to support high-quality evaluation of anomaly detection systems. Our tool enables both fully automated generation, based on randomly sampled dependency structures and anomaly types, and manual generation through user-defined equations and anomaly configurations. In both cases, it provides full transparency over the data generation process, including access to ground-truth anomaly labels at the variable and timestamp levels. Fun-TSG supports the creation of diverse, interpretable, and reproducible benchmarking scenarios, enabling fine-grained performance analysis for both classical and modern anomaly detection models.",
+      "authors": [
+        "Pierre Lotte",
+        "André Péninou",
+        "Olivier Teste"
+      ],
+      "url": "https://arxiv.org/abs/2604.14221",
+      "published": "2026-04-14T08:38:33+00:00",
+      "updated": "2026-04-14T08:38:33+00:00",
+      "categories": [
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.131,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-16T03:55:42.782162+00:00"
+  "patched_at": "2026-04-17T03:53:07.482216+00:00"
 }
