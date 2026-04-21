@@ -3,6 +3,160 @@
   "fetched_at": "2026-04-16T12:55:41.166093+09:00",
   "papers": [
     {
+      "id": "2604.15380",
+      "title": "Exascale Multi-Task Graph Foundation Models for Imbalanced, Multi-Fidelity Atomistic Data",
+      "abstract": "We present an exascale workflow for materials discovery using atomistic graph foundation models built on HydraGNN. We jointly train on 16 open first-principles datasets (544+ million structures covering 85+ elements) using a multi-task architecture with per-dataset heads and a scalable ADIOS2/DDStore data pipeline. On Frontier, we execute six large-scale DeepHyper hyperparameter optimization campaigns in FP64 and promote the top-performing message-passing models to sustained 2,048-node training, yielding a PaiNN-based lead model. The resulting model enables billion-scale screening, evaluating 1.1 billion atomistic structures in 50 seconds, compressing a workload that would require years of first-principles computation, and supports data-scarce fine-tuning across diverse downstream tasks. We quantify precision-performance tradeoffs (BF16/FP32/FP64), demonstrate transfer across twelve chemically diverse downstream tasks, and establish seamless strong- and weak-scaling across Frontier, Aurora, and Perlmutter. This work allows fast and reliable exploration of vast chemical design spaces that are otherwise inaccessible to first-principles methods.",
+      "authors": [
+        "Massimiliano Lupo Pasini",
+        "Jong Youl Choi",
+        "Kshitij Mehta",
+        "Richard Messerly",
+        "Rylie Weaver",
+        "Linda Ungerboeck",
+        "Isaac Lyngaas",
+        "Benajmin Stump",
+        "Ashwin M. Aji",
+        "Karl W. Schulz",
+        "Jorda Polo"
+      ],
+      "url": "https://arxiv.org/abs/2604.15380",
+      "published": "2026-04-15T23:27:09+00:00",
+      "updated": "2026-04-15T23:27:09+00:00",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16512",
+      "title": "Medial Axis Aware Learning of Signed Distance Functions",
+      "abstract": "We propose a novel variational method to compute a highly accurate global signed distance function (SDF) to a given point cloud. To this end, the jump set of the gradient of the SDF, which coincides with the medial axis of the surface, is explicitly taken into account through a higher-order variational formulation that enforces linear growth along the gradient direction away from this discontinuity set. The eikonal equation and the zero-level set of the SDF are enforced as constraints. To make this variational problem computationally tractable, a phase field approximation of Ambrosio-Tortorelli type is employed. The associated phase field function implicitly describes the medial axis. The method is implemented for surfaces represented by unoriented point clouds using neural network approximations of both the SDF and the phase field. Experiments demonstrate the method's accuracy both in the near field and globally. Quantitative and qualitative comparisons with other approaches show the advantages of the proposed method.",
+      "authors": [
+        "Samuel Weidemaier",
+        "Christoph Norden-Smoch",
+        "Martin Rumpf"
+      ],
+      "url": "https://arxiv.org/abs/2604.16512",
+      "published": "2026-04-15T08:55:07+00:00",
+      "updated": "2026-04-15T08:55:07+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CG",
+        "cs.GR",
+        "cs.LG",
+        "math.NA"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15370",
+      "title": "TopFeaRe: Locating Critical State of Adversarial Resilience for Graphs Regarding Topology-Feature Entanglement",
+      "abstract": "Graph adversarial attacks are usually produced from the two perspectives of topology/structure and node feature, both of them represent the paramount characteristics learned by today's deep learning models. Although some defense countermeasures are proposed at present, they fails to disclose the intrinsic reasons why these two aspects necessitate and how they are adequately fused to co-learn the graph representation. Towards this question, we in this paper propose an adversarial defense approach through locating the graph's critical state of adversarial resilience, resorting to the equilibrium-point theory in the discipline of complex dynamic system (CDS). In brief, our work has three novelties: i) Adversarial-Attack Modeling, i.e. map a graph regime into CDS, and use the oscillation of dynamic system to model the behavior of adversarial perturbation; ii) 2D Topology-Feature-Entangled Function Design for Perturbed Graph, i.e. project graph topology and node feature as two characteristic spaces, and define two-dimensional entangled perturbation functions to represent the dynamic variance under adversarial attacks; and iii) Location of Critical State of Adversarial Resilience, i.e. utilize the equilibrium-point theory to locate the graph's critical state of attack resilience resorting to the perturbation-reflected 2D function. Finally, multi-facet experiments on five commonly-used realistic datasets validate the effectiveness of our proposed approach, and the results show our approach can significantly outperform the state-of-the-art baselines under four representative graph adversarial attacks.",
+      "authors": [
+        "Xinxin Fan",
+        "Wenxiong Chen",
+        "Quanliang Jing",
+        "Chi Lin",
+        "Shaoye Luo",
+        "Wenbo Song",
+        "Yunfeng Lu"
+      ],
+      "url": "https://arxiv.org/abs/2604.15370",
+      "published": "2026-04-15T09:02:23+00:00",
+      "updated": "2026-04-15T09:02:23+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16509",
+      "title": "Learning-Based Sparsification of Dynamic Graphs in Robotic Exploration Algorithms",
+      "abstract": "Many robotic exploration algorithms rely on graph structures for frontier-based exploration and dynamic path planning. However, these graphs grow rapidly, accumulating redundant information and impacting performance. We present a transformer-based framework trained with Proximal Policy Optimization (PPO) to prune these graphs during exploration, limiting their growth and reducing the accumulation of excess information. The framework was evaluated on simulations of a robotic agent using Rapidly Exploring Random Trees (RRT) to carry out frontier-based exploration, where the learned policy reduces graph size by up to 96%. We find preliminary evidence that our framework learns to associate pruning decisions with exploration outcomes despite sparse, delayed reward signals. We also observe that while intelligent pruning achieves a lower rate of exploration compared to baselines, it yields the lowest standard deviation, producing the most consistent exploration across varied environments. To the best of our knowledge, these results are the first suggesting the viability of RL in sparsification of dynamic graphs used in robotic exploration algorithms.",
+      "authors": [
+        "Adithya V. Sastry",
+        "Bibek Poudel",
+        "Weizi Li"
+      ],
+      "url": "https://arxiv.org/abs/2604.16509",
+      "published": "2026-04-15T03:39:16+00:00",
+      "updated": "2026-04-15T03:39:16+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16517",
+      "title": "SmoGVLM: A Small, Graph-enhanced Vision-Language Model",
+      "abstract": "Large vision-language models (VLMs) achieve strong performance on multimodal tasks but often suffer from hallucination and poor grounding in knowledge-intensive reasoning. We propose SmoGVLM, a small, graph-enhanced VLM that integrates structured knowledge with visual and textual modalities, using Graph Neural Networks. We investigate the effects of our method across a range of model sizes, from tiny (1.3B) to large (13B) models. Our results demonstrate that, when trained using our approach, a small model can achieve performance gains upto 16.24%, and surpass its larger counterparts, outperforming larger VLMs and strong fine-tuned baselines. These results highlight the potential of structured knowledge augmentation for efficient, smaller-scale multimodal reasoning systems.",
+      "authors": [
+        "Debjyoti Mondal",
+        "Rituraj Singh",
+        "Subhadarshi Panda"
+      ],
+      "url": "https://arxiv.org/abs/2604.16517",
+      "published": "2026-04-15T13:44:49+00:00",
+      "updated": "2026-04-15T13:44:49+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16518",
+      "title": "On-Orbit Space AI: Federated, Multi-Agent, and Collaborative Algorithms for Satellite Constellations",
+      "abstract": "Satellite constellations are transforming space systems from isolated spacecraft into networked, software-defined platforms capable of on-orbit perception, decision making, and adaptation. Yet much of the existing AI studies remains centered on single-satellite inference, while constellation-scale autonomy introduces fundamentally new algorithmic requirements: learning and coordination under dynamic inter-satellite connectivity, strict SWaP-C limits, radiation-induced faults, non-IID data, concept drift, and safety-critical operational constraints. This survey consolidates the emerging field of on-orbit space AI through three complementary paradigms: (i) {federated learning} for cross-satellite training, personalization, and secure aggregation; (ii) {multi-agent algorithms} for cooperative planning, resource allocation, scheduling, formation control, and collision avoidance; and (iii) {collaborative sensing and distributed inference} for multi-satellite fusion, tracking, split/early-exit inference, and cross-layer co-design with constellation networking. We provide a system-level view and a taxonomy that unifies collaboration architectures, temporal mechanisms, and trust models. To support community development and keep this review actionable over time, we continuously curate relevant papers and resources at https://github.com/ziyangwang007/AI4Space.",
+      "authors": [
+        "Ziyang Wang"
+      ],
+      "url": "https://arxiv.org/abs/2604.16518",
+      "published": "2026-04-15T16:15:47+00:00",
+      "updated": "2026-04-15T16:15:47+00:00",
+      "categories": [
+        "cs.RO",
+        "astro-ph.IM",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.377,
+      "backfilled": true
+    },
+    {
       "id": "2604.14489",
       "title": "CobwebTM: Probabilistic Concept Formation for Lifelong and Hierarchical Topic Modeling",
       "abstract": "Topic modeling seeks to uncover latent semantic structure in text corpora with minimal supervision. Neural approaches achieve strong performance but require extensive tuning and struggle with lifelong learning due to catastrophic forgetting and fixed capacity, while classical probabilistic models lack flexibility and adaptability to streaming data. We introduce \\textsc{CobwebTM}, a low-parameter lifelong hierarchical topic model based on incremental probabilistic concept formation. By adapting the Cobweb algorithm to continuous document embeddings, \\textsc{CobwebTM} constructs semantic hierarchies online, enabling unsupervised topic discovery, dynamic topic creation, and hierarchical organization without predefining the number of topics. Across diverse datasets, \\textsc{CobwebTM} achieves strong topic coherence, stable topics over time, and high-quality hierarchies, demonstrating that incremental symbolic concept formation combined with pretrained representations is an efficient approach to topic modeling.",
@@ -7539,7 +7693,296 @@
       "match_method": "none",
       "best_score": 0.074,
       "backfilled": true
+    },
+    {
+      "id": "2604.16519",
+      "title": "Positive-Only Drifting Policy Optimization",
+      "abstract": "In the field of online reinforcement learning (RL), traditional Gaussian policies and flow-based methods are often constrained by their unimodal expressiveness, complex gradient clipping, or stringent trust-region requirements. Moreover, they all rely on post-hoc penalization of negative samples to correct erroneous actions. This paper introduces Positive-Only Drifting Policy Optimization (PODPO), a likelihood-free and gradient-clipping-free generative approach for online RL. By leveraging the drifting model, PODPO performs policy updates via advantage-weighted local contrastive drifting. Relying solely on positive-advantage samples, it elegantly steers actions toward high-return regions while exploiting the inherent local smoothness of the generative model to enable proactive error prevention. In doing so, PODPO opens a promising new pathway for generative policy learning in online settings.",
+      "authors": [
+        "Qi Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2604.16519",
+      "published": "2026-04-15T17:01:10+00:00",
+      "updated": "2026-04-15T17:01:10+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.312,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15373",
+      "title": "InfoChess: A Game of Adversarial Inference and a Laboratory for Quantifiable Information Control",
+      "abstract": "We propose InfoChess, a symmetric adversarial game that elevates competitive information acquisition to the primary objective. There is no piece capture, removing material incentives that would otherwise confound the role of information. Instead, pieces are used to alter visibility. Players are scored on their probabilistic inference of the opponent's king location over the duration of the game. To explore the space of strategies for playing InfoChess, we introduce a hierarchy of heuristic agents defined by increasing levels of opponent modeling, and train a reinforcement learning agent that outperforms these baselines. Leveraging the discrete structure of the game, we analyze gameplay through natural information-theoretic characterizations that include belief entropy, oracle cross entropy, and predictive log score under the action-induced observation channel. These measures disentangle epistemic uncertainty, calibration mismatch, and uncertainty induced by adversarial movement. The design of InfoChess renders it a testbed for studying multi-agent inference under partial observability. We release code for the environment and agents, and a public interface to encourage further study.",
+      "authors": [
+        "Kieran A. Murphy"
+      ],
+      "url": "https://arxiv.org/abs/2604.15373",
+      "published": "2026-04-15T16:07:42+00:00",
+      "updated": "2026-04-15T16:07:42+00:00",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.288,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15371",
+      "title": "Applied Explainability for Large Language Models: A Comparative Study",
+      "abstract": "Large language models (LLMs) achieve strong performance across many natural language processing tasks, yet their decision processes remain difficult to interpret. This lack of transparency creates challenges for trust, debugging, and deployment in real-world systems.   This paper presents an applied comparative study of three explainability techniques: Integrated Gradients, Attention Rollout, and SHAP, on a fine-tuned DistilBERT model for SST-2 sentiment classification. Rather than proposing new methods, the focus is on evaluating the practical behavior of existing approaches under a consistent and reproducible setup.   The results show that gradient-based attribution provides more stable and intuitive explanations, while attention-based methods are computationally efficient but less aligned with prediction-relevant features. Model-agnostic approaches offer flexibility but introduce higher computational cost and variability.   This work highlights key trade-offs between explainability methods and emphasizes their role as diagnostic tools rather than definitive explanations. The findings provide practical insights for researchers and engineers working with transformer-based NLP systems.   This is a preprint and has not undergone peer review.",
+      "authors": [
+        "Venkata Abhinandan Kancharla"
+      ],
+      "url": "https://arxiv.org/abs/2604.15371",
+      "published": "2026-04-15T13:07:29+00:00",
+      "updated": "2026-04-15T13:07:29+00:00",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.249,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16513",
+      "title": "SynthPID: P&ID digitization from Topology-Preserving Synthetic Data",
+      "abstract": "Automating the digitization of Piping and Instrumentation Diagrams (P&IDs) into structured process graphs would unlock significant value in plant operations, yet progress is bottlenecked by a fundamental data problem: engineering drawings are proprietary, and the entire community shares a single public benchmark of just 12 annotated images. Prior attempts at synthetic augmentation have fallen short because template-based generators scatter symbols at random, producing graphs that bear little resemblance to real process plants and, accordingly, yield only approximately 33% edge detection accuracy under synth-only training. We argue the failure is structural rather than visual and address it by introducing SynthPID, a corpus of 665 synthetic P&IDs whose pipe topology is seeded directly from real drawings. Paired with a patch-based Relationformer adapted for high-resolution diagrams, a model trained on SynthPID alone achieves 63.8 +/- 3.1% edge mAP on PID2Graph OPEN100 without seeing a single real P&ID during training, closing within 8 pp of the real-data oracle. These gains hold up under a controlled comparison against the template-based regime, confirming that generation quality drives performance rather than model choice. A scaling study reveals that gains flatten beyond roughly 400 synthetic images, pointing to seed diversity as the binding constraint.",
+      "authors": [
+        "Suraj Prasad",
+        "Pinak Mahapatra"
+      ],
+      "url": "https://arxiv.org/abs/2604.16513",
+      "published": "2026-04-15T09:14:44+00:00",
+      "updated": "2026-04-15T09:14:44+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.225,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16514",
+      "title": "BARD: Bridging AutoRegressive and Diffusion Vision-Language Models Via Highly Efficient Progressive Block Merging and Stage-Wise Distillation",
+      "abstract": "Autoregressive vision-language models (VLMs) deliver strong multimodal capability, but their token-by-token decoding imposes a fundamental inference bottleneck. Diffusion VLMs offer a more parallel decoding paradigm, yet directly converting a pretrained autoregressive VLM into a large-block diffusion VLM (dVLM) often leads to substantial quality degradation. In this work, we present BARD, a simple and effective bridging framework that converts a pretrained autoregressive VLM into a same-architecture, decoding-efficient dVLM. Our approach combines progressive supervised block merging, which gradually enlarges the decoding block size, with stage-wise intra-dVLM distillation from a fixed small-block diffusion anchor to recover performance lost at larger blocks. We further incorporate a mixed noise scheduler to improve robustness and token revision during denoising, and memory-friendly training to enable efficient training on long multimodal sequences. A key empirical finding is that direct autoregressive-to-diffusion distillation is poorly aligned and can even hurt performance, whereas distillation within the diffusion regime is consistently effective. Experimental results show that, with $\\leq 4.4M$ data, BARD-VL transfers strong multimodal capability from Qwen3-VL to a large-block dVLM. Remarkably, BARD-VL establishes a new SOTA among comparable-scale open dVLMs on our evaluation suite at both 4B and 8B scales. At the same time, BARD-VL achieves up to \\textbf{3$\\times$} decoding throughput speedup compared to the source model.",
+      "authors": [
+        "Baoyou Chen",
+        "Hanchen Xia",
+        "Peng Tu",
+        "Haojun Shi",
+        "Shan Mu",
+        "Weihao Yuan",
+        "Siyu Zhu"
+      ],
+      "url": "https://arxiv.org/abs/2604.16514",
+      "published": "2026-04-15T09:17:38+00:00",
+      "updated": "2026-04-15T09:17:38+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.224,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15374",
+      "title": "Seeing the imagined: a latent functional alignment in visual imagery decoding from fMRI data",
+      "abstract": "Recent progress in visual brain decoding from fMRI has been enabled by large-scale datasets such as the Natural Scenes Dataset (NSD) and powerful diffusion-based generative models. While current pipelines are primarily optimized for perception, their performance under mental-imagery remains less well understood. In this work, we study how a state-of-the-art (SOTA) perception decoder (DynaDiff) can be adapted to reconstruct imagined content from the Imagery-NSD benchmark. We propose a latent functional alignment approach that maps imagery-evoked activity into the pretrained model's conditioning space, while keeping the remaining components frozen. To mitigate the limited amount of matched imagery-perception supervision, we further introduce a retrieval-based augmentation strategy that selects semantically related NSD perception trials. Across four subjects, latent functional alignment consistently improves high-level semantic reconstruction metrics relative to the frozen pretrained baseline and a voxel-space ridge alignment baseline, and enables above-chance decoding from multiple cortical regions. These results suggest that semantic structure learned from perception can be leveraged to stabilize and improve visual imagery decoding under out-of-distribution conditions.",
+      "authors": [
+        "Fabrizio Spera",
+        "Tommaso Boccato",
+        "Michal Olak",
+        "Sara Cammarota",
+        "Matteo Ciferri",
+        "Michelangelo Tronti",
+        "Nicola Toschi",
+        "Matteo Ferrante"
+      ],
+      "url": "https://arxiv.org/abs/2604.15374",
+      "published": "2026-04-15T16:31:57+00:00",
+      "updated": "2026-04-15T16:31:57+00:00",
+      "categories": [
+        "q-bio.NC",
+        "cs.AI",
+        "eess.IV"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.21,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15377",
+      "title": "M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention",
+      "abstract": "Accurate and timely rainfall nowcasting is crucial for disaster mitigation and water resource management. Despite recent advances in deep learning, precipitation prediction remains challenging due to limitations in effectively leveraging diverse multimedia data sources. We introduce M3R, a Meteorology-informed MultiModal attention-based architecture for direct Rainfall prediction that synergistically combines visual NEXRAD radar imagery with numerical Personal Weather Station (PWS) measurements, using a comprehensive pipeline for temporal alignment of heterogeneous meteorological data. With specialized multimodal attention mechanisms, M3R novelly leverages weather station time series as queries to selectively attend to spatial radar features, enabling focused extraction of precipitation signatures. Experimental results for three spatial areas of 100 km * 100 km centered at NEXRAD radar stations demonstrate that M3R outperforms existing approaches, achieving substantial improvements in accuracy, efficiency, and precipitation detection capabilities. Our work establishes new benchmarks for multimedia-based precipitation nowcasting and provides practical tools for operational weather prediction systems. The source code is available at https://github.com/Sanjeev97/M3Rain",
+      "authors": [
+        "Sanjeev Panta",
+        "Rhett M Morvant",
+        "Xu Yuan",
+        "Li Chen",
+        "Nian-Feng Tzeng"
+      ],
+      "url": "https://arxiv.org/abs/2604.15377",
+      "published": "2026-04-15T21:02:51+00:00",
+      "updated": "2026-04-15T21:02:51+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "cs.MM"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.197,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16511",
+      "title": "SQL Query Engine: A Self-Healing LLM Pipeline for Natural Language to PostgreSQL Translation",
+      "abstract": "We present SQL Query Engine, an open-source, self-hosted service that translates natural language questions into validated PostgreSQL queries through a two-stage LLM pipeline. The first stage performs automatic schema introspection and SQL generation; a multi-strategy response parser extracts SQL from any LLM output format (JSON, code blocks, or raw text) without requiring structured output APIs. The second stage executes the query against PostgreSQL and, upon failure or empty results, enters an iterative self-healing loop in which the LLM diagnoses the error using full SQLSTATE codes and PostgreSQL diagnostic messages. Two mechanisms prevent regressions: early-accept returns successful queries immediately without LLM re-evaluation, and best-result tracking preserves the best partial result across retries. Schema context is cached per session in Redis, progress events stream via Redis Pub/Sub and SSE, and an OpenAI-compatible /v1/chat/completions endpoint lets existing tools work without modification. All database connections are read-only at the driver level. We evaluate across five LLM backends on a synthetic benchmark (75 questions, three databases) where the self-healing loop yields up to +9.3pp accuracy gains with zero regressions on the best model (Llama 4 Scout 17B, 57.3%), and on BIRD (437 questions, 11 databases migrated from SQLite to PostgreSQL) where the full pipeline reaches 49.0% execution accuracy (GPT-OSS-120B, +4.6pp). Source code: https://github.com/codeadeel/sqlqueryengine.",
+      "authors": [
+        "Muhammad Adeel Ijaz"
+      ],
+      "url": "https://arxiv.org/abs/2604.16511",
+      "published": "2026-04-15T06:59:37+00:00",
+      "updated": "2026-04-15T06:59:37+00:00",
+      "categories": [
+        "cs.DB",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.193,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15375",
+      "title": "VeriCWEty: Embedding enabled Line-Level CWE Detection in Verilog",
+      "abstract": "Large Language Models (LLMs) have shown significant improvement in RTL code generation. Despite the advances, the generated code is often riddled with common vulnerabilities and weaknesses (CWEs) that can slip by untrained eyes. Attackers can often exploit these weaknesses to fulfill their nefarious motives. Existing RTL bug-detection techniques rely on rule-based checks, formal properties, or coarse-grained structural analysis, which either fail to capture semantic vulnerabilities or lack precise localization. In our work, we bridge this gap by proposing an embedding-based bug-detection framework that detects and classifies bugs at both module and line-level granularity. Our method achieves about 89% precision in identifying common CWEs such as CWE-1244 and CWE-1245, and 96% accuracy in detecting line-level bugs.",
+      "authors": [
+        "Prithwish Basu Roy",
+        "Zeng Wang",
+        "Anatolii Chuvashlov",
+        "Weihua Xiao",
+        "Johann Knechtel",
+        "Ozgur Sinanoglu",
+        "Ramesh Karri"
+      ],
+      "url": "https://arxiv.org/abs/2604.15375",
+      "published": "2026-04-15T19:25:57+00:00",
+      "updated": "2026-04-15T19:25:57+00:00",
+      "categories": [
+        "cs.AR",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.185,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15372",
+      "title": "The Synthetic Media Shift: Tracking the Rise, Virality, and Detectability of AI-Generated Multimodal Misinformation",
+      "abstract": "As generative AI advances, the distinction between authentic and synthetic media is increasingly blurred, challenging the integrity of online information. In this study, we present CONVEX, a large-scale dataset of multimodal misinformation involving miscaptioned, edited, and AI-generated visual content, comprising over 150K multimodal posts with associated notes and engagement metrics from X's Community Notes. We analyze how multimodal misinformation evolves in terms of virality, engagement, and consensus dynamics, with a focus on synthetic media. Our results show that while AI-generated content achieves disproportionate virality, its spread is driven primarily by passive engagement rather than active discourse. Despite slower initial reporting, AI-generated content reaches community consensus more quickly once flagged. Moreover, our evaluation of specialized detectors and vision-language models reveals a consistent decline in performance over time in distinguishing synthetic from authentic images as generative models evolve. These findings highlight the need for continuous monitoring and adaptive strategies in the rapidly evolving digital information environment.",
+      "authors": [
+        "Zacharias Chrysidis",
+        "Stefanos-Iordanis Papadopoulos",
+        "Symeon Papadopoulos"
+      ],
+      "url": "https://arxiv.org/abs/2604.15372",
+      "published": "2026-04-15T14:12:00+00:00",
+      "updated": "2026-04-15T14:12:00+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MM"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.177,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16516",
+      "title": "Operationalizing Fairness in Text-to-Image Models: A Survey of Bias, Fairness Audits and Mitigation Strategies",
+      "abstract": "Text-to-Image (T2I) generation models have been widely adopted across various industries, yet are criticized for frequently exhibiting societal stereotypes. While a growing body of research has emerged to evaluate and mitigate these biases, the field at present contends with conceptual ambiguity, for example terms like \"bias\" and \"fairness\" are not always clearly distinguished and often lack clear operational definitions. This paper provides a comprehensive systematic review of T2I fairness literature, organizing existing work into a taxonomy of bias types and fairness notions. We critically assess the gap between \"target fairness\" (normative ideals in T2I outputs) and \"threshold fairness\" (normative standards with actionable decision rules). Furthermore, we survey the landscape of mitigation strategies, ranging from prompt engineering to diffusion process manipulation. We conclude by proposing a new framework for operationalizing fairness that moves beyond descriptive metrics towards rigorous, target-based testing, offering an approach for more accountable generative AI development.",
+      "authors": [
+        "Megan Smith",
+        "Venkatesh Thirugnana Sambandham",
+        "Florian Richter",
+        "Laura Crompton",
+        "Matthias Uhl",
+        "Torsten Schön"
+      ],
+      "url": "https://arxiv.org/abs/2604.16516",
+      "published": "2026-04-15T11:11:39+00:00",
+      "updated": "2026-04-15T11:11:39+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.165,
+      "backfilled": true
+    },
+    {
+      "id": "2604.16515",
+      "title": "Penny Wise, Pixel Foolish: Bypassing Price Constraints in Multimodal Agents via Visual Adversarial Perturbations",
+      "abstract": "The rapid proliferation of Multimodal Large Language Models (MLLMs) has enabled mobile agents to execute high-stakes financial transactions, but their adversarial robustness remains underexplored. We identify Visual Dominance Hallucination (VDH), where imperceptible visual cues can override textual price evidence in screenshot-based, price-constrained settings and lead agents to irrational decisions. We propose PriceBlind, a stealthy white-box adversarial attack framework for controlled screenshot-based evaluation. PriceBlind exploits the modality gap in CLIP-based encoders via a Semantic-Decoupling Loss that aligns the image embedding with low-cost, value-associated anchors while preserving pixel-level fidelity. On E-ShopBench, PriceBlind achieves around 80% ASR in white-box evaluation; under a simplified single-turn coordinate-selection protocol, Ensemble-DI-FGSM transfers with roughly 35-41% ASR across GPT-4o, Gemini-1.5-Pro, and Claude-3.5-Sonnet. We also show that robust encoders and Verify-then-Act defenses reduce ASR substantially, though with some clean-accuracy trade-off.",
+      "authors": [
+        "Jiachen Qian",
+        "Zhaolu Kang"
+      ],
+      "url": "https://arxiv.org/abs/2604.16515",
+      "published": "2026-04-15T10:46:38+00:00",
+      "updated": "2026-04-15T10:46:38+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.157,
+      "backfilled": true
+    },
+    {
+      "id": "2604.15376",
+      "title": "Zoom Consistency: A Free Confidence Signal in Multi-Step Visual Grounding Pipelines",
+      "abstract": "Multi-step zoom-in pipelines are widely used for GUI grounding, yet the intermediate predictions they produce are typically discarded after coordinate remapping. We observe that these intermediate outputs contain a useful confidence signal for free: zoom consistency, the distance between a model's step-2 prediction and the crop center. Unlike log-probabilities or token-level uncertainty, zoom consistency is a geometric quantity in a shared coordinate space, making it directly comparable across architecturally different VLMs without calibration. We prove this quantity is a linear estimator of step-1 spatial error under idealized conditions (perfect step-2, target within crop) and show it correlates with prediction correctness across two VLMs (AUC = 0.60; Spearman rho = -0.14, p < 10^{-6} for KV-Ground-8B; rho = -0.11, p = 0.0003 for Qwen3.5-27B). The correlation is small but consistent across models, application categories, and operating systems. As a proof-of-concept, we use zoom consistency to route between a specialist and generalist model, capturing 16.5% of the oracle headroom between them (+0.8%, McNemar p = 0.19). Code is available at https://github.com/omxyz/zoom-consistency-routing.",
+      "authors": [
+        "Keon Kim",
+        "Krish Chelikavada"
+      ],
+      "url": "https://arxiv.org/abs/2604.15376",
+      "published": "2026-04-15T20:47:08+00:00",
+      "updated": "2026-04-15T20:47:08+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.142,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-17T03:53:06.265538+00:00"
+  "patched_at": "2026-04-21T03:52:52.564302+00:00"
 }
