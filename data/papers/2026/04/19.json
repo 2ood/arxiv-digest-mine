@@ -3,6 +3,133 @@
   "fetched_at": "2026-04-21T12:52:38.267370+09:00",
   "papers": [
     {
+      "id": "2604.18644",
+      "title": "FASE : A Fairness-Aware Spatiotemporal Event Graph Framework for Predictive Policing",
+      "abstract": "Predictive policing systems that allocate patrol resources based solely on predicted crime risk can unintentionally amplify racial disparities through feedback driven data bias. We present FASE, a Fairness Aware Spatiotemporal Event Graph framework, which integrates spatiotemporal crime prediction with fairness constrained patrol allocation and a closed loop deployment feedback simulator.   We model Baltimore as a graph of 25 ZIP Code Tabulation Areas and use 139,982 Part 1 crime incidents from 2017 to 2019 at hourly resolution, producing a sparse feature tensor. The prediction module combines a spatiotemporal graph neural network with a multivariate Hawkes process to capture spatial dependencies and self exciting temporal dynamics. Outputs are modeled using a Zero Inflated Negative Binomial distribution, suitable for overdispersed and zero heavy crime counts. The model achieves a validation loss of 0.4800 and a test loss of 0.4857.   Patrol allocation is formulated as a fairness constrained linear optimization problem that maximizes risk weighted coverage while enforcing a Demographic Impact Ratio constraint with deviation bounded by 0.05. Across six simulated deployment cycles, fairness remains within 0.9928 to 1.0262, and coverage ranges from 0.876 to 0.936. However, a persistent detection rate gap of approximately 3.5 percentage points remains between minority and non minority areas. This result shows that allocation level fairness constraints alone do not eliminate feedback induced bias in retraining data, highlighting the need for fairness interventions across the full pipeline.",
+      "authors": [
+        "Pronob Kumar Barman",
+        "Pronoy Kumar Barman",
+        "Plaban Kumar Barman",
+        "Rohan Mandar Salvi"
+      ],
+      "url": "https://arxiv.org/abs/2604.18644",
+      "published": "2026-04-19T21:22:45+00:00",
+      "updated": "2026-04-19T21:22:45+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.18636",
+      "title": "Virtual boundary integral neural network for three-dimensional exterior acoustic problems",
+      "abstract": "This paper presents a virtual boundary integral neural network (VBINN) for exterior acoustic problems in three dimensions. The method introduces a virtual boundary inside the scatterer or vibrating body and represents the associated source density with a neural network. Coupled with the acoustic fundamental solution, this representation satisfies the Sommerfeld radiation condition by construction and enables direct evaluation of the acoustic pressure and its normal derivative at arbitrary field points. Because the integration surface is separated from the physical boundary, the formulation avoids the singular and near singular kernel evaluations associated with coincident source and collocation points in conventional boundary integral learning methods. To reduce sensitivity to boundary placement, the geometric parameters of the virtual boundary are optimized jointly with the source density during training. Numerical examples for acoustic scattering, multiple body interaction, and underwater acoustic propagation show close agreement with analytical solutions and COMSOL results, and the Burton Miller extension further improves stability near characteristic frequencies. These results demonstrate the potential of VBINN for exterior acoustic analysis in three dimensions.",
+      "authors": [
+        "Jiahao Li",
+        "Qiang Xi",
+        "Ilia Marchevskiy",
+        "Zhuojia Fu"
+      ],
+      "url": "https://arxiv.org/abs/2604.18636",
+      "published": "2026-04-19T01:22:51+00:00",
+      "updated": "2026-04-19T01:22:51+00:00",
+      "categories": [
+        "cs.SD",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.18637",
+      "title": "NeuroAI and Beyond: Bridging Between Advances in Neuroscience and ArtificialIntelligence",
+      "abstract": "Neuroscience and Artificial Intelligence (AI) have made impressive progress in recent years but remain only loosely interconnected. Based on a workshop convened by the National Science Foundation in August 2025, we identify three fundamental capability gaps in current AI: the inability to interact with the physical world, inadequate learning that produces brittle systems, and unsustainable energy and data inefficiency. We describe the neuroscience principles that address each: co-design of body and controller, prediction through interaction, multi-scale learning with neuromodulatory control, hierarchical distributed architectures, and sparse event-driven computation. We present a research roadmap organized around these principles at near, mid, and long-term horizons. We argue that realizing this program requires a new generation of researchers trained across the boundary between neuroscience and engineering, and describe the institutional conditions: interdisciplinary training, hardware access, community standards, and ethics, needed to support them. We conclude that NeuroAI, neuroscience-informed artificial intelligence, has the potential to overcome limitations of current AI while deepening our understanding of biological neural computation.",
+      "authors": [
+        "Anthony Zador",
+        "Jean-Marc Fellous",
+        "Terrence Sejnowski",
+        "Gina Adam",
+        "James B Aimone",
+        "Akwasi Akwaboah",
+        "Yiannis Aloimonos",
+        "Carmen Amo Alonso",
+        "Chiara Bartolozzi",
+        "Michael J. Bennington",
+        "Michael Berry",
+        "Bing W. Brunton",
+        "Gert Cauwenberghs",
+        "Hillel J. Chiel",
+        "Tobi Delbruck",
+        "John Doyle",
+        "Jason Eshraghian",
+        "Ralph Etienne-Cummings",
+        "Cornelia Fermuller",
+        "Matthew Jacobsen",
+        "Ali A. Minai",
+        "Barbara Oakley",
+        "Alexander G. Ororbia",
+        "Joe Paton",
+        "Blake Richards",
+        "Yulia Sandamirskaya",
+        "Abhronil Sengupta",
+        "Shihab Shamma",
+        "Michael P. Stryker",
+        "Seong Jong Yoo",
+        "Steven W. Zucker"
+      ],
+      "url": "https://arxiv.org/abs/2604.18637",
+      "published": "2026-04-19T01:42:30+00:00",
+      "updated": "2026-04-19T01:42:30+00:00",
+      "categories": [
+        "q-bio.NC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.18645",
+      "title": "On Solving the Multiple Variable Gapped Longest Common Subsequence Problem",
+      "abstract": "This paper addresses the Variable Gapped Longest Common Subsequence (VGLCS) problem, a generalization of the classical LCS problem involving flexible gap constraints between consecutive solutions' characters. The problem arises in molecular sequence comparison, where structural distance constraints between residues must be respected, and in time-series analysis where events are required to occur within specified temporal delays. We propose a search framework based on the root-based state graph representation, in which the state space comprises a generally large number of rooted state subgraphs. To cope with the resulting combinatorial explosion, an iterative beam search strategy is employed, dynamically maintaining a global pool of promising candidate root nodes, enabling effective control of diversification across iterations. To exploit the search for high-quality solutions, several known heuristics from the LCS literature are utilized into the standalone beam search procedure. To the best of our knowledge, this is the first comprehensive computational study on the VGLCS problem comprising 320 synthetic instances with up to 10 input sequences and up to 500 characters. Experimental results show robustness of the designed approach over the baseline beam search in comparable runtimes.",
+      "authors": [
+        "Marko Djukanović",
+        "Nikola Balaban",
+        "Christian Blum",
+        "Aleksandar Kartelj",
+        "Sašo Džeroski",
+        "Žiga Zebec"
+      ],
+      "url": "https://arxiv.org/abs/2604.18645",
+      "published": "2026-04-19T21:44:53+00:00",
+      "updated": "2026-04-19T21:44:53+00:00",
+      "categories": [
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.17411",
       "title": "DuConTE: Dual-Granularity Text Encoder with Topology-Constrained Attention for Text-attributed Graphs",
       "abstract": "Text-attributed graphs integrate semantic information of node texts with topological structure, offering significant value in various applications such as document classification and information extraction. Existing approaches typically encode textual content using language models (LMs), followed by graph neural networks (GNNs) to process structural information. However, during the LM-based text encoding phase, most methods not only perform semantic interaction solely at the word-token granularity, but also neglect the structural dependencies among texts from different nodes. In this work, we propose DuConTE, a dual-granularity text encoder with topology-constrained attention. The model employs a cascaded architecture of two pretrained LMs, encoding semantics first at the word-token granularity and then at the node granularity. During the self-attention computation in each LM, we dynamically adjust the attention mask matrix based on node connectivity, guiding the model to learn semantic correlations informed by the graph structure. Furthermore, when composing node representations from word-token embeddings, we separately evaluate the importance of tokens under the center-node context and the neighborhood context, enabling the capture of more contextually relevant semantic information. Extensive experiments on multiple benchmark datasets demonstrate that DuConTE achieves state-of-the-art performance on the majority of them.",
@@ -4959,6 +5086,31 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.086
+    },
+    {
+      "id": "2604.18639",
+      "title": "Easy Samples Are All You Need: Self-Evolving LLMs via Data-Efficient Reinforcement Learning",
+      "abstract": "Previous LLMs-based RL studies typically follow either supervised learning with high annotation costs, or unsupervised paradigms using voting or entropy-based rewards. However, their performance remains far from satisfactory due to the substantial annotation cost and issues such as model collapse or reward hacking. To address these issues, we introduce a new perspective inspired by cognitive learning theory and propose a novel approach called EasyRL. The core of EasyRL is to simulate the human cognitive acquisition curve by integrating reliable knowledge transfer from easy labeled data with a progressive divide-and-conquer strategy that tackles increasingly difficult unlabeled data. Specifically, we initialize a warm-up model using supervised RL with few-shot labeled data. This is followed by a divide-and-conquer pseudo-labeling strategy on difficult unlabeled data, combining consistency-based selection for low-uncertainty cases and reflection-based resolution for medium-uncertainty cases. Finally, difficulty-progressive self-training with iterative pseudo-labeling and RL further strengthens the model's reasoning capability. EasyRL provides a unified self-evolving framework that facilitates data-efficient post-training of LLMs. Experimental results on mathematical and scientific benchmarks demonstrate that EasyRL, using only 10% of easy labeled data, consistently outperforms state-of-the-art baselines.",
+      "authors": [
+        "Zhiyin Yu",
+        "Bo Zhang",
+        "Qibin Hou",
+        "Zhonghai Wu",
+        "Xiao Luo",
+        "Lei Bai"
+      ],
+      "url": "https://arxiv.org/abs/2604.18639",
+      "published": "2026-04-19T08:02:31+00:00",
+      "updated": "2026-04-19T08:02:31+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.327,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-04-22T03:49:22.179554+00:00"
 }
