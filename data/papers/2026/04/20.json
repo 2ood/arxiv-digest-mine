@@ -3,6 +3,75 @@
   "fetched_at": "2026-04-21T12:52:33.003755+09:00",
   "papers": [
     {
+      "id": "2604.19832",
+      "title": "Option Pricing on Noisy Intermediate-Scale Quantum Computers: A Quantum Neural Network Approach",
+      "abstract": "In a global derivatives market with notional values in the hundreds of trillions of dollars, the accuracy and efficiency of pricing models are of fundamental importance, with direct implications for risk management, capital allocation, and regulatory compliance. In this work, we employ the Black-Scholes-Merton (BSM) framework not as an end in itself, but as a controlled benchmark environment in which to rigorously assess the capabilities of quantum machine learning methods.   We propose a fully quantum approach to option pricing based on Quantum Neural Networks (QNNs), and, to the best of our knowledge, present one of the first implementations of such a methodology on currently available quantum hardware. Specifically, we investigate whether QNNs, by exploiting the geometric structure of Hilbert space, can effectively approximate option pricing functions.   Our implementation utilizes a compact 2-qubit QNN architecture evaluated across multiple state-of-the-art quantum processors, including IBM Fez, IQM Garnet, IonQ Forte, and Rigetti Ankaa-3. This cross-platform study reveals distinct hardware-dependent performance characteristics while demonstrating that accurate pricing approximations can be achieved consistently across different devices despite the constraints of Noisy Intermediate-Scale Quantum (NISQ) hardware.   The results provide empirical evidence that QNN-based approaches constitute a viable framework for derivative pricing. While the analysis is conducted within the BSM setting, the broader significance lies in the potential extension of these methods to more realistic and computationally demanding models, including local volatility, stochastic volatility, and interest rate frameworks commonly used in practice.",
+      "authors": [
+        "Sebastian Zając",
+        "Rafał Pracht"
+      ],
+      "url": "https://arxiv.org/abs/2604.19832",
+      "published": "2026-04-20T23:03:57+00:00",
+      "updated": "2026-04-20T23:03:57+00:00",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.19826",
+      "title": "Co-Located Tests, Better AI Code: How Test Syntax Structure Affects Foundation Model Code Generation",
+      "abstract": "AI coding assistants increasingly generate code alongside tests. How developers structure test code, whether inline with the implementation or in separate blocks, has traditionally been a matter of testing philosophy. We investigate whether this choice affects AI code generation quality.   We conduct a large-scale empirical study (830+ generated files, 12 models, 3 providers) using SEGA, a three-dimensional evaluation framework measuring Determinism, Preservation, and Correctness. Comparing inline test syntax (Python doctests) against separated test syntax (Rust #[test] blocks) on a d-ary heap implementation, we find that: (1) inline tests yield near-perfect preservation (100%) and correctness (92-100%) across all models; (2) separated tests expose stark model-tier gaps (0-100% correctness) and independence between preservation and correctness; (3) model behavior evolves across generations, and notably one model breaks the test suppression pattern of its three predecessors; (4) mechanistic analysis on 7 open-source architectures (6 transformers and a gated-linear Recurrent Neural Network (RNN)) reveals inline test markers receive 2.8-4.4$\\times$ stronger attention in 5/7 models, with causal validation via knockout and steering experiments on the 4 code-specialized transformers and RWKV-6; the co-location mechanism extends to a non-transformer architecture, suggesting the design recommendation is robust to future architectural shifts. In the Foundation Model era, test syntax structure is a software design concern: co-locating tests with implementation code produces measurably better AI-generated code. This arxiv long version includes appendices that further qualify the effect as bounded by both model capability and programming language.",
+      "authors": [
+        "Éric Jacopin"
+      ],
+      "url": "https://arxiv.org/abs/2604.19826",
+      "published": "2026-04-20T14:47:46+00:00",
+      "updated": "2026-04-20T14:47:46+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Recurrent Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.19827",
+      "title": "More Is Different: Toward a Theory of Emergence in AI-Native Software Ecosystems",
+      "abstract": "Software engineering faces a fundamental challenge: multi-agent AI systems fail in ways that defy explanation by traditional theories. While individual agents perform correctly, their interactions degrade entire ecosystems, revealing a gap in our understanding of software evolution. This paper argues that AI-native software ecosystems must be studied as complex adaptive systems (CAS), where emergent properties like architectural entropy, cascade failures, and comprehension debt arise not from individual components, but from their interactions. We map Holland's six CAS properties onto observable ecosystem dynamics, distinguishing these systems from microservices or open-source networks. To measure causal emergence, we define micro-level state variables, coarse-graining functions, and a tractable measurement framework. Seven falsifiable propositions link CAS theory to software evolution, challenging or extending Lehman's laws where agent-level assumptions fail. If confirmed, these findings would demand a radical shift: ecosystem-level monitoring as the primary governance mechanism for AI-native systems. If refuted, existing theories may only need incremental updates. Either way, this work forces us to ask: Can software engineering's core assumptions survive the age of autonomous agents?",
+      "authors": [
+        "Daniel Russo"
+      ],
+      "url": "https://arxiv.org/abs/2604.19827",
+      "published": "2026-04-20T15:09:55+00:00",
+      "updated": "2026-04-20T15:09:55+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.403,
+      "backfilled": true
+    },
+    {
       "id": "2604.18862",
       "title": "Human-Machine Co-Boosted Bug Report Identification with Mutualistic Neural Active Learning",
       "abstract": "Bug reports, encompassing a wide range of bug types, are crucial for maintaining software quality. However, the increasing complexity and volume of bug reports pose a significant challenge in sole manual identification and assignment to the appropriate teams for resolution, as dealing with all the reports is time-consuming and resource-intensive. In this paper, we introduce a cross-project framework, dubbed Mutualistic Neural Active Learning (MNAL), designed for automated and more effective identification of bug reports from GitHub repositories boosted by human-machine collaboration. MNAL utilizes a neural language model that learns and generalizes reports across different projects, coupled with active learning to form neural active learning. A distinctive feature of MNAL is the purposely crafted mutualistic relation between the machine learners (neural language model) and human labelers (developers) when enriching the knowledge learned. That is, the most informative human-labeled reports and their corresponding pseudo-labeled ones are used to update the model while those reports that need to be labeled by developers are more readable and identifiable, thereby enhancing the human-machine teaming therein. We evaluate MNAL using a large scale dataset against the SOTA approaches, baselines, and different variants. The results indicate that MNAL achieves up to 95.8% and 196.0% effort reduction in terms of readability and identifiability during human labeling, respectively, while resulting in a better performance in bug report identification. Additionally, our MNAL is model-agnostic since it is capable of improving the model performance with various underlying neural language models. To further verify the efficacy of our approach, we conducted a qualitative case study involving 10 human participants, who rate MNAL as being more effective while saving more time and monetary resources.",
@@ -9866,7 +9935,83 @@
       "match_method": "none",
       "best_score": 0.078,
       "backfilled": true
+    },
+    {
+      "id": "2604.19821",
+      "title": "JTPRO: A Joint Tool-Prompt Reflective Optimization Framework for Language Agents",
+      "abstract": "Large language model (LLM) agents augmented with external tools often struggle as number of tools grow large and become domain-specific. In such settings, ambiguous tool descriptions and under-specified agent instructions frequently lead to tool mis-selection and incorrect slot/value instantiation. We hypothesize that this is due to two root causes: generic, one-size-fits-all prompts that ignore tool-specific nuances, and underspecified tool schemas that lack clear guidance on when and how to use each tool and how to format its parameters. We introduce Joint Tool-Prompt Reflective Optimization (JTPRO), a framework for improving tool-calling reliability in trace-supervised settings by iteratively using rollout-driven reflection to co-optimize global instructions and per-tool schema/argument descriptions for accurate tool selection and argument instantiation in large tool inventories. JTPRO is designed to preserve only tool-local cues needed for correct disambiguation and slot filling. We evaluate JTPRO across multi-tool benchmarks, which account for different number of tools using three metrics: Tool Selection Accuracy (TSA), Slot Filling Accuracy(SFA), and Overall Success Rate(OSR) (correct tool + correct slots + correct values). JTPRO consistently outperforms strong baselines, including CoT-style agents, and reflective prompt optimizers such as GEPA by 5%-20% (relative) on OSR. Ablations show that joint optimization of instructions and tool schemas is more effective and robust than optimizing either component in isolation.",
+      "authors": [
+        "Sandip Ghoshal",
+        "Anshul Mittal",
+        "Jyotika Singh",
+        "Miguel Ballesteros",
+        "Weiyi Sun",
+        "Fang Tu",
+        "Shailender Singh",
+        "Yassine Benajiba",
+        "Fahad Shah",
+        "Sujeeth Bharadwaj",
+        "Sujith Ravi",
+        "Dan Roth"
+      ],
+      "url": "https://arxiv.org/abs/2604.19821",
+      "published": "2026-04-20T05:37:43+00:00",
+      "updated": "2026-04-20T05:37:43+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.269,
+      "backfilled": true
+    },
+    {
+      "id": "2604.19825",
+      "title": "SolidCoder: Bridging the Mental-Reality Gap in LLM Code Generation through Concrete Execution",
+      "abstract": "State-of-the-art code generation frameworks rely on mental simulation, where LLMs internally trace execution to verify correctness. We expose a fundamental limitation: the Mental-Reality Gap -- where models hallucinate execution traces and confidently validate buggy code. This gap manifests along two orthogonal dimensions: the Specification Gap (overlooking edge cases during planning) and the Verification Gap (hallucinating correct behavior for flawed code). We propose SolidCoder with a simple principle: don't imagine -- execute. The S.O.L.I.D. architecture addresses both dimensions by forcing edge-case awareness before algorithm design and replacing imagined traces with sandboxed execution using property-based oracles. With GPT-4o, SolidCoder achieves state-of-the-art pass@1 performance: 95.7% on HumanEval (+0.6%p), 77.0% on CodeContests (+4.3%p), and 26.7% on APPS (+3.4%p). Ablation reveals that edge-case awareness provides the largest individual gain, while execution grounding catches categorically different errors that specification improvements cannot address. These gains generalize to RL post-trained models, validating that bridging both gap dimensions is essential for robust code synthesis. We release our code and framework to facilitate future research.",
+      "authors": [
+        "Woojin Lee",
+        "Jin-Xia Huang"
+      ],
+      "url": "https://arxiv.org/abs/2604.19825",
+      "published": "2026-04-20T13:00:46+00:00",
+      "updated": "2026-04-20T13:00:46+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.252,
+      "backfilled": true
+    },
+    {
+      "id": "2604.19823",
+      "title": "Rabies diagnosis in low-data settings: A comparative study on the impact of data augmentation and transfer learning",
+      "abstract": "Rabies remains a major public health concern across many African and Asian countries, where accurate diagnosis is critical for effective epidemiological surveillance. The gold standard diagnostic methods rely heavily on fluorescence microscopy, necessitating skilled laboratory personnel for the accurate interpretation of results. Such expertise is often scarce, particularly in regions with low annual sample volumes. This paper presents an automated, AI-driven diagnostic system designed to address these challenges. We developed a robust pipeline utilizing fluorescent image analysis through transfer learning with four deep learning architectures: EfficientNetB0, EfficientNetB2, VGG16, and Vision Transformer (ViTB16). Three distinct data augmentation strategies were evaluated to enhance model generalization on a dataset of 155 microscopic images (123 positive and 32 negative). Our results demonstrate that TrivialAugmentWide was the most effective augmentation technique, as it preserved critical fluorescent patterns while improving model robustness. The EfficientNetB0 model, utilizing Geometric & Color augmentation and selected through stratified 3fold cross-validation, achieved optimal classification performance on cropped images. Despite constraints posed by class imbalance and a limited dataset size, this work confirms the viability of deep learning for automating rabies diagnosis. The proposed method enables fast and reliable detection with significant potential for further optimization. An online tool was deployed to facilitate practical access, establishing a framework for future medical imaging applications. This research underscores the potential of optimized deep learning models to transform rabies diagnostics and improve public health outcomes.",
+      "authors": [
+        "Khalil Akremi",
+        "Mariem Handous",
+        "Zied Bouslama",
+        "Farah Bassalah",
+        "Maryem Jebali",
+        "Mariem Hanachi",
+        "Ines Abdeljaoued-Tej"
+      ],
+      "url": "https://arxiv.org/abs/2604.19823",
+      "published": "2026-04-20T12:03:56+00:00",
+      "updated": "2026-04-20T12:03:56+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.222,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-22T03:49:21.090442+00:00"
+  "patched_at": "2026-04-23T03:56:09.851606+00:00"
 }
