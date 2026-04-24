@@ -3,6 +3,79 @@
   "fetched_at": "2026-04-22T12:49:17.911977+09:00",
   "papers": [
     {
+      "id": "2604.20909",
+      "title": "Do Masked Autoencoders Improve Downhole Prediction? An Empirical Study on Real Well Drilling Data",
+      "abstract": "Downhole drilling telemetry presents a fundamental labeling asymmetry: surface sensor data are generated continuously at 1~Hz, while labeled downhole measurements are costly, intermittent, and scarce. Current machine learning approaches for downhole metric prediction universally adopt fully supervised training from scratch, which is poorly suited to this data regime. We present the first empirical evaluation of masked autoencoder (MAE) pretraining for downhole drilling metric prediction. Using two publicly available Utah FORGE geothermal wells comprising approximately 3.5 million timesteps of multivariate drilling telemetry, we conduct a systematic full-factorial design space search across 72 MAE configurations and compare them against supervised LSTM and GRU baselines on the task of predicting Total Mud Volume. Results show that the best MAE configuration reduces test mean absolute error by 19.8\\% relative to the supervised GRU baseline, while trailing the supervised LSTM baseline by 6.4\\%. Analysis of design dimensions reveals that latent space width is the dominant architectural choice (Pearson $r = -0.59$ with test MAE), while masking ratio has negligible effect, an unexpected finding attributed to high temporal redundancy in 1~Hz drilling data. These results establish MAE pretraining as a viable paradigm for drilling analytics and identify the conditions under which it is most beneficial.",
+      "authors": [
+        "Aleksander Berezowski",
+        "Hassan Hassanzadeh",
+        "Gouri Ginde"
+      ],
+      "url": "https://arxiv.org/abs/2604.20909",
+      "published": "2026-04-21T22:46:42+00:00",
+      "updated": "2026-04-21T22:46:42+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.20906",
+      "title": "Biomedical systems biology workflow orchestration and execution with PoSyMed",
+      "abstract": "The rapid growth of scientific software has created practical barriers for bioinformatics research. Although powerful statistical, artificial intelligence (AI)-based methods are now widely available, their effective use is often hindered by fragmented distribution, inconsistent documentation, complex dependencies, and difficult-to-reproduce execution environments. As a result, reusing published tools and workflow adaptation to own date remains technically demanding and time-intensive, even for experienced users. Here, we present PoSyMed, an open and modular platform for the controlled integration, composition, and execution of bioinformatics tools and workflows. PoSyMed combines a backend-centered platform architecture with formal tool descriptions, controlled container-based build and execution processes, persistent workflow state, and a dialogue-based user interface. Large language models (LLM) are integrated not as autonomous decision-makers, but as human-computer interface with bounded semantic assistants that help identify tools, propose workflow steps, and support parameterization within a typed, validated, and human-supervised execution environment. PoSyMed is designed to improve reproducibility, traceability, and transparency in practical biomedical analysis within one platform. We describe the system architecture and evaluate its behavior across representative biological software scenarios with respect to workflow support, interaction design, and platform extensibility. PoSyMed is publicly available at https://apps.cosy.bio/posymed.",
+      "authors": [
+        "Simon Süwer",
+        "Zoe Chervontseva",
+        "Kester Bagemihl",
+        "Jan Baumbach",
+        "Olga Tsoy",
+        "Andreas Maier"
+      ],
+      "url": "https://arxiv.org/abs/2604.20906",
+      "published": "2026-04-21T20:20:58+00:00",
+      "updated": "2026-04-21T20:20:58+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.20895",
+      "title": "Towards a Systematic Risk Assessment of Deep Neural Network Limitations in Autonomous Driving Perception",
+      "abstract": "Safety and security are essential for the admission and acceptance of automated and autonomous vehicles. Deep neural networks (DNNs) are widely used for perception and further components of the autonomous driving (AD) stack. However, they possess several limitations, including lack of generalization, efficiency, explainability, plausibility, and robustness. These insufficiencies can pose significant risks to autonomous driving systems. However, hazards, threats, and risks associated with DNN limitations in this domain have not been systematically studied so far. In this work, we propose a joint workflow for risk assessment combining the hazard analysis and risk assessment (HARA) following ISO 26262 and threat analysis and risk assessment (TARA) following the ISO/SAE 21434 to identify and analyze risks arising from inherent DNN limitations in AD perception.",
+      "authors": [
+        "Svetlana Pavlitska",
+        "Christopher Gerking",
+        "J. Marius Zöllner"
+      ],
+      "url": "https://arxiv.org/abs/2604.20895",
+      "published": "2026-04-21T09:35:28+00:00",
+      "updated": "2026-04-21T09:35:28+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.20027",
       "title": "Cognitive Alignment At No Cost: Inducing Human Attention Biases For Interpretable Vision Transformers",
       "abstract": "For state-of-the-art image understanding, Vision Transformers (ViTs) have become the standard architecture but their processing diverges substantially from human attentional characteristics. We investigate whether this cognitive gap can be shrunk by fine-tuning the self-attention weights of Google's ViT-B/16 on human saliency fixation maps. To isolate the effects of semantically relevant signals from generic human supervision, the tuned model is compared against a shuffled control. Fine-tuning significantly improved alignment across five saliency metrics and induced three hallmark human-like biases: tuning reversed the baseline's anti-human large-object bias toward small-objects, amplified the animacy preference and diminished extreme attention entropy. Bayesian parity analysis provides decisive to very-strong evidence that this cognitive alignment comes at no cost to the model's original classification performance on in- (ImageNet), corrupted (ImageNet-C) and out-of-distribution (ObjectNet) benchmarks. An equivalent procedure applied to a ResNet-50 Convolutional Neural Network (CNN) instead degraded both alignment and accuracy, suggesting that the ViT's modular self-attention mechanism is uniquely suited for dissociating spatial priority from representational logic. These findings demonstrate that biologically grounded priors can be instilled as a free emergent property of human-aligned attention, to improve transformer interpretability.",
@@ -8004,7 +8077,120 @@
       "match_method": "none",
       "best_score": 0.098,
       "backfilled": true
+    },
+    {
+      "id": "2604.20907",
+      "title": "Achieving the Kesten-Stigum bound in the non-uniform hypergraph stochastic block model",
+      "abstract": "We study the community detection problem in the non-uniform hypergraph stochastic block model (HSBM), where hyperedges of varying sizes coexist. This setting captures higher-order and multi-view interactions and raises a fundamental question: can multiple uniform hypergraph layers below the detection threshold be combined to enable weak recovery? We answer this question by establishing a Kesten--Stigum-type bound for weak recovery in a general class of non-uniform HSBMs with $r$ blocks, generated according to multiple symmetric probability tensors. In the case $r=2$, we show that weak recovery is possible whenever the sum of the signal-to-noise ratios across all uniform hypergraph layers exceeds one, thereby confirming the positive part of a conjecture in (Chodrow et al., 2023). Moreover, we provide a polynomial-time spectral algorithm that achieves this threshold via an optimally weighted non-backtracking operator. For the unweighted non-backtracking matrix, our spectral method attains a different algorithmic threshold, also conjectured in (Chodrow et al., 2023).   Our approach develops a spectral theory for weighted non-backtracking operators on non-uniform hypergraphs, including a precise characterization of outlier eigenvalues and eigenvector overlaps. We introduce a novel Ihara--Bass formula tailored to weighted non-uniform hypergraphs, which yields an efficient low-dimensional representation and leads to a provable spectral reconstruction algorithm. Taken together, these results provide a principled and computationally efficient approach to clustering in non-uniform hypergraphs, and highlight the role of optimal weighting in aggregating heterogeneous higher-order interactions.",
+      "authors": [
+        "Manuel Fernandez",
+        "Ludovic Stephan",
+        "Yizhe Zhu"
+      ],
+      "url": "https://arxiv.org/abs/2604.20907",
+      "published": "2026-04-21T20:43:10+00:00",
+      "updated": "2026-04-21T20:43:10+00:00",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.CO",
+        "math.PR",
+        "math.ST"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.324,
+      "backfilled": true
+    },
+    {
+      "id": "2604.20897",
+      "title": "Watts-per-Intelligence Part II: Algorithmic Catalysis",
+      "abstract": "We develop a thermodynamic theory of algorithmic catalysis within the watts-per-intelligence framework, identifying reusable computational structures that reduce irreversible operations for a task class while satisfying bounded restoration and structural selectivity constraints. We prove that any class-specific speed-up is upper-bounded by the algorithmic mutual information between the substrate and the class descriptor, and that installing this information incurs a minimum thermodynamic cost via Landauer erasure. Combining these results yields a coupling theorem that lower-bounds the deployment horizon required for a catalyst to be energetically favourable. The framework is illustrated on an affine SAT class and situates contemporary learned systems within a unified information-thermodynamic constraint on intelligent computation.",
+      "authors": [
+        "Elija Perrier"
+      ],
+      "url": "https://arxiv.org/abs/2604.20897",
+      "published": "2026-04-21T13:36:33+00:00",
+      "updated": "2026-04-21T13:36:33+00:00",
+      "categories": [
+        "cs.IT",
+        "cs.AI",
+        "physics.comp-ph"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.277,
+      "backfilled": true
+    },
+    {
+      "id": "2604.20899",
+      "title": "Predicting Scale-Up of Metal-Organic Framework Syntheses with Large Language Models",
+      "abstract": "Scalable synthesis remains the gate between MOF discovery and industrial deployment, as scale-up know-how is fragmented across disparate reports. We introduce ESU-MOF, a literature-mined dataset and a positive-unlabeled learning strategy that fine-tunes large language models to predict scalability potential with 91.4% accuracy, enabling rapid data-driven triage for industrial MOF discovery.",
+      "authors": [
+        "Peter Walther",
+        "Hongrui Sheng",
+        "Xinxin Liu",
+        "Bin Feng",
+        "Reid Coyle",
+        "Xinhua Yan",
+        "Kyle Smith",
+        "Harrison Kayal",
+        "Shyam Chand Pal",
+        "Zhiling Zheng"
+      ],
+      "url": "https://arxiv.org/abs/2604.20899",
+      "published": "2026-04-21T14:59:01+00:00",
+      "updated": "2026-04-21T14:59:01+00:00",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.27,
+      "backfilled": true
+    },
+    {
+      "id": "2604.20902",
+      "title": "Frequency-Forcing: From Scaling-as-Time to Soft Frequency Guidance",
+      "abstract": "While standard flow-matching models transport noise to data uniformly, incorporating an explicit generation order - specifically, establishing coarse, low-frequency structure before fine detail - has proven highly effective for synthesizing natural images. Two recent works offer distinct paradigms for this. K-Flow imposes a hard frequency constraint by reinterpreting a frequency scaling variable as flow time, running the trajectory inside a transformed amplitude space. Latent Forcing provides a soft ordering mechanism by coupling the pixel flow with an auxiliary semantic latent flow via asynchronous time schedules, leaving the pixel interpolation path itself untouched. Viewed from the angle of improving pixel generation, we observe that forcing - guiding generation with an earlier-maturing auxiliary stream - offers a highly compatible route to scale-ordered generation without rewriting the core flow coordinate. Building on this, we propose Frequency-Forcing, which realizes K-Flow's frequency ordering through Latent Forcing's soft mechanism: a standard pixel flow is guided by an auxiliary low-frequency stream that matures earlier in time. Unlike Latent Forcing, whose scratchpad relies on a heavy pretrained encoder (e.g., DINO), our frequency scratchpad is derived from the data itself via a lightweight learnable wavelet packet transform. We term this a self-forcing signal, which avoids external dependencies while learning a basis better adapted to data statistics than the fixed bases used in hard frequency flows. On ImageNet-256, Frequency-Forcing consistently improves FID over strong pixel- and latent-space baselines, and naturally composes with a semantic stream to yield further gains. This illustrates that forcing-based scale ordering is a versatile, path-preserving alternative to hard frequency flows.",
+      "authors": [
+        "Weitao Du"
+      ],
+      "url": "https://arxiv.org/abs/2604.20902",
+      "published": "2026-04-21T17:00:16+00:00",
+      "updated": "2026-04-21T17:00:16+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.214,
+      "backfilled": true
+    },
+    {
+      "id": "2604.20904",
+      "title": "Reinforcing privacy reasoning in LLMs via normative simulacra from fiction",
+      "abstract": "Information handling practices of LLM agents are broadly misaligned with the contextual privacy expectations of their users. Contextual Integrity (CI) provides a principled framework, defining privacy as the appropriate flow of information within context-relative norms. However, existing approaches either double inference cost via supervisor-assistant architectures, or fine-tune on narrow task-specific data. We propose extracting normative simulacra (structured representations of norms and information flows) from fiction novels and using them to fine-tune LLMs via supervised learning followed by GRPO reinforcement learning. Our composite reward function combines programmatic signals, including task clarity (subsuming schema validity, construct discrimination, and extraction confidence), structural completeness, internal consistency, and context identification, with an LLM judge that evaluates whether the model's privacy reasoning is grounded in the held-out normative universe of the source text. To mitigate overfitting, we introduce per-completion contrastive scoring: each completion is evaluated against both the correct normative universe and a randomly selected wrong one, teaching the model to condition on context rather than memorize source-specific norms. We evaluate on five CI-aligned benchmarks spanning distinct societal contexts and ablate the contributions of RL and normative grounding. Across seven models, SFT introduces a conservative prior toward restricting information flow, improving recognition of privacy-relevant situations but not the correctness of privacy judgments. GRPO with normative grounding achieves the highest score on a law compliance benchmark and strongest correlation with crowdsourced human privacy expectations, demonstrating that fiction-derived normative simulacra can teach contextual privacy reasoning that transfers to real-world domains.",
+      "authors": [
+        "Matt Franchi",
+        "Madiha Zahrah Choksi",
+        "Harold Triedman",
+        "Helen Nissenbaum"
+      ],
+      "url": "https://arxiv.org/abs/2604.20904",
+      "published": "2026-04-21T19:16:22+00:00",
+      "updated": "2026-04-21T19:16:22+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.212,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-23T03:56:08.667784+00:00"
+  "patched_at": "2026-04-24T03:59:18.436416+00:00"
 }
