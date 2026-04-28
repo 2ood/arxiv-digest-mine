@@ -3,6 +3,58 @@
   "fetched_at": "2026-04-23T12:56:06.302897+09:00",
   "papers": [
     {
+      "id": "2604.22853",
+      "title": "FastAT Benchmark: A Comprehensive Framework for Fair Evaluation of Fast Adversarial Training Methods",
+      "abstract": "Fast Adversarial Training (FastAT) seeks to achieve adversarial robustness at a fraction of the computational cost incurred by standard multi-step methods such as PGD-AT. Although numerous FastAT techniques have been proposed in recent years, fair comparison among them remains elusive. Existing benchmarks and public leaderboards typically permit diverse model architectures, varying training configurations, and external data sources, making it unclear whether reported improvements reflect genuine algorithmic advances or merely more favorable experimental conditions. To address this problem, we introduce the FastAT Benchmark, a controlled evaluation framework built on three core design principles: unified architecture requirements, standardized training settings, and strict prohibition of external or synthetic data. The benchmark implements over twenty representative FastAT methods within a single codebase, enabling direct and reproducible comparison. Each method is assessed through a dual-metric evaluation framework that measures both adversarial robustness (accuracy under PGD, AutoAttack, and CR Attack) and computational cost (GPU training time and peak memory footprint). Comprehensive experiments on CIFAR-10, CIFAR-100, and Tiny-ImageNet provide reliable baseline measurements and reveal that well-designed single-step methods can match or surpass PGD-AT robustness at substantially lower cost, while no single method dominates across all evaluation dimensions. The complete benchmark, including source code, configuration files, and experimental results, is publicly available to support transparent and fair evaluation of future FastAT research.",
+      "authors": [
+        "Chao Pan",
+        "Xin Yao"
+      ],
+      "url": "https://arxiv.org/abs/2604.22853",
+      "published": "2026-04-22T09:11:34+00:00",
+      "updated": "2026-04-22T09:11:34+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Neural Network Training Methods"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.22851",
+      "title": "EgoDyn-Bench: Evaluating Ego-Motion Understanding in Vision-Centric Foundation Models for Autonomous Driving",
+      "abstract": "While Vision-Language Models (VLMs) have advanced highlevel reasoning in autonomous driving, their ability to ground this reasoning in the underlying physics of ego-motion remains poorly understood. We introduce EgoDyn-Bench, a diagnostic benchmark for evaluating the semantic ego-motion understanding of vision-centric foundation models. By mapping continuous vehicle kinematics to discrete motion concepts via a deterministic oracle, we decouple a model's internal physical logic from its visual perception. Our large-scale empirical audit spanning 20 + models, including closed-source MLLMs, open-source VLMs across multiple scales, and specialized VLAs, identifies a significant Perception Bottleneck: while models exhibit logical physical concepts, they consistently fail to accurately align them with visual observations, frequently underperforming classical non-learned geometric baselines. This failure persists across model scales and domain-specific training, indicating a structural deficit in how current architectures couple visual perception with physical reasoning. We demonstrate that providing explicit trajectory encodings substantially restores physical consistency across all evaluated models, revealing a functional disentanglement between vision and language: egomotion logic is derived almost exclusively from the language modality, while visual observations contribute negligible additional signal. This structural finding provides a standardized diagnostic framework and a practical pathway toward physically aligned embodied AI. Keywords: Ego-motion - Physical Reasoning - Foundation Models",
+      "authors": [
+        "Finn Rasmus Schäfer",
+        "Yuan Gao",
+        "Dingrui Wang",
+        "Thomas Stauner",
+        "Stephan Günnemann",
+        "Mattia Piccinini",
+        "Sebastian Schmidt",
+        "Johannes Betz"
+      ],
+      "url": "https://arxiv.org/abs/2604.22851",
+      "published": "2026-04-22T07:49:02+00:00",
+      "updated": "2026-04-22T07:49:02+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.354,
+      "backfilled": true
+    },
+    {
       "id": "2604.21101",
       "title": "A Hybridizable Neural Time Integrator for Stable Autoregressive Forecasting",
       "abstract": "For autoregressive modeling of chaotic dynamical systems over long time horizons, the stability of both training and inference is a major challenge in building scientific foundation models. We present a hybrid technique in which an autoregressive transformer is embedded within a novel shooting-based mixed finite element scheme, exposing topological structure that enables provable stability. For forward problems, we prove preservation of discrete energies, while for training we prove uniform bounds on gradients, provably avoiding the exploding gradient problem. Combined with a vision transformer, this yields latent tokens admitting structure-preserving dynamics. We outperform modern foundation models with a $65\\times$ reduction in model parameters and long-horizon forecasting of chaotic systems. A \"mini-foundation\" model of a fusion component shows that 12 simulations suffice to train a real-time surrogate, achieving a $9{,}000\\times$ speedup over particle-in-cell simulation.",
@@ -8154,7 +8206,74 @@
       "match_method": "none",
       "best_score": 0.071,
       "backfilled": true
+    },
+    {
+      "id": "2604.22852",
+      "title": "SwarmDrive: Semantic V2V Coordination for Latency-Constrained Cooperative Autonomous Driving",
+      "abstract": "Cloud-hosted LLM inference for autonomous driving adds round-trip delay and depends on stable connectivity, while purely local edge models struggle under occlusion. We present SwarmDrive, a semantic Vehicle-to-Vehicle (V2V) coordination framework in which nearby vehicles run local Small Language Models (SLMs), share compact intent distributions only when uncertainty is high, and fuse them through event-triggered consensus. We evaluate SwarmDrive in a 5-seed executable study built around one occluded intersection case, combining matched operating-point comparisons with robustness sweeps. In that setting, SwarmDrive under its 6G communication setting (\"Swarm 6G\") raises success from 68.9% to 94.1% over a single local SLM while reducing latency from a 510 ms cloud reference to 151.4 ms. However, an increased number of participating vehicles leads to higher communication overhead and packet loss. SwarmDrive also evaluates the impact of swarm-size, packet-loss, and entropy-threshold sweeps and shows that the cooperative gain holds across ablations and is best balanced near an active swarm size of 4 vehicles and an entropy trigger threshold of 0.65 in the current prototype. These results show that semantic edge cooperation can work under tight latency constraints in the targeted intersection case, but they are not a deployment-grade validation of a real 6G stack.",
+      "authors": [
+        "Anjie Qiu",
+        "Donglin Wang",
+        "Zexin Fang",
+        "Sanket Partani",
+        "Hans D. Schotten"
+      ],
+      "url": "https://arxiv.org/abs/2604.22852",
+      "published": "2026-04-22T08:02:18+00:00",
+      "updated": "2026-04-22T08:02:18+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.336,
+      "backfilled": true
+    },
+    {
+      "id": "2604.22850",
+      "title": "Accelerating New Product Introduction for Visual Quality Inspection via Few-Shot Diffusion-Based Defect Synthesis",
+      "abstract": "Industrial visual inspection systems often suffer from a severe scarcity of labeled defect data, particularly during the early stages of New Product Introduction (NPI). This limitation hinders the deployment of robust supervised detectors precisely when automated quality control is most needed. We present an end-to-end generative framework for high-fidelity, few-shot defect synthesis that enables both in-domain augmentation and cross-domain transfer. Our approach disentangles defect morphology from background appearance by combining masked textual inversion for defect representation learning, noise-blended conditioned generation for surface-aware synthesis, and gradient-aware post-processing for seamless visual integration. We evaluate the framework in two practically relevant settings: few-shot data augmentation, where synthetic samples enrich a small set of real defects, and zero-shot adaptation, where defects learned from a source domain are transferred to a novel target surface without any real target-domain defect examples. Using RF-DETR as the downstream detector, we show that the proposed pipeline substantially narrows the domain gap on a private industrial dataset. In the few-shot setting, synthetic augmentation improves mAP from 78.8% to 83.3%. In the zero-shot setting, synthetic domain adaptation improves mAP from 65.0% to 85.1%. These results demonstrate that high-fidelity defect synthesis can meaningfully accelerate NPI by enabling effective inspection models before sufficient real defect data has been collected.",
+      "authors": [
+        "Serkan Hamdi Güğül",
+        "Kemal Levi",
+        "Burak Acar"
+      ],
+      "url": "https://arxiv.org/abs/2604.22850",
+      "published": "2026-04-22T07:25:16+00:00",
+      "updated": "2026-04-22T07:25:16+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.259,
+      "backfilled": true
+    },
+    {
+      "id": "2604.22854",
+      "title": "MAE-Based Self-Supervised Pretraining for Data-Efficient Medical Image Segmentation Using nnFormer",
+      "abstract": "Transformer architectures, including nnFormer,have demonstrated promising results in volumetric medical image segmentation by being able to capture long-range spatial interactions. Although they have high performance, these models need large quantities of labeled training data and are also likely to overfit and become training unstable. This is a serious practical problem because it is not only time-consuming but also expensive to obtain medical images that are annotated by experts. Moreover, fully supervised traditional training pipelines do not take advantage of the available large amounts of unlabeled medical imaging data that can be easily obtained in the clinics. We have solved these drawbacks by advancing the efficiency of the nnFormer with a self-supervised pretraining framework, which is based on the Masked Autoencoders (MAE). In this method, the model is pretrained on unlabeled volumetric medical images to reconstruct randomly masked parts of the input. This allows the encoder to learn meaningful anatomical and structural representations . The encoder is then further fine-tuned on a labeled dataset on the downstream segmentation task. Conducted Experiment shows that the offered method leads to a higher segmentation performance on the count of Dice score, a quicker convergence rate on the course of the fine-tuning procedure, and a superior generalization on the basis of limited labeled data . These findings validate that self-supervised learning combined with transformer-based segmentation models is an appropriate approach to the problem of data shortage in medical image analysis.",
+      "authors": [
+        "R. M. Krishna Sureddi",
+        "T. Satyanarayana Murthy",
+        "Nomula Varsha Reddy",
+        "Adi Kanishka",
+        "Nalla Manvika Reddy"
+      ],
+      "url": "https://arxiv.org/abs/2604.22854",
+      "published": "2026-04-22T11:29:08+00:00",
+      "updated": "2026-04-22T11:29:08+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.216,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-24T03:59:17.634225+00:00"
+  "patched_at": "2026-04-28T04:15:08.073779+00:00"
 }
