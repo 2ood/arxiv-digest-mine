@@ -3,6 +3,36 @@
   "fetched_at": "2026-04-28T13:14:56.489718+09:00",
   "papers": [
     {
+      "id": "2604.24796",
+      "title": "A multi-stage soft computing framework for complex disease modelling and decision support: A liver cirrhosis case study",
+      "abstract": "Liver cirrhosis is a major global health problem causing millions of deaths annually, and timely detection with aggressive treatment can significantly improve patients' quality of life. Modelling complex diseases from biomedical data is computationally challenging due to high dimensionality, strong feature correlations, noise, and limited labelled samples. Conventional Machine Learning (ML) pipelines often struggle with robustness, interpretability, and generalisation under such conditions. In this study, we propose an ML-driven multi-stage decision framework for complex disease modelling and therapeutic exploration. The framework integrates single-cell transcriptomic profiling, high-dimensional network-based feature stabilisation, multi-model learning, deep representation construction, and post-hoc decision support. Specifically, single-cell sequencing data were analysed to identify key cellular subpopulations, followed by high-dimensional weighted gene co-expression network analysis (hdWGCNA) to stabilise gene modules under sparsity and noise. To enhance non-linear feature interaction modelling, tabular molecular features were restructured into two-dimensional disease maps and analysed using a CNN. Finally, molecular docking was incorporated as a decision-support module to evaluate candidate therapeutic compounds. Using liver cirrhosis as a representative case, the framework identified a disease-associated endothelial subpopulation and extracted seven robust signature genes (HSPB1, GADD45A, CLDN5, ATP1B3, C1QBP, ENPP2, and PARL). The CNN-based representation learning module outperformed conventional pipelines in classification. The framework is disease-agnostic and readily extends to other omics-driven biomedical applications involving uncertainty, heterogeneity, and limited samples.",
+      "authors": [
+        "Xueyuan Huang",
+        "Yuheng Wang",
+        "Yuanzhi He",
+        "Siqi Gou",
+        "Lu Bai",
+        "Wenqian Wu",
+        "Peifeng Liu",
+        "Aijia Wang",
+        "Tianhui Fan",
+        "Jiayu Xu"
+      ],
+      "url": "https://arxiv.org/abs/2604.24796",
+      "published": "2026-04-26T11:55:48+00:00",
+      "updated": "2026-04-26T11:55:48+00:00",
+      "categories": [
+        "q-bio.OT",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.23740",
       "title": "Transformer as an Euler Discretization of Score-based Variational Flow",
       "abstract": "Despite the Transformer's dominance across machine learning, its architecture remains largely heuristic and lacks a unified theoretical foundation. We introduce Score-based Variational Flow (SVFlow), a continuous-time dynamical system for representation learning in which the state evolves according to a variational posterior-weighted average of conditional log-likelihood scores, and provide a principled basis for regularization through variational consistency. We show that forward Euler discretization of spherical SVFlow exactly recovers the Transformer architecture. Multi-head attention approximates SVFlow vector field via a vMF kernel-smoothed posterior, while MoE/FFN approximates it in a relaxed network-based way, and the residual-normalization block implements a relaxed retraction that maintains spherical geometry. This unification explains why attention trains stably without explicit regularization while MoE requires auxiliary balancing losses. Experiments on pre-trained language models with prefix shuffling show that SVFlow-induced metrics correlate with task performance, reveal depth-dependent sensitivity, and reflect the intrinsic dynamics of attention.",
@@ -3397,5 +3427,6 @@
       "match_method": "none",
       "best_score": 0.062
     }
-  ]
+  ],
+  "patched_at": "2026-04-29T04:11:07.484874+00:00"
 }
