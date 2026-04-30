@@ -3,6 +3,31 @@
   "fetched_at": "2026-04-28T13:14:53.042734+09:00",
   "papers": [
     {
+      "id": "2604.24966",
+      "title": "Risk Reporting for Developers' Internal AI Model Use",
+      "abstract": "Frontier AI companies first deploy their most advanced models internally, for weeks or months of safety testing, evaluation, and iteration, before a possible public release. For example, Anthropic recently developed a new class of model with advanced cyberoffense-relevant capabilities, Mythos Preview, which was available internally for at least six weeks before it was publicly announced. This internal use creates risks that external deployment frameworks may fail to address.   Legal frameworks, notably California's Transparency in Frontier Artificial Intelligence Act (SB 53), New York's Responsible AI Safety And Education (RAISE) Act, and the EU's General-Purpose AI Code of Practice, all discuss risks from internal AI use. They require frontier developers to make and implement plans for how to manage risks from internal use, and to produce internal use risk reports describing their safeguards and any residual risks. This guide provides a harmonized standard for companies to produce internal use risk reports suitable for all three regulatory frameworks. It is addressed primarily to evaluation and safety teams at frontier AI developers, and secondarily to regulators and auditors seeking to understand what good reporting looks like.   Given the pace of AI R&D automation and the limited external visibility into how companies use their most capable models internally, regular and detailed risk reporting may be one of the few mechanisms available to ensure that the risks from internal AI use are identified and managed before they materialize. Whenever a substantially more capable or riskier model is deployed internally, the developer should create a risk report and argue why the model is safe to deploy. We structure the reporting framework around two threat vectors -- autonomous AI misbehavior and insider threats -- and three risk factors for each: means, motive, and opportunity.",
+      "authors": [
+        "Oscar Delaney",
+        "Sambhav Maheshwari",
+        "Joe O'Brien",
+        "Theo Bearman",
+        "Oliver Guest"
+      ],
+      "url": "https://arxiv.org/abs/2604.24966",
+      "published": "2026-04-27T20:07:09+00:00",
+      "updated": "2026-04-27T20:07:09+00:00",
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.24822",
       "title": "A systematic literature Review for Transformer-based Software Vulnerability detection",
       "abstract": "Context: Software vulnerabilities pose significant security threats to software systems, especially as software is increasingly used across many areas of daily life, including health, government, and finance. Recently, transformer-based models have demonstrated promising results in automatic software vulnerability identification due to their robust contextual modelling and representation learning capabilities. Objectives: While numerous systematic literature reviews (SLRs) have examined machine learning and deep learning methods for identifying vulnerabilities, a more transformer-centric analysis remains to be explored. This SLR critically analysed 80 studies published between 2021 and 2025 that utilised transformer models to identify software vulnerabilities. Methods: Using Kitchenhams SLR guidelines, we methodically evaluate current research from various perspectives, encompassing study trends, datasets and sources, programming languages, transformer frameworks, detection detail levels, assessment metrics, reference models, types of vulnerabilities, and experimental configurations. Results: We classify transformer models into encoder, decoder, and combined architectures and analyse both pre-trained and fine-tuned versions utilized on source code, logs, and smart contracts. The results emphasise prevailing research trends, frequently utilised benchmarks, and main baselines. It also uncovers crucial technical issues like data imbalance, interpretability, scalability, and generalization across programming languages. Conclusion: By integrating current evidence and recognising unaddressed research areas, this SLR provides a consolidated resource for researchers and professionals seeking to develop more reliable, precise, and interpretable transformer-based vulnerability identification systems.",
@@ -8186,7 +8211,35 @@
       "match_method": "none",
       "best_score": 0.108,
       "backfilled": true
+    },
+    {
+      "id": "2604.25960",
+      "title": "Large Language Models for Multilingual Code Intelligence: A Survey",
+      "abstract": "Large language models have transformed AI-assisted software engineering, but current research remains biased toward high-resource languages such as Python, with weaker performance in languages like Rust and OCaml. Since real-world systems are inherently polyglot, robust multilingual code intelligence is crucial. This survey focuses on two key tasks: multilingual code generation from shared natural-language requirements, and multilingual code translation that preserves semantics across languages. It reviews representative methods, benchmarks, and evaluation metrics, and highlights challenges and opportunities for trustworthy cross-language generalization.",
+      "authors": [
+        "Chao Jiang",
+        "Dugang Liu",
+        "Cheng Wen",
+        "Zhiwu Xu",
+        "Hua Zheng",
+        "Muhammad Sadiq",
+        "Jawwad Ahmed Shamsi",
+        "Shengchao Qin",
+        "Zhong Ming"
+      ],
+      "url": "https://arxiv.org/abs/2604.25960",
+      "published": "2026-04-27T20:20:26+00:00",
+      "updated": "2026-04-27T20:20:26+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.LG",
+        "cs.PL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.302,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-29T04:11:07.468355+00:00"
+  "patched_at": "2026-04-30T04:13:19.874363+00:00"
 }
