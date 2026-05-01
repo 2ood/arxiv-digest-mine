@@ -3,6 +3,50 @@
   "fetched_at": "2026-04-29T13:11:05.333457+09:00",
   "papers": [
     {
+      "id": "2604.26979",
+      "title": "Multibit neural inference in a N-ary crossbar architecture",
+      "abstract": "In-memory computing (IMC) enables energy-efficient neural network inference by computing analog matrix-vector multiplications (MVM) in memory crossbar arrays. In this work we present a simulation framework for N-ary crossbar architectures that retrieves MVM results with minimal implementation assumptions. The XOR and MNIST classification tasks were successfully inferred using a simulated crossbar array of (4x4) 4-states magnetic tunnel junctions (MTJ). MNIST accuracy reached 94.48% (vs. 97.56% software baseline). The software-hardware performance gap was further reduced using PCA dimensionality reduction. We identified weight quantization as the primary error source, and studied its impact alongside systematic nonidealities and random noise. We find that cell-specific random noise is less detrimental than systematic errors due to averaging across the array. Finally, we demonstrate an optimal number of states per cell that balances quantization error against resistance state resolution to minimize total MVM error.",
+      "authors": [
+        "Anatole Moureaux",
+        "Anthony Lopes Temporao",
+        "Flavio Abreu Araujo"
+      ],
+      "url": "https://arxiv.org/abs/2604.26979",
+      "published": "2026-04-28T13:29:51+00:00",
+      "updated": "2026-04-28T13:29:51+00:00",
+      "categories": [
+        "cs.AR",
+        "cs.AI",
+        "cs.ET"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26984",
+      "title": "Monitoring Neural Training with Topology: A Footprint-Predictable Collapse Index",
+      "abstract": "Representational collapse, where embeddings become anisotropic and lose multi-scale structure, can erode downstream performance long before performance metrics react. We propose an online, topology-aware monitor for evolving neural representations that couples Modular Morse Homology Maintenance (MMHM) with a composite Collapse Index (CI). Instead of rebuilding complexes each epoch, we apply sparse edits at a fixed scale and maintain a discrete Morse matching, yielding fast, incremental updates. Across LLM fine-tuning and temporal KGE training, CI provides a low-latency early-warning signal suitable for in-training interventions. Code and experimental scripts will be released publicly",
+      "authors": [
+        "Alexander Kalinowski"
+      ],
+      "url": "https://arxiv.org/abs/2604.26984",
+      "published": "2026-04-28T19:21:21+00:00",
+      "updated": "2026-04-28T19:21:21+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.25972",
       "title": "A Survey of Multi-Agent Deep Reinforcement Learning with Graph Neural Network-Based Communication",
       "abstract": "In multi-agent reinforcement learning (MARL), the integration of a communication mechanism, allowing agents to better learn to coordinate their actions and converge on their objectives by sharing information. Based on an interaction graph, a subclass of methods employs graph neural networks (GNNs) to learn the communication, enabling agents to improve their internal representations by enriching them with information exchanged. With growing research, we note a lack of explicit structure and framework to distinguish and classify MARL approaches with communication based on GNNs. Thus, this paper surveys recent works in this field. We propose a generalized GNN-based communication process with the goal of making the underlying concepts behind the methods more obvious and accessible.",
@@ -6982,7 +7026,184 @@
       "match_method": "none",
       "best_score": 0.059,
       "backfilled": true
+    },
+    {
+      "id": "2604.26991",
+      "title": "People-Centred Medical Image Analysis",
+      "abstract": "Recent advances in data-centric medical AI have produced highly accurate diagnostic systems, but the emphasis on data curation and performance metrics has not translated into widespread clinical adoption. We conjecture that this limited uptake stems from insufficient attention dedicated to the optimisation of fair performance across diverse patient populations and to workflow integration: performance biases can create regulatory barriers, and poorly integrated automation can disrupt clinical routines, degrade the quality of human-AI collaboration, and reduce clinicians' willingness to adopt AI tools. Prior work on workflow integration (e.g., Learning to Defer (L2D) and Learning to Complement (L2C)) and AI fairness has typically examined these challenges in isolation, overlooking their natural interdependence and the practical constraints of clinical environments, such as restricted clinician availability. We propose People-Centred Medical Image Analysis (PecMan), a human-AI framework that jointly optimises fairness, diagnostic accuracy, and workflow effectiveness through a dynamic gating mechanism that assigns cases to AI, clinicians, or both under clinician workload constraints. We also introduce the Fairness and Human-Centred AI (FairHAI) benchmark for evaluating trade-offs between accuracy, fairness, and clinician workload. Experiments using this benchmark show that PecMan consistently outperforms existing methods, paving the way for more trustworthy and clinically viable AI systems. Code will be available upon paper acceptance.",
+      "authors": [
+        "Zheng Zhang",
+        "Milad Masroor",
+        "Cuong Nguyen",
+        "Tahir Hassan",
+        "Yuanhong Chen",
+        "David Rosewarne",
+        "Kevin Wells",
+        "Thanh-Toan Do",
+        "Gustavo Carneiro"
+      ],
+      "url": "https://arxiv.org/abs/2604.26991",
+      "published": "2026-04-28T22:13:36+00:00",
+      "updated": "2026-04-28T22:13:36+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.301,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26985",
+      "title": "Simple Self-Conditioning Adaptation for Masked Diffusion Models",
+      "abstract": "Masked diffusion models (MDMs) generate discrete sequences by iterative denoising under an absorbing masking process. In standard masked diffusion, if a token remains masked after a reverse update, the model discards its clean-state prediction for that position. Thus, still-masked positions must be repeatedly inferred from the mask token alone. This design choice limits cross-step refinement. To address this limitation, this paper proposes a simple, yet effective, post-training adaptation for MDMs that conditions each denoising step on the model's own previous clean-state predictions. The resulting method, called Self-Conditioned Masked Diffusion Models (SCMDM), requires minimal architectural change, does not introduce a recurrent latent-state pathway, does not rely on an auxiliary reference model, and adds no extra denoiser evaluations during sampling. This is an important departure from partial self-conditioning approaches which requires expensive model training from scratch. In particular, the paper shows that partial self-conditioning, including the commonly used 50% dropout strategy for training self-conditioned models from scratch, is suboptimal in the post-training regime. Instead, once the model's self-generated clean-state estimates become informative, the specialization to refinement is preferable to mixing conditional and unconditional objectives. SCMDM is evaluated across multiple domains, demonstrating consistent improvement over vanilla MDM baselines, achieving nearly a 50% reduction in generative perplexity on OWT-trained models (42.89 to 23.72), alongside strong improvements in discretized image synthesis quality, small molecular generation, and enhanced fidelity in genomic distribution modeling.",
+      "authors": [
+        "Michael Cardei",
+        "Huu Binh Ta",
+        "Ferdinando Fioretto"
+      ],
+      "url": "https://arxiv.org/abs/2604.26985",
+      "published": "2026-04-28T19:34:04+00:00",
+      "updated": "2026-04-28T19:34:04+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.297,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26986",
+      "title": "BatteryPass-12K: The First Dataset for the Novel Digital Battery Passport Conformance Task",
+      "abstract": "We introduce a novel task of digital battery passport (DBP) conformance classification and introduce the first public benchmark for the task: BatteryPass-12K, created synthetically from real pilot samples. This is as the EU's battery regulation on DBPs comes into effect soon and there exists no public dataset. We evaluated 22 language models (LMs) in zero-shot inference, spanning small LMs (SLMs), mixture of experts (MoEs), and dense LLMs. We also conducted analysis, additional evaluations of few-shot inference and prompt-injection attacks to find that (1) Thinking models have the best performance (with GPT-5.4 scoring 0.98 (0.03) and 0.71 (0.22) on average as F1 (and confidence interval at 95%) on the validation and test sets, respectively), (2) few-shot examples improve performance significantly, (3) generally capable frontier models find the task challenging, (4) merely scaling model parameters does not necessarily lead to improved performance, as SLMs outperformed some LLMs, and (5) prompt-injection attacks degrade performance. We note that BatteryPass-12K, though limited to real pilot samples, may be useful for other known or emerging tasks in the battery domain, e.g. lifecycle reasoning. We publicly release the dataset under a permissive licence (CC-BY-4.0).",
+      "authors": [
+        "Tosin Adewumi",
+        "Martin Karlsson",
+        "Lama Alkhaled",
+        "Marcus Liwicki"
+      ],
+      "url": "https://arxiv.org/abs/2604.26986",
+      "published": "2026-04-28T20:51:08+00:00",
+      "updated": "2026-04-28T20:51:08+00:00",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.237,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26981",
+      "title": "Budget-Constrained Online Retrieval-Augmented Generation: The Chunk-as-a-Service Model",
+      "abstract": "Large Language Models (LLMs) have revolutionized the field of natural language processing. However, they exhibit some limitations, including a lack of reliability and transparency: they may hallucinate and fail to provide sources that support the generated output. Retrieval-Augmented Generation (RAG) was introduced to address such limitations in LLMs. One popular implementation, RAG-as-a-Service (RaaS), has shortcomings that hinder its adoption and accessibility. For instance, RaaS pricing is based on the number of submitted prompts, without considering whether the prompts are enriched by relevant chunks, i.e., text segments retrieved from a vector database, or the quality of the utilized chunks (i.e., their degree of relevance). This results in an opaque and less cost-effective payment model. We propose Chunk-as-a-Service (CaaS) as a transparent and cost-effective alternative. CaaS includes two variants: Open-Budget CaaS (OB-CaaS) and Limited-Budget CaaS (LB-CaaS), which is enabled by our ``Utility-Cost Online Selection Algorithm (UCOSA)''. UCOSA further extends the cost-effectiveness and the accessibility of the OB-CaaS variant by enriching, in an online manner, a subset of the submitted prompts based on budget constraints and utility-cost tradeoff. Our experiments demonstrate the efficacy of the proposed UCOSA compared to both offline and relevance-greedy selection baselines. In terms of the performance metric-the number of enriched prompts (NEP) multiplied by the Average Relevance (AR)-UCOSA outperforms random selection by approximately 52% and achieves around 75% of the performance of offline selection methods. Additionally, in terms of budget utilization, LB-CaaS and OB-CaaS achieve higher performance-to-budget ratios of 140% and 86%, respectively, compared to RaaS, indicating their superior efficiency.",
+      "authors": [
+        "Shawqi Al-Maliki",
+        "Ammar Gharaibeh",
+        "Mohamed Rahouti",
+        "Mohammad Ruhul Amin",
+        "Mohamed Abdallah",
+        "Junaid Qadir",
+        "Ala Al-Fuqaha"
+      ],
+      "url": "https://arxiv.org/abs/2604.26981",
+      "published": "2026-04-28T14:42:51+00:00",
+      "updated": "2026-04-28T14:42:51+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.225,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26976",
+      "title": "Fitting Horn DL Ontologies to ABox and Query Examples: A Tale of Simulation Quantifiers and Finite Models",
+      "abstract": "We study the problem of fitting a description logic (DL) ontology to a given set of positive and negative examples that take the form of an ABox and a Boolean query. While previous work has investigated this problem for the expressive DLs ALC and ALCI, we here focus on the Horn DLs EL and ELI, as well as their extensions with the bottom concept. As the query language, we consider atomic queries (AQs), conjunctive queries (rooted CQs), and unions thereof (rooted UCQs). We provide characterization of the existence of a fitting ontology based on simulations, use them to develop decision procedures, and clarify the exact computational complexity. For AQs, the problem is in PTime for both EL and ELI. For rooted CQs and UCQ, it is Sigma_P^2-complete for EL and ExpTime-complete for ELI. Adding the bottom concept does not change any of these complexities. Interestingly, moving from ALC and ALCI to EL and ELI introduces additional technical challenges rather than simplifying the matter.",
+      "authors": [
+        "Marvin Grosser",
+        "Carsten Lutz"
+      ],
+      "url": "https://arxiv.org/abs/2604.26976",
+      "published": "2026-04-28T08:53:15+00:00",
+      "updated": "2026-04-28T08:53:15+00:00",
+      "categories": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.224,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26993",
+      "title": "State-Dependent Lyapunov Method for Rank-1 Matrix Factorization",
+      "abstract": "We study gradient descent for rank-1 matrix factorization through a certificate-based viewpoint. The central object is a parameterized quadratic certificate $I(δ;\\,\\cdot)$ whose level sets shrink along the dynamics, thereby inducing a monotone state parameter $δ_t$. In the certified regime, this mechanism yields convergence to a global minimizer; in the post-critical regime, it forces trajectories toward a terminal balanced manifold.   To explain the origin of these certificates, we formulate a state-dependent Lyapunov framework based on structural axioms. Within this framework, the scalar certificate is uniquely determined, and the same local Lagrange analysis constrains the signal and noise blocks of rank-1 extensions. Thus, the certificates arise from the monotonicity structure of the dynamics, rather than from ad hoc algebraic constructions.   We also provide numerical evidence beyond the proved cases. For the 2-dimensional rank-1 approximation problem $X=\\mathrm{diag}(1,σ)$ with $σ\\in(0,1)$, the experiments are consistent with the existence of a $C^1$ admissible certificate branch. For the quartic-augmented scalar loss $\\frac12(ab-1)^2+μ(ab-1)^4$, the same scalar certificate remains predictive for several values of $μ$ after choosing an empirical threshold. These experiments suggest that the state-dependent Lyapunov method may extend beyond the settings proved in this paper.",
+      "authors": [
+        "Jaehong Moon"
+      ],
+      "url": "https://arxiv.org/abs/2604.26993",
+      "published": "2026-04-28T22:43:16+00:00",
+      "updated": "2026-04-28T22:43:16+00:00",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.OC"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.184,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26977",
+      "title": "Defeasible Conditional Obligation in a Two-tiered Preference-based Semantics (Extended Version)",
+      "abstract": "In response to a concern raised by Horty, this paper develops a two-tiered, preference-based semantic framework for modeling defeasible conditional obligations. The paper extends a Hansson-Lewis style preference semantics for dyadic deontic logic by incorporating a nonmonotonic reasoning mechanism that enables previously derived obligations to be withdrawn when new, potentially conflicting information comes in. The account is bi-preferential: two orderings--ideality and normality--on worlds are employed to address shortcomings in earlier approaches, with a separate ranking method for each. At the nonmonotonic layer, a number of postulates are considered, including antecedent strengthening, inclusion and no-drowning. A connection is established with so-called constrained input/output (I/O) logic--an existing standard for normative reasoning based on a different methodology.",
+      "authors": [
+        "Xavier Parent"
+      ],
+      "url": "https://arxiv.org/abs/2604.26977",
+      "published": "2026-04-28T11:04:26+00:00",
+      "updated": "2026-04-28T11:04:26+00:00",
+      "categories": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.16,
+      "backfilled": true
+    },
+    {
+      "id": "2604.26983",
+      "title": "Value-Aware Product Recommendation by Customer Segmentation using a suitable High-Dimensional Similarity Measure",
+      "abstract": "This paper presents a novel value-aware approach to product recommendation that simultaneously addresses the high dimensionality and sparsity of user-item data while explicitly incorporating the contribution of each product and user to overall sales revenue. The proposed framework encodes revenue contributions in the user-item matrix and computes customer similarity directly on this basis using suitable distance measures. This enables the segmentation of users according to the revenue-based similarity of their purchase baskets and supports recommendations aligned with profitability objectives. We compare conventional similarity metrics with a novel alternative tailored to high-dimensional contexts and propose three recommendation strategies based on revenue share, product popularity, and expected profit generation. The effectiveness of the proposed method is validated through simulation experiments and a real-world application using the UCI Online Retail dataset.",
+      "authors": [
+        "María Florencia Acosta",
+        "Rodrigo García Arancibia",
+        "Pamela Llop",
+        "Mariel Lovatto",
+        "Lucas Mansilla"
+      ],
+      "url": "https://arxiv.org/abs/2604.26983",
+      "published": "2026-04-28T18:16:30+00:00",
+      "updated": "2026-04-28T18:16:30+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.062,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-04-30T04:13:19.406834+00:00"
+  "patched_at": "2026-05-01T04:37:41.783264+00:00"
 }
