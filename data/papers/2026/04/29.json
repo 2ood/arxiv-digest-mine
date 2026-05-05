@@ -3,6 +3,90 @@
   "fetched_at": "2026-04-30T13:13:17.938984+09:00",
   "papers": [
     {
+      "id": "2605.00051",
+      "title": "Learning from the Unseen: Generative Data Augmentation for Geometric-Semantic Accident Anticipation",
+      "abstract": "Anticipating traffic accidents is a critical yet unresolved problem for autonomous driving, hindered by the inherent complexity of modeling interactions between road users and the limited availability of diverse, large-scale datasets. To address these issues, we propose a dual-path framework. On the one hand, we employ a video synthesis pipeline that, guided by structured prompts, derives feature distributions from existing corpora and produces high-fidelity synthetic driving scenes consistent with the statistical patterns of real data. On the other hand, we design a graph neural network enriched with semantic cues, enabling dynamic reasoning over both spatial and semantic relations among participants. To validate the effectiveness of our approach, we release a new benchmark dataset containing standardized, finely annotated video sequences that cover a broad spectrum of regions, weather, and traffic conditions. Evaluations across existing datasets and our new benchmark confirm notable gains in both accuracy and anticipation lead time, highlighting the capacity of the proposed framework to mitigate current data bottlenecks and enhance the reliability of autonomous driving systems.",
+      "authors": [
+        "Yanchen Guan",
+        "Haicheng Liao",
+        "Chengyue Wang",
+        "Xingcheng Liu",
+        "Jiaxun Zhang",
+        "Keqiang Li",
+        "Zhenning Li"
+      ],
+      "url": "https://arxiv.org/abs/2605.00051",
+      "published": "2026-04-29T15:29:19+00:00",
+      "updated": "2026-04-29T15:29:19+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00056",
+      "title": "Smart Ensemble Learning Framework for Predicting Groundwater Heavy Metal Pollution",
+      "abstract": "Groundwater in the Densu Basin is increasingly threatened by heavy metal contamination, but conventional methods fail to capture the statistical complexity and spatial heterogeneity of pollution indicators. A key challenge is modelling the Heavy Metal Pollution Index (HPI), which is typically skewed and affected by correlated contaminants, leading to biased predictions without transformation. This study develops a predictive framework integrating response transformations with nested cross-validated ensemble machine learning. Three transformations (raw, log, and Gaussian copula) were applied to HPI and evaluated across six learners: support vector regression (SVM), $k$-nearest neighbours (k-NN), CART, Elastic Net, kernel ridge regression, and a stacked Lasso ensemble. Raw-scale models produced deceptively high fits (Elastic Net and stacked ensemble $R^2 \\approx 1.0$), suggesting over-optimism. The log transformation stabilised variance (SVM: $R^2 = 0.93$, RMSE $= 0.18$; k-NN: $R^2 = 0.92$, RMSE $= 0.20$). The Gaussian copula gave the most reliable results: stacked ensemble $R^2 = 0.96$ (RMSE $= 0.19$), with other learners maintaining high accuracy. Copula-based models improved residuals and produced spatially plausible maps. DBSCAN clustering revealed Fe and Mn as primary HPI contributors, consistent with regional hydrogeochemistry. Limitations include reliance on random (not spatial) cross-validation and basin-specific scope. Future work should explore spatial validation and other geological settings. Overall, distribution-aware ensembles with clustering diagnostics offer robust, interpretable assessments of groundwater contamination.",
+      "authors": [
+        "T. Ansah-Narh",
+        "G. Y. Afrifa",
+        "J. B. Tandoh",
+        "K. Asare",
+        "M. Addi",
+        "K. E. Yorke",
+        "D. M. A. Akpoley",
+        "K. Aidoo",
+        "S. K. Fosuhene"
+      ],
+      "url": "https://arxiv.org/abs/2605.00056",
+      "published": "2026-04-29T21:40:18+00:00",
+      "updated": "2026-04-29T21:40:18+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "physics.data-an",
+        "physics.geo-ph",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00055",
+      "title": "Ambient Persuasion in a Deployed AI Agent: Unauthorized Escalation Following Routine Non-Adversarial Content Exposure",
+      "abstract": "We report a safety incident in a deployed multi-agent research system in which a primary AI agent installed 107 unauthorized software components, overwrote a system registry, overrode a prior negative decision from an oversight agent, and escalated through increasingly privileged operations up to an attempted system administrator command. The incident was preceded not by an adversarial attack but by routine content: a forwarded technology article written for human developers and shared by the principal investigator for discussion. The agent operated in a permissive environment, with unrestricted shell access, soft behavioral guidelines containing genuinely conflicting instructions, and no machine-enforced installation policy, and had recommended installing the same tool six hours earlier before being told to stand down. We analyze the behavioral cascade, the control boundaries that failed, and the limitations of multi-agent oversight in detecting and remediating the damage. We use directive weighting error as a descriptive interpretation of the observed failure and ambient persuasion as a provisional analytic label for the broader trigger configuration of non-adversarial environmental content preceding unauthorized agent action. The case highlights ethical and governance implications for deployed agent systems: ambiguous conversational cues are insufficient authorization for consequential actions, prior refusals must persist as enforceable constraints rather than message-level reminders, and oversight mechanisms require systematic post-incident auditing in addition to routine monitoring.",
+      "authors": [
+        "Diego F. Cuadros",
+        "Abdoul-Aziz Maiga"
+      ],
+      "url": "https://arxiv.org/abs/2605.00055",
+      "published": "2026-04-29T21:18:55+00:00",
+      "updated": "2026-04-29T21:18:55+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2604.27126",
       "title": "Unsupervised Electrofacies Classification and Porosity Characterization in the Offshore Keta Basin Using Wireline Logs",
       "abstract": "This study presents an unsupervised machine learning workflow for electrofacies analysis in the offshore Keta Basin, Ghana, where core data are scarce. Six standard wireline logs from Well~C were analysed over a depth interval comprising approximately $11{,}195$ samples. K-means clustering was applied in multivariate log space, with the clustering structure evaluated using inertia and silhouette diagnostics. Four clusters were identified, supported by an average silhouette coefficient of approximately $0.50$, indicating moderate but meaningful separation. The resulting electrofacies exhibit systematic, depth-continuous patterns associated with variations in clay content, porosity, and rock framework properties, forming a geological continuum from shale-dominated to cleaner sandstone-dominated units. The results demonstrate that log-only, unsupervised clustering supported by quantitative metrics provides a robust and reproducible framework for subsurface characterisation. The proposed workflow offers a practical tool for early-stage formation evaluation in frontier offshore basins and a foundation for future integrated studies.",
@@ -7102,7 +7186,223 @@
       "match_method": "none",
       "best_score": 0.123,
       "backfilled": true
+    },
+    {
+      "id": "2605.00905",
+      "title": "DIAGRAMS: A Review Framework for Reasoning-Level Attribution in Diagram QA",
+      "abstract": "Diagram question answering (Diagram QA) requires reasoning-level attribution that links each question-answer pair to all visual regions needed to derive the answer, rather than only the region containing the final response. Creating such structured evidence across diagrams, charts, maps, circuits, and infographics is time-consuming, and existing annotation tools tightly couple their interfaces to dataset-specific formats. We present DIAGRAMS, a lightweight, schema-driven review framework that decouples interface logic from dataset-specific JSON structures through an internal meta-schema and dataset adapters. Given an image and QA pair with optional candidate regions, the system performs QA-conditioned evidence selection and proposes the regions required for reasoning. When QA pairs or candidate regions are missing, it generates them and supports human verification and refinement. Across six Diagram QA datasets, model-suggested evidence achieves 85.39% precision and 75.30% recall against reviewer-final selections (micro-averaged). These results indicate that the review-first framework reduces manual region creation while maintaining high agreement with final reasoning-level attributions. We release a public demo and installable package to support dataset auditing, grounded supervision creation, and grounded evaluation.",
+      "authors": [
+        "Anirudh Iyengar Kaniyar Narayana Iyengar",
+        "Tampu Ravi Kumar",
+        "Manan Suri",
+        "Raviteja Bommireddy",
+        "Dinesh Manocha",
+        "Puneet Mathur",
+        "Vivek Gupta"
+      ],
+      "url": "https://arxiv.org/abs/2605.00905",
+      "published": "2026-04-29T02:34:51+00:00",
+      "updated": "2026-04-29T02:34:51+00:00",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.343,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00050",
+      "title": "Learning physically grounded traffic accident reconstruction from public accident reports",
+      "abstract": "Traffic accidents are routinely documented in textual reports, yet physically grounded accident reconstruction remains difficult because detailed scene measurements and expert reconstructions are scarce, costly and hard to scale. Here we formulate accident reconstruction from publicly accessible reports and scene measurements as a parameterized multimodal learning problem. We construct CISS-REC, a dataset of 6,217 real-world accident cases curated from the NHTSA Crash Investigation Sampling System, and develop a reconstruction framework that grounds report semantics to road topology and participant attributes, reconstructs lane consistent pre-impact motion, and refines collision relevant interactions through localized geometric reasoning and temporal allocation. Our method outperforms representative baselines on CISS-REC, achieving the strongest overall reconstruction fidelity, including improved accident point accuracy and collision consistency. These results show that public accident reports can serve as scalable computational substrates for quantitatively verifiable accident reconstruction, with potential value for traffic safety analysis, simulation and autonomous driving research.",
+      "authors": [
+        "Yanchen Guan",
+        "Haicheng Liao",
+        "Chengyue Wang",
+        "Zhenning Li"
+      ],
+      "url": "https://arxiv.org/abs/2605.00050",
+      "published": "2026-04-29T14:33:27+00:00",
+      "updated": "2026-04-29T14:33:27+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.313,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00043",
+      "title": "SiriusHelper: An LLM Agent-Based Operations Assistant for Big Data Platforms",
+      "abstract": "Big data platforms are widely used in modern enterprises, and an in-production intelligent assistant is increasingly important to help users quickly find actionable guidance and reduce operational burden. While recent LLM+RAG assistants provide a natural interface, they face practical challenges in real deployments: limited scenario coverage across both general consultation and domain-specific troubleshooting workflows, inefficient knowledge access due to inadequate multi-hop retrieval and flat knowledge organization, and high maintenance cost because escalated tickets are unstructured and hard to convert into assistant improvements and reusable SOPs.   In this paper, we present SiriusHelper, a deployed intelligent assistant for big data platforms. SiriusHelper serves as a unified online assistant that automatically identifies user intent and routes queries to the right handling path, including dedicated expert workflows for specialized scenarios (e.g., SQL execution diagnosis). To support complex troubleshooting, SiriusHelper combines a DeepSearch-driven mechanism with a priority-based hierarchical knowledge base to enable multi-hop retrieval without context overload, thus improving answer reliability and latency. To reduce expert overhead, SiriusHelper further introduces automated ticket understanding and SOP distillation: it diagnoses the assistant failure reason (e.g., missing knowledge or wrong routing) and extracts domain-specific SOPs to continuously enrich the knowledge base. Experiments and online deployment on Tencent Big Data platform show that SiriusHelper outperforms representative alternatives and reduces online ticket volume by 20.8\\%.",
+      "authors": [
+        "Yu Shen",
+        "Shiyang Liu",
+        "Qihang He",
+        "Yihang Cheng",
+        "Haining Xie",
+        "Zhiming He",
+        "Huahua Fan",
+        "Xianzhi Tan",
+        "Teng Ma",
+        "Shaoquan Zhang",
+        "Danqing Huang",
+        "Fan Jiang",
+        "Yang Li",
+        "Chongqing Zhao",
+        "Peng Chen",
+        "Jie Jiang",
+        "Bin Cui"
+      ],
+      "url": "https://arxiv.org/abs/2605.00043",
+      "published": "2026-04-29T06:18:07+00:00",
+      "updated": "2026-04-29T06:18:07+00:00",
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.29,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00907",
+      "title": "TRIP-Evaluate: An Open Multimodal Benchmark for Evaluating Large Models in Transportation",
+      "abstract": "Large language models (LLMs) and multimodal large models (MLLMs) are increasingly used for transportation tasks such as regulation question answering, traffic management support, engineering review, and autonomous-driving scene reasoning. Yet transportation workflows are rule-intensive, computation-intensive, safety-critical, and inherently multimodal. Existing general benchmarks provide limited evidence of whether a model can apply regulations correctly, perform verifiable engineering calculations, or interpret traffic scenes reliably, while the small number of public transportation benchmarks remain narrow in scope and rarely support fine-grained diagnosis across text, images, and point-cloud data. To address this gap, we present TRIP-Evaluate, an open multimodal benchmark for large models in transportation. The benchmark organizes 837 items using a role-task-knowledge taxonomy that covers vehicle, traffic-management, traveler, and planning-and-design functions. Each item is annotated with capability, modality, and difficulty labels, enabling diagnosis from overall accuracy down to specific failure modes. The current release includes 596 text items, 198 image items, and 43 point-cloud items. TRIP-Evaluate also standardizes item construction, quality control, prompting, decoding, and scoring to improve cross-model comparability. Results on a diverse panel of models show that text-based performance is improving, but substantial weaknesses remain in multi-step engineering calculation, rule-constrained reasoning, multimodal scene understanding, and point-cloud understanding. Overall, TRIP-Evaluate provides a reproducible, diagnosable, and engineering-aligned evaluation baseline for model selection, regression testing, and safer deployment in transportation applications.",
+      "authors": [
+        "Han Gong",
+        "Zhen Zhou",
+        "Yunyang Shi",
+        "Yan Tan",
+        "Jinbiao Huo",
+        "Qi Hong",
+        "Zhiyuan Liu"
+      ],
+      "url": "https://arxiv.org/abs/2605.00907",
+      "published": "2026-04-29T04:29:48+00:00",
+      "updated": "2026-04-29T04:29:48+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.278,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00913",
+      "title": "Leveraging Imperfect Medical Data: A Manifold-Consistent Spatio-Temporal Network for Sensor-based Human Activity Recognition",
+      "abstract": "Sensor-based Human Activity Recognition (HAR) has attracted increasing attention in medical and healthcare monitoring, particularly with the growth of Internet of Medical Things (IoMT). However, in real-world wearable sensing scenarios, IoMT signals are often corrupted by missing measurements, sensor failures, and environmental noise, which significantly degrade the performance of conventional deep learning models that assume clean and complete inputs. To address this challenge, we propose a Manifold-Consistent Spatio-Temporal Network (MCSTN) for robust HAR under imperfect sensing conditions. The proposed framework introduces a dual-level corruption modeling mechanism that simulates realistic sensor imperfections through both physical-level corruption and diffusion-driven continuous corruption. By enforcing representation consistency across multiple corrupted views, the model learns stable and corruption-invariant semantic representations. Furthermore, we design a dual-stream spatio-temporal architecture that explicitly decouples temporal dynamics modeling and spatial correlation learning. The temporal stream captures long-term activity dynamics, while the spatial stream models inter-sensor relationships, enabling more effective spatio-temporal representation learning. Extensive experiments on three widely used HAR benchmark datasets, PAMAP2, Opportunity, and WISDM, demonstrate that the proposed MCSTN achieves competitive performance compared with existing state-of-the-art methods, particularly under imperfect sensing conditions. These results validate the effectiveness and robustness of the proposed framework for real-world wearable IoMT sensing applications.",
+      "authors": [
+        "Jiangtao Fan",
+        "Anish Jindal",
+        "Amir Atapour-Abarghouei"
+      ],
+      "url": "https://arxiv.org/abs/2605.00913",
+      "published": "2026-04-29T10:55:41+00:00",
+      "updated": "2026-04-29T10:55:41+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.263,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00909",
+      "title": "Accelerating battery research with an AI interface between FINALES and Kadi4Mat",
+      "abstract": "The time-consuming formation process critically impacts the longevity of sodium-ion coin cells and End Of Life (EOL) performance. This study aims to optimize formation protocols for duration efficiency, targeting high-performance outcomes while minimizing the number of experiments to reduce resource consumption and accelerate discovery. Specifically, we consider two potentially competing objectives: minimizing formation time and maximizing EOL performance. Beyond this application focus, we also present a methodological contribution: a framework designed to enable interoperability between the FINALES and Kadi RDM ecosystems, which we employ to tackle our optimization problem. In this setup, the FINALES framework orchestrates experiment planning and execution on the POLiS MAP, while an active-learning agent implemented within Kadi4Mat guides experiment selection, using multi-objective batched Bayesian optimization to efficiently explore the parameter space. This interoperability enhancement enables coordinated, distributed collaboration across automated systems and human-operated workflows, bridging multiple research centers. Using this approach, we iteratively explore the trade-off between formation time and EOL performance and identify candidate solutions approximating the Pareto front. The resulting workflow demonstrates the capability of interoperable infrastructures to facilitate data-driven optimization in battery research, and establishes a transferable framework applicable to diverse materials science and engineering optimization tasks.",
+      "authors": [
+        "Giovanna Tosato",
+        "Leon Merker",
+        "Monika Vogler",
+        "Michael Selzer",
+        "Arnd Koeppe"
+      ],
+      "url": "https://arxiv.org/abs/2605.00909",
+      "published": "2026-04-29T09:24:24+00:00",
+      "updated": "2026-04-29T09:24:24+00:00",
+      "categories": [
+        "cs.AI",
+        "cond-mat.mtrl-sci",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.253,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00906",
+      "title": "Generalized Category Discovery under Domain Shifts: From Vision to Vision-Language Models",
+      "abstract": "Generalized Category Discovery (GCD) aims to categorize unlabelled instances from both known and unknown classes by transferring knowledge from labelled data of known classes. Existing methods assume all data comes from a single domain, yet real-world unlabelled data often exhibits domain shifts alongside semantic shifts. We study GCD under domain shifts and propose three frameworks that adapt foundation models, ranging from self-supervised vision models to vision-language models. (i) HiLo disentangles domain and semantic features through multi-level feature extraction and mutual information minimization, combined with PatchMix augmentation and curriculum sampling. (ii) HLPrompt extends HiLo with semantic-aware spatial prompt tuning to suppress background and domain noise. (iii) VLPrompt leverages vision-language models via factorized textual prompts and cross-modal consistency regularization. The three methods share core design principles while operating on different foundation backbones, making them suitable for different deployment scenarios. Extensive experiments on synthetic corruptions and real-world multi-domain shifts demonstrate consistent improvements over strong baselines. Project page: https://visual-ai.github.io/hilo/",
+      "authors": [
+        "Hongjun Wang",
+        "Po Hu",
+        "Kai Han"
+      ],
+      "url": "https://arxiv.org/abs/2605.00906",
+      "published": "2026-04-29T02:54:33+00:00",
+      "updated": "2026-04-29T02:54:33+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.233,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00915",
+      "title": "Rethink MAE with Linear Time-Invariant Dynamics",
+      "abstract": "Standard representation probing for visual models relies on mathematically permutation-invariant operations like Global Average Pooling (GAP) or CLS tokens, treating patch representations as an unstructured bag-of-words. We challenge this paradigm by demonstrating that token order is a critical, exploitable dimension in frozen visual representations (e.g., MAE, BEiT, DINOv2, and ViT as CLS-ablation extreme). We propose SSMProbe, a probing framework driven by a State Space Model (SSM). Operating as discrete Linear Time-Invariant (LTI) dynamical systems, SSMs act as permutation-sensitive probes where sequence order strictly dictates the final state due to inherent memory decay. Formulating token ordering as an information scheduling problem, we compare fixed scan heuristics against a differentiable soft permutation (Sinkhorn-based) learned from downstream supervision. Evaluations on standard and fine-grained classification benchmarks reveal a striking order gap: while fixed scans fail dramatically on highly localized patch features, our learned soft permutation successfully extracts highly competitive performance from otherwise heavily localized patch sequences. We find that pre-training objectives fundamentally shape token structure: DINOv2 concentrates global semantics in optimized CLS tokens leaving patches hyperspecialized, pure MAE preserves distributed representations with heterogeneous patch informativeness, and ViT represents a supervised CLS-dominated extreme. BEiT occupies middle ground. This heterogeneity is order-dependent -- meaning the SSM probe's performance depends critically on which tokens are placed at which temporal positions -- and is not merely a topological property of the spatial grid. SSMProbe's learned routing effectively discovers and exploits this heterogeneity, offering a powerful new diagnostic lens for visual representation analysis.",
+      "authors": [
+        "Zice Wang"
+      ],
+      "url": "https://arxiv.org/abs/2605.00915",
+      "published": "2026-04-29T15:07:00+00:00",
+      "updated": "2026-04-29T15:07:00+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.232,
+      "backfilled": true
+    },
+    {
+      "id": "2605.00914",
+      "title": "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate",
+      "abstract": "Multi-agent debate, where teams of LLMs iteratively exchange rationales and vote on answers, is widely deployed under the assumption that peer review filters hallucinations. Yet the failure dynamics of homogeneous debate remain poorly understood, therefore we report findings from a controlled empirical study of teams of $N{=}10$ homogeneous agents (Qwen2.5-7B, Llama-3.1-8B, Ministral-3-8B) across $R{=}3$ debate rounds on two high-difficulty benchmarks (GSM-Hard and MMLU-Hard). We compare peer debate against isolated self-correction and a stochastic noise control that injects rationales from unrelated problems. We decompose debate failure into three model-dependent pathways: sycophantic conformity, where agents uncritically adopt majority answers (modal adoption up to 85.5%); contextual fragility, where peer rationales destabilize previously correct reasoning (vulnerability rate up to 70.0%); and consensus collapse, where plurality voting discards correct answers already present in the generation pool (oracle gap up to 32.3 percentage points). Ablations over communication density ($K \\in \\{2,4,9\\}$) and sampling temperature ($T \\in \\{0.4, 0.7\\}$) show that conformity reaches high levels at minimal peer exposure ($K{=}2$) and intensifies with greater initial diversity. Across all configurations, debate consumes 2.1-3.4$\\times$ more tokens (up to 28,631 tokens per problem) than self-correction for equal or lower accuracy. Our results indicate that, within the 7-8B parameter class, homogeneous teams without structured roles do not benefit from unguided peer exchange, and that isolated self-correction consistently offers a more favorable cost-accuracy tradeoff.",
+      "authors": [
+        "Blaž Bertalanič",
+        "Carolina Fortuna"
+      ],
+      "url": "https://arxiv.org/abs/2605.00914",
+      "published": "2026-04-29T14:33:57+00:00",
+      "updated": "2026-04-29T14:33:57+00:00",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.181,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-05-01T04:37:40.289077+00:00"
+  "patched_at": "2026-05-05T03:58:51.595069+00:00"
 }
