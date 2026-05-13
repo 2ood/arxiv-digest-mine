@@ -3,6 +3,241 @@
   "fetched_at": "2026-05-05T12:58:33.840021+09:00",
   "papers": [
     {
+      "id": "2605.04107",
+      "title": "TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments",
+      "abstract": "Production agent frameworks (OpenAI Function Calling, Anthropic Tool Use, MCP) transmit tool schemas as JSON, a format designed for machine parsing, not for interpretation by language models. For small models (4B-14B), this protocol mismatch accounts for the majority of tool-use failure at production catalog sizes. We present TSCG, a deterministic tool-schema compiler that resolves this mismatch at the API boundary, converting JSON schemas into token-efficient structured text without model access, fine-tuning, or runtime search. TSCG combines eight composable operators with a formal compression bound (>=51% on well-formed schemas).   On TSCG-Agentic-Bench (about 19,000 calls, 12 models, 5 scenarios), TSCG restores Phi-4 14B from 0% to 84.4% accuracy at 20 tools (90.3% at 50 tools) and achieves 108-181% accuracy-retained ratio across three models on BFCL. Format-versus-compression decomposition (R^2=0.88 -> 0.03) establishes representation change as the dominant mechanism. Per-operator isolation across three frontier models reveals three distinct operator-response profiles: operator-hungry (Opus 4.7), operator-sensitive (GPT-5.2), and operator-robust (Sonnet 4), providing per-model deployment guidance. Scaling experiments show accuracy advantages persisting on heavy production MCP schemas (+5.0 pp at about 10,500 input tokens) despite saturation on light synthetic catalogs, with 52-57% token savings throughout. The synthetic benchmark generalizes to real MCP schemas within 0.1 accuracy points. TSCG ships as a 1,200-line zero-dependency TypeScript package.",
+      "authors": [
+        "Furkan Sakizli"
+      ],
+      "url": "https://arxiv.org/abs/2605.04107",
+      "published": "2026-05-04T15:35:45+00:00",
+      "updated": "2026-05-04T15:35:45+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08152",
+      "title": "Privacy-Preserving Federated Learning: Integrating Zero-Knowledge Proofs in Scalable Distributed Architectures",
+      "abstract": "The intersection of Artificial Intelligence (AI) and distributed systems has given rise to Federated Learning (FL), a paradigm that enables decentralized model training without compromising local data privacy. As organizational data silos grow, deploying complex machine learning models across highly distributed edge networks becomes a critical infrastructural challenge. Standard FL implementations suffer from severe vulnerabilities related to adversarial gradient updates and computational bottlenecks at the aggregation layer. This paper presents a novel, end-to-end distributed architecture that hardens FL pipelines using advanced cryptographic verification and optimized big data processing frameworks. We introduce a Zero-Knowledge Proof (ZKP) wrapper that cryptographically validates node computations before global aggregation, neutralizing model poisoning attacks without inspecting raw gradients. Additionally, we evaluate the system's performance using extreme gradient boosting models optimized for distributed edge execution. We formalize the mathematical transformation of the machine learning loss functions into Rank-1 Constraint Systems (R1CS) suitable for succinct verification. Extensive experimental results demonstrate that our hybrid architecture achieves a 94.2\\% accuracy retention under adversarial conditions while maintaining scalable throughput across 1,000 parallel distributed nodes, effectively bridging the gap between rigorous cryptographic security and high-performance distributed AI.",
+      "authors": [
+        "Divya Gupta"
+      ],
+      "url": "https://arxiv.org/abs/2605.08152",
+      "published": "2026-05-04T04:20:16+00:00",
+      "updated": "2026-05-04T04:20:16+00:00",
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08171",
+      "title": "Communication Dynamics Neural Networks: FFT-Diagonalized Layers for Improved Hessian Conditioning at Reduced Parameter Count",
+      "abstract": "Background and motivation. The Communication Dynamics (CD) framework, introduced in two earlier papers for atomic-energy prediction and field-induced superconductivity, treats each physical channel as a (2l+1)-vertex polygon whose discrete Fourier transform yields its energy spectrum. This paper applies the same circulant-spectral machinery to neural-network design.   Layer construction. CDLinear is a block-circulant linear layer with block size B = 2l+1 and 1/B the parameter count of a dense layer of equal input/output dimensions. Three properties follow from the construction. (i) The Hessian of mean-squared loss with respect to the weights is diagonalized by the discrete Fourier transform, with eigenvalues |F[Xj](k)|^2 read directly from the input statistics (Theorem 1). (ii) Under input pre-whitening, the population Hessian condition number satisfies kappa = 1 exactly, with the empirical condition number bounded by 1+O(sqrt(B/N)) on N samples (Theorem 2). (iii) The Shannon noise rate alpha_CD = 0.0118 calibrated in the parent CD papers from the Na D-doublet specifies a transferable, non-arbitrary dropout rate.   Empirical evaluation. A CDLinear MLP at B = 4 achieves 97.50% +/- 0.23% test accuracy with 2,380 parameters versus 98.15% +/- 0.47% for a parameter-matched dense MLP at 8,970 parameters, a 3.8x parameter reduction at 0.65% accuracy cost, within one standard deviation of the seed-to-seed spread. The CD-MLP mean Hessian condition number kappa = 1.9x10^4 is 310x smaller than the dense baseline kappa = 5.9x10^6, in quantitative agreement with Theorem 2.",
+      "authors": [
+        "Lurong Pan"
+      ],
+      "url": "https://arxiv.org/abs/2605.08171",
+      "published": "2026-05-04T23:43:09+00:00",
+      "updated": "2026-05-04T23:43:09+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08172",
+      "title": "Augmented Equivariant Mesh Networks for Anatomical Segmentation",
+      "abstract": "Anatomical mesh segmentation requires models that operate directly on irregular surface geometry while remaining robust to arbitrary patient pose and mesh resolution variation. Existing task-specific mesh and point-cloud methods are not equivariant, and can degrade sharply under test-time perturbation, for example dropping by 25-26 IoU points on intraoral scan segmentation at $40^\\circ$ tilt. We present EAMS, an Equivariant Anatomical Mesh Segmentor built on Equivariant Mesh Neural Networks (EMNN), and evaluate it across four clinically distinct tasks spanning edge-, vertex-, and face-level supervision. We combine intrinsic mesh descriptors with anatomy-aware priors, including PCA-derived frames for dental arches and liver surfaces, and augment message passing to provide lightweight global context. Across intracranial aneurysm and intraoral segmentation, EAMS variants are competitive with specialized baselines on unperturbed inputs while remaining stable under geometric perturbations, and on liver surfaces they expose a favorable trade-off between canonical-pose accuracy and rotation robustness. These results show that a lightweight ($<2$M parameters) equivariant framework can deliver robust anatomical mesh segmentation across diverse supervision types without task-specific architectures.",
+      "authors": [
+        "Daniel Saragih"
+      ],
+      "url": "https://arxiv.org/abs/2605.08172",
+      "published": "2026-05-04T23:54:07+00:00",
+      "updated": "2026-05-04T23:54:07+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.04109",
+      "title": "Resource Utilization of Differentiable Logic Gate Networks Deployed on FPGAs",
+      "abstract": "On-edge machine learning (ML) often strives to maximize the intelligence of small models while miniaturizing the circuit size and power needed to perform inference. Meeting these needs, differentiable Logic Gate Networks (LGN) have demonstrated nanosecond-scale prediction speeds while reducing the required resources as compares to traditional binary neural networks. Despite these benefits, the trade-offs between LGN parameters and resulting hardware synthesis characteristics are not well characterized. This paper therefore studies the tradeoffs between power, resource utilization, inference speed, and model accuracy when varying the depth and width of LGNs synthesized for Field Programmable Gate Arrays (FPGA). Results reveal that the final layer of an LGN is critical to minimize timing and resource usage (i.e. 28\\% decrease), as this layer dictates the logic size of summing operations. Subject to timing and routing constraints, deeper and wider LGNs can be synthesized for FPGA when the final layer is narrow. Further tradeoffs are presented to help ML engineers select baseline LGN architectures for FPGAs with a set number of Look Up Tables (LUT).",
+      "authors": [
+        "Stephen Wormald",
+        "Gilon Kravatsky",
+        "Damon Woodard",
+        "Domenic Forte"
+      ],
+      "url": "https://arxiv.org/abs/2605.04109",
+      "published": "2026-05-04T23:04:52+00:00",
+      "updated": "2026-05-04T23:04:52+00:00",
+      "categories": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.06696",
+      "title": "Hidden Coalitions in Multi-Agent AI: A Spectral Diagnostic from Internal Representations",
+      "abstract": "Collections of interacting AI agents can form coalitions, creating emergent group-level organization that is critical for AI safety and alignment. However, observing agent behavior alone is often insufficient to distinguish genuine informational coupling from spurious similarity, as consequential coalitions may form at the level of internal representations before any overt behavioral change is apparent. Here, we introduce a practical method for detecting coalition structure from the internal neural representations of multi-agent systems. The approach constructs a pairwise mutual-information graph from the hidden states of agents and applies spectral partitioning to identify the most salient coalition boundary.   We validate this method in two domains. First, in multi-agent reinforcement learning environments, the method successfully recovers programmed hierarchical and dynamic coalition structures and correctly rejects false positives arising from behavioral coordination without informational coupling. Second, using a large language model, the method identifies coalition structures implied by descriptive prompts, tracks dynamic team reassignments, and reveals a representational hierarchy where explicit labels dominate over conflicting interaction patterns. Across both settings, the recovered partition reveals subgroup organization that a scalar cross-agent mutual-information measure cannot distinguish. The results demonstrate that analyzing hidden-state mutual information through spectral partitioning provides a scalable diagnostic for identifying representational coalitions, offering a valuable tool for monitoring emergent structure in distributed AI systems.",
+      "authors": [
+        "Cameron Berg",
+        "Susan L. Schneider",
+        "Mark M. Bailey"
+      ],
+      "url": "https://arxiv.org/abs/2605.06696",
+      "published": "2026-05-04T16:59:08+00:00",
+      "updated": "2026-05-04T16:59:08+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08167",
+      "title": "Digital Image Forgery Detection Using Transfer Learning",
+      "abstract": "The increasing availability of advanced image editing tools has led to a significant rise in manipulated digital content, posing serious challenges for digital forensics and information security. This study presents a transfer learning-based framework for digital image forgery detection that integrates compression-aware feature enhancement with deep convolutional neural network (CNN) architectures.   The proposed approach introduces a hybrid input representation that combines RGB images with compression difference-based features (FDIFF), explicitly highlighting subtle manipulation artifacts that are often difficult to detect. In addition, a model-specific adaptive threshold optimization strategy based on the Youden Index is employed to improve classification reliability by achieving a better balance between true positive and false positive rates.   Experiments conducted on the CASIA v2.0 dataset using multiple pretrained CNN architectures, including DenseNet121, VGG16, ResNet50, EfficientNetB0, MobileNet, and InceptionV3, demonstrate the effectiveness and robustness of the proposed framework. The models are evaluated using comprehensive performance metrics such as accuracy, precision, recall, F1-score, Matthews correlation coefficient (MCC), and area under the ROC curve (AUC).   The results show that DenseNet121 achieves the highest accuracy and AUC, while ResNet50 provides the most balanced and reliable predictions with the highest MCC. The findings emphasize that relying solely on accuracy is insufficient for forensic applications, where minimizing false negatives is critical. Overall, the proposed framework improves the visibility of manipulation artifacts and enhances classification robustness, making it suitable for real-world digital image forgery detection scenarios.",
+      "authors": [
+        "Fatma Betul Buyuk",
+        "Gozde Karatas Baydogmus",
+        "Ali Buldu",
+        "Ayaulym Tulendiyeva",
+        "Zhuldyz Baizhumanova"
+      ],
+      "url": "https://arxiv.org/abs/2605.08167",
+      "published": "2026-05-04T17:48:36+00:00",
+      "updated": "2026-05-04T17:48:36+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.02453",
+      "title": "Testing General Relativity Through Gravitational Wave Classification: A Convolutional Neural Network Framework",
+      "abstract": "We present a machine learning framework for testing general relativity (GR) with gravitational wave signals from binary black hole mergers. Using the source parameters of 173 BBH events from the GWTC catalog as a realistic astrophysical population, we generate simulated GR waveforms and construct beyond GR (BGR) waveforms by applying controlled phase deformations. We introduce a response function formalism that provides a systematic framework for quantifying how any observable responds to modifications of GR. We train convolutional neural networks (CNNs) on two input representations: whitened waveforms and a response function type observable derived from the waveform mismatch, which isolates the effect of phase deviations from the bulk signal. Using response functions as the CNN input improves the classification sensitivity by a factor of approximately 33 compared to whitened waveforms, demonstrating that the choice of observable representation is as important as the classifier architecture. We study the fundamental limits of this classification through Bayes optimal error analysis, averaging methods that reveal coherent patterns hidden in noise, and a comparison between CNN accuracy and a single feature classifier as a proxy for human performance. At all deformation scales, the CNN outperforms the best single feature approach. We extend the framework to physically motivated theories using the parameterized post Einsteinian (ppE) formalism and apply it to massive gravity, where the classifier detects deviations for graviton masses of order $m_g \\sim 10^{-23}\\;\\mathrm{eV}/c^2$ with aLIGO design sensitivity.",
+      "authors": [
+        "Lavinia Heisenberg",
+        "Shayan Hemmatyar",
+        "Hector Villarrubia-Rojo"
+      ],
+      "url": "https://arxiv.org/abs/2605.02453",
+      "published": "2026-05-04T10:57:10+00:00",
+      "updated": "2026-05-04T10:57:10+00:00",
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE",
+        "cs.LG",
+        "physics.data-an",
+        "stat.ML"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08153",
+      "title": "Temporal-Decay Shapley: A Time-Aware Data Valuation Framework for Time-Series Data",
+      "abstract": "With the rapid development of machine learning applications on time-series data, accurately assessing the value of training samples has become essential for data selection, noise detection, and model optimization. However, traditional data valuation methods usually assume that samples are independent and identically distributed, and thus ignore the time-varying nature of sample value in time-series data. This paper proposes an improved temporal Shapley data valuation method that enables accurate sample valuation for time-series data through a temporal decay mechanism and a multi-scale fusion strategy. Specifically, we propose three progressively enhanced temporal Shapley methods. Temporal-Decay Shapley (TDS) incorporates temporal information into Shapley value computation through exponential decay weights; the improved TDS adopts power exponential decay to better adapt to nonlinear temporal drift; and Multi-Scale Temporal-Decay Shapley (MS-TDS) constructs a multi-scale fusion mechanism that balances the value of short-term hotspot samples and long-term foundational samples through parallel multi-scale valuation and sample-level adaptive fusion. Experimental results show that the proposed methods generally outperform traditional methods in noise detection and high-value data identification tasks, with more evident advantages under most strongly temporal settings, thereby effectively improving the accuracy and robustness of data valuation.",
+      "authors": [
+        "Chuwen Pang",
+        "Bing Mi",
+        "Kongyang Chen"
+      ],
+      "url": "https://arxiv.org/abs/2605.08153",
+      "published": "2026-05-04T04:32:33+00:00",
+      "updated": "2026-05-04T04:32:33+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.GT"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08170",
+      "title": "Quantitative Sobolev Approximation Bounds for Neural Operators with Empirical Validation on Burgers Equation",
+      "abstract": "Neural operators have emerged as a powerful tool for learning mappings between infinite-dimensional function spaces. However, their approximation properties in Sobolev norms remain poorly quantified, even though these norms control both function values and derivatives and are the natural metrics for PDE well-posedness, stability, and generalization. We develop a functional-analytic framework for operator learning in Sobolev spaces and connect it to the numerical behavior of Fourier Neural Operators (FNOs) on a prototypical PDE. First, for a continuous nonlinear operator $\\mathcal{G}: H^{s}(D)\\to H^{t}(D')$ with $s > d/2$ and inputs restricted to a compact subset of $H^{s}(D)$, we prove that $\\mathcal{G}$ can be uniformly approximated in $H^{t}$-norm by a neural operator with $\\mathcal{O}(\\varepsilon^{-d/s})$ trainable parameters. This yields an explicit complexity--error relation of the form $\\|\\mathcal{G}-\\mathcal{G}_θ\\|_{H^{t}} \\lesssim C N^{-s/d}$. We then study the one-dimensional viscous Burgers solution operator $\\mathcal{G}: u_{0}\\mapsto u(\\cdot,1)$ on a bounded $H^{1}$-ball and train FNOs with an $H^{1}$-loss. Across a sweep of model sizes, we obtain test $H^{1}$-errors down to $\\mathcal{O}(10^{-7})$ and relative errors of order $10^{-3}$, with predictions accurately matching both solutions and spatial derivatives on held-out data. A log-log plot of Sobolev error versus parameter count exhibits an approximate power law $\\|\\mathcal{G}-\\mathcal{G}_θ\\|_{H^{1}} \\approx C N^{-α}$ with empirical exponent $α\\approx 1.4$, and long-horizon training reveals optimization instabilities in large FNOs, providing quantitative evidence that Sobolev-space approximation theory meaningfully predicts neural-operator scaling behavior.",
+      "authors": [
+        "Nicole Hao"
+      ],
+      "url": "https://arxiv.org/abs/2605.08170",
+      "published": "2026-05-04T22:15:21+00:00",
+      "updated": "2026-05-04T22:15:21+00:00",
+      "categories": [
+        "cs.LG",
+        "math.FA"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2605.03183",
       "title": "Enhancing AI-Based ECG Delineation with Deep Learning Denoising Techniques",
       "abstract": "Evaluating canine electrocardiograms (ECGs) is challenging due to noise that can obscure clinically relevant cardiac electrical activity. Common sources of interference include respiration, muscle activity, poor lead contact, and external electrical artifacts. Classical signal denoising techniques, such as filtering and wavelet-based methods, struggle to suppress diverse noise patterns while preserving morphological features critical for accurate ECG delineation. We propose an autoencoder-based neural network model and training strategy for ECG denoising as a preprocessing step for canine ECG analysis. The model is trained to reconstruct clean cardiac signals from noisy inputs, enabling effective noise reduction without degrading diagnostically important waveforms. Our approach demonstrates strong performance across both noisy and clean ECG recordings, indicating robustness to varying signal conditions and suitability for downstream delineation tasks.",
@@ -7705,7 +7940,292 @@
       "match_method": "none",
       "best_score": 0.105,
       "backfilled": true
+    },
+    {
+      "id": "2605.08168",
+      "title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models offer a promising path to generalist robot control, but their inference latency causes observation staleness when generated actions are executed asynchronously. Several methods have been proposed concurrently to mitigate this problem: inference-time inpainting (IT-RTC), training-time delay simulation (TT-RTC), future-state-aware conditioning (VLASH), and lightweight residual correction (A2C2). Each takes a fundamentally different approach, but they have so far been evaluated independently with different codebases, base policies, and protocols. We present a systematic comparison of these four methods under controlled conditions. We develop two unified codebases that integrate all methods with harmonized library and dataset versions, and we benchmark them on the Kinetix suite with MLPMixer policies and on the LIBERO manipulation benchmark with SmolVLA, sweeping inference delays up to $d=20$ control steps. A2C2's per-step residual correction is the most effective method on Kinetix, holding above 90% solve rate up to $d=8$, and also leads on LIBERO from $d=4$ onwards. IT-RTC is competitive at low delays but degrades sharply under long chunks ($H=30$) and high delays. TT-RTC is the most robust training-based method: stable across $d_\\max$ choices, generalizes beyond its training delay distribution, and adds zero inference overhead. VLASH exhibits a clear low-delay vs. high-delay trade-off governed by the fine-tuning delay range $[0,d_\\max]$. Code is available at https://github.com/TheAyos/async-vla-inference",
+      "authors": [
+        "Ayoub Agouzoul"
+      ],
+      "url": "https://arxiv.org/abs/2605.08168",
+      "published": "2026-05-04T18:01:15+00:00",
+      "updated": "2026-05-04T18:01:15+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.293,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08169",
+      "title": "Optimized Culprit Identification Using Mobilenet and Attention Mechanisms",
+      "abstract": "Automated culprit identification in surveillance systems is a critical task that requires high accuracy along with computational efficiency for real-time deployment. In this paper, an optimized deep learning framework is proposed using a lightweight MobileNet architecture integrated with channel and spatial attention mechanisms. The proposed model enhances feature representation by selectively focusing on the most discriminative regions while suppressing irrelevant background information, thereby improving identification performance. The framework incorporates efficient preprocessing, attention based feature refinement, and a robust classification strategy optimized using the Adam Optimizer. Experiments were conducted on benchmark face recognition datasets, including Labelled Faces in the Wild (LFW), CASIA-WebFace, and a subset of VGGFace2, under realistic conditions with variations in illumination, pose, and occlusion. The results demonstrate that the proposed model achieves a high classification accuracy of 97.8%, outperforming conventional models such as baseline CNN, ResNet, and standard MobileNet. The confusion matrix analysis indicates strong class-wise discrimination with minimal misclassification, while ROC-AUC evaluation confirms robust performance across all classes. Additionally, the proposed approach maintains low computational complexity and reduced inference time, making it suitable for real-time surveillance and edge-based applications.",
+      "authors": [
+        "Savitha N J",
+        "Lata B T"
+      ],
+      "url": "https://arxiv.org/abs/2605.08169",
+      "published": "2026-05-04T19:18:42+00:00",
+      "updated": "2026-05-04T19:18:42+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.286,
+      "backfilled": true
+    },
+    {
+      "id": "2605.05245",
+      "title": "AdaGATE: Adaptive Gap-Aware Token-Efficient Evidence Assembly for Multi-Hop Retrieval-Augmented Generation",
+      "abstract": "Retrieval-augmented generation (RAG) remains brittle on multi-hop questions in realistic deployment settings, where retrieved evidence may be noisy or redundant and only limited context can be passed to the generator. Existing controllers address parts of this problem, but typically either expand context additively, select from a fixed top-k set, or optimize relevance without explicitly repairing missing bridge facts. We propose AdaGATE, a training-free evidence controller for multi-hop RAG that frames evidence selection as a token-constrained repair problem. AdaGATE combines entity centric gap tracking, targeted micro-query generation, and a utility based selection mechanism that balances gap coverage, corroboration, novelty, redundancy, and direct question relevance. We evaluate AdaGATE on HotpotQA under clean, redundancy, and noise injected retrieval conditions. Across all three settings, AdaGATE achieves the best evidence F1 among the compared controllers, reaching 62.3% on clean data and 71.2% under redundancy injection, while using 2.6x fewer input tokens than Adaptive-k. These results suggest that explicit gap-aware repair, combined with token-efficient evidence selection, improves robustness in multi-hop RAG under imperfect retrieval. Our code and evaluation pipeline are available at https://github.com/eliguo/AdaGATE.",
+      "authors": [
+        "Yilin Guo",
+        "Yinshan Wang",
+        "Yixuan Wang"
+      ],
+      "url": "https://arxiv.org/abs/2605.05245",
+      "published": "2026-05-04T14:45:49+00:00",
+      "updated": "2026-05-04T14:45:49+00:00",
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.285,
+      "backfilled": true
+    },
+    {
+      "id": "2605.05244",
+      "title": "Towards Dependable Retrieval-Augmented Generation Using Factual Confidence Prediction",
+      "abstract": "Incorporating specific knowledge into large language models via retrieval-augmented generation (RAG) is a widespread technique that fuels many of today's industry AI applications. A fundamental problem is to assess if the context retrieved by some similarity search provides indeed supporting facts, or instead misguides the generator with irrelevant information. It is critical to associate meaningful confidence measures about the factuality of the retrieval process with the generated answers. We present a new, two-staged approach to predict fact faithfulness of the output of retrieval-augmented generations. First, we employ conformal prediction to select only those retrieved chunks who have a high chance to come from the correct source. This approach in itself can improve answer quality by up to 6% in some of the studied datasets, however, the associated statistical guarantees do not hold generally, since the assumption of sample exchangeability depends on the retriever setup. We present diagnostic metrics to assess whether a setup is suitable. Second, we quantify confidence in the consistency of a generated final answer with a given retrieved context, using an attention-based factuality classifier. This approach can detect inconsistent answers with a chance of up to 77%. Our work helps to establish a novel type of certified RAG systems for a broad range of natural language industry applications.",
+      "authors": [
+        "Florian Geissler",
+        "Francesco Carella",
+        "Laura Fieback",
+        "Jakob Spiegelberg"
+      ],
+      "url": "https://arxiv.org/abs/2605.05244",
+      "published": "2026-05-04T11:28:19+00:00",
+      "updated": "2026-05-04T11:28:19+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.285,
+      "backfilled": true
+    },
+    {
+      "id": "2605.02798",
+      "title": "Measuring Accuracy and Energy-to-Solution of Quantum Fine-Tuning of Foundational AI Models",
+      "abstract": "We present an experimental study of energy-to-solution (ETS) of hybrid quantum-classical applications, enabled by direct instrumentation of power consumption of a Forte Enterprise trapped-ion quantum processor. We apply this methodology to a hybrid quantum-classical pipeline for quantum fine-tuning of foundational AI models, and validate the approach end-to-end on quantum hardware. Despite noise and limited qubit counts, the resulting models achieve accuracy competitive with and exceeding classical baselines such as logistic regression and support vector classifiers. Our results show that QPU energy consumption scales approximately linearly with qubit number for shallow circuits, while classical simulation exhibits exponential scaling, indicating a break-even for ETS around 34 qubits. The classification error improvement of the best quantum fine-tuned model over the best classical fine-tuned model considered in this study is around 24%. We further contextualize these findings with comparisons to tensor network methods. This work establishes energy-to-solution as a measurable and scalable metric for evaluating quantum applications and provides experimental evidence of favorable energy-accuracy trade-offs.",
+      "authors": [
+        "Oliver Knitter",
+        "Sang Hyub Kim",
+        "Maximilian Wurzer",
+        "Jonathan Mei",
+        "Claudio Girotto",
+        "Karen Horovitz",
+        "Chi Chen",
+        "Masako Yamada",
+        "Frederik F. Flöther",
+        "Martin Roetteler"
+      ],
+      "url": "https://arxiv.org/abs/2605.02798",
+      "published": "2026-05-04T16:38:04+00:00",
+      "updated": "2026-05-04T16:38:04+00:00",
+      "categories": [
+        "quant-ph",
+        "cs.AI",
+        "cs.ET",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.271,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08164",
+      "title": "parHSOM: A novel parallel Hierarchical Self-Organizing Map implementation",
+      "abstract": "The digital age has completely transformed the way that information is processed and stored, which makes cybersecurity a crucial field of research. Cybersecurity contains many different domains, but this work focuses on Intrusion Detection Systems (IDSs). Within the literature, Hierarchical Self-Organizing Maps (HSOMs) have been used to create trustworthy, explainable, and AI-based IDSs. However, HSOMs are trained sequentially, which means that training HSOMs on large datasets is slow. This work presents a novel parallel HSOM architecture, called parHSOM. The purpose of this research is to investigate the effect that parallel computation has on the HSOM training time. parHSOM is tested on two different testbeds, four different output grid sizes, and five different cybersecurity datasets. Performance metrics collected from these experiments show that parHSOM consistently trains faster than the Sequential HSOM algorithm without any significant loss in performance. Additionally, this work provides a platform for further investigation into parallel HSOM implementations.",
+      "authors": [
+        "Rebekah Lane",
+        "Logan Cummins",
+        "Andy Perkins",
+        "George Trawick",
+        "Ioana Banicescu",
+        "Sudip Mittal"
+      ],
+      "url": "https://arxiv.org/abs/2605.08164",
+      "published": "2026-05-04T16:46:59+00:00",
+      "updated": "2026-05-04T16:46:59+00:00",
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.196,
+      "backfilled": true
+    },
+    {
+      "id": "2605.10958",
+      "title": "Multi-Fidelity Emulation of Atmospheric Correction Coefficients with Physics-Guided Kolmogorov-Arnold Networks",
+      "abstract": "Atmospheric correction is a critical preprocessing step in optical remote sensing, but repeated high-fidelity radiative transfer simulations remain computationally expensive for dense look-up-table generation, sensitivity analysis, retrieval support, and operational preprocessing. This study presents a physics-aware multi-fidelity surrogate framework for emulating atmospheric correction coefficients using paired 6S and libRadtran simulations. Atmospheric and geometric states are sampled using Latin Hypercube Sampling, and both radiative transfer models are evaluated under matched conditions for Sentinel-2 bands using spectral-response-function-aware coefficient generation. The high-fidelity targets are path reflectance, total transmittance, and spherical albedo. A physics-guided Kolmogorov-Arnold Network, termed pKANrtm, receives the atmospheric state and low-fidelity 6S coefficients, predicts the residual relative to libRadtran, and reconstructs the high-fidelity coefficients. The pKANrtm model uses an Efficient-KAN architecture and is trained with a physics-consistency penalty applied in the original coefficient space. The proposed model is evaluated against state-of-the-art regression-based RTM surrogates. Across both standard and out-of-distribution evaluation settings, pKANrtm achieves the strongest overall predictive performance among the compared models. Runtime benchmarking demonstrates substantial acceleration relative to libRadtran, with GPU inference providing approximately four orders of magnitude single-sample speedup and batched inference reaching tens of thousands of samples per second. These results indicate that physics-aware multi-fidelity pKANrtm emulation provides an accurate, physically structured, and computationally efficient strategy for atmospheric correction coefficient generation.",
+      "authors": [
+        "Md Abdullah Al Mazid",
+        "Naphtali Rishe"
+      ],
+      "url": "https://arxiv.org/abs/2605.10958",
+      "published": "2026-05-04T22:43:25+00:00",
+      "updated": "2026-05-04T22:43:25+00:00",
+      "categories": [
+        "physics.ao-ph",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.181,
+      "backfilled": true
+    },
+    {
+      "id": "2605.05246",
+      "title": "Memory-Efficient EDA Denoising via Knowledge Distillation for Wearable IoT Under Severe Motion Artifacts and Underwater Conditions",
+      "abstract": "Electrodermal activity (EDA) is widely used in wearable Internet of Medical Things (IoMT) systems for continuous health monitoring, including autonomic assessment. However, EDA signals are highly vulnerable to motion artifacts and environmental noise, limiting reliable deployment in harsh operating conditions such as underwater. This study proposes a robust, deployable EDA denoising framework that generalizes across multiple measurement locations and harsh environments. The framework integrates a hybrid CNN-Transformer teacher model with a lightweight depth-wise separable CNN student model via a knowledge distillation (KD) strategy. To further improve robustness, a realistic data augmentation scheme is introduced to simulate diverse motion artifacts and environmental distortions. The KD-based student model significantly reduces model size (7.87 MB to 0.51 MB) and computational cost (105.1M to 11.61M FLOPs) while maintaining denoising performance (MAE: 0.144, SNR improvement: 12.08 dB) using the public dataset validation. In real-world underwater conditions (UMAC dataset) testing, the proposed method substantially improves skin conductance response reconstruction, reducing mean absolute error from 2.809 to 0.215. Furthermore, on independent testing using the CNS-OT dataset, the denoised signals enhanced downstream CNS-OT prediction performance, achieving the highest AUROC (0.806) compared to prior denoising methods. The proposed method also improved the early prediction rate (sensitivity) from 0.550 to 0.767, enabling CNS-OT prediction up to a median of 6.9 minutes before symptom onset. These results demonstrate that the proposed framework not only improves EDA signal quality but also enhances clinically relevant prediction performance while remaining suitable for deployment in resource-constrained wearable Internet of Things systems operating in harsh environments.",
+      "authors": [
+        "Yongbin Lee",
+        "Andrew Peitzsch",
+        "Youngsun Kong",
+        "Jarod Zizza",
+        "Dong-hee Kang",
+        "Farnoush Baghestani",
+        "Ki H. Chon"
+      ],
+      "url": "https://arxiv.org/abs/2605.05246",
+      "published": "2026-05-04T18:37:49+00:00",
+      "updated": "2026-05-04T18:37:49+00:00",
+      "categories": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.181,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08156",
+      "title": "LAGO: Language-Guided Adaptive Object-Region Focus for Zero-Shot Visual-Text Alignment",
+      "abstract": "Zero-shot recognition aims to classify an image by selecting the most compatible label description from a set of candidate classes without any task-specific supervision. In fine-grained settings, however, the relevant evidence often lies in localized parts, attributes, or textures rather than in the full image, making whole-image alignment suboptimal. Recent localized visual-text alignment methods address this by comparing class descriptions with multiple image regions, but they typically rely on large sets of random or redundant crops, increasing inference cost and introducing many highly redundant or weakly relevant candidates. Moreover, introducing semantic guidance too early can create an error-amplifying feedback process in which inaccurate intermediate predictions bias later localization and reinforce subsequent mistakes; we refer to this failure mode as the prediction loop. We propose LAGO (LAnguage-Guided adaptive Object-region focus), a framework for efficient and robust zero-shot localized visual-text alignment. LAGO first performs class-agnostic object-centric candidate discovery to obtain a stable visual initialization, and then applies adaptive language-guided refinement with the strength of semantic guidance controlled by intermediate confidence. It further combines object-level, contextual, and full-image evidence through an effective object-context dual-channel aggregation strategy. Extensive experiments show that LAGO consistently achieves state-of-the-art performance on standard zero-shot benchmarks and challenging distribution-shift settings, while requiring substantially fewer candidate regions at inference time.",
+      "authors": [
+        "Junyi Hu",
+        "Qiji Zhou",
+        "Lei Zhang",
+        "Yue Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2605.08156",
+      "published": "2026-05-04T09:07:00+00:00",
+      "updated": "2026-05-04T09:07:00+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.138,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08163",
+      "title": "MULTITEXTEDIT: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing",
+      "abstract": "Text-in-image editing has become a key capability for visual content creation, yet existing benchmarks remain overwhelmingly English-centric and often conflate visual plausibility with semantic correctness. We introduce MULTITEXTEDIT, a controlled benchmark of 3,600 instances spanning 12 typologically diverse languages, 5 visual domains, and 7 editing operations. Language variants of each instance share a common visual base and are paired with a human-edited reference and region masks, isolating the language variable for cross-lingual comparison. To capture script-level errors that coarse text-matching metrics miss, such as missing diacritics, reversed RTL order, and mixed-script renderings, we introduce a language fidelity (LSF) metric scored by a two-stage LVM protocol that first traces the edited target text and then judges it in isolation, reaching a quadratic-weighted \\k{appa} of 0.76 against native-speaker annotators. Evaluating 12 open-source and proprietary systems with LSF alongside standard semantic and mask-aware pixel metrics, we find pronounced cross-lingual degradation for every model, largest on Hebrew and Arabic and smallest on Dutch and Spanish, and concentrated in text accuracy and script fidelity rather than in coarse structural dimensions. We also uncover a pervasive semantic and pixel mismatch, where outputs preserve global layout and background fidelity yet distort script-specific forms.",
+      "authors": [
+        "Liwei Cheng",
+        "Zirui Song",
+        "Shibo Feng",
+        "Lunjie Zhou",
+        "Yixuan Guan",
+        "Dayan Guan"
+      ],
+      "url": "https://arxiv.org/abs/2605.08163",
+      "published": "2026-05-04T16:21:25+00:00",
+      "updated": "2026-05-04T16:21:25+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.116,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08158",
+      "title": "HY-Himmel Technical Report: Hierarchical Interleaved Multi-stream Motion Encoding for Long Video Understanding",
+      "abstract": "Long-video understanding with multimodal language models suffers from three compounding bottlenecks: heavy decode cost to obtain dense RGB frames, quadratic token growth with frame count, and weak motion perception under sparse keyframe sampling. We present HY-Himmel, a hierarchical video-language framework that allocates semantic and motion capacity separately. A small set of sparse anchor I-frames is routed to the expensive host ViT to ground object identity and scene layout, while the far denser inter-frame intervals are encoded by a lightweight compressed-domain tri-stream adapter that distils motion evidence from motion-vector maps, residual maps, and I-frame context into aligned motion tokens. These tokens are injected into the LLM via a differentiable placeholder mechanism after a dedicated Stage-1 contrastive alignment that places the motion representation in a geometry compatible with the frozen visual backbone. On Video-MME, HY-Himmel surpasses the dense 32-frame baseline by +2.3 pp (61.2 to 63.5%) while using 3.6x fewer context tokens. Extensive ablations over stream composition, motion encoder family, fusion mode, alignment objective, anchor count, LoRA rank, and video duration confirm that the full tri-stream is necessary and sufficient for the observed gains.",
+      "authors": [
+        "Haopeng Jin",
+        "Hongzhu Yi",
+        "Wenlong Zhao",
+        "Jinwen Luo",
+        "Shani Ye",
+        "Zhenyu Guan",
+        "Shiquan Dong",
+        "Tiankun Yang",
+        "Tao Yu"
+      ],
+      "url": "https://arxiv.org/abs/2605.08158",
+      "published": "2026-05-04T09:35:25+00:00",
+      "updated": "2026-05-04T09:35:25+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.099,
+      "backfilled": true
+    },
+    {
+      "id": "2605.08160",
+      "title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+      "abstract": "Monitoring archaeological sites at scale is vital for protecting cultural heritage, yet pinpointing when disturbances occur remains difficult because visual cues are subtle and ground-truth data are sparse. We introduce WATCH, a framework for month-level change-event localization over PlanetScope satellite mosaics (2017-2024, 4.7 m/px) that supports three complementary scoring approaches: (i) Temporal Embedding Distance (TED), a training-free method that scores month-to-month deviations from a local temporal reference; (ii) Self-Supervised Change Detection (SSCD), an ensemble of reconstruction, forecasting, and latent-novelty signals; and (iii) a Weakly Supervised (WS) temporal localization model trained with sparse event-month labels. We benchmark WATCH on 1,943 archaeological sites in Afghanistan using embeddings from six foundation models (CLIP, GeoRSCLIP, SatMAE, Prithvi-EO-2.0, DINOv3, and Satlas-Pretrain) alongside a handcrafted spectral and texture baseline, and assess cross-regional generalization on sites in Syria, Turkey, Pakistan, and Egypt. The unsupervised approaches (TED, SSCD) consistently outperform the weakly supervised alternative. TED with SatMAE achieves the highest exact-month recall (55% at m=0), while TED with GeoRSCLIP, CLIP, or Satlas-Pretrain reaches 92.5% within a three-month tolerance (m=3). Handcrafted features remain competitive for exact-month detection under weak supervision. Our directional margin analysis reveals systematic temporal biases: SSCD paired with GeoRSCLIP or Prithvi-EO-2.0 exhibits the strongest early-warning profile, detecting anomalies before the recorded event, while TED favors confirmation-oriented detection after a change has materialized. These results show that satellite imagery combined with foundation-model embeddings enables scalable, decision-relevant heritage monitoring. Code: https://github.com/microsoft/WATCH",
+      "authors": [
+        "Girmaw Abebe Tadesse",
+        "Titien Bartette",
+        "Andrew Hassanali",
+        "Allen Kim",
+        "Jonathan Chemla",
+        "Andrew Zolli",
+        "Yves Ubelmann",
+        "Caleb Robinson",
+        "Inbal Becker-Reshef",
+        "Juan Lavista Ferres"
+      ],
+      "url": "https://arxiv.org/abs/2605.08160",
+      "published": "2026-05-04T12:35:59+00:00",
+      "updated": "2026-05-04T12:35:59+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.081,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-05-06T04:15:23.008488+00:00"
+  "patched_at": "2026-05-13T04:31:54.405877+00:00"
 }
