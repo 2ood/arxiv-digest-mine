@@ -3,6 +3,54 @@
   "fetched_at": "2026-05-13T13:30:50.319894+09:00",
   "papers": [
     {
+      "id": "2605.13894",
+      "title": "Phylogenetic Tree Inference with Tropical Axial Attention",
+      "abstract": "In this work, we introduce a Tropical Axial Attention neural reasoning architecture that replaces vanilla softmax dot-product attention with max-plus operators, inducing a piecewise-linear structure aligned with dynamic programming formulations. From multi-species sequence alignments, our model learns all possible pairwise distances and is trained using a combination of $\\ell_1$ and tropical symmetric distance metric losses with an ultrametric violation penalty. We leverage the well known isomorphic relationship between the space of all phylogenetic trees with $n$ species and tropical Grassmannian to show that tropical attention provides a natural geometric framework for phylogenetic inference.   On empirical $DS1-DS11$ alignments, where true trees are unknown, the tropical model produces distance matrices that are substantially closer to their BME-induced tree metrics than the baseline models. These results suggest that tropical attention is a useful geometric inductive bias for neural phylogenetic inference, especially under distribution shift and when tree-metric consistency is important.",
+      "authors": [
+        "Chris Teska",
+        "Kurt Pasque",
+        "Ruriko Yoshida",
+        "Baran Hashemi"
+      ],
+      "url": "https://arxiv.org/abs/2605.13894",
+      "published": "2026-05-12T10:54:37+00:00",
+      "updated": "2026-05-12T10:54:37+00:00",
+      "categories": [
+        "q-bio.PE",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.13887",
+      "title": "Breaking Global Self-Attention Bottlenecks in Transformer-based Spiking Neural Networks with Local Structure-Aware Self-Attention",
+      "abstract": "Transformer-based Spiking Neural Networks (SNNs) integrate SNNs with global self-attention and have demonstrated impressive performance. However, existing Transformer-based SNNs suffer from two fundamental limitations. First, they typically employ max pooling layers to reduce the size of feature maps, but the max pooling captures only the strongest response and fails to comprehensively preserve representative regional features. Second, the global self-attention involves all global feature interactions, resulting in computational redundancy and quadratic computational complexity, thus conflicting with the sparse and energy-efficient characteristics of SNNs. To address these challenges, we develop Local Structure-Aware Spiking Transformer (LSFormer), a novel Transformer-based Spiking Neural Network that incorporates Spiking Response Pooling (SPooling) and Local Structure-Aware Spiking Self-Attention (LS-SSA). For the first time, our LSFormer leverages a local dilated window mechanism to capture both local details and long-range dependencies. Experimental results demonstrate that our LSFormer achieves state-of-the-art performance compared to existing advanced Transformer-based SNNs. Notably, on the more challenging static dataset Tiny-ImageNet and neuromorphic dataset N-CALTECH101, LSFormer substantially outperforms state-of-the-art baselines by 4.3\\% and 8.6\\% in top-1 classification accuracy, respectively. These results highlight the potential of LSFormer to advance energy-efficient spiking models toward practical deployment in large-scale vision applications.",
+      "authors": [
+        "Lingdong Li",
+        "Hangming Zhang",
+        "Qiang Yu"
+      ],
+      "url": "https://arxiv.org/abs/2605.13887",
+      "published": "2026-05-12T02:08:08+00:00",
+      "updated": "2026-05-12T02:08:08+00:00",
+      "categories": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2605.12597",
       "title": "The critical slowing down in diffusion models",
       "abstract": "Computational sampling has been central to the sciences since the mid-20th century. While machine-learning-based approaches have recently enabled major advances, their behavior remains poorly understood, with limited theoretical control over when and why they succeed. Here we provide such insight for diffusion models-a class of generative schemes highly effective in practice-by analyzing their application to the $O(n)$ model of statistical field theory in the Gaussian limit $n \\to \\infty$. In this analytically tractable setting, we show that training a score model with a one-layer network architecture matching the exact solution exhibits a form of critical slowing down in parameter learning. This slowing down also impacts the generation process, indicating that the well-known difficulties of sampling near criticality persist even for learned generative models. To overcome this bottleneck, we demonstrate the power of combining architectural depth with physical locality. We find that using a two-layer architecture drastically reduces the critical slowing down, with the training time scaling logarithmically rather than quadratically with system size. By introducing a local score approximation we show that this acceleration in training time can be achieved without increasing the number of neural network parameters. Taken together, these results demonstrate that diffusion models can overcome the critical slowing down through appropriate architectural design, and establish a controlled framework for understanding and improving learned sampling methods in statistical physics and beyond.",
@@ -14630,7 +14678,71 @@
       "match_method": "none",
       "best_score": 0.12,
       "backfilled": true
+    },
+    {
+      "id": "2605.13889",
+      "title": "Physics-Grounded Adversarial Stain Augmentation with Calibrated Coverage Guarantees",
+      "abstract": "Stain variation across hospitals degrades histopathology models at deployment. Existing augmentation methods perturb color spaces with arbitrary hyperparameters, lacking both a principled budget and coverage guarantees for unseen centers. We propose \\textbf{C}alibrated \\textbf{A}dversarial \\textbf{S}tain \\textbf{A}ugmentation (\\textbf{CASA}), which performs adversarial augmentation in the Macenko stain parameter space with a budget calibrated from multi-center statistics via the DKW inequality. On Camelyon17-WILDS (5 seeds), CASA achieves $93.9\\% \\pm 1.6\\%$ slide-level accuracy -- outperforming HED-strong ($88.4\\% \\pm 7.3\\%$), RandStainNA ($85.2\\% \\pm 6.7\\%$), and ERM ($63.9\\% \\pm 11.3\\%$) -- with the highest worst-group accuracy ($84.9\\% \\pm 0.9\\%$) among all 10 compared methods.",
+      "authors": [
+        "Mingi Hong"
+      ],
+      "url": "https://arxiv.org/abs/2605.13889",
+      "published": "2026-05-12T04:39:33+00:00",
+      "updated": "2026-05-12T04:39:33+00:00",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.281,
+      "backfilled": true
+    },
+    {
+      "id": "2605.13900",
+      "title": "Ready from Day 1: Population-Aware Coordination for Large-Scale Constrained Multi-Agent Systems",
+      "abstract": "In large-scale multi-agent systems with shared resource constraints, an upstream planner must iteratively evaluate candidate resource plans -- assessing feasibility, aggregate response, and marginal cost -- before committing to one. Lagrangian relaxation separates local decisions through a broadcast cost signal, but the planner still needs the cost-to-utilization response map to explore plan space, and this map depends on population composition that changes across planning cycles. We propose \\emph{population-aware coordination interfaces}: learned primal and dual maps, conditioned on compact population summaries, that the planner queries inside its iterative loop. The primal map predicts aggregate utilization under a proposed cost trajectory; the dual map predicts the cost trajectory for a target plan. By encoding response-relevant population structure, these maps remain reliable across evolving populations without per-cycle retraining, and support coordination of large populations from compact subsamples. We additionally cast Sim2Real transfer as a backtestable procedure, enabling evaluation before deployment. In a supply-chain capacity-control case study, population-aware interfaces reduce forecast error by 16--19\\% and capacity violations by 20--51\\% relative to population-unaware baselines under composition shift; 20K-agent cohorts support accurate coordination of 500K-agent populations; and simulator-trained primal maps achieve 11.1\\% MAPE on real observations versus 13--24\\% for baselines.",
+      "authors": [
+        "Angel Wang",
+        "Dominique Perrault-Joncas",
+        "Alvaro Maggiar",
+        "Carson Eisenach",
+        "Dean Foster"
+      ],
+      "url": "https://arxiv.org/abs/2605.13900",
+      "published": "2026-05-12T16:57:24+00:00",
+      "updated": "2026-05-12T16:57:24+00:00",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.278,
+      "backfilled": true
+    },
+    {
+      "id": "2605.13897",
+      "title": "Attention-Based Multimodal Survival Prediction with Cross-Modal Bilinear Fusion",
+      "abstract": "We propose a novel multimodal deep learning framework for patient-level survival prediction, which integrates whole-slide histology features, RNA-seq expression profiles, and clinical variables. Our architecture combines an ABMIL module~\\cite{ilse2018attention} for slide-level representation with feedforward encoders for RNA and clinical data. These embeddings are then integrated through low-rank bilinear cross-modal fusion~\\cite{liu2018efficient} to model conditional interactions across modalities while controlling parameter growth. The model outputs continuous risk scores that are subsequently mapped to survival times using a nonparametric calibration procedure based on the Kaplan--Meier estimator~\\cite{kaplan1958nonparametric}. By decomposing multimodal reasoning into independent pairwise interactions, the proposed fusion design promotes structural interpretability and parameter efficiency compared with full tensor and hierarchical fusion strategies. Experiments on the CHIMERA challenge dataset demonstrate improved predictive performance over concatenation-based baselines and competitive generalization on hidden evaluation cohorts. These results indicate that the proposed framework is a promising approach for multimodal survival prediction in HR-NMIBC. The implementation is publicly available at https://github.com/hassancpu/ChimeraChallenge2025_Task_3.",
+      "authors": [
+        "Hassan Keshvarikhojasteh",
+        "Josien P. W. Pluim",
+        "Mitko Veta"
+      ],
+      "url": "https://arxiv.org/abs/2605.13897",
+      "published": "2026-05-12T13:09:25+00:00",
+      "updated": "2026-05-12T13:09:25+00:00",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.247,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-05-14T04:30:12.967561+00:00"
+  "patched_at": "2026-05-15T04:36:45.699270+00:00"
 }
