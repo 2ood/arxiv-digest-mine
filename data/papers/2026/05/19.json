@@ -3,6 +3,28 @@
   "fetched_at": "2026-05-21T13:54:17.463714+09:00",
   "papers": [
     {
+      "id": "2605.21528",
+      "title": "A Reproducible Log-Driven AutoML Framework for Interpretable Pipeline Optimization in Healthcare Risk Prediction",
+      "abstract": "Accurate and reproducible disease risk prediction remains challenging due to heterogeneous features, limited samples, and severe class imbalance. This study introduces yvsoucom-iterkit, a deterministic and log-driven automated machine learning framework that formulates pipeline optimization as a fully reproducible, configuration-level system. Each pipeline is encoded as a traceable log entity, enabling analysis of component attribution, interactions, similarity, and cross-seed robustness. Experiments on the Pima Indians Diabetes and Stroke datasets across more than 18,000 pipeline configurations reveal a structured and partially redundant search space, where performance is governed by a small subset of interacting components. Random Forest importance analysis identifies augmentation (0.454), model choice (0.198), and imbalance handling (0.101) as key drivers on Pima, while imbalance handling dominates Stroke (0.406). Component similarity analysis shows strong redundancy, with feature selection variants (biMax-biMean) exhibiting low RMS distance (0.0252), mixup closely matching no augmentation (0.0279), and TomekLinks aligning with no imbalance handling (0.0325), whereas Gaussian noise shows greater divergence from no augmentation (0.10). The framework achieves strong and stable performance using ensemble models (Weighted-F1 0.89, Macro-F1 0.88 on Pima; Weighted-F1 0.94 on Stroke), while Macro-F1 remains lower on Stroke (0.67) due to class imbalance. Cross-seed analysis reveals a performance-robustness trade-off, with ensembles showing lower variability (0.023-0.026) than SVM. These results indicate that effective AutoML optimization can focus on a reduced set of high-impact components.",
+      "authors": [
+        "Rui Huang",
+        "Lican Huang"
+      ],
+      "url": "https://arxiv.org/abs/2605.21528",
+      "published": "2026-05-19T16:57:56+00:00",
+      "updated": "2026-05-19T16:57:56+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2605.20295",
       "title": "Quant.npu: Enabling Efficient Mobile NPU Inference for on-device LLMs via Fully Static Quantization",
       "abstract": "Large language models (LLMs) are increasingly deployed on mobile devices, where Neural Processing Units (NPUs) necessitate fully static quantization for optimal inference efficiency. However, existing post-training quantization (PTQ) methods predominantly rely on dynamic activation quantization, rendering them incompatible with NPU hardware constraints. To bridge the gap between high-fidelity PTQ and NPU-constrained inference, we propose Quant.npu, a integer-only fully static quantization framework. It incorporates learnable quantization parameters and rotation matrices, enabling low-bit activation-weight quantization without runtime quantization parameters re-computation. Crucially, we identify that initialization and selective optimization of quantization parameters is pivotal for optimization stability, as improper initialization and naive joint optimization induce gradient instability that disrupts the optimization of rotation matrices. To address this, we propose a rotation-and-bit-width-aware initialization tailored to diverse activation profiles and a distribution-aware selective optimization (two-stage quantization pipeline) tailored to rotated and unrotated tensors. Furthermore, we introduce a sensitivity-guided adaptive mixed-precision scheme to balance accuracy with inference efficiency. Extensive experiments on real-world mobile NPUs demonstrate that Quant.npu achieves comparable accuracy to state-of-the-art methods, while reducing inference latency by up to 15.1%.",
@@ -10601,6 +10623,100 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.091
+    },
+    {
+      "id": "2605.21522",
+      "title": "Protein Thoughts: Interpretable Reasoning with Tree of Thoughts and Embedding-Space Flow Matching for Protein-Protein Interaction Discovery",
+      "abstract": "Protein-protein interactions (PPIs) govern nearly all cellular processes, yet computational methods for identifying binding partners typically produce ranked predictions without mechanistic justification. This creates a fundamental barrier to adoption because biologists cannot assess whether predictions reflect genuine biochemical insight or spurious correlations. We present \\textbf{Protein Thoughts}, a framework that reformulates PPI discovery as an interpretable search problem with explicit reasoning. The system decomposes binding evidence into four biologically meaningful signals: sequence similarity reflecting evolutionary relationships, structural complementarity capturing geometric fit, interface balance, and chemical compatibility encoding residue-level interactions. Rather than collapsing these signals into an opaque score, we preserve their individual contributions through a transparent value function that enables both ranking and auditing. To navigate large candidate spaces efficiently, we introduce hypothesis-guided entropy-regularized Tree-of-Thoughts search. A fine-tuned language model generates search directives from embedding-derived features, classifying candidates as high-priority, exploratory, or skippable. These directives condition a Boltzmann policy that balances exploitation with entropy-driven exploration, while hypothesis-aware pruning prevents premature abandonment of promising candidates. For candidates exhibiting score disagreement, hypothesis-conditioned embedding-space flow matching transports protein embeddings toward the binder manifold. On the SHS148k benchmark, Protein Thoughts achieves mean best-binder rank of 11.2 versus 47.7 for an entropic tree search baseline, a 76% improvement, and for binding prediction the trained value function achieves $91.08 \\pm 0.19$ Micro-F1, outperforming existing PPI methods on the same dataset.",
+      "authors": [
+        "Kingsley Yeon",
+        "Xuefeng Liu",
+        "Promit Ghosal"
+      ],
+      "url": "https://arxiv.org/abs/2605.21522",
+      "published": "2026-05-19T04:14:06+00:00",
+      "updated": "2026-05-19T04:14:06+00:00",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.CE",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.343,
+      "backfilled": true
+    },
+    {
+      "id": "2605.20348",
+      "title": "Memory-Induced Supra-Competitive Outcomes Between Deep Reinforcement Learning Agents in Optimal Trade Execution",
+      "abstract": "In this paper, we investigate whether deep reinforcement-learning agents interacting in a shared optimal-execution environment can sustain supra-competitive outcomes, in the sense of achieving lower implementation shortfalls than the relevant game-theoretical competitive benchmark. We study a two-agent Almgren-Chriss liquidation game and examine how learned behavior depends on intra-episode environment feedback, the ability to interpret the mid-price and the agent's knoledge of the past. We first use ex-ante schedule-learning agents to remove intra-episode feedback and isolate what can arise when agents commit to complete liquidation trajectories before execution begins. We then allow agents to condition on the evolving state using a variety of DDQN architectures. We find that, when agents are given access to intra-episode history, especially recent prices and own past actions, supra-competitive outcomes become substantially more frequent and more persistent. These findings indicate that supra-competitive behavior in this execution game is driven not by multi-agent learning or by current price observation alone, but by feedback, memory, and state-contingent interaction along the realized execution path.",
+      "authors": [
+        "Christos Spyridon Koulouris",
+        "Carlo Campajola"
+      ],
+      "url": "https://arxiv.org/abs/2605.20348",
+      "published": "2026-05-19T18:03:48+00:00",
+      "updated": "2026-05-19T18:03:48+00:00",
+      "categories": [
+        "q-fin.CP",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.249,
+      "backfilled": true
+    },
+    {
+      "id": "2605.21527",
+      "title": "CryoNet: A Deep Learning Framework for Multi-Modal Debris-Covered Glacier Mapping. A Case Study of the Poiqu Basin, Central Himalaya",
+      "abstract": "Glaciers play a critical role as freshwater reserves and indicators of climate change, yet their automatic delineation, especially for debris-covered glaciers, remains challenging due to spectral similarity with surrounding terrain. This study introduces CryoNet, a deep learning framework that leverages a rich multi-modal dataset combining Sentinel-2 optical imagery, DEM-derived topographic variables, spectral indices, Principal Component Analysis (PCA), InSAR coherence and phase, tasseled-cap features, and GLCM texture to discriminate clean-ice glaciers, debris-covered glaciers, and glacial lakes. CryoNet is an encoder-decoder CNN with nested skip connections and spatial-channel Squeeze-and-Excitation (scSE) attention, built upon a ResNet101 encoder to capture hierarchical contextual and spatial features. The study is conducted in the Poiqu Basin in the central Himalaya, and transferability is evaluated by applying the trained model to the Mont Blanc Massif in the Alps. We additionally analyse the importance of each data layer in improving glacier mapping performance. The proposed model achieves an overall IoU of 90.52%, mean Recall of 98.08%, and mean Precision of 92.26%. For debris-covered glaciers specifically, CryoNet obtains an IoU of 90.46%, a recall of 95.79%, and a precision of 94.21%. Across both per-class and overall metrics, CryoNet surpasses DeepLabV3+, SegFormer, and U-Net, taken as state-of-the-art (SOTA) references, demonstrating its effectiveness for robust glacier mapping in complex high-mountain environments.",
+      "authors": [
+        "Farzaneh Barzegar",
+        "Tobias Bolch",
+        "Norbert Kuehtreiber",
+        "Silvia L. Ullo"
+      ],
+      "url": "https://arxiv.org/abs/2605.21527",
+      "published": "2026-05-19T15:31:46+00:00",
+      "updated": "2026-05-19T15:31:46+00:00",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.202,
+      "backfilled": true
+    },
+    {
+      "id": "2605.21523",
+      "title": "Tackle CSM in JPEG Steganalysis with Data Adaptation",
+      "abstract": "Steganalysis models excel on benchmark datasets but struggle in the wild when analyzed images are produced by a processing pipeline unseen during training. This problem known as Cover Source Mismatch (CSM) is particularly hard in realistic settings where practitioners (1) have access to only a small, unlabeled dataset, (2) are unsure of the processing techniques applied to these images, and (3) lack information on the proportion of covers and stegos in that set. To answer this challenge, we introduce TADA (Target Alignment through Data Adaptation), a framework learning to emulate the unknown processing pipeline from a small unlabeled target set. This architecture is trained with a loss combining residual covariance alignment, residual distribution matching, and a $\\ell^2$ loss constraining the emulator to produce realistic images. Across toy and operational targets, TADA yields substantial gains in robustness to CSM and improves operational generalization compared to strong holistic and atomistic baselines. Additional resources are available at this link: https://github.com/RonyAbecidan/TADA",
+      "authors": [
+        "Rony Abecidan",
+        "Vincent Itier",
+        "Jérémie Boulanger",
+        "Patrick Bas",
+        "Tomáš Pevný"
+      ],
+      "url": "https://arxiv.org/abs/2605.21523",
+      "published": "2026-05-19T11:03:43+00:00",
+      "updated": "2026-05-19T11:03:43+00:00",
+      "categories": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV",
+        "cs.MM",
+        "eess.SP"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.185,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-05-22T04:46:03.551334+00:00"
 }
