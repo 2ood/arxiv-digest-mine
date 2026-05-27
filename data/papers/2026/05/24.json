@@ -3,6 +3,60 @@
   "fetched_at": "2026-05-26T13:45:10.872232+09:00",
   "papers": [
     {
+      "id": "2605.26163",
+      "title": "Adversarial Water-Filling: Theory, Algorithms and Foundation Model",
+      "abstract": "Competitive resource allocation problems over frequency and space can be formulated as minimax interaction between transmit power and worst-case interference. This formulation naturally arises in multi-operator low Earth orbit (LEO) satellite spectrum sharing, where transmissions from competing constellations interfere in real-time. Under Gaussian channels, AWF is strongly convex--concave on nondegenerate active channels, whereas discrete constellations yield generally nonconvex mercury/water-filling formulations. In this paper we propose the Adversarial Water-Filling (AWF) problem with corresponding theory and algorithms for these real situations. In addition, we develop a wireless foundation model for AWF to learn the AWF search dynamics. The architecture incorporates permutation-invariant channel representations, a constraint-aware graph neural network (GNN) with sparse message passing, and global latent variables capturing the low-dimensional water level implied by the AWF optimality. Through learned projected extragradient iterations, the model approximates stationary solutions of the constrained minimax problem arising under mercury/water-filling. We further show that, under local regularity and contractivity conditions, the learned AWF dynamics converge locally linearly around regular stationary points. Experiments demonstrate empirical generalization across unseen problem sizes, different constraints, and multiple discrete constellations, while achieving more than one-order-of-magnitude runtime improvements over iterative baselines. The related code can be found at https://github.com/convexsoft/AWF.",
+      "authors": [
+        "Xindi Tong",
+        "Chee Wei Tan",
+        "H. Vincent Poor"
+      ],
+      "url": "https://arxiv.org/abs/2605.26163",
+      "published": "2026-05-24T17:37:30+00:00",
+      "updated": "2026-05-24T17:37:30+00:00",
+      "categories": [
+        "cs.IT",
+        "cs.LG",
+        "math.OC"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26167",
+      "title": "Planning Neural Dynamics with Lie Group Embedding through Supervised Projective Manifold Learning",
+      "abstract": "We propose Lie group embedded dynamical neural networks (LieEDNN) and the corresponding learning algorithms based on gradient descent and metric projection on smooth manifold, where we treat Lie group as an intrinsic representation for continuous symmetry of manifold geometry. Thereby we achieve learnable and stable dynamics on the underlying manifold for general Lie group, and we are able to utilize the powerful representation capability of Lie group such as SO(3) and SE(3) to solve real world engineering problems in areas such as robotics, graphics, and control. Two core challenges are: (i) General Lie groups are incompatible with addition arithmetic, which is necessary for neural network interactions. (ii) The dynamics evolve in the nonlinear representation space of special algebra rather than the normal Euclidean space, which violates the paradigm of common neural ODEs. To address these two challenges, we firstly introduce adjoint Lie group action on the Lie algebra, which induces a linear mapping and transfer to the block-wise structure of weight matrices, such that addition could operate on the Lie algebra as a vector space. Then we parameterize the Lie algebra and the adjoint action as linear transformation so that the architecture is aligned with neural network perceptrons. Explicitly, this embedding appears as block-wise manifold constraints on weights, and we develop algorithms to learn the equilibrium with stability guarantees of the temporal neural network dynamics. Experiments are implemented on a specific Lie group SE(3), with the application scenario of telescopic manipulators.",
+      "authors": [
+        "Tianwei Wang",
+        "Bryan Chen",
+        "Qian Zuo",
+        "Qiyue Xia",
+        "Xin Li",
+        "Wei Pang"
+      ],
+      "url": "https://arxiv.org/abs/2605.26167",
+      "published": "2026-05-24T22:47:25+00:00",
+      "updated": "2026-05-24T22:47:25+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.DS",
+        "math.RA"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2605.25110",
       "title": "Uncertainty-DTW for Sequences and Visual Tokens",
       "abstract": "Aligning structured data is a fundamental problem in computer vision and machine learning, underlying tasks such as time series analysis, human action recognition, and visual representation learning. Existing alignment methods, including Dynamic Time Warping (DTW) and its differentiable variants, rely on deterministic similarity measures and are therefore sensitive to heterogeneous and noisy features. In this work, we introduce uncertainty-aware alignment, a probabilistic framework that models pairwise correspondences with heteroscedastic uncertainty and performs structured matching along alignment paths. Our formulation, uncertainty-DTW (uDTW), assigns each correspondence a Normal distribution and parametrizes each alignment path by a Maximum Likelihood Estimate objective consisting of (i) a precision-weighted matching term that suppresses unreliable features, and (ii) a log-variance regularization that prevents degenerate solutions. This yields a probabilistic alignment mechanism that is robust to noise and interpretable, as uncertainty directly reflects the reliability of matches. We further generalize this framework from temporal sequences to tokenized visual representations, enabling structured matching over sets of visual tokens. The learned uncertainty can be interpreted as a reverse-attention: semantically relevant regions exhibit low uncertainty and dominate the alignment, while ambiguous/noisy regions have high uncertainty. This provides a connection between alignment, attention, and uncertainty modeling. We evaluate the proposed framework across diverse domains. The results demonstrate consistent improvements over state-of-the-art methods and show that learned uncertainty correlates with semantic importance. These findings establish uncertainty-aware alignment as a general, robust, and interpretable framework for learning from structured data.",
@@ -4613,6 +4667,211 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.098
+    },
+    {
+      "id": "2605.26155",
+      "title": "When Does Adaptive Guidance Help? Belief-Aware Privileged Distillation for Autonomous Driving Under Partial Observability",
+      "abstract": "Guided Soft Actor-Critic (GSAC) distills knowledge from a privileged full-state teacher to a partial-observation student for autonomous driving, but uses a fixed distillation coefficient lambda regardless of the agent's uncertainty. We present Belief-Aware GSAC (BA-GSAC), which modulates lambda via ensemble disagreement, and use it as a testbed for a systematic empirical study asking: when does adaptive guidance actually help? Evaluating five strategies (fixed lambda in {0.01, 0.1}, adaptive, linear decay, and vanilla SAC) across three POMDP difficulty levels on Highway-Env, we find that preliminary single-seed runs suggest benefits under mild and moderate partial observability, but under severe occlusion (evaluated with 3 seeds for all methods) the adaptive coefficient collapses to lambda_min within about 3K steps. We trace this to an observability blindness phenomenon: because the ensemble predicts partial observations, it achieves low disagreement even under heavy occlusion, modeling what is visible but unable to detect what is missing. We diagnose the root cause and propose an architectural fix (training the ensemble on full-state predictions using the guiding actor's privileged access); while not validated here, we show that even with current limitations, the warmup phase provides measurable stabilization (CV=13.3% vs. 29.8% for constant lambda=0.01). In fact, a simple deterministic linear decay schedule achieves the best severe-POMDP performance across all metrics (mean 116.5, CV=8.9%), suggesting that the scheduling effect, not the ensemble, drives the stability benefit. These findings provide practical guidance for designing uncertainty-aware teacher-student frameworks and highlight ensemble prediction targets as an important design choice.",
+      "authors": [
+        "Mehmet Haklidir"
+      ],
+      "url": "https://arxiv.org/abs/2605.26155",
+      "published": "2026-05-24T04:41:30+00:00",
+      "updated": "2026-05-24T04:41:30+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.273,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26166",
+      "title": "Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures",
+      "abstract": "The rapid proliferation of Internet of Things (IoT) devices has created an urgent demand for adaptive, resource-efficient Intrusion Detection Systems (IDS) capable of handling dynamic and evolving cyber threats. This paper investigates AOC-IDS, a state-of-the-art autonomous online IDS published at IEEE INFOCOM 2024, which employs an Autoencoder (AE) with Cluster Repelling Contrastive (CRC) loss and an autonomous Gaussian-based decision module. We first successfully replicate AOC-IDS on the UNSW-NB15 benchmark, achieving 89.39% accuracy in close agreement with the published 89.19%. We then identify four key limitations: class imbalance, unreliable pseudo-label generation, limited generalization, and computational overhead for IoT deployment, and propose targeted improvements for each. Our XGBoost-BalSamp method achieves 95.45% accuracy on UNSW-NB15, a gain of 6.26% over the baseline. Our combined deep learning approach (PseudoFilter, MixupAug, and LiteAE) achieves a best-run accuracy of 90.88% (F1: 91.45%), surpassing the base paper while reducing model parameters by 55%.These results demonstrate that targeted improvements to AOC-IDS yield consistent accuracy gains while improving practical deployability on IoT edge devices.",
+      "authors": [
+        "Hanzala Afzaal",
+        "Danish Memon",
+        "Chouhdary Bilal Raza",
+        "Muhammad Khurram Shahzad"
+      ],
+      "url": "https://arxiv.org/abs/2605.26166",
+      "published": "2026-05-24T21:48:30+00:00",
+      "updated": "2026-05-24T21:48:30+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.269,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26156",
+      "title": "Turning Bias into Bugs: Bandit-Guided Style Manipulation Attacks on LLM Judges",
+      "abstract": "The known stylistic biases in LLM judges, such as a preference for verbosity or specific sentence structures, present an underexplored security vulnerability. In this work, we introduce BITE (BIas exploraTion and Exploitation), a black-box adversarial framework that learns semantics-preserving edits to mislead an LLM judge and artificially inflate the scores it assigns. We cast the selection of stylistic edits as a contextual bandit problem and use a LinUCB policy to adaptively choose edits that maximize the judge's score without access to model parameters or gradients. Empirically, we test BITE across a diverse range of LLM judges and tasks, including both pointwise and pairwise comparisons on chatbot leaderboards and AI-reviewer benchmarks. BITE achieves an attack success rate exceeding 65% and raises scores by 1-2 points on a 9-point scale, all while preserving semantic equivalence. We further assess the attack's stealthiness, showing that BITE evades standard style-control methods and several detection baselines. Our findings expose a fundamental weakness in the LLM-as-a-judge paradigm and motivate robust, attack-aware evaluation. Our code is available at https://github.com/xianglinyang/llm-as-a-judge-attack.",
+      "authors": [
+        "Xianglin Yang",
+        "Bryan Hooi",
+        "Gelei Deng",
+        "Tianwei Zhang",
+        "Jin Song Dong"
+      ],
+      "url": "https://arxiv.org/abs/2605.26156",
+      "published": "2026-05-24T05:24:09+00:00",
+      "updated": "2026-05-24T05:24:09+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.253,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26162",
+      "title": "On the Push-Based Asynchronous Federated Learning: A Bias-Correction Aggregation Approach",
+      "abstract": "Asynchronous decentralized federated learning (ADFL) eliminates central coordination and global synchronization, making it attractive for large-scale and heterogeneous systems. However, frequent peer-to-peer communication, asynchronous updates on directed topologies, and non-IID data jointly lead to excessive communication overhead, biased aggregation and severe model drift. We propose PushCen-ADFL, a communication-efficient ADFL framework that enables stable training under asymmetric communication and delayed client participation. PushCen-ADFL couples communication, aggregation, and local stabilization in a shared centroid representation space, forming a closed loop between compression and optimization. Clients exchange centroid-form messages, apply average-preserving push-sum mixing to correct aggregation bias, and use a lightweight centroid regularization anchored in the same centroid space to mitigate drift under heterogeneity and staleness. A bounded, sender-deduplicated buffer further improves robustness under irregular asynchronous arrivals. Experiments on vision datasets demonstrate that PushCen-ADFL improves accuracy under data heterogeneity by up to 6\\% while reducing per-push communication cost by more than 80\\%, achieving a favorable accuracy-communication trade-off.",
+      "authors": [
+        "Jiahui Bai",
+        "Hai Dong",
+        "A. K. Qin"
+      ],
+      "url": "https://arxiv.org/abs/2605.26162",
+      "published": "2026-05-24T15:56:37+00:00",
+      "updated": "2026-05-24T15:56:37+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.244,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26158",
+      "title": "Furina: Fragmented Uncertainty-Driven Refusal Instability Attack",
+      "abstract": "Safety alignment in large language models (LLMs) and multimodal large language models (MLLMs) is commonly assumed to operate as a near-binary threshold mechanism. We challenge this assumption by revealing that safety behavior is governed by an instability region where small perturbations induce stochastic refusal decisions rather than deterministic outcomes. We develop a multi-metric diagnostic framework combining external and internal signals to characterize this instability. Through systematic experiments, we identify a characteristic diagnostic signature: inputs in unstable regimes exhibit elevated output uncertainty yet decreased internal safety activation, a decoupling phenomenon that explains why detection-based defenses fail against sophisticated attacks. Building on this framework, we introduce Furina, a jailbreak attack that deliberately induces this signature through fragmented, scene-anchored prompts without model-specific optimization. Furina outperforms strong single-turn and multi-turn baselines on HarmBench and achieves competitive results on MM-SafetyBench, demonstrating that uncertainty amplification provides a principled and transferable mechanism for understanding safety vulnerabilities. Code is available at: https://github.com/0xCavaliers/Furina_Jailbreak.",
+      "authors": [
+        "Tongxi Wu",
+        "Jian Zhang",
+        "Yang Gao"
+      ],
+      "url": "https://arxiv.org/abs/2605.26158",
+      "published": "2026-05-24T11:35:12+00:00",
+      "updated": "2026-05-24T11:35:12+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.215,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26165",
+      "title": "Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets",
+      "abstract": "Agentic RAG systems that equip language models with dozens to hundreds of tool definitions face a critical resource conflict: tool schemas consume the same context window needed for retrieval-augmented generation. We present the first systematic study of this tool-context trade-off, evaluating 14 models spanning 1.5B-32B local models plus one frontier API model across 6,566 controlled API calls at three context budgets (8K, 16K, 32K) with 28 tool definitions. Applying TSCG conservative-profile compression (44-50% schema token savings), we observe a binary enablement effect: at 8K tokens, JSON-schema tool definitions overflow the context window entirely, yielding near-zero EM (2.6% average), while compressed schemas restore RAG functionality with +20.5 pp average exact-match lift across all eight models (+24.7 pp among the six exhibiting full enablement). At 32K -- where both formats fit -- four of five tested models show delta <= 1 pp, confirming the effect is purely budget-driven. External validation on HotpotQA (50 multi-hop questions) shows +48 pp EM under the same overflow scenario. Frontier scaling tests demonstrate that JSON schemas overflow at ~494 tools while compressed schemas remain operational beyond 800 tools. Our results establish tool-schema compression as a necessary infrastructure layer for agentic RAG in constrained-context deployments. All code, data, and checkpoints are publicly available.",
+      "authors": [
+        "Furkan Sakizli"
+      ],
+      "url": "https://arxiv.org/abs/2605.26165",
+      "published": "2026-05-24T20:52:54+00:00",
+      "updated": "2026-05-24T20:52:54+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.182,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26154",
+      "title": "MemMorph: Tool Hijacking in LLM Agents via Memory Poisoning",
+      "abstract": "LLM-driven agents are capable of selecting external tools to complete users' tasks. However, attackers could compromise such process, steering agents toward inappropriate/wrong tools and enabling malicious actions. Most existing attacks primarily manipulate the tool metadata, which is easily detectable by auditing and may lose effectiveness as modern agents increasingly adopt memory modules to refine tool selection policies through accumulated experience. This paper proposes MemMorph, the first attack that bias tool selection by poisoning the agent's long-term memory. Rather than explicitly dictating the tool invocation decision, MemMorph injects a small number of crafted records that are disguised as technical facts, incident reports, and operational policies. These poisoned records reshape the agent's contextual perception and decision-making process, leading it to autonomously infer and select the tool preferred by the attacker. Experiments across 3 benchmarks, 10 agent backbones, and 3 memory-module implementations show that MemMorph achieves up to 85.9% attack success rate with only three injected records, outperforming the strongest baseline by up to 25% while retaining potency under 3 representative defenses. Our findings expose long-term memory as a critical and under-explored attack surface in tool-augmented agents, urging the development of memory-level integrity safeguards.",
+      "authors": [
+        "Xuanye Zhang",
+        "Yongsen Zheng",
+        "Zhuqin Xu",
+        "Kaiyu Zhou",
+        "Bowen Shen",
+        "Haoran Ou",
+        "Tianwei Zhang",
+        "Kwok-Yan Lam"
+      ],
+      "url": "https://arxiv.org/abs/2605.26154",
+      "published": "2026-05-24T04:26:13+00:00",
+      "updated": "2026-05-24T04:26:13+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.17,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26159",
+      "title": "Device Context Protocol: A Compact, Safety-First Architecture for LLM-Driven Control of Constrained Devices",
+      "abstract": "Large language models are increasingly used as orchestrators of external tools via the Model Context Protocol (MCP), but MCP is built for software services with megabytes of memory and does not descend to the microcontrollers that dominate the long tail of physical devices. Recent work (IoT-MCP) ports MCP to edge gateways at 74 KB peak memory; this still excludes the smallest commodity MCUs and, critically, does not address the safety problem of giving an unreliable caller (an LLM that may hallucinate or be prompt-injected) direct control of physical hardware. We present the Device Context Protocol (DCP): a sub-50-byte typical frame (6-byte header + CBOR payload + optional 16-byte HMAC), a manifest schema in which capability scoping, range and type checks, dry-run evaluation, and units-as-types are protocol-layer primitives, and a host-side Bridge that rejects malformed or hallucinated calls before any byte reaches the device. Reference firmware measures 27.6 KB flash / 0.6 KB RAM on ESP32; the Python Bridge, ESP32 firmware, and a language-neutral conformance suite are MIT-licensed and public. An empirical study -- 675 tool calls produced by five LLMs across four vendors (DeepSeek, Alibaba, Zhipu, MiniMax) against six categories of adversarial prompts, with the injection category instantiating AgentDojo's attack templates -- shows DCP rejects 100% of capability-escalation attempts and 78% of prompt-injection attempts, versus 0--1% for Raw MCP and IoT-MCP, matching the expressiveness of a well-formed OpenAPI 3 schema at three orders of magnitude less firmware footprint. We position DCP as the missing layer between MCP (which is moving toward enterprise SaaS connectivity) and the physical devices it does not reach.",
+      "authors": [
+        "Dongxu Yang"
+      ],
+      "url": "https://arxiv.org/abs/2605.26159",
+      "published": "2026-05-24T12:37:19+00:00",
+      "updated": "2026-05-24T12:37:19+00:00",
+      "categories": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.152,
+      "backfilled": true
+    },
+    {
+      "id": "2605.26161",
+      "title": "TSFMAudit: Data Contamination Auditing in Forecasting Time Series Foundation Models",
+      "abstract": "Time series foundation models (TSFMs) are increasingly pretrained on large corpora, raising concerns that evaluation datasets may have been exposed during pretraining and thus yield overly optimistic performance estimates. Auditing such contamination is challenging in time series because signals are continuous and heterogeneous, and often lack corpus documentation. To the best of our knowledge, this is the first work to study pretraining contamination auditing for TSFMs. We formalize the problem of pretraining contamination auditing for TSFMs and propose TSFMAudit, a method based on probe adaptation dynamics. Our key intuition is that contamination manifests as unusually efficient adaptation: after a fine tuning probe, contaminated datasets tend to exhibit faster loss reduction with smaller backbone movement. We evaluate TSFMAudit on 6 TSFMs and 187 datasets using documented training source evidence as supervision, and compare against 10 competitive baselines adapted from the LLM literature.",
+      "authors": [
+        "Hongkai Li",
+        "Shifeng Xie",
+        "Lefei Shen",
+        "Zhuo Li",
+        "Mouxiang Chen",
+        "Xiaobin Zhang",
+        "Han Fu",
+        "Jianling Sun",
+        "Xiaoxue Ren",
+        "Chenghao Liu"
+      ],
+      "url": "https://arxiv.org/abs/2605.26161",
+      "published": "2026-05-24T14:59:12+00:00",
+      "updated": "2026-05-24T14:59:12+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.15,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-05-27T04:57:12.649533+00:00"
 }
