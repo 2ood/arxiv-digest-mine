@@ -3,6 +3,52 @@
   "fetched_at": "2026-05-26T13:45:02.623005+09:00",
   "papers": [
     {
+      "id": "2605.27458",
+      "title": "Generic Interpretation Approach for Transformer Models Incorporating Heterogenous Attention Structures",
+      "abstract": "Transformer has significantly propelled the development of artificial intelligence, and certainly the development of agents as well. We categorize attention structures of Transformer into two types based on the source of the input information: homogenous and heterogenous attention structures. Heterogenous attention structures, with co-attention as a typical example, process information from different sources. Heterogenous attention structure is the foundation for Transformer models to achieve more complex functions and integrate more modal information. Whether for research purposes or policy requirements, the interpretation of Transformer models with heterogenous attention structures is an important task. The fusion of information from different sources brings new challenges. Our work mainly includes two parts: method and experimentation. In terms of method, we propose an interpretation method for Transformer models with heterogenous attention structures. In terms of experimentation, based on our experimental analysis paradigm, we interpret the operating mechanisms of representative models, conduct semantic interpretation and logical interpretation.",
+      "authors": [
+        "Yongjin Cui",
+        "Xiaohui Fan",
+        "Huajun Chen"
+      ],
+      "url": "https://arxiv.org/abs/2605.27458",
+      "published": "2026-05-25T17:42:53+00:00",
+      "updated": "2026-05-25T17:42:53+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2605.27456",
+      "title": "Metric-Aware PCA as a Linear Instance of Geometric Deep Learning",
+      "abstract": "Geometric deep learning organises neural architectures around the symmetries of their data domain, with the choice of symmetry group serving as a geometric prior that determines what representations can be learned. Metric-Aware Principal Component Analysis (MAPCA) parameterises principal component analysis by a positive-definite metric matrix, with a canonical subfamily interpolating between standard PCA and output whitening and a diagonal-metric point recovering Invariant PCA (IPCA). This paper positions MAPCA within the geometric deep learning framework. The metric is read as the geometric prior; the orthogonal group preserving it is the symmetry group it induces; MAPCA solutions are equivariant under this group with the resulting spectrum invariant; and MAPCA's defining constraint is the linear analogue of the Schur-type weight constraints used in equivariant networks. Across six axes - domain, symmetry group, equivariance, invariance, architectural primitive, and geometric prior - we construct a precise dictionary between MAPCA and geometric deep learning. The technical anchor is a uniqueness theorem characterising IPCA as the unique linear data-derived metric in the MAPCA family that is equivariant under arbitrary diagonal rescaling and projects onto the fixed-point set of the action, equivalent under normalisation to the variance-maximisation criterion in its precise form. The paper closes with three bridges: kernel PCA as the nonlinear extension, spectral graph methods as MAPCA on graphs, and a deep MAPCA construction extending the positioning into deep equivariant networks",
+      "authors": [
+        "Michael Leznik"
+      ],
+      "url": "https://arxiv.org/abs/2605.27456",
+      "published": "2026-05-25T16:07:24+00:00",
+      "updated": "2026-05-25T16:07:24+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2605.26168",
       "title": "LearnedCache: An eBPF-Integrated Perceptron-Based Eviction Policy for the Linux Page Cache",
       "abstract": "Linux is the foundation of the digital age, accounting for the majority of the cloud and mobile OS markets. Any device that runs Linux uses the Linux page cache, a central pillar in OS and application performance, serving to reduce extraneous disk access. Many page cache eviction policies have been developed but remain bound by the rigidity of heuristics. The rise of AI-driven tools in recent years, melded with the ever-increasing variety of workloads for Linux devices, sets the stage for machine-learning-driven cache eviction policies. Promising research has been done in this field, but only in the field of user-space applications such as CDNs. We develop LearnedCache, an eBPF-integrated single-layer perceptron-based cache eviction policy for the Linux page cache, trained on real kernel data from diverse workloads. We demonstrate median AUCs of nearly 80% over multiple linear models modeling page reuse time, then take a step further by embedding these models inside the Linux kernel for real-time performance evaluation. Through statistical testing over 50 paired trials against a baseline of FIFO for each workload, LearnedCache reveals that machine-learning-derived cache eviction policies are practical in the Linux kernel under representative empirical workloads and are able to surpass conventional FIFO by statistically significant margins of up to 10% in insertion rate, a frequency-adjusted derivation of cache hit rate, in specific workloads while incurring minimal overhead.",
@@ -9321,5 +9367,5 @@
       "backfilled": true
     }
   ],
-  "patched_at": "2026-05-27T04:57:12.022286+00:00"
+  "patched_at": "2026-05-28T04:51:29.412712+00:00"
 }
