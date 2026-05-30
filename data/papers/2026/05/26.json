@@ -12329,7 +12329,106 @@
       "match_method": "none",
       "best_score": 0.094,
       "backfilled": true
+    },
+    {
+      "id": "2605.28882",
+      "title": "GrowLoop: Self-Evolving Conversation Evaluation Seeded by Human",
+      "abstract": "With the rapid advancement of large language models, evaluating human-likeness in open-ended conversation has become increasingly important. However, human-likeness is a form of tacit knowledge that humans perceive intuitively, yet the underlying criteria resist explicit formulation. Human judgments vary widely, with strong agreement on some cases and legitimate disagreement on others. Meanwhile, the criteria behind human judgments remain implicit, leaving no clear basis for constructing cases. Further, what counts as human-like is not static, but evolving with model capability and human expectations. Despite progress in evaluation methods such as expert-authored benchmarks, Reward Models, and self-evolving benchmarks, none addresses all three challenges simultaneously. Therefore, we propose GrowLoop, a self-evolving conversation evaluation system that continuously adapts as models advance and scenarios shift. With minimal human seed annotations as the first mover, LLM agents iteratively extract and refine evaluation rubrics through Heuristic Learning. Human-AI agreement is required where annotators converge, while only plausibility is expected where they diverge. Moreover, the Rubric-Case co-evolution mechanism enables continuous evolution, expanded through new seeds when the evaluation target moves. Applied to human-likeness evaluation in open-ended conversation, the generated rubrics not only substantially outperform existing methods in alignment with human judgments, but also uncover issues that annotators overlook. The resulting benchmark effectively discriminates models across capability tiers and reveals where they fall short, while generalizing to new scenarios and adapting as models advance. Our work shifts the benchmarking paradigm from manual updates or difficulty scaling to comprehensive, continuous self-evolution.",
+      "authors": [
+        "Yihang Lin",
+        "Yunze Gao",
+        "Zeyang Lin",
+        "Dongbo Li",
+        "Kun Peng",
+        "Chenglong Song",
+        "Yue Liu"
+      ],
+      "url": "https://arxiv.org/abs/2605.28882",
+      "published": "2026-05-26T16:53:14+00:00",
+      "updated": "2026-05-26T16:53:14+00:00",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SD"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.258,
+      "backfilled": true
+    },
+    {
+      "id": "2605.28880",
+      "title": "Towards Continuous-time Causal Foundation Models",
+      "abstract": "Extending discrete-time causal Prior-data Fitted Networks for time series to continuous time invites writing the mechanism as a stochastic differential equation (SDE) -- but if the SDE is integrated \\emph{once per observation gap}, the trajectory law depends on when it is observed, and the prior remains a discrete-time Markov model in SDE clothing.   We propose a precise continuity criterion -- trajectory-law invariance to the observation schedule -- together with a three-tier taxonomy (discrete; naive observation-grid integration; fine-grid integration with decoupled observation) and a construction realising the top tier on a random DAG with OU or small-MLP nonlinear drifts, irregular observation schedules, and hard / soft / time-varying interventions.   A $2 \\times 2$ encoder $\\times$ integrator ablation, run independently on a linear and a nonlinear prior, finds fine-grid integration beats naive on 8/8 cells (sign-consistency $p < 1/256$) with the gap growing as the eval grid refines; the encoder axis is null with fine integration but time-aware-leading with naive.   We release the prior and a preliminary zero-shot protocol on pharmacokinetic and physical-system data.",
+      "authors": [
+        "Dennis Thumm",
+        "Ruben Wiedemann",
+        "Ying Chen"
+      ],
+      "url": "https://arxiv.org/abs/2605.28880",
+      "published": "2026-05-26T12:06:04+00:00",
+      "updated": "2026-05-26T12:06:04+00:00",
+      "categories": [
+        "cs.LG",
+        "physics.data-an",
+        "stat.ME"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.181,
+      "backfilled": true
+    },
+    {
+      "id": "2605.28876",
+      "title": "LogDx-CI: Benchmarking Log Reduction Tools for LLM Root-Cause Diagnosis",
+      "abstract": "CI failure logs are large (median 5k lines, max 200k in this corpus) and noisy. Coding agents that try to debug them depend on an upstream tool to reduce the log to a manageable context, but the field has had no public empirical comparison of which reductions preserve enough evidence for downstream LLM diagnosis. We introduce LogDx-CI, a benchmark that compares 11 context-reduction tools (raw, tail, grep, three RTK modes, two real LLM map-reduce summarizers, three hybrid routers) on 35 real GitHub Actions failure cases, scored by 3 LLM debugger families (Claude Haiku 4.5, Claude Sonnet 4.6, OpenAI gpt-5-mini) plus a Sonnet 4.6 tool-using agent. We report three load-bearing findings. (1)~Hybrid grep+tail routers dominate the cost-quality Pareto frontier; the top two methods score 0.670 / 0.666 at $\\sim$ \\$0.03 per case, same-ballpark quality as standalone grep at $4.5\\times$ fewer tokens. (2)~In the agent-loop regime, the quality range across reduction tools collapses $7\\times$ (single-shot spread 0.42 $\\to$ agent-loop spread 0.059); the agent rescues weak contexts via follow-up tool calls. However, cost differences persist: weak contexts force the agent to issue 2--4$\\times$ more tool calls to recover. (3)~A cross-family LLM-summary pair (gpt-5-mini summarizer feeding a Claude Haiku debugger) beats the same-family pair by $+0.071$ averaged across four diagnoser variants, falsifying the self-call-bias hypothesis on this task. The gpt-5-mini summarizer is also the agent-loop \\#1 method (score 0.749) at $0.37$ tool-calls per case and $10\\times$ lower reducer cost than the Haiku summarizer (\\$0.18 vs \\$1.75 per case). All data, code, per-case bundles, and reproducibility infrastructure are public.",
+      "authors": [
+        "Bowen Qin"
+      ],
+      "url": "https://arxiv.org/abs/2605.28876",
+      "published": "2026-05-26T06:34:47+00:00",
+      "updated": "2026-05-26T06:34:47+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.155,
+      "backfilled": true
+    },
+    {
+      "id": "2605.28883",
+      "title": "Ultra-Reduced-Impact-Encased-Logging (URIEL): propose a new method for selective sustainable logging and post-harvest silvicultural treatment in tropical forest using airborne robotics systems",
+      "abstract": "Tropical forests worldwide are under intense deforestation pressure driven by economic and political interests, and scientific evidence suggests this deforestation contributes to climate change. This paper proposes a novel logging method for tropical forests, Ultra-Reduced-Impact-Encased-Logging (URIEL). This new method is based on heli-logging techniques combined with intensive use of robotics and AI integrated with post-harvest silvicultural treatments performed by drones. The concept of appropriate equipment for this method was developed, dimensions were determined, details were completed in a digital proof of concept, and an effective digital simulation and economic feasibility analysis were carried out for various helicopter-timber-distance combinations. The results demonstrated that a URIEL method has high economic viability and makes it possible to virtually eliminate collateral damage to forests while maintaining ecosystem services. The main conclusion of this paper is that, despite the satisfactory scientific and technological results, the feasibility of a Uriel method depends on the integration of stakeholders intrinsic to the context: high-tech industry; political governments; certified logging companies; and native populations.",
+      "authors": [
+        "Daniel Albiero",
+        "Gelton Fernando de Morais",
+        "Daniela Han",
+        "Flávio Roberto de Freitas Gonçalves",
+        "Artur Vitório Andrade Santos",
+        "Wesllen Lins de Araújo",
+        "Alessandra Maia Freire",
+        "Cláudio Kiyoshi Umezu",
+        "Mateus Peressin",
+        "Francesco Toscano",
+        "Admilson Írio Ribeiro",
+        "Alfeu J. Sguarezi Filho",
+        "Américo Ferraz Dias Neto",
+        "Angel Pontin Garcia"
+      ],
+      "url": "https://arxiv.org/abs/2605.28883",
+      "published": "2026-05-26T20:30:42+00:00",
+      "updated": "2026-05-26T20:30:42+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.146,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-05-28T04:51:29.383682+00:00"
+  "patched_at": "2026-05-30T04:35:53.959500+00:00"
 }
