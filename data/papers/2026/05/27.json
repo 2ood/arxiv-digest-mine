@@ -3,6 +3,43 @@
   "fetched_at": "2026-05-28T13:51:25.667352+09:00",
   "papers": [
     {
+      "id": "2606.00108",
+      "title": "Project SPARROW and the Future of Conservation Technology",
+      "abstract": "Global biodiversity is declining at unprecedented rates, yet the tools available to monitor and protect ecosystems remain limited by constraints in power, connectivity, and accessibility. We present SPARROW, a hardware and software open-source platform that integrates solar energy, edge artificial intelligence, and satellite communication to enable continuous, autonomous biodiversity monitoring in remote environments. Each SPARROW node combines a low-power Graphics Processing Unit (GPU) with modular visual, acoustic, and environmental sensors, performing on-device deep learning inference and transmitting summarized results through Low-Earth-Orbit (LEO) satellite or Global System for Mobile Communications (GSM) networks.   We deployed SPARROW across tropical, temperate, and montane ecosystems in Colombia, Peru, Tanzania, and the United States, where it sustained 24/7 operation under variable environmental conditions and collected more than two million images and acoustic recordings in the first 190 days. The system demonstrated robust real-time classification and adaptive power management, achieving full autonomy without on-site human intervention. By integrating renewable energy, on-edge AI, and open-source design, SPARROW lowers the technical and financial barriers to ecological monitoring and establishes a scalable foundation for a distributed, intelligent network of sensors, an emerging \"Internet of Living Things\" for planetary biodiversity monitoring.",
+      "authors": [
+        "Juan M. Lavista Ferres",
+        "Carl Chalmers",
+        "Bruno Demuro Segundo",
+        "Zhongqi Miao",
+        "Andres Hernandez Celis",
+        "Federico Alves Torres",
+        "Isai Daniel Chacon Silva",
+        "Anthony Cintron Roman",
+        "Allen Kim",
+        "Meygha Machado",
+        "Luana Marotti",
+        "Amy Michaels",
+        "Daniela Ruiz Lopez",
+        "Catherine Romero",
+        "Rahul Dodhia",
+        "Inbal Becker-Reshef",
+        "Pablo Arbelaez"
+      ],
+      "url": "https://arxiv.org/abs/2606.00108",
+      "published": "2026-05-27T01:34:16+00:00",
+      "updated": "2026-05-27T01:34:16+00:00",
+      "categories": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2605.29183",
       "title": "TIMEGATE: Sustainable Time-Boxed Promotion Gates for Continual ML Adaptation Under Resource Constraints",
       "abstract": "As machine learning(ML) systems evolve to continual adaptation, each re-training cycle uses compute, annotation, and energy. We introduce TIMEGATE, a policy layer managing adaptation by budgeting time, labeling, training, and evaluation. TIMEGATE emits a metric-availability signal M for partial vs. full-evaluation decisions. We validate: (i) labeling outperforms training by 2.3x on Adult tabular; (ii) it transfers to LLaMA-3.1-8B + QLoRA on SST-2 (accuracy 0.80 to 0.96; M =1 in 35/36 runs); (iii) M is informative, 28-cell sensitivity shows M drops to 0.81 at tight thresholds; (iv) 100-cycle simulation achieves 66% evaluation-compute savings with no silent mis-promotions; (v) 10%-slice evaluation on LLaMA uses 89% less wall-clock and energy on a single H200 (ratios agree to 0.2%).",
@@ -13887,7 +13924,107 @@
       "match_method": "none",
       "best_score": 0.046,
       "backfilled": true
+    },
+    {
+      "id": "2606.00111",
+      "title": "ChWDTA: Channel-wise Wavelet-Domain Transformer Attention and Entropy Modeling for Learned Image Compression",
+      "abstract": "State-of-the-art learned image compression (LIC) schemes are increasingly based on hybrid CNN-transformer architectures. To further improve rate-distortion performance, we introduce channel-wise wavelet transforms into both the transformer and entropy-coding components. First, we propose a channel-wise wavelet-domain transformer attention (ChWDTA) mechanism. ChWDTA keeps the efficient windowed spatial self-attention used in modern LIC backbones, but computes the Q/K/V projections on channel-wise wavelet-transformed features before mapping the attention output back with the inverse transform. The resulting Channel-wise Wavelet-Domain Transformer Block (ChWDTB) therefore preserves the spatial tokenization pattern of windowed attention while sparsifying the channel covariance seen by the attention projections. Second, in the entropy-coding stage, we introduce a channel-wise wavelet packet (ChWP) decomposition that produces four equal-sized subbands, which better fit channel-wise slice-based autoregressive entropy modeling. When each channel-wise subband is divided into two slices, we use eight slices for entropy coding. With this configuration, the proposed scheme obtains BD-rate reductions of -17.82%, -19.15%, and -22.56% on the Kodak, CLIC Professional Validation, and Tecnick test sets, respectively. Even when each channel-wise subband is coded as a single slice, the scheme still retains most of the coding gains with lower complexity. The results confirm the advantage of introducing wavelet transform in CNN-transformer-based LIC schemes.",
+      "authors": [
+        "Haisheng Fu",
+        "Runyu Yang",
+        "Feng Ding",
+        "Siyu Zhu",
+        "Jie Liang",
+        "Xiaoxiao Li",
+        "Zhenman Fang",
+        "Jingning Han"
+      ],
+      "url": "https://arxiv.org/abs/2606.00111",
+      "published": "2026-05-27T04:36:08+00:00",
+      "updated": "2026-05-27T04:36:08+00:00",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.254,
+      "backfilled": true
+    },
+    {
+      "id": "2606.00115",
+      "title": "Physics from Video: Identifiability of Time-Invariant Second-Order ODEs under Minimal Trajectory Conditions",
+      "abstract": "Bridging the gap between visual realism and physical understanding is a core challenge for video-based world models. We study the structural identifiability of continuous-time physical laws from raw pixels, focusing on whether an encoder-only pipeline can uniquely recover the parameters of second-order linear ODEs. We prove that a level-set slope-coverage condition ensures the learned latent space is locally affine to the true physical state, enabling exact parameter recovery. Our theory provides the first characterization of minimal data requirements across damping regimes, establishing that underdamped systems are identifiable from a single video clip, whereas other regimes require three diverse trajectories. We further introduce a variance-floor regularizer to stabilize the decoder-free objective and prevent latent collapse. Validated on synthetic and real-world data, our approach demonstrates that interpretable physical constants can be reliably estimated from video without the need for compute-intensive pixel reconstruction, ensuring both physical correctness and transparency. Code is available at https://github.com/wenjiewang3/PhysicsFromVideo.",
+      "authors": [
+        "Yuanyuan Wang",
+        "Wenjie Wang",
+        "Kun Zhang",
+        "Mingming Gong"
+      ],
+      "url": "https://arxiv.org/abs/2606.00115",
+      "published": "2026-05-27T13:22:29+00:00",
+      "updated": "2026-05-27T13:22:29+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.208,
+      "backfilled": true
+    },
+    {
+      "id": "2606.00116",
+      "title": "Enhancing BiGRU with a KAN Block for Legal Document Classification and Summarization",
+      "abstract": "This study introduces a novel architecture of KAN-based BiGRU model for the task of classification and summarization of legal documents in a low-resource multilingual setup. In order to tackle problems associated with domain language, the usage of different languages, long dependencies within context, and class imbalance, we employ the dataset composed of legal documents from Bangladesh and taken from Manupatra, which include Bengali, English, and transliterated Bengali languages. Our classification task involves BiGRU model, along with Kolmogorov-Arnold Network (KAN) module, while the summarization part utilizes attention-based GRU, combined with a KAN model head. Classification model yields 67.96% of accuracy and 0.65 F1 score; while ROUGE-1, ROUGE-2, and ROUGE-L measures for summarization yield 0.38, 0.23, and 0.31 F1 scores, correspondingly. Ablation study shows that the use of KAN increases classification accuracy from 57.34% to 67.96%. Moreover, our proposed technique is compared to several baselines, including classical ML algorithms and pretrained language models.",
+      "authors": [
+        "Ahmed Faizul Haque Dhrubo",
+        "Souvik Pramanik",
+        "Most. Aysha Siddika Sumona",
+        "Shahnewaz Siddique",
+        "Mohammad Ashrafuzzaman Khan",
+        "Mohammad Abdul Qayum",
+        "Mohsin Sajjad"
+      ],
+      "url": "https://arxiv.org/abs/2606.00116",
+      "published": "2026-05-27T14:59:27+00:00",
+      "updated": "2026-05-27T14:59:27+00:00",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.189,
+      "backfilled": true
+    },
+    {
+      "id": "2606.00109",
+      "title": "VDSB-GWSyn: Diffusion Schrödinger Bridge for Controllable and Anatomically Feasible Guidewire Synthesis in Coronary Angiography",
+      "abstract": "Coronary guidewire endpoint localization is a fundamental capability for computer-assisted PCI, and its importance increases as robot-assisted PCI is progressively adopted to reduce operator radiation exposure. However, the scarcity of annotated CAG images with guidewires and the limited adaptability of existing guidewire synthesis models remain key bottlenecks for guidewire endpoint localization. To address this issue, we propose VDSB-GWSyn, a Diffusion Schrödinger Bridge (DSB) model-based framework, enabling synthesis of controllable, high-fidelity guidewire samples under complex anatomical backgrounds. VDSB-GWSyn first uses our shape prior algorithm to learn the basic guidewire geometry. It then generates guidewire masks under constraints imposed by the vessel segmentation masks and outputs the corresponding endpoint coordinates. Finally, it synthesizes realistic guidewire samples on real CAG images using DSB conditioned with SPADE. Experimental results show that the guidewire samples synthesized by VDSB-GWSyn achieve favorable ROI-FID and ROI-KID, as well as high IPR scores. In addition, incorporating our synthesized data for synthetic pre-training followed by real fine-tuning substantially improves downstream guidewire endpoint localization, reducing MPE from 16.01~px to 7.71~px and increasing PCK at 3~px from 52.63\\% to 86.27\\%, leading to more clinically reliable deployment of robot-assisted guidewire delivery systems. Moreover, the core design philosophy of controllable device synthesis with strict background preservation and anatomical feasibility constraints has the potential to transfer to other interventional device perception tasks where annotated data are scarce.",
+      "authors": [
+        "Haoyuan Tang",
+        "Zhuo Zhang",
+        "Jialin Li",
+        "Shuai Xiao",
+        "Jiachen Yang"
+      ],
+      "url": "https://arxiv.org/abs/2606.00109",
+      "published": "2026-05-27T01:35:35+00:00",
+      "updated": "2026-05-27T01:35:35+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.154,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-05-30T04:35:53.042579+00:00"
+  "patched_at": "2026-06-02T05:13:03.279799+00:00"
 }
