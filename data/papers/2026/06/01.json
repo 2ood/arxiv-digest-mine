@@ -3,6 +3,144 @@
   "fetched_at": "2026-06-02T14:12:33.953403+09:00",
   "papers": [
     {
+      "id": "2606.04028",
+      "title": "Novel Aspects of IEEE SA P3109 Arithmetic Formats for Machine Learning",
+      "abstract": "The IEEE P3109 draft standard defines a parameterized family of binary floating-point formats and associated operations, with a focus on facilitating machine learning. These formats allow efficient and consistent representation of values in a small number of bits. The defined formats are parameterized over width and precision in bits, signedness, and the presence of infinities. Operations are defined by decoding floating-point values to the set of closed extended reals: the reals augmented with positive and negative infinity and NaN (Not a Number). Explicit treatment of NaN and infinite operands ensures that only real arithmetic is invoked in operation definitions. Extensive rounding and saturation modes are defined; stochastic rounding is included. Operations are exception-free, accelerating throughput, with exceptional situations communicated through return values, e.g., NaN. Operations on blocks of values sharing a common scale factor are defined in terms of the underlying operations in a uniform manner. System vendors may describe approximate implementations via a novel scale-invariant measure, akin to units in the last place, called kappa-approximation. Standard function definitions and various other properties are mechanically verified and generated using formal specifications.",
+      "authors": [
+        "Andrew Fitzgibbon",
+        "Christoph M. Wintersteiger",
+        "Jeffrey Sarnoff"
+      ],
+      "url": "https://arxiv.org/abs/2606.04028",
+      "published": "2026-06-01T19:27:39+00:00",
+      "updated": "2026-06-01T19:27:39+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04025",
+      "title": "The Biomimetic Architecture of Software 4.0",
+      "abstract": "Dominant programming paradigms inherit an execution model optimised for a bygone era of a single human mind instructing a local machine, leaving contemporary systems burdened with historical path dependencies. When forced to host multi-dimensional, connectionist intelligence, this brittle assembly model fractures under the weight of a profound probabilistic-symbolic impedance mismatch. While contemporary Software 3.x frameworks attempt to patch the mismatch by encasing large language models (LLMs) in increasingly complicated external harnesses, this spiralling architectural complexity only compounds the carrying cost of static code assembly. To address the cause rather than the effects, this paper introduces Software 4.0 -- an autopoietic heterarchy of human intelligence, neural AI, and natively reflective symbolic substrate. Under this paradigm, software is transformed from an inert corpus to be parsed into a self-regulating metabolic network that natively verifies, modifies, and evolves its own structural integrity. We present Recognitive, the programming language and platform that materialises this architecture. By offloading the burden of structural verification to a deterministic substrate, it unlocks a superior inference-time scaling regime -- one where connectionist compute translates entirely into deep semantic exploration and hypothesis traversal rather than the ruinous computational and financial cost of simulating structural constraints probabilistically. Moving beyond the legacy 'Software Factory' mindset, we outline the theoretical foundations required to ground connectionist intent and arrive fully in the intelligence age. This is a foundational vision paper; empirical evaluation and formal specification of the type system and operational semantics are the subject of future work.",
+      "authors": [
+        "Philip Sheldrake",
+        "Dirk Scheffler"
+      ],
+      "url": "https://arxiv.org/abs/2606.04025",
+      "published": "2026-06-01T16:23:45+00:00",
+      "updated": "2026-06-01T16:23:45+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04033",
+      "title": "Inverse Critical Experiment Design via Gradient Optimization and a Multigroup Attention-Based Neural Network Architecture",
+      "abstract": "The validation of advanced nuclear reactor designs and fuel concepts requires critical experiments with high neutronic similarity to the target technology. Neutronic similarity is quantified by the correlation coefficient $c_k$, which captures the shared bias in $k_\\text{eff}$ induced by uncertainties in nuclear data. Generally, a $c_k\\geq0.9$ is needed for an experiment to be sufficiently similar to a target technology. This work presents a methodology for the inverse design of critical experiments. Deep neural network surrogate modeling and nonparametric gradient optimization are used to generate experiment geometries that maximize $c_k$.   A deep neural network is trained on OpenMC-calculated sensitivity vectors for grid-based critical experiment geometries. The model architecture combines a U-Net convolutional encoder-decoder with a novel multigroup attention pooling layer, introduced to capture the differing spatial dependencies of sensitivities. Multigroup attention pooling is shown to achieve better performance than traditional pooling, as well as interpretable internal behavior. The differentiability of the surrogate enables gradient-based optimization of the full combinatorial design space, allowing $c_k$ to be maximized by directly changing the material assignment of each position in the geometry grid.   The method is applied to the validation of the TN-Americas TN-LC transportation cask with HALEU fuel, for which existing critical experiment coverage is limited. The optimization procedure is shown to produce experiment geometries achieving $c_k$ scores of 0.97757, 0.81324, and 0.93276 for three configurations of interest. This approach demonstrates the potential of deep learning and gradient optimization to accelerate the development of advanced nuclear technology.",
+      "authors": [
+        "Will Savage",
+        "Logan Burnett",
+        "Dean Price"
+      ],
+      "url": "https://arxiv.org/abs/2606.04033",
+      "published": "2026-06-01T21:19:18+00:00",
+      "updated": "2026-06-01T21:19:18+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04020",
+      "title": "SpliceBind: Isoform-Aware Prediction of Binding Pocket Druggability",
+      "abstract": "Splice-mediated drug resistance occurs in up to 40% of patients on targeted kinase inhibitors, yet state-of-the-art druggability tools operate on single structures and cannot compare across isoforms. We introduce SpliceBind, a graph neural network framework for isoform-aware druggability prediction. Beyond improving prediction accuracy (AUROC 0.703 vs. P2Rank 0.634, p = 0.026), we address a more fundamental question: when do structural methods succeed, and when must they fail? Systematic analysis of six clinically validated variants spanning five mechanism classes reveals a two-tier resistance taxonomy. Domain deletions (AR-V7, Delta = -18.39) and pocket disruptions produce structurally detectable changes, while allosteric mechanisms (BRAF-p61) remain fundamentally invisible to any pocket-centric approach -- a boundary no algorithmic improvement can cross. Notably, learned embeddings capture affinity-based resistance missed by geometry alone (ALK-L1196M: Delta_SB = -0.228 vs. Delta_P2Rank = -0.95), partially bridging the structural-biochemical gap. On 229 kinase pockets spanning 25 families, SpliceBind achieves AUROC 0.703 (p = 0.026 vs. P2Rank) with robust generalization to held-out families (AUROC 0.761). This taxonomy transforms clinical workflows: upon discovering a splice variant, clinicians can immediately determine whether computational triage suffices or biochemical validation is required -- reducing time from variant discovery to therapeutic decision.",
+      "authors": [
+        "Bryan Cheng",
+        "Austin Jin",
+        "Joshua Chang"
+      ],
+      "url": "https://arxiv.org/abs/2606.04020",
+      "published": "2026-06-01T09:21:24+00:00",
+      "updated": "2026-06-01T09:21:24+00:00",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04031",
+      "title": "Pseudospectral Bounds for Transient Amplification in Coupled Gradient Descent",
+      "abstract": "Coupled gradient descent--where the update of one parameter block depends on another--underlies bilevel optimization, two-time-scale stochastic approximation, and adversarial training. When the coupled Jacobian is block-triangular, asymptotic stability is governed by the spectral radii of the diagonal blocks, yet transient amplification before convergence can be arbitrarily large due to non-normality. We develop a sharp pseudospectral theory for such block-triangular Jacobians, proving that the Kreiss constant satisfies $K(J) \\leq 2/(1-γ) + \\|C\\|/(4(1-γ))$ when the diagonal blocks are symmetric with spectral radii at most $γ< 1$, and we establish matching minimax lower bounds. We characterize the critical coupling threshold for spectral instability and extend the analysis to nearly self-referential systems via a Neumann-series perturbation framework. As a consequence, we obtain a finite-horizon iteration-complexity bound of $O(K(J)^2 \\log(1/δ))$ for stochastic coupled descent. Framed as scaling laws for non-stationary two-time-scale optimization, our results expose a non-asymptotic, instance-dependent regime of high-dimensional learning dynamics that is invisible to spectral-radius analysis. Experiments on linear-quadratic problems, IQC-based comparisons, and neural-network training confirm the theory.",
+      "authors": [
+        "Ahanaf Hasan Ariq"
+      ],
+      "url": "https://arxiv.org/abs/2606.04031",
+      "published": "2026-06-01T20:42:04+00:00",
+      "updated": "2026-06-01T20:42:04+00:00",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04021",
+      "title": "Structure-Aware Prediction of PROTAC-Mediated Protein Degradability via Graph Neural Networks",
+      "abstract": "Proteolysis-targeting chimeras (PROTACs) can selectively degrade disease-causing proteins, yet predicting which targets are amenable to degradation remains a critical bottleneck: existing computational methods require the complete PROTAC molecular structure, information unavailable before synthesis. We present DegradoMap, a graph neural network that predicts PROTAC-mediated degradability from protein structure and E3 ligase identity alone -- the minimal information available at the target selection stage. The model encodes biophysical priors through lysine-weighted graph pooling with per-protein normalization, models protein-E3 compatibility via cross-attention, and integrates cellular context from the Cancer Dependency Map. On the PROTAC-8K benchmark (3,101 samples, 155 targets, 10 E3 ligases), DegradoMap achieves 0.646+-0.124 AUROC on target-unseen evaluation (best seed: 0.7449) and 0.811 AUROC on CRBN->VHL E3-unseen transfer, outperforming GNN and machine learning baselines. The model additionally recommends optimal E3 ligases with 74% Hit@3 accuracy. Two findings carry broader implications: E(3)-equivariant architectures underperform the simpler invariant design for this scalar prediction task, and ESM-2 embeddings improve peak performance only with careful regularization -- naive integration fails. DegradoMap provides pre-synthesis computational guidance for degradability assessment; its well-calibrated confidence scores (ECE = 0.029, target-unseen) enable practitioners to prioritize high-confidence predictions for experimental follow-up. However, the high seed variance (std = 0.124) and limited E3 coverage require ensembling for reliable deployment.",
+      "authors": [
+        "Bryan Cheng",
+        "Austin Jin"
+      ],
+      "url": "https://arxiv.org/abs/2606.04021",
+      "published": "2026-06-01T09:39:22+00:00",
+      "updated": "2026-06-01T09:39:22+00:00",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Graph Neural Networks",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2606.02663",
       "title": "AdaWeather: Adaptively Mixing Probabilistic Weather Forecasts with Logarithmic Regret",
       "abstract": "Recent advances in machine learning have produced probabilistic weather forecasting models comparable to state-of-the-art numerical weather predictors. But no model consistently dominates spatio-temporally, and relative performance is highly context-dependent. This motivates adaptive methods for combining multiple forecasts to obtain improvements and robustness. While combined forecasts have been proposed in the literature, these are achieved either through supervised learning or through prediction with expert advice methods. We introduce AdaWeather, an adaptive framework that combines many probabilistic forecasts using both machine learning as well as mixture of experts to arrive at a unified improved probabilistic forecast. While traditional expert methods develop the regret bounds with respect to the best single expert in hindsight, we extend the algorithm and analysis to show our method has logarithmic regret compared to the best static mixture of experts in hindsight. Empirically, we focus on forecasting temperature, and observe improvements over existing methods.",
@@ -11478,7 +11616,143 @@
       "match_method": "none",
       "best_score": 0.111,
       "backfilled": true
+    },
+    {
+      "id": "2606.04032",
+      "title": "Do Transformers Need Three Projections? Systematic Study of QKV Variants",
+      "abstract": "Transformers have become the standard solution for various AI tasks, with the query, key, and value (QKV) attention formulation playing a central role. However, the individual contribution of these three projections and the impact of omitting some remain poorly understood. We systematically evaluate three projection sharing constraints: a) Q-K=V (shared key-value), b) Q=K-V (shared query-key), and c) Q=K=V (single projection). The last two variants produce symmetric attention maps; to address this, we also explore asymmetric attention via 2D positional encodings. Through experiments spanning synthetic tasks, vision (MNIST, CIFAR, TinyImageNet, anomaly), and language modeling (300M and 1.2B parameter models on 10B tokens), we discovered that our transformers perform on par or occasionally better than the QKV transformer. In language modeling, Q-K=V projection sharing achieves 50% KV cache reduction with only 3.1% perplexity degradation. Crucially, projection sharing is complementary to head sharing (GQA/MQA): combining Q-K=V with GQA-4 yields 87.5% cache reduction, while Q-K=V + MQA achieves 96.9%, enabling practical on-device inference. We show that Q-K=V preserves quality because keys and values can occupy similar representational spaces and attention operates in a low-rank regime, whereas Q=K-V breaks attention directionality. Our results systematically characterize projection sharing as an underexplored instance of weight tying in attention, with direct, quantifiable inference memory benefits, particularly valuable for edge deployment. The code is publicly available at https://github.com/anushamadan02/Do-Transformers-Need-3-Projections",
+      "authors": [
+        "Ali Kayyam",
+        "Anusha Madan Gopal",
+        "M Anthony Lewis"
+      ],
+      "url": "https://arxiv.org/abs/2606.04032",
+      "published": "2026-06-01T20:59:05+00:00",
+      "updated": "2026-06-01T20:59:05+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.PF"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.288,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04029",
+      "title": "Position: Deployed Reinforcement Learning should be Continual",
+      "abstract": "Reinforcement Learning (RL) has received increasing attention and adoption in real-world use cases. Most of these systems follow a train-then-fix paradigm, where trained agents do not learn while interacting with the world until performance degrades and retraining becomes necessary. In this position paper, we argue that deploying an agent that is incapable of optimality, but receives an evaluative reward signal, is inherently a continual RL problem. We identify four sources of non-stationarity after deployment that necessitate never-ending learning, and highlight why the best deployed agents never stop adapting. We analyze successful examples of continual RL in the real world, and present the community with the advantages and measures to move away from the current train-then-fix paradigm.",
+      "authors": [
+        "Parnian Behdin",
+        "Kevin Roice",
+        "Golnaz Mesbahi"
+      ],
+      "url": "https://arxiv.org/abs/2606.04029",
+      "published": "2026-06-01T19:40:10+00:00",
+      "updated": "2026-06-01T19:40:10+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.283,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04027",
+      "title": "MaskForge: Structure-Aware Adaptive Attacks for Jailbreaking Diffusion Large Language Models",
+      "abstract": "Diffusion large language models (dLLMs) generate text by iteratively denoising partially masked sequences under bidirectional context, exposing a safety surface distinct from autoregressive LLMs. Because mask tokens are native inputs and tokens are committed by confidence rather than position, harmful content can be induced through infilling and outside the monitored prefix. Existing jailbreaks either miss this native infill capability or rely on low-diversity mask-bearing templates applied uniformly across goals, with little structural adaptation or accumulated attack experience. We propose MaskForge, a fully black-box adaptive attack that casts dLLM red-teaming as optimized search over a growing library of structural patterns. MaskForge abstracts successful attempts into reusable schemas, selects goal-compatible patterns with a UCB bandit, and invokes a scorer-guided fallback when the current library fails. Successful attempts are distilled back into the pattern library, enabling experience to accumulate across goals. Across five public dLLMs and three benchmarks, MaskForge achieves an average attack success rate of 79.3%, a 17.6% relative improvement over the strongest competing dLLM baseline. The matured pattern library further transfers to AdvBench without any updates, achieving a 88.2% attack success rate and a 67% relative improvement over the strongest competing baseline.",
+      "authors": [
+        "Yingzi Ma",
+        "Zhengyue Zhao",
+        "Xiaogeng Liu",
+        "Minhui Xue",
+        "Yue Zhao",
+        "Chaowei Xiao"
+      ],
+      "url": "https://arxiv.org/abs/2606.04027",
+      "published": "2026-06-01T18:10:21+00:00",
+      "updated": "2026-06-01T18:10:21+00:00",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.254,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04019",
+      "title": "Gravity-Aware Hierarchical Routing for Lightweight SensorLLM on Human Activity Recognition",
+      "abstract": "Recent studies on sensor-language alignment have shown that two-stage frameworks can improve the semantic modeling ability of wearable-sensor human activity recognition (HAR), where SensorLLM-style methods first perform motion-to-language alignment and then fine-tune the model for downstream tasks. However, our experiments reveal a consistent failure mode when the Stage 2 backbone is compressed to a compact model such as TinyLlama: recognition of dynamic activities remains relatively strong, while the discrimination of low-motion static classes such as standing, sitting, and lying degrades substantially. To address this issue, we propose a gravity-aware hierarchical routing head as a lightweight post-alignment adaptation built on top of an already aligned model, rather than a new large-scale pretraining framework. The method uses the per-channel mean and std from the Chronos tokenizer state to extract statistical cues related to posture and gravity direction, and adaptively combines a static expert and a full expert through soft routing, together with a load-balancing loss for stable training. On the MHealth dataset, this design significantly improves macro-F1 with minimal parameter overhead, and the gains are concentrated mainly on static classes while preserving strong performance on dynamic activities. As a first arXiv disclosure, the current paper reports results on a single dataset only, with the goal of highlighting the core method and laying the groundwork for broader evaluation in future work.",
+      "authors": [
+        "Hao Li",
+        "Mingrui Zheng",
+        "Yasuyuki Tahara",
+        "Yuichi Sei"
+      ],
+      "url": "https://arxiv.org/abs/2606.04019",
+      "published": "2026-06-01T06:43:50+00:00",
+      "updated": "2026-06-01T06:43:50+00:00",
+      "categories": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.163,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04023",
+      "title": "CodegenBench: Can LLMs Write Efficient Code Across Architectures?",
+      "abstract": "While large language models (LLMs) have been extensively evaluated on code generation tasks for general-purpose programming and GPU-accelerated environments (e.g., PyTorch, CUDA), their capabilities in CPU-oriented high-performance computing (HPC) across diverse architectures remain underexplored. To bridge this gap, we introduce CodegenBench, a comprehensive benchmark suite designed to evaluate the generation of efficient parallel code across three distinct hardware platforms: x86_64, Sunway, and Kunpeng. Our benchmark comprises 106 standard Basic Linear Algebra Subprograms (BLAS) routines establishing a fundamental baseline, alongside 20 specialized computational kernels adapted for each of the unique supercomputing architectures (LeetSunway and LeetKunpeng). Our extensive evaluation reveals that while state-of-the-art LLMs can generate optimized code for ubiquitous architectures like x86_64, they exhibit significant performance degradation on domain-specific architectures with limited public documentation and training data, highlighting critical limitations in cross-platform generalization. Furthermore, our analysis of factors influencing code quality such as implementation length and task complexity indicates that current LLMs are most effective for moderately difficult problems requiring concise code snippets. We open-source our dataset and automated evaluation infrastructure to facilitate future research in LLM-driven high-performance code generation. The resources are available at https://anonymous.4open.science/r/CodegenBench-EDE1/ and https://anonymous.4open.science/r/CodegenBenchDataset-2551.",
+      "authors": [
+        "Jie Li",
+        "Wenzhao Wu",
+        "Junqi Hu",
+        "Qinrui Zheng",
+        "Bowen Wu",
+        "Juepeng Zheng",
+        "Yutong Lu",
+        "Haohuan Fu"
+      ],
+      "url": "https://arxiv.org/abs/2606.04023",
+      "published": "2026-06-01T12:55:10+00:00",
+      "updated": "2026-06-01T12:55:10+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.161,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04035",
+      "title": "Unpredictable Safety: Domain-Dependent Compliance and the Transparency Gap in Open-Weight LLMs",
+      "abstract": "We present a systematic study of domain-dependent safety behavior in open-weight LLMs: 7 standardized experiments across 7 ethical domains, testing 5 models (12B--70B) in 4,200 interactions with dual-judge validation. Using a dual-condition methodology, each scenario tested in both an analytical framing (identify the harm) and an operational framing (help commit the harm), we find compliance rates vary from 14.7% (human trafficking) to 85.7% (surveillance design), a 71-percentage-point span with non-overlapping cluster-bootstrapped 95% CIs. Trustworthy deployment requires predictable safety behavior, yet we find compliance is highly context-dependent: the same model (Mistral Nemo 12B) provides surveillance designs in 100% of requests but assists with trafficking in only 26.7%. This unpredictability is opaque to deployers: the technical framing bypass, where harmful requests reframed as engineering problems override safety training without any external signal that refusal thresholds have shifted. Within-domain heterogeneity reaches 84.4pp, meaning safety behavior cannot be predicted even at the domain level. A replication on five frontier closed models (GPT-4.1/5.2, Claude Haiku/Sonnet/Opus 4.x; n=4,163 responses) accessed via the GitHub Copilot CLI deployed-product surface reproduces the same domain stratification, attenuated in absolute level but identical in shape, with the two low-codification domains (science fraud, surveillance) again the most permissive. These results show that current safety mechanisms lack the transparency and consistency required for trustworthy AI deployment.",
+      "authors": [
+        "Zacharie Bugaud"
+      ],
+      "url": "https://arxiv.org/abs/2606.04035",
+      "published": "2026-06-01T22:41:32+00:00",
+      "updated": "2026-06-01T22:41:32+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.102,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-03T05:27:34.479381+00:00"
+  "patched_at": "2026-06-04T05:22:55.152131+00:00"
 }
