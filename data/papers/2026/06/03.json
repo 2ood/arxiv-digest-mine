@@ -3,6 +3,134 @@
   "fetched_at": "2026-06-04T14:22:52.272261+09:00",
   "papers": [
     {
+      "id": "2606.07664",
+      "title": "Seq103: A Unified Neuroevolution Framework for Compact Sequence Architecture Discovery",
+      "abstract": "Neuroevolution is a representative neural architecture search paradigm that evolves both network topology and weights through evolutionary algorithms. In this paper, we propose Seq103, a unified NEAT-style neuroevolution framework for compact sequence architecture discovery. Seq103 consists of a shared evolutionary backbone and an optional recurrent extension. The shared backbone includes an elementary node-and-connection representation, per-class RMSE-based evaluation, mutation-based evolution with class-wise recombination, and elitism. The optional hidden-state mechanism extends the search space with hidden-state nodes and hidden connections, enabling temporal memory when step-wise recurrent inference is required. With this design, Seq103 applies the same core search pipeline to both step-wise recurrent and sample-wise feedforward sequence classification. In recurrent tasks, the hidden-state extension is enabled to provide temporal memory; in feedforward tasks, it is disabled while the shared evolutionary backbone remains unchanged. We evaluate Seq103 on 8 text classification datasets and the full UCRArchive2018 benchmark with 128 univariate time-series datasets. On step-wise tasks, Seq103 retains 86.96% of the best-baseline accuracy on average while using 34.6x to 3218.0x fewer parameters. On sample-wise tasks over the full UCRArchive2018 benchmark, Seq103 retains 81.95% of the best-baseline accuracy on average while using 11.8x to 160,601.0x fewer parameters.",
+      "authors": [
+        "Wenxiao Li",
+        "Yongjian Liu",
+        "Qing Xie"
+      ],
+      "url": "https://arxiv.org/abs/2606.07664",
+      "published": "2026-06-03T19:01:40+00:00",
+      "updated": "2026-06-03T19:01:40+00:00",
+      "categories": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.05050",
+      "title": "Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin",
+      "abstract": "Theoretical heterogeneous catalysis promises rapid catalyst discovery, yet computational and machine-learning predictions often deviate from experiment and stay confined to narrow material families, for want of a faithful, condition-aware catalytic simulator. We present CatDT (Catalysis Digital Twin), a self-evolving multi-agent system that builds an autonomous digital twin of a working catalyst, unifying gas-solid and liquid-solid modeling. From only a bulk crystal and a natural-language reaction description, eight specialized agents and 27 scientific tools predict stable facets, reconstruct working surfaces, enumerate and rank reaction pathways, locate transition states, and compute kinetics in 5-30 min on a single GPU. Two innovations address the hardest steps: UniMech finds dominant pathways for novel materials at over $10^3\\times$ lower cost than exhaustive enumeration by fusing agent-guided proposals with energy-cached graph search, and a memory-augmented reinforcement loop raises barrier-calculation success from 41\\% to 84\\% across 600 catalytic surfaces. Across seven gas-solid benchmarks -- stepped metals, single-atom catalysts, ordered intermetallics, vacancy-rich 2D sulfides and carbides, and a strong-metal--support-interaction (SMSI) interface -- every CatDT prediction lies within 0.5-2 times experiment over four orders of magnitude. For propane dehydrogenation, CatDT independently discovers non-precious candidates rivaling the Pt-based industrial benchmark, with a proposed Ni@ZrO$_2$ SMSI overlayer reaching a simulated TOF of $1.63~\\text{s}^{-1}$ at $\\sim$100\\% selectivity. More broadly, the decisive factor for a faithful catalyst digital twin -- or any multi-stage scientific simulator -- is not raw LLM capability but the engineered harness around it: deterministic tools, persistent memory, and verified self-improvement that compound across models, tools, and runs.",
+      "authors": [
+        "Zhilong Song",
+        "Zongmin Zhang",
+        "Lixue Cheng"
+      ],
+      "url": "https://arxiv.org/abs/2606.05050",
+      "published": "2026-06-03T16:10:58+00:00",
+      "updated": "2026-06-03T16:10:58+00:00",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.chem-ph"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.07657",
+      "title": "QDS-SNN: Energy-efficient Quantum Deeply-Supervised Spiking Neural Network Algorithm for Traffic Sign Recognition",
+      "abstract": "Traffic sign recognition is crucial for intelligent transportation and autonomous driving, as it can improve driving efficiency and ensure road safety. However, traditional recognition methods are based on large datasets and intensive computation, which limits their real-time applicability. Spiking Neural Networks (SNNs) offer a biologically inspired, energy-efficient alternative due to their spatiotemporal processing capabilities, but suffer from information loss and vanishing gradients during training. To overcome these limitations, this study proposes a Quantum Deep-supervised Spiking Neural Network (QDS-SNN) that integrates Quantum Neural Networks (QNNs) for efficient, low-power deep supervision. Using quantum superposition and entanglement, QNNs enable expressive representations and parallel computation, thereby enhancing performance without compromising energy efficiency. The proposed QDS-SNN incorporates a temporally and spatially adaptive LIF (TSA-LIF) neuron and a quantum-assisted classifier module (QACM) to mitigate gradient issues and improve training effectiveness. This study conducts experiments on the PennyLane quantum simulation platform, and the results show that QDS-SNN achieves 99.72\\% accuracy on the GTSRB dataset in only 6 time steps -- outperforming the MS-ResNet baseline by 1.32\\% while reducing energy consumption by 55.77\\%. In the TSRD dataset, it achieves 97.90\\% accuracy while reducing energy use to 52.68\\% of the baseline. These results demonstrate that QDS-SNN offers a high-performance, energy-efficient solution for traffic sign recognition in intelligent transportation systems.",
+      "authors": [
+        "Zhiguo Qu",
+        "Keqi Li",
+        "Le Sun",
+        "Wenjie Liu",
+        "Yimin Yu",
+        "Saif Al-Kuwari",
+        "Ahmed Farouk"
+      ],
+      "url": "https://arxiv.org/abs/2606.07657",
+      "published": "2026-06-03T11:07:12+00:00",
+      "updated": "2026-06-03T11:07:12+00:00",
+      "categories": [
+        "cs.NE",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.06535",
+      "title": "Architecturally Significant MLOps Guidelines for ML Model Integration and Deployment: a Gray Literature Review",
+      "abstract": "Context. Despite the growing adoption of Machine Learning Operations (MLOps), teams often approach MLOps projects in an ad hoc manner due to the lack of consolidated architectural guidance. The community would benefit from a reference that synthesizes knowledge to inform the architectural design of MLOps systems, especially regarding the integration and deployment of ML models. Objective. In response, our goal is to provide a comprehensive overview of architecturally significant guidelines for the integration and deployment of ML models in MLOps systems. Method. We conduct a gray literature review of 103 web sources to analyze state-of-practice knowledge on MLOps model integration and deployment. We then apply thematic analysis to synthesize these practices into recommended guidelines. Results. We contribute a collection of 25 architecturally significant MLOps guidelines for model integration and deployment, organized into five categories, and describe their impact on the overall system architecture. Conclusion. Our results serve as an overview of state-of-practice MLOps guidelines to support researchers and practitioners with the integration and deployment of ML models in their MLOps systems.",
+      "authors": [
+        "Faezeh Amou Najafabad",
+        "Markus Haug",
+        "Keerthiga Rajenthiram",
+        "Justus Bogner",
+        "Ilias Gerostathopoulos"
+      ],
+      "url": "https://arxiv.org/abs/2606.06535",
+      "published": "2026-06-03T21:09:50+00:00",
+      "updated": "2026-06-03T21:09:50+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.06533",
+      "title": "Position: Don't Just \"Fix it in Post\": A Science of AI Must Study Training Dynamics",
+      "abstract": "What would it mean to have a scientific understanding of AI? Models are not static objects: they are snapshots of time-evolving processes shaped by data, objectives, architectures, and optimization dynamics. Yet much of AI research treats models as fixed artifacts, analyzing behaviors after training rather than asking why they emerge. This position paper argues that a science of AI must move beyond post-hoc fixes and study the training dynamics that produce model behavior. Such a science should support progressively stronger forms of understanding: predicting outcomes from early training signals, intervening when trajectories go wrong, and ultimately designing training procedures that more reliably produce desired properties. Scaling laws have made prediction routine for loss; the challenge is extending this success to capabilities, biases, robustness, and safety-relevant behaviors. We articulate requirements for such theories grounded in the history and philosophy of science, examine progress in mechanistic interpretability, fairness, memorization, and simplicity bias, and identify concrete open problems.",
+      "authors": [
+        "Stella Biderman",
+        "Mohammad Aflah Khan",
+        "Niloofar Mireshghallah",
+        "Catherine Arnett",
+        "Fazl Barez",
+        "Naomi Saphra"
+      ],
+      "url": "https://arxiv.org/abs/2606.06533",
+      "published": "2026-06-03T17:58:14+00:00",
+      "updated": "2026-06-03T17:58:14+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.46,
+      "backfilled": true
+    },
+    {
       "id": "2606.05436",
       "title": "Ten Headache Specialists versus Artificial Intelligence for Clinical Literature Summarization: A Critical Evaluation and Comparison",
       "abstract": "Summarizing the latest medical literature to guide clinical decision-making is essential for evidence-based medicine and high-quality patient care. Yet clinicians face increasing challenges due to limited time with patients and a rapidly growing volume of published articles. Although retrieval-augmented large language models (LLMs) have shown promise in clinical summarization, human evaluations of their effectiveness in synthesizing broader scientific literature and direct comparisons to expert-written syntheses remain scarce. We constructed a RAG-based agentic AI framework using three state-of-the-art LLMs: Sonnet, GPT-4o, and Llama 3.1. A headache specialist created 13 questions, three for prompt optimization and ten for evaluation. Ten headache specialists across the United States and Canada each wrote a summary for one question, yielding four summaries per question (expert, Sonnet, GPT-4o, and Llama). The experts, blinded to authorship, critically evaluated the summaries, excluding the topic for which they wrote a summary, based on correctness, completeness, conciseness, and clinical utility, scoring each from 1 to 10 using standardized rubrics. They also ranked the summaries by preference and indicated whether they believed each summary was written by an expert or an LLM. Our study, comparing LLM- and expert-written literature summaries evaluated by headache specialists, showed that expert-written summaries were preferred, although experts sometimes found it challenging to distinguish between human- and AI-generated summaries. We also identified key expert-valued features beyond standard evaluation metrics that can guide future refinement of both human and AI literature summarization pipelines.",
@@ -10644,7 +10772,209 @@
       "match_method": "none",
       "best_score": 0.048,
       "backfilled": true
+    },
+    {
+      "id": "2606.06536",
+      "title": "Attention-Guided Autoencoder Fusion for Insulator Defect Detection Using UAV Transmission-Line Imaging",
+      "abstract": "Automated defect detection in high-voltage transmission-line insulators remains challenging due to severe class imbalance, large scale variation, and the small spatial extent of defect instances in Unmanned Aerial Vehicle (UAV) imagery. To address these challenges, this paper proposes AE-YOLO, an Attention-Guided AutoEncoder-Enhanced YOLO framework for robust insulator defect detection. The architecture integrates lightweight bottleneck autoencoders within a Feature Pyramid Network-Path Aggregation Network (FPN-PAN) neck. This preserves anomaly-sensitive information during multi-scale feature fusion. Convolutional Block Attention Modules (CBAM) are used throughout the backbone, enhancing feature discrimination and suppressing background interference. The framework also introduces a variance-maximizing autoencoder regularization strategy, which encourages diverse, defect-discriminative latent representations. The network trains using a unified objective that combines focal loss, Complete IoU (CIoU) loss, and autoencoder regularization to address foreground-background imbalance and improve localization accuracy. During inference, Weighted Boxes Fusion (WBF) combines predictions from YOLOv8, YOLOv10, and YOLO11. An autoencoder-guided confidence boosting mechanism improves sensitivity to rare defect categories. Experiments on the Insulator-Defect Detection dataset show that AE-YOLO with an EfficientNetV2 backbone achieves 95.10 percent mAP at 0.5, 96.40 percent precision, and 93.80 percent recall. This performance surpasses the strongest YOLO-family baseline by 5.0 points in mAP at 0.5 and 6.7 points in recall. These results confirm the effectiveness and adaptability of the framework. The model is a practical and scalable solution for UAV-based transmission-line inspection and defect monitoring.",
+      "authors": [
+        "Malak Allam",
+        "Khaled Shaban",
+        "Ali Hamdi"
+      ],
+      "url": "https://arxiv.org/abs/2606.06536",
+      "published": "2026-06-03T21:56:13+00:00",
+      "updated": "2026-06-03T21:56:13+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.295,
+      "backfilled": true
+    },
+    {
+      "id": "2606.06529",
+      "title": "Attack Selection in Agentic AI Control Evaluations Meaningfully Decreases Safety",
+      "abstract": "An attacker that strategically chooses when to attack is much harder to catch than one that attacks indiscriminately. AI control is a safety framework for deploying capable but untrusted AI agents under the oversight of a weaker, trusted monitor and a limited human audit budget. Control evaluations stress-test these protocols by pitting a red-team attack policy against the blue-team monitor, but current evaluations typically assume attackers that do not strategically select when to attack. We study this capability, attack selection, in agentic settings by decomposing attack decisions into a start policy, which decides when an attacker should attack, and a stop policy, which decides when an attacker should abort an ongoing attack. Across two agentic settings, BashArena and LinuxArena, both policies substantially lower measured empirical safety without changing the underlying attack capability. At a 1% audit budget, our start policy reduces safety by 20pp on both BashArena and LinuxArena, and our stop policy reduces safety by 20pp on BashArena and 28pp on LinuxArena. These reductions should be interpreted as upper bounds on the effect of attack selection. Existing control evaluations may therefore yield overly optimistic safety estimates against selective attackers. We recommend that future evaluations, system cards, and safety cases elicit attack selection to produce more realistic safety estimates.",
+      "authors": [
+        "Catherine Ge-Wang",
+        "Tyler Crosse",
+        "Benjamin Hadad",
+        "Joachim Schaeffer",
+        "Ram Potham",
+        "Tyler Tracy"
+      ],
+      "url": "https://arxiv.org/abs/2606.06529",
+      "published": "2026-06-03T11:04:59+00:00",
+      "updated": "2026-06-03T11:04:59+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.288,
+      "backfilled": true
+    },
+    {
+      "id": "2606.07654",
+      "title": "MM-Matryoshka: Towards Budget-Elastic Visual Document Retrieval via a 2D Multimodal Matryoshka Training Framework",
+      "abstract": "Multi-vector visual document retrievers achieve strong fine-grained matching by representing each page with multiple vectors from deep Vision-Language Models (VLMs), but this design makes deployment expensive in both storage and computational overhead. Existing efficiency techniques usually optimize only part of this budget, leaving multimodal retrievers without a unified way to trade accuracy for both vector width and encoder depth. Therefore, we propose MM-Matryoshka, a 2D Matryoshka training framework for budget-elastic Visual Document Retrieval (VDR), enabling ColPali-style multi-vector retrieval elastic along both dimension and layer. At inference time, a single retriever can select a 2D selectable budget without training separate models for different budgets. Through comprehensive experiments across multiple representative backbones, we demonstrate that by retaining significantly higher quality than direct truncation baselines while substantially reducing storage and computational overhead, MM-Matryoshka can offer robust budget elasticity for efficient VDR.",
+      "authors": [
+        "Haowen Xiang",
+        "Yibo Yan",
+        "Jiahao Huo",
+        "Yu Huang",
+        "Yi Cao",
+        "Mingdong Ou",
+        "Xuming Hu"
+      ],
+      "url": "https://arxiv.org/abs/2606.07654",
+      "published": "2026-06-03T02:57:09+00:00",
+      "updated": "2026-06-03T02:57:09+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.277,
+      "backfilled": true
+    },
+    {
+      "id": "2606.06531",
+      "title": "CARVE-Q: Quantum-Proposed, Classically Certified Interactive Driving Repair",
+      "abstract": "The critical question after a correct driving veto is not only whether a maneuver is unsafe, but whether the blocked interaction admits a lawful, auditable, and responsibility-bounded repair. Prediction and game-theoretic planners can suggest plausible cooperation, yet they do not return a proof that the repair respects hard rules, right-of-way, cost allocation, and ego fallback. We introduce CARVE, Certified Affordable Repair of Vetoed maneuvers via Envelopes, a certificate architecture for prediction-free interactive repair. Given a vetoed maneuver, CARVE constructs a finite repair lattice and emits a structured certificate recording the binding rule, selected joint repair, right-of-way-scaled cooperation envelope, responsibility-weighted cost split, and ego-only fallback. This certificate view reveals the algorithmic bottleneck: multi-owner repair induces a product lattice $M = \\prod_j |\\mathcal{A}_j|$. We therefore introduce CARVE-Q, a verifier-shielded quantum-AI search layer that applies quantum minimum finding only to this black-box lattice while leaving all safety authority classical. In the conservative verifier-oracle model, exact classical minimum finding requires $Θ(M)$ queries in the worst case, whereas Durr-Hoyer/Grover minimum finding uses $O(\\sqrt{M})$ oracle queries with high probability. We prove verifier-shielded certificate soundness, priority non-elicitation, black-box query separation, and finite-precision reversible-oracle constructibility. We then demonstrate state-vector minimum finding on CARVE repair oracles up to 65,536 assignments and validate certificate preservation on Lanelet2-grounded INTERACTION replay with 100% right-of-way respect, 100% blame consistency, and zero priority false positives. The result is a trust-bounded quantum-AI pattern for certified autonomy: quantum proposes; CARVE certifies.",
+      "authors": [
+        "Yifan Wang"
+      ],
+      "url": "https://arxiv.org/abs/2606.06531",
+      "published": "2026-06-03T17:38:23+00:00",
+      "updated": "2026-06-03T17:38:23+00:00",
+      "categories": [
+        "cs.AI",
+        "quant-ph"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.232,
+      "backfilled": true
+    },
+    {
+      "id": "2606.07660",
+      "title": "Need We Teach Foundation Models What is a Generative Image? Gradient-Free Generative Artifact Detection via Analytic Spectral Adaptation",
+      "abstract": "Adapting foundation models to detect generative artifacts via gradient-based updates compromises their intrinsic representations. Under optimization on limited samples, models overfit to local domain shortcuts. Fine-tuning massive weights on specialized data introduces erroneous inductive biases, inducing a measurable $\\mathcal{L}_2$ norm perturbation in the high-dimensional feature space -- a phenomenon we formalize as anchor drift. Amplified by nonlinear activations, this drift impairs zero-shot forgery detection across unseen domains.We propose a gradient-free methodology reframing detection from binary classification to an out-of-distribution (OOD) anomaly measurement problem. Treating a frozen foundation model as a stable coordinate system, we establish an absolute natural anchor on the real visual manifold by analytically decoupling statistical and semantic deviations, derived from attention-weighted spatial moments and orthogonal projection of perceptual inconsistencies. Evaluated in an extreme zero-shot setting (trained on face forgeries, tested on universal Text-to-Image generations), our method significantly outperforms gradient-optimized paradigms. Backpropagation-free forward passes and linear solvers enable hardware-agnostic, edge-deployable calibration with minimal latency. Furthermore, the Sherman-Morrison formula unlocks instantaneous online learning against novel attacks and enables privacy-preserving federated collaboration via covariance delta transmission.",
+      "authors": [
+        "Qiaoyu Chen",
+        "Bing Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2606.07660",
+      "published": "2026-06-03T13:04:23+00:00",
+      "updated": "2026-06-03T13:04:23+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.226,
+      "backfilled": true
+    },
+    {
+      "id": "2606.07658",
+      "title": "What neurosurgeons need to see: synthetic intra-operative MRI from ultrasound for brain-shift compensation in brain tumour surgery",
+      "abstract": "Maximal safe resection is the primary objective in glioma surgery. Neuronavigation guidance is progressively degraded by brain shift after dural opening. Intraoperative MRI can compensate but needs dedicated infrastructure and is rarely available, whereas intraoperative ultrasound (ioUS) is inexpensive, repeatable, and compatible with routine workflows. Navigation systems combining ioUS with preoperative MRI usually rely on rigid registration; even deformable multimodal registration is limited by ultrasound speckle contrast, a narrow field of view, and the inability to represent structures absent from the preoperative scan, most critically the resection cavity and residual tumor. We propose an end-to-end pipeline that generates a new whole-brain MRI volume in the preoperative imaging space by merging the preoperative MRI, a synthetic MRI generated from the ioUS, and a deformable registration anchored on that synthetic image. It integrates a 2.5D residual-transformer synthesis backbone (ResViT-2.5D) and a two-stage registration coupling NiftyReg with a synthesis-anchored SynthMorph stage, operating directly on raw scanner inputs. On a post-resection ReMIND cohort, ResViT-2.5D produced synthetic images closely matching the intraoperative T2 across structural, intensity, and perceptual metrics. In 14 subjects with 215 expert landmarks, the synthesis-anchored registration reduced the mean target registration error from 6.27 to 5.86 mm, matching a strong classical NiftyReg baseline (5.85 mm) while yielding a diffeomorphic deformation field in every subject. The contribution is not a gain in registration accuracy but the integrated volume itself, which inside the ultrasound field of view it reflects the intraoperative post-resection state. This provides the surgeon with an MRI-like update of the operative field with potential for integration into surgical-navigation workflows.",
+      "authors": [
+        "Santiago Cepeda",
+        "Olga Esteban-Sinovas",
+        "Ignacio Arrese",
+        "Rosario Sarabia"
+      ],
+      "url": "https://arxiv.org/abs/2606.07658",
+      "published": "2026-06-03T11:17:47+00:00",
+      "updated": "2026-06-03T11:17:47+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.216,
+      "backfilled": true
+    },
+    {
+      "id": "2606.06534",
+      "title": "Attention Consistent Longitudinal Medical Visual Question Answering Guided by Vision Foundation Models",
+      "abstract": "Longitudinal medical visual question answering (VQA) requires reasoning about anatomical differences between an image of a current time point and an image of a referred time point. We propose an attention-guided encoder-decoder for this task with chest X-rays. Instead of conventional direct contrast, we propose to include a lightweight affine registration module to reduce nuisance motion by co-registering the current image to the reference image with a small registration regularizer. The registered image pair is fed into the image encoder, followed by a frozen DINO-based mask generator and a trainable adaptive mask generator to produce masks applied to the original image pairs. The masked image pairs are again fed into the image encoder and concatenated with text features as the input to a multimodal transformer-based decoder to generate final answers. To facilitate learning stabilization and clarify the change signal, inspired by DINO-v3, we include additional auxiliary objectives, including a mask rebuilding loss, a pairwise Gram-style consistency loss, and a KoLeo uniformity loss, which enhances the geometry of the representation. On the Medical-Diff-VQA benchmark, the model delivers strong BLEU, ROUGE-L, CIDEr, and METEOR scores while offering intrinsic interpretability through the shared saliency mask. These results support saliency-conditioned generation with mild pre-alignment as a principled framework for longitudinal reasoning in medical VQA. Our training strategy also illustrates the potential of a paradigm in utilizing image foundation models in biomedicine: optimizing both supervised and unsupervised learning objectives simultaneously.",
+      "authors": [
+        "Jialin Wu",
+        "Qianru Zhang",
+        "Georges El Fakhri",
+        "Xiaofeng Liu"
+      ],
+      "url": "https://arxiv.org/abs/2606.06534",
+      "published": "2026-06-03T18:12:19+00:00",
+      "updated": "2026-06-03T18:12:19+00:00",
+      "categories": [
+        "eess.IV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.21,
+      "backfilled": true
+    },
+    {
+      "id": "2606.07656",
+      "title": "SC3: The Multi-Solvent Solubility Challenge and Benchmark",
+      "abstract": "Solubility prediction is a standard benchmark in computational chemistry, yet multi-solvent models which reportedly approach the experimental-noise ceiling (i.e. the aleatoric limit) are not yet reliable enough to be deployed. We argue that this gap is partly artefactual: published benchmarks differ in curation policies, evaluate on count-weighted RMSE that hides failure on tail-heavy solvent distributions, and treat the widely cited 0.6-0.8 log S inter-laboratory figure as the aleatoric ceiling even though it reflects worst-case, not expected, disagreement. We introduce SC3, a multi-solvent solubility benchmark built on BigSolDB v2.1 with three contributions: (i) a reproducible curation pipeline yielding 101,535 measurements over 1,327 solutes and 206 solvents, with a recalibrated aleatoric floor of 0.106 log S-roughly 6 times tighter than the conventional figure; (ii) nested Gold/Silver/Bronze consensus tiers with per-point standard deviation, three leakage-checked splits, and a multi-solvent metric suite (PS-RMSE, Z-RMSE); and (iii) a 31-model benchmark across six families, whose best Bronze PS-RMSE sits at 5 times the aleatoric limit, and we observe this is a gap unclosed by any deep alternative tested. We perform three follow-on analyses: data scaling, transfer from quantum-chemistry solvation energies, and feature-level attribution, which demonstrates that calibrated per-point uncertainty is a reusable infrastructure for diagnosis beyond point prediction.",
+      "authors": [
+        "Vansh Ramani",
+        "Har Ashish Arora",
+        "Dhairya Kuchhal",
+        "Sergei Tatarin",
+        "Lev Krasnov",
+        "Sayan Ranu",
+        "Tarak Karmakar"
+      ],
+      "url": "https://arxiv.org/abs/2606.07656",
+      "published": "2026-06-03T08:57:00+00:00",
+      "updated": "2026-06-03T08:57:00+00:00",
+      "categories": [
+        "physics.chem-ph",
+        "cs.CE",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.083,
+      "backfilled": true
+    },
+    {
+      "id": "2606.04550",
+      "title": "Trading Engagement for Sustainability: Carbon-Aware Re-ranking for E-commerce Recommendations",
+      "abstract": "E-commerce recommender systems strongly influence which products users consider and purchase, yet sustainability signals such as Product Carbon Footprint (PCF) are almost never available at catalog scale. We study carbon-aware product recommendation in the realistic setting where PCF labels are missing for most items and must be inferred. We first estimate product-level carbon footprints via a retrieval-augmented PCF estimation pipeline that transfers supervision from the Carbon Catalogue, a small set of life-cycle-assessed products, to a large unlabeled e-commerce catalog using semantic similarity search, few-shot LLM prompting, and a nearest-neighbour fallback. We then apply a carbon-aware post-hoc re-ranking strategy on top of relevance scores produced by three established recommendation models: BPR, NeuMF, and LightGCN. The method trades off predicted user-item engagement against estimated carbon footprint through a single tunable parameter, lambda. In this offline study, engagement is operationalized through Amazon review interactions, which serve as implicit feedback and as a proxy for user interest or purchase behavior. We evaluate the framework on the Amazon Reviews dataset across three product categories: Home and Kitchen, Sports and Outdoors, and Electronics. By sweeping lambda, we construct Pareto frontiers that characterize the achievable engagement and carbon trade-off for each model and category. Substantial carbon reductions are achievable at minimal engagement cost across all models and categories. However, the available carbon headroom varies by model and category, underscoring the importance of model choice and domain context.",
+      "authors": [
+        "Noah Lund Syrdal",
+        "Anders Vestrum",
+        "Jorgen Bergh"
+      ],
+      "url": "https://arxiv.org/abs/2606.04550",
+      "published": "2026-06-03T07:34:46+00:00",
+      "updated": "2026-06-03T07:34:46+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.069,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-06T04:38:33.464009+00:00"
+  "patched_at": "2026-06-09T04:47:29.776715+00:00"
 }
