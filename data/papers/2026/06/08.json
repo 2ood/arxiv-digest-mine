@@ -3,6 +3,49 @@
   "fetched_at": "2026-06-09T13:47:05.619318+09:00",
   "papers": [
     {
+      "id": "2606.11251",
+      "title": "Mechanical Field Networks: Structured Neural Dynamics for Multivariate Systems",
+      "abstract": "Many multivariate dynamical systems are observed only through trajectories, leaving the mechanisms governing their joint dynamics hidden. Existing approaches can impose interpretable dynamics or learn flexible state transitions, yet the resulting interaction structure is typically either specified in advance or left implicit within the learned dynamics. We introduce MF-Net, a recurrent dynamical model that represents all variables in a shared field state and updates this state through a learned relation law. Each variable carries a field component, and these components evolve jointly through a learnable mechanical transition. Here, mechanical refers to the relation-to-motion organization of the transition, where learned relations shape state-dependent flows, field responses, and motion tendencies that move the field state forward. The resulting structure is part of the rollout itself: learned relations influence how the field moves, and the same internal quantities support both forecasting and structural readout. Across known-law interaction systems, chaotic benchmarks, real neural recordings, and ecological time series, MF-Net achieves competitive short- and medium-horizon forecasting while retaining inspectable structural readout. On the 40-dimensional Lorenz--96 testbed, MF-Net achieves an eight-step $R^2$ of $0.798\\pm0.018$; across five seeds, its learned relation matrix recovers the local coupling support with a local/nonlocal strength ratio of $19.80\\pm1.00$ and Precision@$K$ of $1.000\\pm0.000$. MF-Net provides a structure-readable dynamical modeling framework in which learned relations are trained through forward evolution and, on real data, interpreted as functional predictive couplings under appropriate observational limits.",
+      "authors": [
+        "Xingji Cui"
+      ],
+      "url": "https://arxiv.org/abs/2606.11251",
+      "published": "2026-06-08T15:23:16+00:00",
+      "updated": "2026-06-08T15:23:16+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.11247",
+      "title": "Physics-informed generative AI for semiconductor manufacturing: Enforcing hard physical constraints in generative models by construction",
+      "abstract": "Generative models are increasingly used to propose designs, data, and control actions for physical systems, yet many such systems are governed by hard physical constraints rather than by perceptual plausibility. Semiconductor manufacturing provides a demanding test case: generated masks, layouts, synthetic defect data, and process recipes must obey lithography, transport, reaction, and device-physics constraints, because physically invalid samples are not merely low quality but unusable. This Perspective argues that semiconductor manufacturing exposes a broader computational-science challenge, namely that generative AI for constrained physical domains must be physics-informed by construction, not corrected only through post-hoc filtering. We survey the emerging architectural toolkit, including physics-informed diffusion, PDE-constrained variational models, neural-operator priors, and conservation-law-respecting generative networks, and show how it connects to differentiable lithography, TCAD, process simulation, and autonomous experimentation. We identify four integration patterns between generative models and physics-based simulators, and we propose a research agenda centered on physics-fidelity benchmarks, differentiable simulator infrastructure, and multimodal foundation models for physical design and manufacturing. The central claim is analytical rather than rhetorical: where physical validity is the binding criterion of success, architectures that enforce it by construction should be expected to outperform those that filter for it after the fact, and the fab is the setting where this distinction is sharpest.",
+      "authors": [
+        "Yaser Mike Banad",
+        "Sarah Sharif"
+      ],
+      "url": "https://arxiv.org/abs/2606.11247",
+      "published": "2026-06-08T07:06:11+00:00",
+      "updated": "2026-06-08T07:06:11+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2606.10213",
       "title": "Automated Pronunciation Evaluation for Korean Toddler Speech using Speech Diarization and Self-Supervised Learning",
       "abstract": "Speech sound disorders affect approximately 44% of Korean pediatric communication disorder cases, yet automated assessment tools for Korean toddler speech remain underdeveloped. This paper presents an end-to-end pipeline for automated pronunciation evaluation of Korean toddler speech, combining neural speaker diarization with self-supervised speech representation learning. We introduce a novel IRB-approved corpus of 53 recordings from Korean-speaking children aged 2-5 years. A subset of 53 subjects was annotated by three independent reviewers, yielding 1,190 consonant and 748 vowel word-level binary correctness labels. We evaluate three diarization models, finding that NeMo SortFormer achieves 88.69% speaker count accuracy and 33.04% diarization error rate (DER) owing to its arrival-time-sorted transformer architecture, which handles the acoustic confound between young female caregivers exhibiting aegyo and toddler speech. For pronunciation scoring, we compare three self-supervised learning (SSL) backbones across multiple pooling strategies. A cross-model ensemble routing consonant prediction to HuBERT-large and vowel prediction to WavLM-large achieves balanced accuracies of 0.720 and 0.845, with a mean of 0.782.",
@@ -10515,7 +10558,71 @@
       "match_method": "none",
       "best_score": 0.099,
       "backfilled": true
+    },
+    {
+      "id": "2606.11256",
+      "title": "My Chemical Harness: Evolutionary Molecular Design over Synthetic Pathways with Large Language Model Agents",
+      "abstract": "Designing molecules with target properties is most useful when candidate structures are accompanied by feasible synthetic routes. We introduce My Chemical Harness, a route-native evolutionary framework for goal-directed molecular design in which the search population consists of executable synthetic pathways rather than isolated molecular graphs. Each route is built from purchasable building blocks and reaction templates, executed by deterministic chemistry tools, and scored through task-specific molecular oracles. Large language models (LLMs) are used only as strategy controllers that select high-level preferences over route length, move type, reaction families, motifs, and exploration pressure, while local code performs route construction, validation, deduplication, scoring, selection, and memory updates. This separation lets the LLM guide exploration without allowing it to introduce hallucinated products or unsupported reaction steps. On a soluble epoxide hydrolase proxy task, our LLM agent improves over single pass LLM and deterministic controllers, reaching state-of-the-art performance across the sEH score, synthetic accessibility score, and AiZynthFinder success rate metrics. These results suggest that constrained LLM agents can play a significant role in molecular discovery without requiring training, fine-tuning, or dedicated generative models.",
+      "authors": [
+        "César Ojeda",
+        "Darius A. Faroughy",
+        "Maryam Karimi",
+        "Payam Zarrintaj",
+        "Mir Mehdi Seyedebrahimi",
+        "Martín Carballo-Pacheco"
+      ],
+      "url": "https://arxiv.org/abs/2606.11256",
+      "published": "2026-06-08T23:52:52+00:00",
+      "updated": "2026-06-08T23:52:52+00:00",
+      "categories": [
+        "physics.chem-ph",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.274,
+      "backfilled": true
+    },
+    {
+      "id": "2606.11255",
+      "title": "Bernstein-Schur Kernels: Random Features by Sketched Modulation and Radial Randomization",
+      "abstract": "Bernstein--Schur kernels are products of a finite-feature kernel (one with an explicit finite-dimensional feature map) and a completely monotone shift-invariant kernel: nonstationary kernels that fall between the shift-invariant and dot-product templates random features usually exploit, so in general neither Bochner sampling nor polynomial sketching applies to the full kernel directly. We give one random-feature construction for the whole class that \\emph{randomizes both factors: it sketches the finite modulation and randomizes the completely monotone radial factor, sampling the latter's one-dimensional Bernstein--Widder scale and then applying Gaussian random Fourier features (whose frequency is still $d$-dimensional). The feature dimension is then $Dm$, set by the sketch size $m$ and the radial-draw count $D$, free of the $O(d^2)$ size of the exact modulation feature. Keeping the modulation \\emph{exact} is the analyzable limit ($m\\to\\infty$): there we prove unbiasedness, an exact variance for the recommended flat estimator, an expected matrix-Bernstein operator-norm bound (with a matching high-probability tail) controlled by the top eigenvalues of the kernel and modulation Gram matrices together with an intrinsic dimension rather than the crude $N\\max_{ij}$ entrywise route, and a deterministic relative-spectral kernel-ridge stability result. By conditioning on the sketch, the doubly-randomized estimator inherits the same intrinsic-dimension operator-norm guarantee plus a single additive sketch term, tunable by $m$ independently of $D$. The motivating instance is the biased $yat$-kernel $k_{yat,b}(w,x)=(w^\\top x+b)^2/(\\|w-x\\|^2+\\varepsilon)$, $b\\ge0$, whose family span contains the inverse-multiquadric kernel by finite differences in $b$; for it the radial mixture is the IMQ spectral sampler, and one frequency per scale is variance-optimal at a fixed radial-feature budget.",
+      "authors": [
+        "Taha Bouhsine"
+      ],
+      "url": "https://arxiv.org/abs/2606.11255",
+      "published": "2026-06-08T21:59:44+00:00",
+      "updated": "2026-06-08T21:59:44+00:00",
+      "categories": [
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.255,
+      "backfilled": true
+    },
+    {
+      "id": "2606.11249",
+      "title": "MASK: Multi-Agent Semantic K-Scheduling for Risk-Sensitive 6G Robotics",
+      "abstract": "Realizing the vision of 6G connected robotics requires reconciling high-performance collaborative control with the rigid spectral limitations of physical wireless channels. In realistic collaborative sensing scenarios, spectral resources are quantized into finite physical resource blocks or orthogonal subcarriers, rendering simultaneous transmission by all agents infeasible. To address this, we propose Multi-Agent Semantic K-Scheduling (MASK), a control architecture designed to sustain robust, risk-aware coordination under strict instantaneous bandwidth caps. We introduce Arbiter-Assisted Semantic Information Gating (A-SIG), a lightweight coordination mechanism that enforces hard access constraints by scheduling only the top-K agents based on locally computed semantic importance scores. By aggregating these prioritized observations into a compact latent state, a self-supervised global encoder enables a distributional policy to mitigate tail risks despite data sparsity. We evaluate MASK across diverse benchmarks, demonstrating that it matches the performance of communication-unconstrained baselines even when channel access is restricted to a small fraction of the swarm size. Furthermore, the framework exhibits inherent resilience to packet erasures, validating semantic scheduling as a critical enabler for resource-constrained 6G systems.",
+      "authors": [
+        "Ahmet Gunhan Aydin",
+        "Elif Tugce Ceran"
+      ],
+      "url": "https://arxiv.org/abs/2606.11249",
+      "published": "2026-06-08T12:27:17+00:00",
+      "updated": "2026-06-08T12:27:17+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.18,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-10T04:58:58.224052+00:00"
+  "patched_at": "2026-06-11T05:10:32.659350+00:00"
 }
