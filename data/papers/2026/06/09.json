@@ -3,6 +3,33 @@
   "fetched_at": "2026-06-10T13:58:55.940916+09:00",
   "papers": [
     {
+      "id": "2606.11000",
+      "title": "Analog Quantum Asynchronous Event-Based Graph Neural Network",
+      "abstract": "Asynchronous, event-based graph neural networks (AEGNNs) have recently emerged as an efficient paradigm for processing the sparse and high-temporal-resolution data from event cameras. In this paper, we propose quantum analog AEGNNs (QA-AEGNNs), a novel framework to implement an AEGNN on a neutral-atom quantum computer. Neutral-atom quantum processors offer a programmable analog quantum computing platform based on controllable Rydberg-atom interactions. To this end, we map the streaming event data to an array of trapped neutral atoms, where each atom represents a graph node (event) and is positioned such that geometric proximity reflects the spatio-temporal neighborhood of events. The native Rydberg Hamiltonian of the quantum processor is programmed to mirror the message-passing computations of the AEGNN, with atomic qubit states serving as node feature embeddings and inter-atom interactions realizing graph edges. Furthermore, we propose a hybrid quantum-classical training scheme in which the analog Hamiltonian parameters (e.g., laser pulse amplitudes and detunings) are optimized using classical feedback to learn the quantum AEGNN model from data. Our approach leverages the continuous Hamiltonian dynamics and massive parallelism of neutral-atom quantum systems to natively execute event-based graph computations with potential accuracy improvements",
+      "authors": [
+        "Kristian Sotirov",
+        "Shaheen Acheche",
+        "Antonio A. Gentile",
+        "Osvaldo Simeone"
+      ],
+      "url": "https://arxiv.org/abs/2606.11000",
+      "published": "2026-06-09T15:34:17+00:00",
+      "updated": "2026-06-09T15:34:17+00:00",
+      "categories": [
+        "quant-ph",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2606.11471",
       "title": "Evaluating and Combating the Impact of Concept Drift on the Performance of Machine Learning-Based Phishing Detection Systems",
       "abstract": "The expansion of the digital domain has resulted in a substantial increase in digital communication, with email emerging as one of the most prominent channels. The proliferation of email communication is apparent in both professional and personal contexts, thereby creating numerous vulnerabilities for malicious actors to exploit. Spam emails, a form of unsolicited correspondence often bearing malicious intent towards recipients, have been an ongoing challenge for email users since the inception of email technology, and this problem has been exacerbated by the growth of the digital landscape. Email spam filters are integral components of email clients, engineered to identify potentially harmful messages and alert users to their malicious content. Phishing, frequently the initial phase of malware-based attacks, is evolving rapidly, with malware becoming increasingly sophisticated over time. A widely adopted approach for detecting malicious activity within malware and spam domains is the application of machine learning. Our aim is to assess the impact of the evolution within the spam email domain on these machine learning-based detection systems and to explore strategies for mitigating associated performance degradation.",
@@ -9551,7 +9578,29 @@
       "match_method": "none",
       "best_score": 0.086,
       "backfilled": true
+    },
+    {
+      "id": "2606.12471",
+      "title": "Identifiability Without Gaussianity: Symbolic World Models and Near-Infinite Temporal Consistency",
+      "abstract": "Klindt, LeCun, and Balestriero (arXiv:2605.26379) proved that Joint-Embedding Predictive Architectures (JEPAs) achieve linear identifiability, the linear recovery of the world's true latent variables, if and only if the world's latent dynamics follow a Gaussian, stationary process. This Gaussian boundary implies a fundamental limit on temporal consistency: for any non-Gaussian physical system, the representation error of a statistical World Model grows monotonically with time. We prove that this limit is an artifact of the statistical alignment mechanism, not a property of World Models in general. We introduce the Physics-Grounded Symbolic Architecture (PGSA) and prove three results: (1) a PGSA achieves exact linear identifiability for all physical regimes, regardless of the latent distribution; (2) the per-step error of a PGSA is bounded by numerical precision alone; and (3) as a direct consequence, a PGSA maintains temporal consistency for an unbounded number of transitions, a property we term near-infinite temporal consistency. We further prove that statistical World Models cannot achieve this property for any non-Gaussian system, regardless of model capacity or the volume of training data. The algebraic cores of four of the theorems are formalized in Lean 4 with Mathlib4 v4.31.0 (zero sorry placeholders); the Klindt et al. converse is taken as an external premise. The contrast establishes that symbolic grounding in the causal generator of the world's dynamics is the sufficient condition and, in non-Gaussian regimes, the only condition for near-infinite temporal consistency.",
+      "authors": [
+        "Seth Dobrin",
+        "Łukasz Chmiel"
+      ],
+      "url": "https://arxiv.org/abs/2606.12471",
+      "published": "2026-06-09T23:00:48+00:00",
+      "updated": "2026-06-09T23:00:48+00:00",
+      "categories": [
+        "stat.ML",
+        "cs.CL",
+        "cs.ET",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.264,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-11T05:10:31.942513+00:00"
+  "patched_at": "2026-06-12T05:15:50.892193+00:00"
 }
