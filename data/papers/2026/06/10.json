@@ -3,6 +3,113 @@
   "fetched_at": "2026-06-11T14:10:29.822583+09:00",
   "papers": [
     {
+      "id": "2606.14780",
+      "title": "YTClickbait21K: Human-Annotated Multimodal Dataset for YouTube Clickbait Detection Across Diverse Channels and Content Categories",
+      "abstract": "Clickbait content on video-sharing platforms poses a significant challenge to information reliability, yet progress in automated detection has been constrained by the lack of large-scale, high-quality multimodal datasets. We present YTClickbait21K, a human-annotated YouTube clickbait dataset comprising 21,238 videos collected from 40 channels across 29 countries, covering diverse content categories such as news, entertainment, education, and gaming. Each sample includes structured metadata (title, description, engagement statistics) along with associated thumbnail images, enabling comprehensive multimodal analysis. To ensure annotation quality, every video was independently labeled by three annotators using a standardized decision framework that incorporates textual, visual, and cross-modal consistency cues, with final labels determined through majority voting. The dataset exhibits substantial inter-annotator agreement (k=0.65), confirming reliable labeling despite the inherent subjectivity of clickbait detection. By combining scale, annotation rigor, and multimodal richness, this dataset provides a robust benchmark for developing and evaluating machine learning models, facilitating research in cross-modal semantic understanding, and advancing automated content moderation systems.",
+      "authors": [
+        "Md. Minhazul Islam",
+        "Md. Tanbeer Jubaer",
+        "Amith Khandakar",
+        "Shovon Sarker",
+        "Sumaiya Rahman",
+        "Md. Masum Mia",
+        "Mohamed Arselene Ayari",
+        "Hamed Noori"
+      ],
+      "url": "https://arxiv.org/abs/2606.14780",
+      "published": "2026-06-10T09:10:16+00:00",
+      "updated": "2026-06-10T09:10:16+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.14788",
+      "title": "Unifying Acoustic Features and Text with Multimodal LLMs for Neurodegenerative Screening",
+      "abstract": "Voice-based screening offers a scalable and non-invasive way to assess neurodegenerative diseases such as Alzheimer's disease (AD) and Parkinson's disease (PD), but their staging remains challenging due to the difficulty of integrating heterogeneous data. This paper presents NeurMLLM, an efficient multimodal generative framework for neurodegenerative disease staging. NeurMLLM first encodes the spectrograms and Mel-frequency cepstral coefficients of audio data with vision transformers and projects their representations into the embedding space of a large language model (LLM), where they are concatenated with transcript and demographic instruction tokens as a single unified sequence. The LLM is then instruction-tuned via Low-Rank Adaptation using task prompts to autoregressively predict a constrained label token, enabling a generative classification. By evaluating on the Bridge2AI-Voice dataset for fine-grained staging of AD and PD, we observe that NeurMLLM achieves strong performance, consistently outperforming classical machine learning methods and existing LLM-based approaches. The results show the high potential of multimodal LLMs in neurodegenerative disease staging, improving staging accuracy and supporting accessible deployment.",
+      "authors": [
+        "Qingfeng Zhang",
+        "Yuanxiong Guo",
+        "Yanmin Gong"
+      ],
+      "url": "https://arxiv.org/abs/2606.14788",
+      "published": "2026-06-10T21:43:44+00:00",
+      "updated": "2026-06-10T21:43:44+00:00",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.11692",
+      "title": "Evaluation of Alternative-Based Information Systems for Deliberative Polling using an Agentic Simulator",
+      "abstract": "Deliberative polling promises to improve collective decision-making by exposing shareholders to a broad range of arguments before they vote. Yet ensuring that every voter encounters a representative sample of the reason space, the coverage problem, remains an open challenge, particularly at scale and in adversarial or strategically motivated electorates. This paper introduces a way of evaluating solutions using the LLM-based Agentic Bipolar Argumentation Simulator, grounded in a framework which formalises a poll as a six-tuple <Jend, Jopp, Ratt, Renh, VA, VR> of endorsing and opposing justifications, attack and enhance relations, and shareholder- and relation-weights. ABAS simulates N autonomous shareholder agents, each assigned a latent opinion according to desired distributions in [-1, 1], who sequentially vote, choose or author justifications, and optionally submit argumentation-graph links. The simulator implements recommendations that rank existing justifications by their observable endorsement mass. It evaluates the mechanism's success by coverage, namely the fraction of the corpus reason-tag set represented in the K recommendations presented to each shareholder, as a solution to the NP-hard Subsuming Justification Problem. Reported experiments characterise how creativity rate (pown), recommendation size (K), argumentation density (plinks), and population size (N) affect coverage and corpus diversity. In an authenticated electorate where Sybil attacks are impossible and only the relation graph is gameable, we stress-test the scoring with coordinated strategic voting attacks: a tag-flood attack collapses coverage, while author-count relation weighting through a reversed-PageRank rule resists the flood markedly better than uniform weights.",
+      "authors": [
+        "Rwaida Alssadi",
+        "Khulud Alawaji",
+        "Balaji Kasula",
+        "Muntaser Syed",
+        "Badria Alfurhood",
+        "Markus Zanker",
+        "Marius Silaghi"
+      ],
+      "url": "https://arxiv.org/abs/2606.11692",
+      "published": "2026-06-10T06:15:13+00:00",
+      "updated": "2026-06-10T06:15:13+00:00",
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.14778",
+      "title": "FactCheck: Feasibility-aware Long-term Action Anticipation with Multi-agent Collaboration",
+      "abstract": "Long-term action anticipation (LTA) aims to predict an ordered sequence of future verb-noun actions from a partially observed video. While this task serves as the foundation for embodied intelligence, anticipating physically feasible long-term actions remains a critical challenge. Existing methods, which operate in an open-loop manner, often hallucinate non-existent objects, violate object affordances, or disregard object states, as they lack explicit mechanisms to verify action feasibility against the physical environment. To address this, we propose FactCheck, a novel multi-agent collaboration framework that improves feasibility through a closed-loop \"Observe-Plan-Verify\" mechanism. FactCheck decomposes the complex LTA task into specialized roles: an Observer that recognizes historical actions from video observations and constructs a dual-form structured memory, comprising a History Action Abstract that captures high-level human intentions and environmental status, and a History Action Graph that encodes object states and temporal dependencies; a Planner that generates draft future actions conditioned on both low-level historical actions and high-level History Action Abstract; and a Verifier that rigorously validates the draft against the History Action Graph and refines infeasible actions. Extensive experiments on the EPIC-Kitchens-55 and EGTEA Gaze+ benchmarks demonstrate that FactCheck consistently outperforms state-of-the-art methods. Our work establishes a new paradigm for feasibility-aware long-term action anticipation, effectively closing the loop of action recognition, action prediction and action verification.",
+      "authors": [
+        "Rui Cao",
+        "Jiannong Cao",
+        "Bo Yuan",
+        "Zhiyuan Wen",
+        "Mingjin Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2606.14778",
+      "published": "2026-06-10T06:25:09+00:00",
+      "updated": "2026-06-10T06:25:09+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Graph Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2606.12699",
       "title": "LLM-Powered Personalized Glycemic Assessment in Type 2 Diabetes with Wearable Sensor Data",
       "abstract": "Type 2 Diabetes (T2D) poses an increasing global health threat, demanding effective glycemic assessment to support personalized and improved diabetes care. Wearable sensors such as continuous glucose monitors (CGM) and fitness trackers offer many valuable insights for glycemic assessment. However, effectively analyzing these data requires integration with essential individual-level context. Existing methods are often based on traditional machine learning (ML) and rely primarily on historical blood glucose measurements and overlook personalized information, which limits their performance across diverse diabetes populations. Recent advances in large language models (LLMs) have demonstrated their ability to integrate diverse data modalities while modeling sequential dependencies, motivating the exploration of their potential for personalized glycemic assessment.   In this paper, we propose GlyLLM, an LLM-powered framework for modeling CGM-based glycemic dynamics through the integration of wearable sensor data and structured metadata. GlyLLM can leverage the extensive prior knowledge of pre-trained LLMs and achieve sensor-text semantic abstraction at decision time. Experiments on two related tasks on the AI-READI dataset demonstrate that our model outperforms traditional ML methods by an average of 13.66\\% in Root Mean Squared Error (RMSE) for glucose forecasting and 13.08\\% in Area Under the Receiver Operating Characteristic (AUROC) for diabetes categorization. Additionally, our ablation study shows that diabetes surveys and biometric tests are more critical than other health information for glycemic assessment. Our work presents a promising step toward harnessing the power of LLMs to advance personalized glycemic assessment in T2D care.",
@@ -9490,7 +9597,254 @@
       "match_method": "none",
       "best_score": 0.095,
       "backfilled": true
+    },
+    {
+      "id": "2606.14777",
+      "title": "JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence",
+      "abstract": "Many moments in the real world do not wait for a user to ask. A fire starts on a security monitor, an expression flickers across a video call, or a product a viewer wants flashes by in a livestream. Yet today's large models remain mostly turn-based by design: they answer only when addressed, and even video-call apps that appear interactive still operate as question-answer systems, reacting only when polled or prompted. We argue for a different paradigm: a model that is present in the world like a person. It continuously watches what is happening now, decides on its own whether to speak or stay silent, interacts in real time, and delegates to a background model when the problem is hard. To advance interaction models and their adoption across domains, we make two fully open-sourced contributions. First, we release JoyAI-VL-Interaction, an 8B-scale, vision-first VL-interaction model. The model makes the response decision internally, choosing each second to stay silent, respond, or delegate to a background model, and it excels at vision-triggered responsiveness and time awareness. We pair it with a transferable training recipe, from which capabilities we never trained for emerge, such as guiding a shopper through changing app screens or improvising a lecture from a slide deck. Second, we release a complete, deployable system built around that model. The system streams any ongoing video into the model, making it genuinely present in the world. All other components are pluggable, including ASR/TTS modules, memory, visualization UI, and a background brain that can connect to any API or agent. Across six real-world scenarios, human raters prefer JoyAI-VL-Interaction over the in-app video-call assistants of Doubao and Gemini by a wide margin. To our knowledge, this is the first open, vision-driven interaction model released together with its training recipe, data, and complete deployable system.",
+      "authors": [
+        "Dingyu Yao",
+        "Junhao Zhou",
+        "Chenxu Yang",
+        "Chuanyu Qin",
+        "Haowen Hou",
+        "Zheming Liang",
+        "Congcong Wang",
+        "Yuhang Cao",
+        "Shenglong Ye",
+        "Shuai Xie",
+        "Shuhuan Gu",
+        "Haoyang Huang",
+        "Qingyi Si",
+        "Nan Duan",
+        "Jiaqi Wang"
+      ],
+      "url": "https://arxiv.org/abs/2606.14777",
+      "published": "2026-06-10T03:43:50+00:00",
+      "updated": "2026-06-10T03:43:50+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.333,
+      "backfilled": true
+    },
+    {
+      "id": "2606.13707",
+      "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+      "abstract": "The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent collaboration across multiple modalities. Orchestra-o1 introduces a unified orchestration mechanism that enables modality-aware task decomposition, online sub-agent specialization, and parallel sub-task execution. This scalable design allows agent systems to effectively tackle complex real-world tasks involving heterogeneous information sources, surpassing the second-best approach by 10.3% accuracy on the OmniGAIA benchmark. Furthermore, we introduce decision-aligned group relative policy optimization (DA-GRPO), an efficient agentic reinforcement learning approach for training Orchestra-o1-8B, which also achieves state-of-the-art performance against all existing open-source omnimodal agents.",
+      "authors": [
+        "Fan Zhang",
+        "Vireo Zhang",
+        "Shengju Qian",
+        "Haoxuan Li",
+        "Hao Wu",
+        "Jinyang Wu",
+        "Donghao Zhou",
+        "Zhihong Zhu",
+        "Zheng Lian",
+        "Xin Wang",
+        "Pheng-Ann Heng"
+      ],
+      "url": "https://arxiv.org/abs/2606.13707",
+      "published": "2026-06-10T04:50:35+00:00",
+      "updated": "2026-06-10T04:50:35+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.289,
+      "backfilled": true
+    },
+    {
+      "id": "2606.14776",
+      "title": "Deep Learning-Based Lunar Crater Terrain Relative Navigation",
+      "abstract": "Accurate position estimation is crucial for the successful implementation of future lunar landings using autonomous vehicles, especially in dangerous environments with sparse terrain features. In this paper, we propose a terrain relative navigation (TRN) algorithm combining our deep-learning crater detector, which was designed specifically for the NASA Crater Detection Challenge problem, and an Extended Kalman Filter (EKF). Our detector analyzes crater features from the monocular images acquired from orbit, and their matches with craters from a global database are identified via a Hungarian assignment approach followed by the consensus-based outliers removal method. The estimated measurements are then used to refine an EKF, where spacecraft pose estimation in the Lunar-Centered Lunar-Fixed (LCLF) frame of reference, augmented with altitude aiding information, constrains radial drift. The simulation results indicate that even if the spacecraft is off from its actual location up to 5 km, TRN could recover from this situation, achieving navigation error reduction to a few hundred meters. It should be noted that in order to maintain crater feature correspondences, it is important to match the image resolution and the scales within the scene to the detector training set distribution.",
+      "authors": [
+        "Batu Candan",
+        "Simone Servadio"
+      ],
+      "url": "https://arxiv.org/abs/2606.14776",
+      "published": "2026-06-10T03:03:26+00:00",
+      "updated": "2026-06-10T03:03:26+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.269,
+      "backfilled": true
+    },
+    {
+      "id": "2606.13709",
+      "title": "LoMC: Localized Multidirectional Correction for Refusal Suppression in Routed Foundation Models",
+      "abstract": "We study controlled post-training refusal suppression in routed MoE and hybrid-MoE foundation models, aiming to increase non-refusal target-response behavior while preserving general capability under a compact intervention footprint. Existing broad direction-based edits can perturb general-purpose computation, whereas support-only expert edits often lack sufficient capacity to correct heterogeneous refusal representations. To address this limitation, we introduce Localized Multidirectional Correction (LoMC), a support-gated intervention framework that follows a support-then-correction execution order: it first identifies a compact edit support, then aggregates prototype correction directions into layer-wise correction directions, and finally applies rank-one layer-wise correction only within the selected support. By using the edit support as a structural gating constraint, LoMC increases correction capacity without expanding the intervention scope. Experiments on text-only and multimodal safety benchmarks across four routed backbones show that LoMC substantially improves non-refusal target-response behavior while maintaining general capability under a compact intervention footprint.",
+      "authors": [
+        "Yan Hong",
+        "Kedong Xiu",
+        "Wei Li",
+        "Jun Lan",
+        "Huijia Zhu",
+        "Shuheng Zhou",
+        "Zhongcai Lyu",
+        "Weiqiang Wang",
+        "Jianfu Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2606.13709",
+      "published": "2026-06-10T08:02:25+00:00",
+      "updated": "2026-06-10T08:02:25+00:00",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.251,
+      "backfilled": true
+    },
+    {
+      "id": "2606.13715",
+      "title": "WorkBench Revisited: Workplace Agents Two Years On",
+      "abstract": "The best agent on WorkBench in March 2024, GPT-4, completed 43% of tasks and took an unintended harmful action, such as emailing the wrong person, on 26% of them. We re-visit the benchmark in June 2026 and find that the best agent to date, Claude Opus 4.8, completes 89% and takes an unintended harmful action on 2.5%. Aside from this considerable progress in frontier agent performance, three things stand out. First, capability and safety go together on WorkBench rather than trade off, so the models that finish the most tasks also do the least unintended damage. Second, while several classes of error have been totally eliminated, frontier models still make some basic mistakes that occasionally result in irreversible harm, such as sending an email to the wrong person. Third, the rise of open-weight models has drastically lowered costs for a performance level that was previously only accessible to proprietary models, while frontier costs have stayed relatively stable. We release an updated version of the benchmark with data and code quality improvements, new model scores, and analysis of agent progress on WorkBench since 2024.",
+      "authors": [
+        "Olly Styles"
+      ],
+      "url": "https://arxiv.org/abs/2606.13715",
+      "published": "2026-06-10T21:21:35+00:00",
+      "updated": "2026-06-10T21:21:35+00:00",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.222,
+      "backfilled": true
+    },
+    {
+      "id": "2606.14782",
+      "title": "Last But Not Least: Boundary Attention CalibratiON for Multimodal KV Cache Compression",
+      "abstract": "Multimodal Large Language Models (MLLMs) achieve strong vision-language reasoning, but long visual contexts enlarge the KV cache and increase decoding latency. Existing compression methods rely on observation window attention for stable token-importance estimation, yet this aggregation can dilute sparse visual evidence and discard answer-critical tokens under aggressive compression. Therefore, we identify last-query attention as a complementary source for recovering such evidence, but its answer-irrelevant signals can mislead retention. We propose BACON, a plug-and-play method that calibrates observation window attention with last-query evidence and suppresses isolated noise via intra-layer coherence and inter-layer persistence. Across diverse benchmarks, models, budgets, and compression methods, BACON improves multimodal KV compression by 7.5% on average under the most aggressive budget, with gains up to 30.9%.",
+      "authors": [
+        "Tianhao Chen",
+        "Yuheng Wu",
+        "Kelu Yao",
+        "Xiaogang Xu",
+        "Xiaobin Hu",
+        "Dongman Lee"
+      ],
+      "url": "https://arxiv.org/abs/2606.14782",
+      "published": "2026-06-10T10:09:59+00:00",
+      "updated": "2026-06-10T10:09:59+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.213,
+      "backfilled": true
+    },
+    {
+      "id": "2606.14784",
+      "title": "LLM-Based Synthetic Ground Truth Generation for Audio-Based Emotion Classification via In-Context Learning",
+      "abstract": "Understanding human states and interaction dynamics is a core goal of human-computer interaction (HCI). As interaction paradigms become more immersive, virtual reality (VR) has emerged as a powerful platform for studying collaborative work. In such settings, evaluating team collaboration states, including team performance and team resilience, requires continuous and reliable inference of latent team-level cognitive and affective states from multi-modal sensor data, such as speech signals. However, generating ground truth labels for these latent states remains challenging due to sensor-induced noise, contextual variability, and sparse expert annotations. Traditional self-reporting approaches provide only static and delayed measurements and are therefore insufficient for capturing dynamic team processes reflected in continuous speech data. In this work, we propose a large language model (LLM)-driven, agentic inference workflow for automated emotion-related synthetic ground truth generation from streaming speech data in multi-user VR environments. Leveraging the generalization capabilities of LLMs, we use In-Context Learning (ICL) with few-shot demonstrations of paired audio-based samples and their corresponding transcriptions. ICL tends to achieve task adaptation comparable to model fine-tuning while circumventing the computational overhead of parameter updates. To construct informative and robust in-context prompts, we adopt a retrieval-based selection strategy that dynamically identifies relevant audio demonstrations based on similarity in the acoustic feature space.",
+      "authors": [
+        "Qing Huang",
+        "Pooja Pol",
+        "Jianing Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2606.14784",
+      "published": "2026-06-10T11:08:21+00:00",
+      "updated": "2026-06-10T11:08:21+00:00",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.208,
+      "backfilled": true
+    },
+    {
+      "id": "2606.13713",
+      "title": "CisTransCell: Single-Cell Perturbation Prediction via Gene Function, Regulatory Control, and Cellular Context",
+      "abstract": "Predicting cellular transcriptional responses to genetic perturbations is a central problem in single-cell biology, especially in the zero-shot setting where the perturbed gene or gene combination is unseen during training. A major difficulty is that perturbation effects are not determined by expression state alone: they depend on how the perturbed gene product influences other genes and proteins, how those downstream factors act on cis-regulatory elements, and which regulatory programs are active in the current cell state. To better capture this biological complexity, we propose CisTransCell, a cell-conditioned multi-modal framework for single-cell perturbation prediction that augments each gene with two complementary priors: a regulatory-sequence prior that captures how the gene is controlled, and a coding-sequence prior that captures what the gene product does. By integrating these priors with cellular expression state, CisTransCell models perturbation response as a cascade from gene function to regulatory control to downstream transcriptional change. Experiments on benchmark single-cell perturbation datasets show that CisTransCell achieves strong performance in zero-shot perturbation prediction.",
+      "authors": [
+        "Wei Zhang",
+        "Xun Jiang",
+        "Yuesi Xi",
+        "Ming Tang"
+      ],
+      "url": "https://arxiv.org/abs/2606.13713",
+      "published": "2026-06-10T20:40:33+00:00",
+      "updated": "2026-06-10T20:40:33+00:00",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.188,
+      "backfilled": true
+    },
+    {
+      "id": "2606.13712",
+      "title": "Multimodal Speaker Identification in Classroom Environments",
+      "abstract": "Automated analysis of K-12 classroom dynamics faces challenges due to background noise and variable child speech, often confounding acoustic-only models. This study evaluates a multimodal speaker identification framework anchoring acoustic embeddings with LLM-derived semantic context. Using a subset of the EDSI dataset (8 math classrooms, N = 2,801 utterances), we found an acoustic baseline (ECAPA-TDNN) achieved only 39.0% accuracy. By integrating transcript-based \"contextual anchoring\" into a gradient boosting classifier, our multimodal approach raised student identification to 50.3%. Performance also improved for utterances over 5 seconds, reaching 76.9% accuracy (vs. 64.9% baseline) with a 90.9% Top-3 accuracy. Additionally, the model distinguished teacher vs. student roles with 99.3% accuracy. This approach advances the feasibility of automated feedback systems capable of considering individual student participation, a crucial step for supporting equitable instruction at scale.",
+      "authors": [
+        "Michael L. Chrzan",
+        "Meghavarshini Krishnaswamy",
+        "Robert Gibboni",
+        "Katie Wetstone",
+        "Wei Ai",
+        "Jing Liu"
+      ],
+      "url": "https://arxiv.org/abs/2606.13712",
+      "published": "2026-06-10T19:15:40+00:00",
+      "updated": "2026-06-10T19:15:40+00:00",
+      "categories": [
+        "cs.SD",
+        "cs.CL"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.182,
+      "backfilled": true
+    },
+    {
+      "id": "2606.14786",
+      "title": "MatchLM2Lite: A Scalable MLLM-to-Lite Framework for Reproduced Content Identification",
+      "abstract": "Content moderation is critical for online video platforms to ensure content safety, protect creators, and sustain positive user experiences. Beyond filtering harmful content, platforms must guarantee content authenticity at scale so that users are exposed to diverse, original videos rather than low-value reproductions. We present MatchLM2Lite, a real-time, production-grade reproduced content identification (RCI) system that leverages the powerful understanding of a multimodal large language model (MLLM) distilled into a small and fast-inference model. Our system jointly models video, audio, and text signals, operating on pairs of videos to produce fine-grained reproduction scores. The system comprises two modules, MatchLM and MatchLite, and a two-stage training recipe. First, our high-capacity MLLM, MatchLM, serves as a teacher model to define the upper bound of RCI performance. Its capabilities are then distilled into a compact student model, MatchLite. This design allows MatchLite to deliver low-latency, high-throughput inference on video pairs while preserving much of MatchLM's accuracy, making it suitable for integration into real-time recommendation systems. MatchLM achieves an F1-score improvement of +8.57 compared to our previous production model. After knowledge distillation, MatchLite retains a +6.55 gain in F1-score while reducing computational cost by 35x. Deployed at scale, MatchLM2Lite enables efficient, pairwise multimodal RCI, stably serving online traffic at high queries per second (QPS) with an end-to-end latency below 30 seconds. This system has reduced the reproduced video view rate on our platform by 2.5% without degrading user engagement, demonstrating its effectiveness in a large-scale production environment.",
+      "authors": [
+        "Xiaotian Fan",
+        "Hiok Hian Ong",
+        "David Yuchen Wang",
+        "Zirui Zhu",
+        "Kanchan Sarkar",
+        "Kun Xu"
+      ],
+      "url": "https://arxiv.org/abs/2606.14786",
+      "published": "2026-06-10T15:42:21+00:00",
+      "updated": "2026-06-10T15:42:21+00:00",
+      "categories": [
+        "cs.MM",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.091,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-12T05:15:50.359319+00:00"
+  "patched_at": "2026-06-16T06:07:43.720017+00:00"
 }
