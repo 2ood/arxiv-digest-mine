@@ -4395,6 +4395,114 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.095
+    },
+    {
+      "id": "2606.17104",
+      "title": "Prefill/Decode-Aware Evaluation of LLM Inference on Emerging AI Accelerators",
+      "abstract": "As large language models (LLMs) are increasingly deployed in latency- and cost-sensitive settings, inference efficiency has become a central systems challenge. While GPUs dominate current deployments, a growing number of AI accelerators claim advantages for LLM inference, yet it remains unclear under which conditions such accelerators outperform GPUs in practice. Recent inference systems decompose execution into Prefill and Decode phases, which exhibit distinct computational characteristics and latency metrics, commonly captured by time to first token (TTFT) and time per output token (TPOT).   This paper presents a phase-aware evaluation of LLM inference performance across GPUs and emerging AI accelerators using a common model, Llama2-7B. By separately measuring Prefill and Decode performance, we reveal that accelerator advantages differ by phase and metric. Our results show that GPUs consistently excel in the compute-intensive Prefill phase, while GroqRack achieves significantly lower TPOT during Decode (batching not currently supported). However, GPUs regain an advantage in Decode throughput as batch size increases.   These findings demonstrate that each platform exhibits distinct phase-dependent strengths. We further analyze heterogeneous Prefill/Decode disaggregation across different accelerator platforms, identifying performance gains and the workload and network conditions under which such gains are realized.",
+      "authors": [
+        "Shun Usami",
+        "Venkatram Vishwanath",
+        "E. Wes Bethel"
+      ],
+      "url": "https://arxiv.org/abs/2606.17104",
+      "published": "2026-06-14T12:23:29+00:00",
+      "updated": "2026-06-14T12:23:29+00:00",
+      "categories": [
+        "cs.AR",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.308,
+      "backfilled": true
+    },
+    {
+      "id": "2606.17099",
+      "title": "Software Delegation Contracts: Measuring Reviewability in AI Coding-Agent Work",
+      "abstract": "AI coding agents increasingly accept assigned software tasks, modify repositories under bounded authority, and return work packages for review. Prior work proposed the software delegation contract, covering the task, authority, returned work package, and acceptance context, as the unit of analysis for delegated coding work, but did not measure its effects. This paper reports a controlled pilot study of explicit delegation contracts for coding agents. We built a dependency-free TypeScript API task environment with seeded defects and documentation gaps, authored ten tasks across five families, and ran 64 agent executions across two model tiers under three conditions: a realistic issue-style prompt, an explicit delegation contract, and a contract with a required evidence bundle. Each run was scored with hidden acceptance tests, mutation checks, and scope analysis, then reviewed by three independent condition-blinded model-based reviewers using a fixed rubric, for 192 reviews. Explicit contracts did not improve objective task outcomes: all 64 runs passed hidden acceptance checks, with zero scope violations. They did improve reviewability. Evidence sufficiency improved in 22 of 30 paired comparisons and worsened in none (+0.83 on a 5-point scale, p < 0.0001, Cliff's delta = 0.66); reviewer ambiguity decreased (p = 0.035); changed-file lists, known-limitations sections, residual-risk sections, and reviewer checklists appeared mostly or only when demanded by the contract. Contracts cost +13% agent tokens and +38% wall-clock time, with larger effects for the weaker model tier. On these small tasks, delegation contracts bought reviewability rather than correctness.",
+      "authors": [
+        "Vincent Schmalbach"
+      ],
+      "url": "https://arxiv.org/abs/2606.17099",
+      "published": "2026-06-14T05:53:27+00:00",
+      "updated": "2026-06-14T05:53:27+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.295,
+      "backfilled": true
+    },
+    {
+      "id": "2606.17102",
+      "title": "Quantum Cinema: An Interactive Cinematic Exploration of Quantum Computing Hardware via Generative World Models",
+      "abstract": "Quantum computing promises transformative advances across science and industry, yet the physical hardware that enables these computations remains invisible to the public: quantum processors operate inside sealed dilution refrigerators at temperatures near absolute zero, making direct observation impossible. This \"imagination gap\" between quantum computing's growing societal impact and the public's ability to visualize it represents a significant barrier to quantum literacy and workforce development. We present Quantum Cinema, an open-source, browser-based interactive application that closes this gap by transforming invisible quantum hardware into explorable, cinematic experiences using generative world models. Quantum Cinema guides users through a four-act narrative -- from the foundational Nobel Prize-winning science of quantum entanglement, through curated video introductions to three major quantum computing architectures (trapped-ion, neutral-atom, and superconducting systems), into immersive three-dimensional generative worlds that make invisible quantum phenomena observable, and finally to interactive radar-chart comparisons grounded in real quantum device specifications. All three-dimensional environments are generated using WorldLabs' generative world model platform and are scientifically grounded in curated metrics from Amazon Web Services (AWS) Braket quantum hardware. Quantum Cinema requires no installation, no specialized hardware, and no quantum computing background. It is designed to serve two distinct communities: scholars and developers seeking to replicate or extend the platform, and educators, researchers, and science communicators seeking an intuitive tool for explaining quantum hardware to diverse audiences. This paper describes the system architecture, the generative world model pipeline, use cases for both communities, and directions for future work.",
+      "authors": [
+        "Aoyu Zhang",
+        "Dongping Liu",
+        "Luyao Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2606.17102",
+      "published": "2026-06-14T06:58:16+00:00",
+      "updated": "2026-06-14T06:58:16+00:00",
+      "categories": [
+        "physics.pop-ph",
+        "cs.AI",
+        "quant-ph"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.209,
+      "backfilled": true
+    },
+    {
+      "id": "2606.17106",
+      "title": "Informative Missingness to Generate Irregular Clinical Time Series",
+      "abstract": "Laboratory tests in electronic health records are collected irregularly, and the absence of a test order can be as informative as the measurement itself. Such missingness reflects clinicians' decisions and patient physiology, making it important to model it directly rather than treat it as a preprocessing artifact. Here we present a diffusion-based approach for generating clinical time series that jointly models laboratory values and their observation patterns using the public Data Analytics Challenge on Missing Data Imputation (DACMI) benchmark derived from MIMIC-III. To preserve realistic sampling, we align chart times into 4-hour intervals and segment admissions into 7-day windows, producing trajectories that pair each lab value with a corresponding observation indicator. Standard transformations and normalization are applied to stabilize training. Our method extends the TimeDiff framework to learn continuous lab values and discrete missingness patterns through complementary diffusion objectives. Experiments show that the generated data closely match real patient trajectories across individual lab distributions and joint value-missingness embeddings, demonstrating that diffusion models can capture clinically meaningful dependencies between patient physiology and clinicians' testing behavior under MNAR-like (missing-not-at-random) missingness. These preliminary results indicate that our model can serve as an initial component toward developing clinical foundation models. By producing synthetic priors that preserve key physiology-missingness relationships, this work motivates the subsequent training of Prior-Data Fitted Networks capable of leveraging informative missingness, which we will investigate in the extended work.",
+      "authors": [
+        "Hadi Mehdizavareh",
+        "Gabriele Santangelo",
+        "Giovanna Nicora",
+        "Simon Lebech Cichosz",
+        "Arianna Dagliati",
+        "Arijit Khan",
+        "Riccardo Bellazzi"
+      ],
+      "url": "https://arxiv.org/abs/2606.17106",
+      "published": "2026-06-14T13:06:03+00:00",
+      "updated": "2026-06-14T13:06:03+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.CY"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.15,
+      "backfilled": true
+    },
+    {
+      "id": "2606.17107",
+      "title": "Models Take Notes at Prefill: KV Cache Can Be Editable and Composable",
+      "abstract": "Prefix caching reuses prefill only across an exactly shared prefix, so one changed field invalidates the entire downstream cache. Yet overwriting the field's own key/value vectors and reusing the rest leaves the model acting on the old value. The reason, established causally across four model families: at prefill the model has already written the field-conditioned conclusion onto downstream notes; the field's own key/value drives under 1% of the decision. Read as a notebook of memoized conclusions, two capabilities follow. (1) It is editable. A salient erratum amends the notes; and with chain-of-thought, editing the field alone recovers the decision (1.00 at 8B, ~1% compute), while without CoT it is ignored. (2) It is composable. The notes are position-portable, so a precompiled skill can be RoPE-repositioned and spliced into any context, indistinguishable from full recompute (logit cosine 0.90-0.999, twelve models) at O(L) rather than O(L^2) time-to-first-token. A unified edit+compose agent stays decision-identical to recompute at up to 14.9x lower latency. The approach applies to any per-token attention KV cache, validated across scale, quantization, Mixture-of-Experts, and multimodal caches, and extends to several attention variants through small adapters. Because the erratum is append-only, it composes with production prefix caching: in an online vLLM benchmark it keeps the prefix cache-aligned (98.5% hit-rate), cutting p90 time-to-first-token by 53-398x.",
+      "authors": [
+        "Bojie Li"
+      ],
+      "url": "https://arxiv.org/abs/2606.17107",
+      "published": "2026-06-14T15:31:23+00:00",
+      "updated": "2026-06-14T15:31:23+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.138,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-06-17T05:26:14.935572+00:00"
 }
