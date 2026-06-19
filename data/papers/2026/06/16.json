@@ -9454,7 +9454,78 @@
       "match_method": "none",
       "best_score": 0.093,
       "backfilled": true
+    },
+    {
+      "id": "2606.19390",
+      "title": "Execution-bound advisory automation for agentic AI: a reproducible AIBOM-driven CSAF-VEX framework",
+      "abstract": "A protocol driven framework is presented that binds SBOM and AIBOM artefacts to deterministic environment capture and structured runtime telemetry. Exploitability is computed from declared artefacts, observed activation conditions, and enforced execution policies. CSAF VEX advisories are generated from combined static and runtime evidence, cryptographically signed, and validated through deterministic replay. Evaluation uses approximately 10000 component entries across synthetic Agentic AI workloads 50 to 5000 components, incorporating OSV, GitHub Advisory, KEV, and EPSS datasets.",
+      "authors": [
+        "Petar Radanliev",
+        "Omar Santos",
+        "Carsten Maple",
+        "Kay Atefi"
+      ],
+      "url": "https://arxiv.org/abs/2606.19390",
+      "published": "2026-06-16T11:42:42+00:00",
+      "updated": "2026-06-16T11:42:42+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.332,
+      "backfilled": true
+    },
+    {
+      "id": "2606.19387",
+      "title": "Interpretable and Verifiable Hardware Generation with LLM-Driven Stepwise Refinement",
+      "abstract": "Large language models (LLMs) have achieved remarkable success in software development. However, they are susceptible to hallucinations, meaning that they can introduce subtle semantic and logical errors. Due to the high stakes in chip design and manufacturing, hardware engineers are still reluctant to rely on LLMs for register-transfer level (RTL) generation. In this paper, we propose a hardware generation framework that combines the creativity and broad knowledge of LLMs with the explainability and mathematical rigor of formal methods. Specifically, we devise a set of transformation rules that cover various design decisions and hardware features. By iteratively applying these rules, an LLM agent can convert a design specification into an RTL program with guaranteed correctness. Experimental results demonstrate the effectiveness and efficiency of the framework.",
+      "authors": [
+        "You Li",
+        "Samuel Mandell",
+        "David Z. Pan"
+      ],
+      "url": "https://arxiv.org/abs/2606.19387",
+      "published": "2026-06-16T01:28:22+00:00",
+      "updated": "2026-06-16T01:28:22+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.282,
+      "backfilled": true
+    },
+    {
+      "id": "2606.19388",
+      "title": "Beyond the GUI Paradigm: Do Mobile Agents Need the Phone Screen?",
+      "abstract": "Recent advances in mobile agents are dominated by the GUI paradigm, in which agents perceive UI information and emit screen interactions. However, mobile platforms also expose a command-line interface (CLI) that provides direct access to device services and data. We argue CLI deserves first-class consideration alongside GUI. We evaluate three coding agents (Claude Code, Terminus-2, mini-swe-agent) across four model APIs on AndroidWorld and MobileWorld without any mobile-specific post-training, comparing against three reproducible GUI baselines (GUI-Owl-1.5-32B, MAI-UI, Qwen3-VL-32B). Claude Code (Opus 4.7) reaches 71.8\\% and 51.9\\%, outperforming every reproducible GUI baseline (69.3/68.1/57.8\\% on AndroidWorld; 43.2/26.3/13.3\\% on MobileWorld), while every other CLI configuration remains competitive. To establish the paradigm's ceiling, we provide oracle CLI solutions that reach 88.8\\% on AndroidWorld (103/116 tasks CLI-solvable) and 86.3\\% on MobileWorld (101/117 tasks CLI-solvable), indicating substantial room for future improvement. To cover everyday user intents beyond the GUI scope, we introduce the \\textbf{CLI-Advantage Task Suite}, comprising 45 templates across five categories: bulk operations, multi-condition filtering, aggregation, cross-app workflows, and hidden device state. Every CLI agent outperforms every GUI baseline in all five categories, with substantially fewer steps per task (10.7 vs.\\ 18.6). To support future research on mobile CLI agents, we will open-source agent implementations, oracle solutions, the CLI-Advantage suite, and evaluation infrastructure.",
+      "authors": [
+        "Li Gu",
+        "Zihuan Jiang",
+        "Linqiang Guo",
+        "Zhixiang Chi",
+        "Ziqiang Wang",
+        "Huan Liu",
+        "Yuanhao Yu",
+        "Tse-Hsun Chen",
+        "Yang Wang"
+      ],
+      "url": "https://arxiv.org/abs/2606.19388",
+      "published": "2026-06-16T02:36:22+00:00",
+      "updated": "2026-06-16T02:36:22+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.207,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-18T05:18:36.245707+00:00"
+  "patched_at": "2026-06-19T05:35:19.301601+00:00"
 }
