@@ -3,6 +3,70 @@
   "fetched_at": "2026-06-23T13:41:59.432709+09:00",
   "papers": [
     {
+      "id": "2606.23742",
+      "title": "Low-power analogue neural networks with trainable nonlinear connections for continuous control",
+      "abstract": "Physical neural networks promise low-power machine learning by computing directly with analogue device physics, but most architectures force nonlinear device responses to act as scalar weights. Inspired by Kolmogorov-Arnold networks, we place trainable nonlinear functions on the connections, making each physical connection a learnable computational element. Realising these functions as analogue band-pass filters on field-programmable analogue arrays, we find that the benefit is task-dependent and follows from the smoothness of the physical basis: the networks represent smooth, continuously valued targets, including robotic kinematics, continuous control, and photovoltaic maximum-power-point tracking, with far fewer nodes and connections than multilayer perceptrons, but offer no parameter-efficiency advantage on classification-like decision boundaries. Trained networks transfer to hardware across approximately 35,000 connections with quantified fidelity, and a dedicated CMOS implementation is projected to operate at approximately 30 microwatts. A memristive realisation reproduces the same behaviour in simulation, indicating that the advantage comes from placing trainable nonlinearity on connections, rather than from a particular device.",
+      "authors": [
+        "Ian T. Vidamour",
+        "Fernando Aguirre",
+        "Thomas J. Hayward",
+        "Matthew O. A. Ellis",
+        "Charles Swindells",
+        "Alexander McDonnell",
+        "Martin Trefzer",
+        "Finley Robins",
+        "Luca Manneschi",
+        "Susan Stepney",
+        "Tony Kenyon",
+        "Oliver J. Sutton",
+        "Jack C. Gartside",
+        "Ivan Y. Tyukin",
+        "Adnan Mehonic",
+        "Eleni Vasilaki"
+      ],
+      "url": "https://arxiv.org/abs/2606.23742",
+      "published": "2026-06-21T15:55:23+00:00",
+      "updated": "2026-06-21T15:55:23+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness",
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.23739",
+      "title": "Systematic Exploration of 4-Expert Heterogeneous Mixture-of-Experts via Automated Pipeline Search",
+      "abstract": "We present an automated large-scale search pipeline for heterogeneous 4-Expert Mixture-of-Experts (MoE4) architectures within the LEMUR neural network dataset ecosystem. Building on a hand-crafted heterogeneous MoE reference model, we replace manual design with a deterministic code-assembly generator that systematically combines base architecture families drawn from the LEMUR database into MoE4 ensembles, each governed by a convolutional gating network with temperature scaling, mixup augmentation, and cosine-annealed learning rate scheduling. Over a 28-day campaign on an NVIDIA RTX 4090, the pipeline generated 4,463 candidate models across 197 batches, of which 1,021 were evaluated successfully. A critical finding emerged from the campaign: due to alphabetical enumeration via itertools.combinations, the entire explored search space (4.8% of the theoretical 23,751 possible 4-family combinations) is anchored to a single family, AirNet. We characterise this coverage bias precisely, identify the root cause in the generator, and propose a stratified random sampling fix. Within the AirNet anchored scope, ShuffleNet and MobileNetV3 consistently co-produce the highest-accuracy ensembles (mean accuracy up to 0.632), while FractalNet and MNASNet are identified as low-yield families warranting exclusion in future campaigns. The pipeline, analysis artefacts, and corrected generator are released as part of the open-source NNGPT project at https://github.com/ABrain-One/nn-gpt",
+      "authors": [
+        "Yashkumar R Lukhi",
+        "Harsh Rameshbhai Moradiya",
+        "Radu Timofte",
+        "Dmitry Ignatov"
+      ],
+      "url": "https://arxiv.org/abs/2606.23739",
+      "published": "2026-06-21T13:43:27+00:00",
+      "updated": "2026-06-21T13:43:27+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "cs.SE"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2606.22333",
       "title": "Towards Whole Hand and Wrist Kinematic Tracking with a Wearable A-Mode Ultrasound Probe",
       "abstract": "A-mode ultrasound (US) has emerged as a promising modality for hand and wrist motion tracking. Prior works have mainly addressed static gesture classification or regression of a few degrees of freedom (DoFs), typically relying on non-wearable systems and external computing devices, and highlight the need for strategies to ensure robustness to sensor repositioning. In this work, we propose a framework for robust whole-hand and wrist kinematic tracking via wearable A-mode US using the WULPUS platform, tackling the regression of 23 DoFs directly on the probe. First, we introduce a compact (11285 parameters) multi-output convolutional neural network combined with an incremental training strategy, which improves inter-session generalization and reduces mean absolute error by more than 17% compared to a non-incremental approach. Second, we demonstrate, for the first time, the feasibility of end-to-end hand and wrist kinematic tracking entirely on-device. We deploy the model on the WULPUS nRF52832 microcontroller, achieving 0.73 mJ per inference, 29.1 ms latency, and showing the feasibility of full operation (data acquisition, online inference, and BLE streaming of results) within 33 mW, enabling up to 36 hours of continuous use and an 88% reduction in wireless bandwidth compared to raw data transmission.",
@@ -3143,6 +3207,106 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.117
+    },
+    {
+      "id": "2606.23740",
+      "title": "Weight-Space Geometry of Offline Reasoning Training",
+      "abstract": "Offline reinforcement-learning losses (RFT, RIFT, DFT, Offline GRPO, DPO) are widely used to distill reasoning from large teachers into smaller students, and are typically compared on downstream accuracy alone. We ask whether they are mechanistically distinct or converge to a similar weight update. Training six methods (SFT, RFT, DFT, RIFT, Offline GRPO, DPO) on identical math rollouts from a single base model (Qwen3-4B) with attention-only LoRA, we analyze the resulting deltas via cosine similarity, principal-angle subspace analysis, linear mode connectivity, and CKA. We observe: (i) SFT, RFT, and RIFT have nearly colinear weight deltas (cosine >= 0.97, top-1 principal angle ~7 deg median over 144 modules) and comparable GSM8K accuracy (87-88%, n=1319; pairwise McNemar p >= 0.15); (ii) DFT diverges further in direction than any reward-weighted method despite using the same data; (iii) Offline GRPO adds a substantial component orthogonal to the SFT direction (~67% globally, up to ~86% in late layers) while staying in the SFT loss basin; (iv) DPO sits in a near-orthogonal subspace, shows a mode-connectivity barrier, and collapses late-layer CKA to ~0.46. DPO also reaches the highest accuracy in our protocol on both GSM8K (93.5%, McNemar p < 10^-9 vs. each other method) and AIME26 (30.0% vs. 3.3-10.0%); its training uses a 10x smaller learning rate than the others (the standard convention), so the update-norm and accuracy gaps reflect loss-function and optimizer choices jointly, and a learning-rate-matched DPO comparison is left for future work.",
+      "authors": [
+        "Aleksandr Nikolich",
+        "Igor Kiselev",
+        "Vladimir Platonov",
+        "Karina Romanova"
+      ],
+      "url": "https://arxiv.org/abs/2606.23740",
+      "published": "2026-06-21T15:34:21+00:00",
+      "updated": "2026-06-21T15:34:21+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.334,
+      "backfilled": true
+    },
+    {
+      "id": "2606.23741",
+      "title": "A Survey on Federated Causal Discovery and Inference",
+      "abstract": "Causal reasoning, which encompasses the discovery of causal structures and the inference of causal effects, is fundamental to data-driven decision making. In practice, data for reliable causal analysis are often distributed across institutions and cannot be centralized due to privacy regulations or communication constraints. Federated learning (FL) addresses this by enabling collaborative analysis without raw data sharing, giving rise to the rapidly growing field of federated causal discovery (FCD) and inference (FCI). However, the interdisciplinary nature of this field and the absence of a comprehensive survey present barriers to entry for researchers. This paper bridges that gap by providing a systematic review through multi-dimensional taxonomies. Grounded in the three core design decisions underlying any FCD solution, namely how structures are learned, how data are partitioned, and what structural knowledge each party obtains, we organize FCD along three axes: methodological paradigm, federation topology, and structural scope. We further examine key practical dimensions, including temporal dynamics, data heterogeneity, missing data, and non-identical variable sets. For FCI, we categorize methods by target estimand (average versus individualized/conditional treatment effects) and by estimation strategy, from classical weighting methods to modern deep generative architectures. Unlike prior works that treat FCD and FCI separately, we formalize their connection as complementary stages of a unified federated causal reasoning pipeline, where FCD supplies the structural knowledge required for valid effect estimation in FCI. Finally, we highlight their shared concerns regarding privacy, communication efficiency, theoretical guarantees, and application domains, and conclude by identifying open challenges for future research.",
+      "authors": [
+        "Xianjie Guo",
+        "Yuwei Wang",
+        "Guodu Xiang",
+        "Xiaoli Tang",
+        "Kui Yu",
+        "Han Yu",
+        "Qiang Yang"
+      ],
+      "url": "https://arxiv.org/abs/2606.23741",
+      "published": "2026-06-21T15:44:39+00:00",
+      "updated": "2026-06-21T15:44:39+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.266,
+      "backfilled": true
+    },
+    {
+      "id": "2606.23743",
+      "title": "Sol Video Inference Engine: Agent-Native Full-Stack Acceleration Framework for Efficient Video Generation",
+      "abstract": "Modern video diffusion models achieve higher generation quality through scaling, but this also increases inference cost. Although many acceleration methods have been proposed, a central challenge is that the most effective acceleration strategy is highly instance-specific: a recipe that works well for one combination of model, hardware, and inference configuration often does not transfer to another. Different models vary in architecture, numerical sensitivity, and attention concentration patterns. Inference settings differ in spatial and temporal resolution and video duration, while hardware platforms differ in memory hierarchy, supported numerical formats, and kernel throughput. These factors create a large tuning space, making manual performance engineering costly. We present Sol Video Inference Engine, an agentic, native, training-free acceleration framework for video diffusion models. It organizes five broadly applicable techniques, cache, sparse attention, token pruning, quantization, and kernel fusion, into an agentic acceleration stack for instance-specific optimization. For a concrete deployment target defined by a model, hardware platform, and serving configuration, parallel skill agents optimize the implementation of each technique, an agent integrator composes them into a global acceleration stack, and a human validator provides feedback on generation quality. We instantiate this workflow on three video models with different sizes and architectures: 64B Cosmos3-Super, 22B LTX-2.3, and 2B SANA-Video. With little human effort, the full stack achieves more than 2x end-to-end acceleration while maintaining near-lossless VBench quality, demonstrating the effectiveness of the agent framework for video diffusion acceleration.",
+      "authors": [
+        "Yitong Li",
+        "Junsong Chen",
+        "Haopeng Li",
+        "Haozhe Liu",
+        "Jincheng Yu",
+        "Ligeng Zhu",
+        "Ping Luo",
+        "Song Han",
+        "Enze Xie"
+      ],
+      "url": "https://arxiv.org/abs/2606.23743",
+      "published": "2026-06-21T17:23:20+00:00",
+      "updated": "2026-06-21T17:23:20+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.207,
+      "backfilled": true
+    },
+    {
+      "id": "2606.23745",
+      "title": "JEDEL: Zero-Shot DNA-Encoded Library Design for Early-Stage Drug Discovery",
+      "abstract": "We present JEDEL, a framework for generating synthesis-ready DNA-encoded libraries (DELs) directly from three-dimensional pharmacophore representations of active ligands. JEDEL is the first model to map pharmacophore interaction patterns to actionable, scalable synthesis instructions, enabling the design of targeted libraries comprising potentially millions of molecules. Unlike existing generative approaches that produce virtual compounds requiring downstream synthesis planning, JEDEL operates within the space of purchasable building blocks and validated reactions, ensuring that every output is experimentally realizable by construction. JEDEL learns a predictive alignment between pharmacophore geometry and molecular structure and decodes this into combinatorial synthesis routes at scale. Across 18 protein targets, it generates focused libraries that outperform random and diversity-based baselines in predicted binding affinity, pharmacophore recovery, and sample efficiency, without target-specific retraining. JEDEL enables a shift from virtual molecule generation to experimentally deployable library design.",
+      "authors": [
+        "Zygimantas Jocys",
+        "Zhanxing Zhu",
+        "Henriette M. G. Willems",
+        "Katayoun Farrahi"
+      ],
+      "url": "https://arxiv.org/abs/2606.23745",
+      "published": "2026-06-21T19:27:28+00:00",
+      "updated": "2026-06-21T19:27:28+00:00",
+      "categories": [
+        "q-bio.BM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.117,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-06-24T04:48:18.509541+00:00"
 }
