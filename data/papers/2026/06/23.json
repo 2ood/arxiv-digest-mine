@@ -8588,7 +8588,132 @@
       "match_method": "none",
       "best_score": 0.073,
       "backfilled": true
+    },
+    {
+      "id": "2606.26155",
+      "title": "Detecting and Controlling Sycophancy with Cascading Linear Features",
+      "abstract": "Interpreting and controlling model behaviors through activation steering methods requires many pairs of contrastive samples that clearly exhibit desired or undesired behavior. These data pairs determine the degree to which interpretability frameworks can reliably detect model features responsible for a behavior, and therefore the ability to steer models toward or away from such behavior. In this work, we present an iterative data generation pipeline that isolates cascading linear features responsible for a behavior. Specifically, we show how moving beyond simple binary pairs of samples, and instead isolating samples that show degrees of features that scale linearly with behavior, allows for better disentanglement of features. We focus on detecting and steering away from sycophancy -- the tendency of language models to prioritize user validation. We demonstrate that sycophancy features discovered through cascading samples form linearly separable subspaces, and allow for selection of model activations that more clearly correspond to the desired behavior than baseline approaches. We also evaluate their ability to enable detection, deterministic scoring, and robust steering, and see that they either match or outperform LLM-as-a-judge and system prompting baselines while providing lower computational demand and more interpretability guarantees. Code & Data: https://cascading-feats.github.io/",
+      "authors": [
+        "Maty Bohacek",
+        "Rishub Jain",
+        "Nicholas Dufour",
+        "Thomas Leung",
+        "Chris Bregler",
+        "Roma Patel"
+      ],
+      "url": "https://arxiv.org/abs/2606.26155",
+      "published": "2026-06-23T20:10:53+00:00",
+      "updated": "2026-06-23T20:10:53+00:00",
+      "categories": [
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.305,
+      "backfilled": true
+    },
+    {
+      "id": "2606.26158",
+      "title": "Life After Benchmark Saturation: A Case Study of CORE-Bench",
+      "abstract": "When a benchmark's accuracy saturates, it is often retired and replaced with a more challenging version. We show that this approach privileges accuracy and misses the opportunity to study six other key dimensions of agent performance: construct validity issues such as shortcuts, out-of-distribution generalizability, efficiency, reliability, the relative importance of the model versus the scaffold, and uplift from human-agent collaboration. We use CORE-Bench Hard, a benchmark for computational reproducibility of scientific code, as a case study to demonstrate that measuring agents along these dimensions yields meaningful insights into agent performance even after accuracy saturates. First, we surface threats to construct validity in CORE-Bench Hard that are difficult to anticipate with less capable agents. We introduce an improved benchmark, CORE-Bench v1.1, and an out-of-distribution task suite, CORE-Bench OOD. Second, we find that despite accuracy saturation, CORE-Bench v1.1 remains useful for measuring efficiency, reliability, model performance, and scaffold performance. Finally, we conduct a small-scale randomized experiment to measure uplift from human-agent collaboration on real-world computational reproducibility tasks. We find a statistically significant speedup by about a factor of two -- likely underestimated due to one-fifth of human-only reproductions reaching the time limit before completing -- and describe various other findings. Together, our contributions present a more rigorous alternative to the dominant accuracy-centric evaluation paradigm.",
+      "authors": [
+        "Nitya Nadgir",
+        "Sayash Kapoor",
+        "Kangheng Liu",
+        "Peter Kirgis",
+        "Matilda Orona",
+        "Stephan Rabanser",
+        "Tilman Bayer",
+        "Abhishek Shetty",
+        "Yue Ling",
+        "Derrick Chan-Sew",
+        "Rumi Nakagawa",
+        "Saiteja Utpala",
+        "Zachary S. Siegel",
+        "Arvind Narayanan"
+      ],
+      "url": "https://arxiv.org/abs/2606.26158",
+      "published": "2026-06-23T22:30:44+00:00",
+      "updated": "2026-06-23T22:30:44+00:00",
+      "categories": [
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.294,
+      "backfilled": true
+    },
+    {
+      "id": "2606.26157",
+      "title": "Reducing Redundancy in Whole-Slide Image Patching for Scalable Indexing and Retrieval",
+      "abstract": "The rapid growth of digital pathology has created an urgent need for efficient indexing and retrieval of whole slide images (WSIs). This need is intensified by emerging generative AI workflows, particularly retrieval-augmented generation (RAG), which require dependable similarity search to support high-stakes clinical decision-making. Yet the substantial cost of high-performance storage limits the scalability and accessibility of WSI indexing for many healthcare institutions. Consequently, methods that can reduce storage demands while preserving retrieval accuracy have become a critical research priority. We propose ARReST (Antithetical Redundancy Reduction Strategy), a principled oppositional framework that leverages redundancy across dissimilar tissue classes to markedly decrease the number of patches that must be indexed from each WSI. Instead of eliminating only within-class duplicates, ARReST identifies antithetical patches-those whose representations contribute minimally to cross-class discrimination-and prunes them from the searchable archive. This targeted reduction substantially compresses the index without sacrificing morphological diversity or retrieval fidelity. By minimizing superfluous patch representations, ARReST reduces storage footprint, lowers computational overhead, and accelerates similarity search across large pathology repositories. Extensive experiments on TCGA repository (The Cancer Genome Atlas with 21 organs) demonstrate that ARReST achieves significant index compression while maintaining competitive retrieval performance. The observed storage savings of 3% to 60% (14%$\\pm$13%) can be reliably achieved without compromising retrieval performance for many organs. The proposed strategy enables scalable, cost-efficient WSI indexing and is well-suited for next-generation retrieval-driven clinical AI systems.",
+      "authors": [
+        "Jialiang Geng",
+        "Ghazal Alabtah",
+        "Saghir Alfasly",
+        "Wataru Uegami",
+        "H. R. Tizhoosh"
+      ],
+      "url": "https://arxiv.org/abs/2606.26157",
+      "published": "2026-06-23T20:57:22+00:00",
+      "updated": "2026-06-23T20:57:22+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.267,
+      "backfilled": true
+    },
+    {
+      "id": "2606.26154",
+      "title": "Reinforcement Learning Enables Autonomous Microrobot Navigation and Intervention in Simulated Blood Capillaries",
+      "abstract": "Autonomous microrobots navigating biological vasculature could enable targeted drug delivery and thrombolysis, yet training control policies for realistic environments remains an open challenge. Prior reinforcement learning (RL) studies of microrobotic navigation have been limited to idealized geometries that omit complex hydrodynamic flow fields, confined branching structures, and dense cellular obstacles found in vivo. Here, we develop a physically grounded simulation of a blood capillary network, incorporating realistic hydrodynamic flow fields, explicit red blood cell dynamics, and anatomically derived branching geometry, and train deep RL agents to navigate it via chemotaxis. We systematically map the physical limits of navigation across robot size and swimming speed, revealing a forbidden regime where Brownian motion and flow overcome propulsion. Successful agents independently discover multiple universal strategy types, including run-and-rotate and energy-efficient search-and-sit policies, regardless of robot parameters. Without retraining, these agents perform targeted blocking and unblocking of capillary flow, restoring throughput to healthy baseline levels. These results establish RL as a viable framework for developing autonomous microrobotic intervention strategies in complex biological environments.",
+      "authors": [
+        "Jannik Drotleff",
+        "Samuel Tovey",
+        "Paul Hohenberger",
+        "Christoph Lohrmann",
+        "Julian Hoßbach",
+        "Konstantin Nikolaou",
+        "Christian Holm"
+      ],
+      "url": "https://arxiv.org/abs/2606.26154",
+      "published": "2026-06-23T12:21:18+00:00",
+      "updated": "2026-06-23T12:21:18+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "physics.bio-ph"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.249,
+      "backfilled": true
+    },
+    {
+      "id": "2606.26151",
+      "title": "Unsupervised Memory-Enhanced Video Transformers: Obstacle Detection for Autonomous Agricultural Rover",
+      "abstract": "While autonomous rovers have become indispensable to precision farming, achieving consistent operational safety remains a critical challenge. Conventional safety sensors, such as LiDAR, fail to detect obstacles positioned below the plant canopy, posing a significant risk. While camera-based supervised learning methods can detect common objects, they perform poorly when faced with obstacles that were not present in their training data. Actual unsupervised anomaly detection offers a solution by learning the normal visual patterns of an environment, but often fails for the dynamic scenes captured by a moving rover.\\\\ This paper introduces Video Memory Transformers for Anomaly Detection (VMTAD), a fully unsupervised method designed for real-time obstacle detection in dynamic agricultural scenes. VMTAD utilizes a transformer-driven architecture augmented with a dedicated memory module. This memory module leverages temporal context by processing encoded representations of preceding frames. This approach enables the system to effectively address the dynamic context caused by the robot's movement. The model is trained using only images that represent normal operation, requiring no data labels.\\\\ VMTAD was rigorously evaluated on the 'Grillion' agricultural rover. On a challenging rapeseed dataset, VMTAD achieved state-of-the-art performance, reaching a 0.973 detection and 0.997 segmentation Area Under the Receiver Operating Characteristic curve. A lightweight variant provides an optimal balance of high accuracy and real-time inference (14 ms), which is critical for safety, as confirmed by our analysis of the rover's total stopping distance.",
+      "authors": [
+        "Théo Biardeau",
+        "Anne-Sophie Capelle-Laizé",
+        "Salwan Alwan",
+        "David Helbert"
+      ],
+      "url": "https://arxiv.org/abs/2606.26151",
+      "published": "2026-06-23T08:29:54+00:00",
+      "updated": "2026-06-23T08:29:54+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.224,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-25T04:46:56.308419+00:00"
+  "patched_at": "2026-06-27T04:35:47.091130+00:00"
 }
