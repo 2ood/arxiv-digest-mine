@@ -3,6 +3,130 @@
   "fetched_at": "2026-06-25T13:46:52.632034+09:00",
   "papers": [
     {
+      "id": "2606.27397",
+      "title": "SidConArena: An Environment Evaluating Agents in Open-Ended,Positive-Sum Bargaining Game",
+      "abstract": "Evaluating LLM agents requires dynamic environments that go beyond static reasoning and zero-sum games. Real-world economic interaction is often open-ended and mixed-motive: agents must negotiate, create positive-sum surplus, compete for scarce assets, and plan under delayed returns. We introduce SidConArena, a new benchmark framework for evaluating LLM agents in open-ended, positive-sum bargaining. SidConArena formalizes a multi-player economy as a finite-horizon partially observable stochastic game with three coupled phases: natural-language negotiation with binding trades, deterministic converter-based production, and sealed-bid auctions for long-term assets. The framework combines structured observations, phase-aware agent dispatching, a neural-symbolic action interface, and asynchronous execution, enabling free-form interaction while preserving rule-grounded evaluation. Across homogeneous and heterogeneous tournaments, stronger frontier models achieve higher economic outcomes, yet agents still misvalue resources, bargain passively, and remain limited in long-horizon investment planning.",
+      "authors": [
+        "Yeqi Feng",
+        "Yuxin Chen",
+        "Tianxing He"
+      ],
+      "url": "https://arxiv.org/abs/2606.27397",
+      "published": "2026-06-24T10:35:31+00:00",
+      "updated": "2026-06-24T10:35:31+00:00",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.GT"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.28399",
+      "title": "Meta-learning as a principle for human-like visual representations",
+      "abstract": "The structure of human visual representations underpins our capacity for adaptive behaviour. While pretrained neural networks model human visual representations with unprecedented success, a large discrepancy remains. We propose one reason: these networks optimise a single fixed objective, whereas human representations must support open-ended tasks. We hypothesise this flexibility arises from meta-learning (learning to learn), a pressure shaping representations to acquire new tasks from few observations. To test this, we train a sequence model, without any supervision from human data, across thousands of semantically rich tasks mapping images to high-level concepts. Compared to their pretrained base encoders, meta-learned representations better predict human similarity judgements, semantic rule learning, and high-level visual cortex. Behavioural gains depend on disentangled, high-level task distributions, while brain alignment is driven primarily by the learning-to-learn pressure. Our results suggest the flexibility of human visual representations reflects the functional demand to learn new semantic relationships on the fly.",
+      "authors": [
+        "Can Demircan",
+        "Marcel Binz",
+        "Alireza Modirshanechi",
+        "Eric Schulz"
+      ],
+      "url": "https://arxiv.org/abs/2606.28399",
+      "published": "2026-06-24T09:28:17+00:00",
+      "updated": "2026-06-24T09:28:17+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "q-bio.NC"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.28406",
+      "title": "Can AI Draw Science? A Benchmark for Evaluating Scientific Figure Generation by Text-to-Image and Multimodal Models",
+      "abstract": "Text-to-image and multimodal generative models are increasingly used to produce scientific figures such as mechanism diagrams, experimental-design schematics, conceptual frameworks, and graphical abstracts. Yet existing image-generation benchmarks (e.g., GenEval, T2I-CompBench, DPG-Bench) evaluate natural images and measure compositionality, object counting, or photorealism. None of them measure what makes a generated scientific figure usable: correct and legible text labels, faithful depiction of entities and their relations, coherent diagrammatic structure, and adherence to disciplinary drawing conventions. We introduce SciDraw-Bench, a benchmark of 32 structured scientific-figure generation tasks spanning eight figure types and ten disciplines, where each task pairs a natural-language prompt with a machine-checkable specification of required labels, relations, components, conventions, and negative constraints. We propose a four-dimensional evaluation protocol: Text Fidelity (OCR-based label recall and character error rate), Semantic Correctness (vision-language-model judging against the specification), Structural Quality, and Convention Adherence, together with a meta-evaluation protocol and a preliminary inter-judge reliability analysis (human-rating validation is ongoing). We evaluate a domain-specific system, SciDraw AI, against representative general-purpose text-to-image models, and outline a code-to-figure baseline as a planned extension. In a pilot over all eight figure types, the domain-specific system substantially outperforms the general-purpose baselines on every dimension and figure type, with the largest gaps on semantic correctness and convention adherence; text fidelity remains the hardest dimension for all systems.",
+      "authors": [
+        "Davie Chen"
+      ],
+      "url": "https://arxiv.org/abs/2606.28406",
+      "published": "2026-06-24T14:21:01+00:00",
+      "updated": "2026-06-24T14:21:01+00:00",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "cs.GR"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.28404",
+      "title": "Financing Artificial Intelligence Infrastructure: Mapping AI Infrastructure Investment and Compute Governance Across Africa",
+      "abstract": "Artificial intelligence depends on large-scale compute resources and their supporting infrastructure. However, AI governance debates treat compute primarily as a technical input rather than as an outcome of investment, ownership, and financial control. This paper examines AI infrastructure investment flows across Africa through a systematic analysis of 46 publicly announced projects totalling USD $12.7 billion between 2019 and 2025. Using a value chain framework, we analyze who invests in AI-relevant infrastructure and where investments concentrate. Our findings reveal a highly concentrated landscape dominated by global data center operators, hyperscale technology firms, and development finance institutions, clustering in South Africa, Kenya, Nigeria, and Egypt. We introduce asymmetrical interdependence to describe a structural condition in which capital and physical infrastructure account for 73% of total funding while control remains concentrated in the compute layer among a small number of global technology firms. We argue that compute governance must account for capital flows, ownership, and control, not only geographic access, because these dynamics shape AI compute equity. Infrastructure presence is necessary but insufficient for meaningful governance capacity.",
+      "authors": [
+        "Kai-Hsin Hung",
+        "Sumaya Nur Adan",
+        "Krupa Suchak",
+        "Armita Sadeghian Barzoki",
+        "Kofi Yeboah",
+        "Mohammad Amir Anwar"
+      ],
+      "url": "https://arxiv.org/abs/2606.28404",
+      "published": "2026-06-24T13:14:02+00:00",
+      "updated": "2026-06-24T13:14:02+00:00",
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "Artificial Consciousness"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
+      "id": "2606.28397",
+      "title": "CLOSER-VLN: Closed-Loop Self-Verified Retrieval-Augmented Reasoning for Aerial Vision-Language Navigation",
+      "abstract": "Vision-language navigation (VLN) has recently advanced with large language and multimodal models, enabling agents to follow natural-language instructions in unseen environments without training a task-specific navigation policy. However, most existing VLN methods relying on large models still adopt an open-loop decision-execution approach, where candidate actions are generated from instructions and observations but are rarely verified or corrected before execution. This causes critical issues in aerial VLN, where minor errors in intermediate actions may quickly accumulate into large trajectory deviations and lead to target loss. To address this issue, we propose Closed-loop Self-verified Retrieval-augmented Reasoning (CLOSER), a training-policy-free method that sequentially performs action reasoning, reliability verification, targeted retrieval, and action correction in a closed-loop manner before executing concrete actions. We instantiate the CLOSER in aerial VLN tasks and develop a CLOSER-VLN framework, which is composed of three components: a hierarchical reasoner for generating candidate actions based on available information, a multidimensional action verifier for assessing the reliability of actions generated by the reasoner, and a verification-triggered multimodal retriever for retrieving targeted exemplars from a memory bank only when verification fails. We conduct experimental evaluations on the CityNav benchmark, where CLOSER-VLN achieves 32.01% SR and 21.28% SPL on the test-unseen split, confirming the effectiveness of closed-loop reasoning.",
+      "authors": [
+        "Shaoxuan Li",
+        "Xiangyu Dong",
+        "Xiaoguang Ma",
+        "Junfeng Chen",
+        "Haoran Zhao",
+        "Yaoming Zhou"
+      ],
+      "url": "https://arxiv.org/abs/2606.28397",
+      "published": "2026-06-24T05:57:42+00:00",
+      "updated": "2026-06-24T05:57:42+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "matched_topics": [
+        "ARC-AGI"
+      ],
+      "match_method": "semantic",
+      "best_score": 0.369,
+      "backfilled": true
+    },
+    {
       "id": "2606.26189",
       "title": "Clue-Guided Money Laundering Group Discovery",
       "abstract": "Money Laundering Group Discovery (MLGD) aims to identify hidden criminal groups and recover their complete structures in large-scale financial networks. Existing graph anomaly detection methods mainly produce node-level risk alerts, while global group discovery methods passively search for suspicious groups over the whole network. Both are mismatched with real Anti-money-laundering (AML) investigations, where analysts usually start from a concrete clue and gradually expand the investigation to recover the responsible group. To address this gap, we propose Clue-Guided Group Discovery (CGGD), where a laundering group is progressively recovered from an initial clue set through analyst interaction. We further propose Clue2Group, a framework that first constructs a compact local investigation context to reduce noise and preserve chain-like and cycle-like laundering structures. It then estimates a clue-conditioned local risk field with a multi-semantic local-temporal GNN, and finally integrates risk, structural, and prior-pattern evidence to recover a coherent laundering group. Experiments on two large-scale AML benchmarks show that Clue2Group provides a practical clue-driven analysis framework for AML investigations, offering a feasible step toward bridging the gap between graph-based AML research and real investigation workflows.",
@@ -7600,7 +7724,99 @@
       "match_method": "none",
       "best_score": 0.047,
       "backfilled": true
+    },
+    {
+      "id": "2606.28401",
+      "title": "Vision-driven Preference Synthesis for Mitigating Hallucinations in VLMs",
+      "abstract": "Vision-Language Models (VLMs) have shown strong performance in visual understanding, yet they still suffer from hallucinations, generating content that is not grounded in the image. Preference alignment is a promising approach to improve visual faithfulness, but its success depends heavily on how preference pairs are constructed. Existing methods exhibit two key limitations; (a) intervention-based methods often introduce significant deviation from the policy distribution, and (b) sampling-based methods often underuse visual information during the construction. In this paper, we propose ViPSy (Vision-driven Preference Synthesis), a framework for constructing preference data that are both policy-aligned and visually grounded. Our framework consists of two stages; in the first stage, ViPSy derives a visual cue from recurring object-level content across semantically aligned image variants, so preference construction can rely on visual information rather than language priors. In the second stage, ViPSy conditions the policy's own rollouts on this cue, allowing candidates to be guided by visually grounded content while staying close to the policy's response distribution. The resulting candidates remain close to the policy's response distribution while better leveraging visual information from the image. Experiments show that the resulting VLM, preference-aligned with ViPSy-constructed preference pairs, achieves a new state-of-the-art in hallucination mitigation. Compared with the previous state-of-the-art method, it reduces hallucination rates on AMBER and Object HalBench by 35.7% and 24.5%, respectively. The resulting model further improves on general visual grounding benchmarks, e.g., MMStar, MMVP, and CV-Bench, while also yielding gains in semantic segmentation and ImageNet linear probing, underscoring the effectiveness of our framework in enhancing the model's visual capabilities.",
+      "authors": [
+        "Yunhun Nam",
+        "Jongheon Jeong"
+      ],
+      "url": "https://arxiv.org/abs/2606.28401",
+      "published": "2026-06-24T11:06:22+00:00",
+      "updated": "2026-06-24T11:06:22+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.226,
+      "backfilled": true
+    },
+    {
+      "id": "2606.28403",
+      "title": "Reinforcement Learning for Software Vulnerability Analysis: A Systematic Review with Emphasis on C/C++ Source Code and Static Analysis",
+      "abstract": "Vulnerability detection in C/C++ software remains a major security challenge due to code complexity, manual memory management, and the limitations of traditional static analysis. Reinforcement Learning (RL) has emerged as a promising approach, particularly for fuzzing, test generation, program exploration, and, more recently, vulnerability detection and localization. Following PRISMA 2020 guidelines, this work reviews RL techniques for software vulnerability analysis, focusing on C/C++ source code and static analysis. We identified 21 primary studies published between 2015 and 2026 from major scientific databases and complementary searches. We analyze the addressed tasks, algorithms, state-action-reward-environment formulations, code representations, datasets, and evaluation metrics. Results show that 15 studies focus on fuzzing and guided exploration, only 3 on direct vulnerability detection, and just 1 on statement-level localization. Moreover, statically extracted structural representations such as Control Flow Graphs (CFGs) and Abstract Syntax Trees (ASTs) are rarely used as agent states, and benchmarks lack comparability. We propose a task- and formulation-oriented taxonomy and identify a key research gap: the absence of RL agents that use source-code CFGs as states to detect and localize vulnerable nodes.",
+      "authors": [
+        "Bruno Caro-Vásquez",
+        "Carola Figueroa-Flores",
+        "Gastón Marquez"
+      ],
+      "url": "https://arxiv.org/abs/2606.28403",
+      "published": "2026-06-24T13:09:42+00:00",
+      "updated": "2026-06-24T13:09:42+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.211,
+      "backfilled": true
+    },
+    {
+      "id": "2606.27401",
+      "title": "Recall Before Rerank: Benchmarking Deep Learning Models for Large-Scale Code-to-Code Retrieval",
+      "abstract": "Semantic code search and clone detection are essential for software development, maintenance, and reuse. This paper evaluates the effectiveness, efficiency, and scalability of contemporary deep learning models for first-stage recall in large-scale code-to-code search engines. Benchmarking across multiple programming languages and datasets reveals critical limits in the precision and scalability of these models on Terabyte-scale source-code collections. We present LLM-based code normalisation and query-rewriting schemes that yield significant gains in precision for lower-performing models. Our results question the sustainability of resource-constrained deployment and the assumed robustness of current code-specialised LLMs across datasets. We conclude with actionable insights for building scalable, efficient code-retrieval systems.",
+      "authors": [
+        "Leonardo Venuta",
+        "Francesco Tosoni",
+        "Paolo Ferragina"
+      ],
+      "url": "https://arxiv.org/abs/2606.27401",
+      "published": "2026-06-24T13:41:36+00:00",
+      "updated": "2026-06-24T13:41:36+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.CL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.196,
+      "backfilled": true
+    },
+    {
+      "id": "2606.28396",
+      "title": "RadarTwin: Scene-Specific mmWave Radar Simulation and Learning for Mobile Indoor Perception",
+      "abstract": "Millimeter-wave (mmWave) radar perception is limited by data scarcity: models trained on existing radar datasets fail to generalize to new objects, environments, and sensing trajectories. We present RadarTwin, a framework for generating deployment-specific radar training data before real data collection. Given a 3D reconstruction of a target space (phone LiDAR, robot-mounted sensing, or RGB-to-3D), RadarTwin uses a vision-language model to infer radar-relevant surface materials and a physics-based ray tracer to synthesize raw frequency-modulated continuous-wave (FMCW) radar measurements with multi-bounce propagation. To study what transfers from simulation to reality, we collect a paired real-simulated dataset spanning household objects, material classes, distances, rotations, translations, and mobile sensing trajectories. We show that simulated and real radar share the same object-discriminative shape and material features, and that modeling the environment's multipath is essential to matching real measurements. A representation trained on simulation alone recognizes real objects at 2.5 times chance with no real radar labels, and a few labeled examples raise this to 95.3% on a 12-way recognition task. RadarTwin enables training radar perception for a new space before any real radar data is collected there.",
+      "authors": [
+        "Emily Bejerano",
+        "Federico Tondolo",
+        "Devang Gupta",
+        "Aaron Mano Cherian",
+        "Taeyoo Kim",
+        "Ayaan Qayyum",
+        "Xiaofan Yu",
+        "Xiaofan Jiang"
+      ],
+      "url": "https://arxiv.org/abs/2606.28396",
+      "published": "2026-06-24T05:50:26+00:00",
+      "updated": "2026-06-24T05:50:26+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.194,
+      "backfilled": true
     }
   ],
-  "patched_at": "2026-06-27T04:35:46.374127+00:00"
+  "patched_at": "2026-06-30T04:46:28.578933+00:00"
 }
