@@ -3,6 +3,31 @@
   "fetched_at": "2026-06-30T13:46:14.299920+09:00",
   "papers": [
     {
+      "id": "2606.30688",
+      "title": "A Coherence Law for Trainability in Noisy Equivariant Quantum Neural Networks",
+      "abstract": "Symmetry provides a quantum neural network structure, but on its own it does not keep the network trainable once noise is present. We ask which physical quantity decides whether the gradients of an equivariant circuit survive decoherence, and we answer with a compact training law. Working with U(1)-equivariant brickwork circuits that conserve a charge, we find that two distinct effects govern a trainable gradient. Causality fixes where the gradient can live, confining it to the backward light cone of the readout inside the active charge sector. Coherence then determines how fast it decays through the contraction of the off-diagonal sector modes that the projected readout can actually observe. We prove a light-cone reduction that pins the noiseless gradient to the sector-restricted cone with a lower bound independent of the total qubit number, and we define a readout-visible aligned coherence rate as a Rayleigh quotient of the noise generator along the gradient-carrying mode. A perturbative open-system analysis turns this rate into a leading-order training law. Density-matrix simulations then confirm that the finite-noise degradation follows a single accumulated variable built from noise depth and coherence contraction, with a coefficient of determination of 0.979. The sharpest test comes from a correlated-dephasing channel that has a large worst-case rate but a near-zero aligned rate. The law predicts no gradient loss for this channel, and none is seen. Sector coherence outperforms every standard channel diagnostic we compare it against, and the analysis identifies readout-visible sector coherence as the quantity that links equivariant architecture, open-system dynamics and noisy trainability.",
+      "authors": [
+        "Hassan Ugail",
+        "Newton Howard"
+      ],
+      "url": "https://arxiv.org/abs/2606.30688",
+      "published": "2026-06-28T16:43:36+00:00",
+      "updated": "2026-06-28T16:43:36+00:00",
+      "categories": [
+        "quant-ph",
+        "cs.AI",
+        "cs.LG",
+        "math-ph"
+      ],
+      "matched_topics": [
+        "Spiking Neural Networks",
+        "Differentiable Logic Gate Networks"
+      ],
+      "match_method": "keyword",
+      "best_score": 0.0,
+      "backfilled": true
+    },
+    {
       "id": "2606.29180",
       "title": "Measuring Graph-to-Graph Semantic Similarity in Knowledge Graphs: An Empirical Evaluation of Knowledge Graph Embeddings",
       "abstract": "A Knowledge Graph (KG) represents facts as structured triples and is widely used to organize relational knowledge across diverse domains. Just as textual information ranges from words and sentences to complete documents, KG information can be interpreted at multiple levels, from entities, relations, and triples to subgraphs and entire KGs. However, existing KG embedding methods mainly focus on entities, relations, and triples, leaving graph-level semantics largely unaddressed. Conventional graph-level methods, which typically compare graphs based on structural patterns, are also insufficient because structural similarity alone cannot guarantee semantic similarity between KGs. To evaluate how well different methods capture such graph-level semantic information, we study graph-to-graph semantic similarity, which determines whether a pair of KGs represents semantically corresponding underlying information. To obtain reliable ground-truth correspondences, we construct a semantic matching dataset by modifying text documents, extracting KGs from both original and modified documents, and transferring their known correspondences to KG pairs. We compare text-based, structure-based, and KG embedding-based approaches on each dataset. For the KG embedding-based approach, we introduce two scoring functions: \\textit{EmbPairSim}, which uses maximal pairwise entity similarity, and \\textit{AvgEmbSim}, which uses a frequency-weighted centroid. Experiments on WikiText-2 and CC-News show that \\textit{EmbPairSim} achieves up to 5.3 pp higher MRR than Sentence-BERT while using substantially fewer parameters. These results suggest that KGE representations can serve as compact and effective signals for graph-to-graph semantic similarity in KGs. Our code is available at https://github.com/SeungRyeolBaek/KG-to-KG-Semantic-Similarity.",
@@ -3935,6 +3960,67 @@
       "matched_topics": [],
       "match_method": "none",
       "best_score": 0.077
+    },
+    {
+      "id": "2606.30686",
+      "title": "Position: Vision-Language-Action Models Cannot Be Verified to Perform Physical Reasoning",
+      "abstract": "Vision-Language-Action (VLA) systems, built on pretrained vision-language models (VLMs), have shown rapidly improving performance on robot manipulation benchmarks. These gains are commonly interpreted as evidence that semantic representations learned from internet-scale data transfer to physical execution generalization. This position paper argues that the assumption underlying this interpretation -- that semantic generalization is sufficient to support physical action decisions -- has not been independently verified and cannot be tested under current evaluation protocols. We support this claim by decomposing VLA policies into semantic mapping and physical action decision, and showing that task success rate -- the dominant evaluation metric -- cannot distinguish between these two sources of capability. As a result, improvements in benchmark performance are consistent with multiple competing explanations, including semantic matching, distributional overlap, and genuine physical generalization. We further argue that this identifiability gap has been reinforced through narrative drift, whereby successive systems inherit and strengthen prior interpretations of performance gains without isolating the underlying causal mechanism. To address this limitation, we propose a research direction based on evaluation designs that introduce controlled variation to separately measure semantic and physical generalization. Such designs make it possible to causally attribute performance without requiring access to model internals, and to empirically assess the role of VLM backbones as semantic interfaces rather than implicit sources of physical competence. Our goal is not to refute the role of VLMs in robotics, but to clarify the conditions under which claims of physical generalization can be meaningfully evaluated.",
+      "authors": [
+        "Taozhao Chen",
+        "Ian Manchester",
+        "Huaming Chen"
+      ],
+      "url": "https://arxiv.org/abs/2606.30686",
+      "published": "2026-06-28T14:03:57+00:00",
+      "updated": "2026-06-28T14:03:57+00:00",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.339,
+      "backfilled": true
+    },
+    {
+      "id": "2606.30689",
+      "title": "Citation Discipline in Spec-Driven Development: A Cross-Model Empirical Study of Output Determinism and Automated Hallucination Detection in LLM-Generated Code",
+      "abstract": "Spec-Driven Development (SDD) frameworks guide Large Language Model (LLM)-powered code generation through formal specifications, yet they differ fundamentally in how they enforce traceability between requirements and generated code. This paper presents two controlled empirical studies comparing three SDD frameworks: $traceSDD$, which enforces mandatory per-line requirement citations using hierarchical REQ-XXX.Y.Z identifiers; $Spec Kit$, which uses artifact-level traceability through user stories and acceptance criteria; and $OpenSpec$, which relies on post-hoc external trace maps. We measure two primary outcomes across two frontier LLMs -- Claude Sonnet 4.6 (N=20, 4 conditions, 240 implementations) and GLM-5-turbo (N=50, 4 conditions, 600 implementations): $output$ $determinism$ (lexical similarity across independent LLM sessions) and $automated$ $hallucination$ $detection$ $rate$ (TDR). Our pre-registered analysis reveals a consistent, cross-model replicated trade-off: the uncited condition produces significantly higher determinism than the cited condition (Claude: $d=-0.76$, $p=0.003$; GLM: $d=-0.72$, $p<0.001$), while only the cited condition enables automated hallucination detection (TDR: Claude 86.4%, GLM 88.0%, vs 0% for all alternatives, FPR=0% across both studies). traceSDD (cited) significantly outperforms $Spec Kit$ on determinism (Claude: $d=0.47$, $p=0.049$; GLM: $d=0.42$, $p=0.003$) but not OpenSpec (Claude: $d=0.18$, $p=0.44$; GLM: $d=0.14$, $p=0.32$). These findings establish that citation annotations trade determinism for verifiability, and that this trade-off generalizes across model architectures.",
+      "authors": [
+        "Subham Panda"
+      ],
+      "url": "https://arxiv.org/abs/2606.30689",
+      "published": "2026-06-28T19:38:55+00:00",
+      "updated": "2026-06-28T19:38:55+00:00",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.194,
+      "backfilled": true
+    },
+    {
+      "id": "2606.30687",
+      "title": "Unsupervised Thermodynamics of Molecular Diffusion Models: Action-Operator Semantics and Auditable Free-Energy Readout",
+      "abstract": "Diffusion models are increasingly utilized for modeling molecular structures and conformational ensembles, yet the thermodynamic meaning of their learned representations and scores remains elusive. To resolve this ambiguity, we introduce a mathematically consistent action-operator framework natively compatible with diffusion models. By defining a fixed molecular environment as a base action $S_0(x)$ and an alchemical perturbation as an operator $O(x)$, standard diffusion noising induces effective noised actions and operators whose gradients and alchemical derivatives are directly represented by the model's learned fields. This rigorous self-consistency enables a ``noisy operator bridge'' capable of reading out free-energy differences ($ΔF$) from endpoint ensembles and per-frame evaluations. In controlled experiments on alanine dipeptide systems, we show that incorporating physical inductive biases enables partial recovery of the base action and perturbation operator. When applied to a challenging C6-H to C6-F ligand-pocket nonbonded perturbation (185L/IND) with negligible phase-space overlap, our supervised bridge estimates the alchemical $ΔF$ within approximately $1\\ k_\\mathrm{B}T$ of a stable 19-state MBAR reference. Finally, we demonstrate that endpoint coordinates and binary labels alone are sufficient to partially recover the operator shape and a centered free-energy scale without any force or action supervision. This work provides a rigorous path toward transforming generative molecular diffusion models from black-box coordinate samplers into auditable thermodynamic estimators.",
+      "authors": [
+        "Wenjie Xi"
+      ],
+      "url": "https://arxiv.org/abs/2606.30687",
+      "published": "2026-06-28T14:45:31+00:00",
+      "updated": "2026-06-28T14:45:31+00:00",
+      "categories": [
+        "physics.chem-ph",
+        "cond-mat.stat-mech",
+        "cs.AI"
+      ],
+      "matched_topics": [],
+      "match_method": "none",
+      "best_score": 0.19,
+      "backfilled": true
     }
-  ]
+  ],
+  "patched_at": "2026-07-02T04:41:41.689985+00:00"
 }
